@@ -1,0 +1,102 @@
+# T-DID event <-> ECS 9.1.0 document. Primary-source copy: docs/eval-handoff/std-sources/ecs_flat.yml.
+# Levels (see _common.yaml): core = ECS `level: core` fields; ext = core + ECS `level: extended` fields.
+# Free-form `labels` and custom fields (ecs_custom.txt) are never used.
+standard: ecs
+layout: flat
+version: 9.1.0
+constants:
+  ecs.version: 9.1.0
+  event.kind: event
+slots:
+  event_type:
+    path: event.action
+    level: core
+    codec: verbatim
+    source: https://www.elastic.co/guide/en/ecs/9.1/ecs-event.html#field-event-action (core)
+    why: "'The action captured by the event.'"
+  occurred_at:
+    path: "@timestamp"
+    level: core
+    codec: verbatim
+    source: https://www.elastic.co/guide/en/ecs/9.1/ecs-base.html (core)
+    why: "'Date/time when the event originated.'"
+  decision.outcome:
+    path: event.outcome
+    level: core
+    codec: ecs_outcome
+    source: https://www.elastic.co/guide/en/ecs/9.1/ecs-allowed-values-event-outcome.html (core; success/failure/unknown)
+    why: Unknown is distinct from failure. Omitted for action records.
+  event_id:
+    path: event.id
+    level: core
+    codec: verbatim
+    source: https://www.elastic.co/guide/en/ecs/9.1/ecs-event.html#field-event-id (core)
+    why: "'Unique ID to describe the event.'"
+  producer.role:
+    path: service.type
+    level: core
+    codec: verbatim
+    source: https://www.elastic.co/guide/en/ecs/9.1/ecs-service.html#field-service-type (core)
+    why: "'The type of the service data is collected from' (issuer, verifier, wallet, ...)."
+  producer.implementation:
+    path: service.name
+    level: core
+    codec: verbatim
+    source: https://www.elastic.co/guide/en/ecs/9.1/ecs-service.html#field-service-name (core)
+    why: "'Name of the service data is collected from.'"
+  producer.service:
+    path: service.id
+    level: core
+    codec: verbatim
+    source: https://www.elastic.co/guide/en/ecs/9.1/ecs-service.html#field-service-id (core)
+    why: "'Unique identifier of the running service ... should be the same for all nodes' = T-DID producer.service."
+  producer.instance:
+    path: service.node.name
+    level: ext
+    codec: verbatim
+    source: https://www.elastic.co/guide/en/ecs/9.1/ecs-service.html#field-service-node-name (extended)
+    why: "'Name of a service node' = one producer instance of the service."
+  producer.seq:
+    path: event.sequence
+    level: ext
+    codec: verbatim
+    source: https://www.elastic.co/guide/en/ecs/9.1/ecs-event.html#field-event-sequence (extended)
+    why: "'Sequence number of the event' within the source; used because service.node.name names the stream."
+  decision.reason_class:
+    path: event.reason
+    level: ext
+    codec: verbatim
+    source: https://www.elastic.co/guide/en/ecs/9.1/ecs-event.html#field-event-reason (extended)
+    why: "'Reason why this event happened, according to the source.'"
+  refs.request_ref:
+    path: trace.id
+    level: ext
+    codec: verbatim
+    source: https://www.elastic.co/guide/en/ecs/9.1/ecs-tracing.html (trace.id extended, keyword)
+    why: "'A trace groups multiple events like transactions that belong together' across services: the request a verifier, wallet and relying party handle."
+  workflow_ref:
+    path: transaction.id
+    level: ext
+    codec: verbatim
+    source: https://www.elastic.co/guide/en/ecs/9.1/ecs-tracing.html (transaction.id extended)
+    why: "'The highest level of work measured within a service' = the component's workflow."
+lost:
+  producer.stream_start: No field.
+  refs.session_ref: ECS has no session field.
+  refs.frontend_session_ref: No session field.
+  other refs (proof_ref, output_ref, ...): related.hash is an untyped list of 'hashes seen on your event' with no role; two hashes cannot be told apart.
+  facts: No field (e.g. vp_response_mode).
+  policy: rule.* describes a detection rule, not the deployment policy of the component; no field.
+  checks.required: No field.
+split:
+  level: ext
+  kind_path: event.action
+  kind_prefix: "check:"
+  outcome_path: event.outcome
+  outcome_codec: ecs_outcome
+  join_path: span.id
+  source: https://www.elastic.co/guide/en/ecs/9.1/ecs-tracing.html (span.id extended)
+  why: >-
+    One document per named check (event.action = 'check:<name>', event.outcome = result) inside the span
+    of the decision (span.id = T-DID event_id on the decision and its check documents).
+    not_performed/error/unavailable -> unknown -> unavailable.

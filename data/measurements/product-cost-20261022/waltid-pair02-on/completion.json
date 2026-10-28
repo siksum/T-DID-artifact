@@ -1,0 +1,12 @@
+{
+  "status": "completed",
+  "product": "waltid",
+  "mode": "on",
+  "repetitions": 30,
+  "binary": "build/waltid-identity-f5b5995059c4ab69d6bc73f434c72d1574188963/waltid-services/waltid-issuer-api/build/install/waltid-issuer-api/bin/waltid-issuer-api",
+  "source_commit": "f5b5995059c4ab69d6bc73f434c72d1574188963",
+  "redactions": {
+    "issuer.stdout": 0,
+    "issuer.stderr": 1434
+  }
+}

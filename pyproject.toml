@@ -1,0 +1,26 @@
+[project]
+name = "t-did-artifact"
+version = "1.0.0"
+description = "Reproducible T-DID security logging and detection research artifact"
+readme = "README.md"
+license = "Apache-2.0"
+requires-python = ">=3.12"
+dependencies = ["jsonschema==4.26.0", "fastjsonschema==2.21.1", "PyYAML==6.0.3"]
+
+[project.optional-dependencies]
+dev = ["pytest==9.1.1"]
+artifact = ["numpy==2.5.2", "matplotlib==3.11.1", "cryptography==50.0.0"]
+
+[project.scripts]
+tdid = "tdid.cli:main"
+
+[build-system]
+requires = ["hatchling==1.33.0"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/tdid"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests", "experiments/eval/monitors", "experiments/eval/mappers", "experiments/eval/loss", "experiments/eval/harness"]
+addopts = "-q --strict-markers"

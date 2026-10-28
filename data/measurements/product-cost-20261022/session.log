@@ -1,0 +1,3080 @@
+waltid 0 0 off start
+thr015-00-fresh [200] 
+thr015-00-different_proof [200, 200] 
+thr015-00-same_session_reuse [200, 200] excess
+thr015-00-new_session_reuse [200, 400] 
+thr015-00-bad_signature [200, 400] 
+thr015-01-fresh [200] 
+thr015-01-different_proof [200, 200] 
+thr015-01-same_session_reuse [200, 200] excess
+thr015-01-new_session_reuse [200, 400] 
+thr015-01-bad_signature [200, 400] 
+thr015-02-fresh [200] 
+thr015-02-different_proof [200, 200] 
+thr015-02-same_session_reuse [200, 200] excess
+thr015-02-new_session_reuse [200, 400] 
+thr015-02-bad_signature [200, 400] 
+thr015-03-fresh [200] 
+thr015-03-different_proof [200, 200] 
+thr015-03-same_session_reuse [200, 200] excess
+thr015-03-new_session_reuse [200, 400] 
+thr015-03-bad_signature [200, 400] 
+thr015-04-fresh [200] 
+thr015-04-different_proof [200, 200] 
+thr015-04-same_session_reuse [200, 200] excess
+thr015-04-new_session_reuse [200, 400] 
+thr015-04-bad_signature [200, 400] 
+thr015-05-fresh [200] 
+thr015-05-different_proof [200, 200] 
+thr015-05-same_session_reuse [200, 200] excess
+thr015-05-new_session_reuse [200, 400] 
+thr015-05-bad_signature [200, 400] 
+thr015-06-fresh [200] 
+thr015-06-different_proof [200, 200] 
+thr015-06-same_session_reuse [200, 200] excess
+thr015-06-new_session_reuse [200, 400] 
+thr015-06-bad_signature [200, 400] 
+thr015-07-fresh [200] 
+thr015-07-different_proof [200, 200] 
+thr015-07-same_session_reuse [200, 200] excess
+thr015-07-new_session_reuse [200, 400] 
+thr015-07-bad_signature [200, 400] 
+thr015-08-fresh [200] 
+thr015-08-different_proof [200, 200] 
+thr015-08-same_session_reuse [200, 200] excess
+thr015-08-new_session_reuse [200, 400] 
+thr015-08-bad_signature [200, 400] 
+thr015-09-fresh [200] 
+thr015-09-different_proof [200, 200] 
+thr015-09-same_session_reuse [200, 200] excess
+thr015-09-new_session_reuse [200, 400] 
+thr015-09-bad_signature [200, 400] 
+thr015-10-fresh [200] 
+thr015-10-different_proof [200, 200] 
+thr015-10-same_session_reuse [200, 200] excess
+thr015-10-new_session_reuse [200, 400] 
+thr015-10-bad_signature [200, 400] 
+thr015-11-fresh [200] 
+thr015-11-different_proof [200, 200] 
+thr015-11-same_session_reuse [200, 200] excess
+thr015-11-new_session_reuse [200, 400] 
+thr015-11-bad_signature [200, 400] 
+thr015-12-fresh [200] 
+thr015-12-different_proof [200, 200] 
+thr015-12-same_session_reuse [200, 200] excess
+thr015-12-new_session_reuse [200, 400] 
+thr015-12-bad_signature [200, 400] 
+thr015-13-fresh [200] 
+thr015-13-different_proof [200, 200] 
+thr015-13-same_session_reuse [200, 200] excess
+thr015-13-new_session_reuse [200, 400] 
+thr015-13-bad_signature [200, 400] 
+thr015-14-fresh [200] 
+thr015-14-different_proof [200, 200] 
+thr015-14-same_session_reuse [200, 200] excess
+thr015-14-new_session_reuse [200, 400] 
+thr015-14-bad_signature [200, 400] 
+thr015-15-fresh [200] 
+thr015-15-different_proof [200, 200] 
+thr015-15-same_session_reuse [200, 200] excess
+thr015-15-new_session_reuse [200, 400] 
+thr015-15-bad_signature [200, 400] 
+thr015-16-fresh [200] 
+thr015-16-different_proof [200, 200] 
+thr015-16-same_session_reuse [200, 200] excess
+thr015-16-new_session_reuse [200, 400] 
+thr015-16-bad_signature [200, 400] 
+thr015-17-fresh [200] 
+thr015-17-different_proof [200, 200] 
+thr015-17-same_session_reuse [200, 200] excess
+thr015-17-new_session_reuse [200, 400] 
+thr015-17-bad_signature [200, 400] 
+thr015-18-fresh [200] 
+thr015-18-different_proof [200, 200] 
+thr015-18-same_session_reuse [200, 200] excess
+thr015-18-new_session_reuse [200, 400] 
+thr015-18-bad_signature [200, 400] 
+thr015-19-fresh [200] 
+thr015-19-different_proof [200, 200] 
+thr015-19-same_session_reuse [200, 200] excess
+thr015-19-new_session_reuse [200, 400] 
+thr015-19-bad_signature [200, 400] 
+thr015-20-fresh [200] 
+thr015-20-different_proof [200, 200] 
+thr015-20-same_session_reuse [200, 200] excess
+thr015-20-new_session_reuse [200, 400] 
+thr015-20-bad_signature [200, 400] 
+thr015-21-fresh [200] 
+thr015-21-different_proof [200, 200] 
+thr015-21-same_session_reuse [200, 200] excess
+thr015-21-new_session_reuse [200, 400] 
+thr015-21-bad_signature [200, 400] 
+thr015-22-fresh [200] 
+thr015-22-different_proof [200, 200] 
+thr015-22-same_session_reuse [200, 200] excess
+thr015-22-new_session_reuse [200, 400] 
+thr015-22-bad_signature [200, 400] 
+thr015-23-fresh [200] 
+thr015-23-different_proof [200, 200] 
+thr015-23-same_session_reuse [200, 200] excess
+thr015-23-new_session_reuse [200, 400] 
+thr015-23-bad_signature [200, 400] 
+thr015-24-fresh [200] 
+thr015-24-different_proof [200, 200] 
+thr015-24-same_session_reuse [200, 200] excess
+thr015-24-new_session_reuse [200, 400] 
+thr015-24-bad_signature [200, 400] 
+thr015-25-fresh [200] 
+thr015-25-different_proof [200, 200] 
+thr015-25-same_session_reuse [200, 200] excess
+thr015-25-new_session_reuse [200, 400] 
+thr015-25-bad_signature [200, 400] 
+thr015-26-fresh [200] 
+thr015-26-different_proof [200, 200] 
+thr015-26-same_session_reuse [200, 200] excess
+thr015-26-new_session_reuse [200, 400] 
+thr015-26-bad_signature [200, 400] 
+thr015-27-fresh [200] 
+thr015-27-different_proof [200, 200] 
+thr015-27-same_session_reuse [200, 200] excess
+thr015-27-new_session_reuse [200, 400] 
+thr015-27-bad_signature [200, 400] 
+thr015-28-fresh [200] 
+thr015-28-different_proof [200, 200] 
+thr015-28-same_session_reuse [200, 200] excess
+thr015-28-new_session_reuse [200, 400] 
+thr015-28-bad_signature [200, 400] 
+thr015-29-fresh [200] 
+thr015-29-different_proof [200, 200] 
+thr015-29-same_session_reuse [200, 200] excess
+thr015-29-new_session_reuse [200, 400] 
+thr015-29-bad_signature [200, 400] 
+waltid 0 0 off completed
+waltid 0 1 on start
+thr015-00-fresh [200] 
+thr015-00-different_proof [200, 200] 
+thr015-00-same_session_reuse [200, 200] excess
+thr015-00-new_session_reuse [200, 400] 
+thr015-00-bad_signature [200, 400] 
+thr015-01-fresh [200] 
+thr015-01-different_proof [200, 200] 
+thr015-01-same_session_reuse [200, 200] excess
+thr015-01-new_session_reuse [200, 400] 
+thr015-01-bad_signature [200, 400] 
+thr015-02-fresh [200] 
+thr015-02-different_proof [200, 200] 
+thr015-02-same_session_reuse [200, 200] excess
+thr015-02-new_session_reuse [200, 400] 
+thr015-02-bad_signature [200, 400] 
+thr015-03-fresh [200] 
+thr015-03-different_proof [200, 200] 
+thr015-03-same_session_reuse [200, 200] excess
+thr015-03-new_session_reuse [200, 400] 
+thr015-03-bad_signature [200, 400] 
+thr015-04-fresh [200] 
+thr015-04-different_proof [200, 200] 
+thr015-04-same_session_reuse [200, 200] excess
+thr015-04-new_session_reuse [200, 400] 
+thr015-04-bad_signature [200, 400] 
+thr015-05-fresh [200] 
+thr015-05-different_proof [200, 200] 
+thr015-05-same_session_reuse [200, 200] excess
+thr015-05-new_session_reuse [200, 400] 
+thr015-05-bad_signature [200, 400] 
+thr015-06-fresh [200] 
+thr015-06-different_proof [200, 200] 
+thr015-06-same_session_reuse [200, 200] excess
+thr015-06-new_session_reuse [200, 400] 
+thr015-06-bad_signature [200, 400] 
+thr015-07-fresh [200] 
+thr015-07-different_proof [200, 200] 
+thr015-07-same_session_reuse [200, 200] excess
+thr015-07-new_session_reuse [200, 400] 
+thr015-07-bad_signature [200, 400] 
+thr015-08-fresh [200] 
+thr015-08-different_proof [200, 200] 
+thr015-08-same_session_reuse [200, 200] excess
+thr015-08-new_session_reuse [200, 400] 
+thr015-08-bad_signature [200, 400] 
+thr015-09-fresh [200] 
+thr015-09-different_proof [200, 200] 
+thr015-09-same_session_reuse [200, 200] excess
+thr015-09-new_session_reuse [200, 400] 
+thr015-09-bad_signature [200, 400] 
+thr015-10-fresh [200] 
+thr015-10-different_proof [200, 200] 
+thr015-10-same_session_reuse [200, 200] excess
+thr015-10-new_session_reuse [200, 400] 
+thr015-10-bad_signature [200, 400] 
+thr015-11-fresh [200] 
+thr015-11-different_proof [200, 200] 
+thr015-11-same_session_reuse [200, 200] excess
+thr015-11-new_session_reuse [200, 400] 
+thr015-11-bad_signature [200, 400] 
+thr015-12-fresh [200] 
+thr015-12-different_proof [200, 200] 
+thr015-12-same_session_reuse [200, 200] excess
+thr015-12-new_session_reuse [200, 400] 
+thr015-12-bad_signature [200, 400] 
+thr015-13-fresh [200] 
+thr015-13-different_proof [200, 200] 
+thr015-13-same_session_reuse [200, 200] excess
+thr015-13-new_session_reuse [200, 400] 
+thr015-13-bad_signature [200, 400] 
+thr015-14-fresh [200] 
+thr015-14-different_proof [200, 200] 
+thr015-14-same_session_reuse [200, 200] excess
+thr015-14-new_session_reuse [200, 400] 
+thr015-14-bad_signature [200, 400] 
+thr015-15-fresh [200] 
+thr015-15-different_proof [200, 200] 
+thr015-15-same_session_reuse [200, 200] excess
+thr015-15-new_session_reuse [200, 400] 
+thr015-15-bad_signature [200, 400] 
+thr015-16-fresh [200] 
+thr015-16-different_proof [200, 200] 
+thr015-16-same_session_reuse [200, 200] excess
+thr015-16-new_session_reuse [200, 400] 
+thr015-16-bad_signature [200, 400] 
+thr015-17-fresh [200] 
+thr015-17-different_proof [200, 200] 
+thr015-17-same_session_reuse [200, 200] excess
+thr015-17-new_session_reuse [200, 400] 
+thr015-17-bad_signature [200, 400] 
+thr015-18-fresh [200] 
+thr015-18-different_proof [200, 200] 
+thr015-18-same_session_reuse [200, 200] excess
+thr015-18-new_session_reuse [200, 400] 
+thr015-18-bad_signature [200, 400] 
+thr015-19-fresh [200] 
+thr015-19-different_proof [200, 200] 
+thr015-19-same_session_reuse [200, 200] excess
+thr015-19-new_session_reuse [200, 400] 
+thr015-19-bad_signature [200, 400] 
+thr015-20-fresh [200] 
+thr015-20-different_proof [200, 200] 
+thr015-20-same_session_reuse [200, 200] excess
+thr015-20-new_session_reuse [200, 400] 
+thr015-20-bad_signature [200, 400] 
+thr015-21-fresh [200] 
+thr015-21-different_proof [200, 200] 
+thr015-21-same_session_reuse [200, 200] excess
+thr015-21-new_session_reuse [200, 400] 
+thr015-21-bad_signature [200, 400] 
+thr015-22-fresh [200] 
+thr015-22-different_proof [200, 200] 
+thr015-22-same_session_reuse [200, 200] excess
+thr015-22-new_session_reuse [200, 400] 
+thr015-22-bad_signature [200, 400] 
+thr015-23-fresh [200] 
+thr015-23-different_proof [200, 200] 
+thr015-23-same_session_reuse [200, 200] excess
+thr015-23-new_session_reuse [200, 400] 
+thr015-23-bad_signature [200, 400] 
+thr015-24-fresh [200] 
+thr015-24-different_proof [200, 200] 
+thr015-24-same_session_reuse [200, 200] excess
+thr015-24-new_session_reuse [200, 400] 
+thr015-24-bad_signature [200, 400] 
+thr015-25-fresh [200] 
+thr015-25-different_proof [200, 200] 
+thr015-25-same_session_reuse [200, 200] excess
+thr015-25-new_session_reuse [200, 400] 
+thr015-25-bad_signature [200, 400] 
+thr015-26-fresh [200] 
+thr015-26-different_proof [200, 200] 
+thr015-26-same_session_reuse [200, 200] excess
+thr015-26-new_session_reuse [200, 400] 
+thr015-26-bad_signature [200, 400] 
+thr015-27-fresh [200] 
+thr015-27-different_proof [200, 200] 
+thr015-27-same_session_reuse [200, 200] excess
+thr015-27-new_session_reuse [200, 400] 
+thr015-27-bad_signature [200, 400] 
+thr015-28-fresh [200] 
+thr015-28-different_proof [200, 200] 
+thr015-28-same_session_reuse [200, 200] excess
+thr015-28-new_session_reuse [200, 400] 
+thr015-28-bad_signature [200, 400] 
+thr015-29-fresh [200] 
+thr015-29-different_proof [200, 200] 
+thr015-29-same_session_reuse [200, 200] excess
+thr015-29-new_session_reuse [200, 400] 
+thr015-29-bad_signature [200, 400] 
+waltid 0 1 on completed
+waltid 1 0 on start
+thr015-00-fresh [200] 
+thr015-00-different_proof [200, 200] 
+thr015-00-same_session_reuse [200, 200] excess
+thr015-00-new_session_reuse [200, 400] 
+thr015-00-bad_signature [200, 400] 
+thr015-01-fresh [200] 
+thr015-01-different_proof [200, 200] 
+thr015-01-same_session_reuse [200, 200] excess
+thr015-01-new_session_reuse [200, 400] 
+thr015-01-bad_signature [200, 400] 
+thr015-02-fresh [200] 
+thr015-02-different_proof [200, 200] 
+thr015-02-same_session_reuse [200, 200] excess
+thr015-02-new_session_reuse [200, 400] 
+thr015-02-bad_signature [200, 400] 
+thr015-03-fresh [200] 
+thr015-03-different_proof [200, 200] 
+thr015-03-same_session_reuse [200, 200] excess
+thr015-03-new_session_reuse [200, 400] 
+thr015-03-bad_signature [200, 400] 
+thr015-04-fresh [200] 
+thr015-04-different_proof [200, 200] 
+thr015-04-same_session_reuse [200, 200] excess
+thr015-04-new_session_reuse [200, 400] 
+thr015-04-bad_signature [200, 400] 
+thr015-05-fresh [200] 
+thr015-05-different_proof [200, 200] 
+thr015-05-same_session_reuse [200, 200] excess
+thr015-05-new_session_reuse [200, 400] 
+thr015-05-bad_signature [200, 400] 
+thr015-06-fresh [200] 
+thr015-06-different_proof [200, 200] 
+thr015-06-same_session_reuse [200, 200] excess
+thr015-06-new_session_reuse [200, 400] 
+thr015-06-bad_signature [200, 400] 
+thr015-07-fresh [200] 
+thr015-07-different_proof [200, 200] 
+thr015-07-same_session_reuse [200, 200] excess
+thr015-07-new_session_reuse [200, 400] 
+thr015-07-bad_signature [200, 400] 
+thr015-08-fresh [200] 
+thr015-08-different_proof [200, 200] 
+thr015-08-same_session_reuse [200, 200] excess
+thr015-08-new_session_reuse [200, 400] 
+thr015-08-bad_signature [200, 400] 
+thr015-09-fresh [200] 
+thr015-09-different_proof [200, 200] 
+thr015-09-same_session_reuse [200, 200] excess
+thr015-09-new_session_reuse [200, 400] 
+thr015-09-bad_signature [200, 400] 
+thr015-10-fresh [200] 
+thr015-10-different_proof [200, 200] 
+thr015-10-same_session_reuse [200, 200] excess
+thr015-10-new_session_reuse [200, 400] 
+thr015-10-bad_signature [200, 400] 
+thr015-11-fresh [200] 
+thr015-11-different_proof [200, 200] 
+thr015-11-same_session_reuse [200, 200] excess
+thr015-11-new_session_reuse [200, 400] 
+thr015-11-bad_signature [200, 400] 
+thr015-12-fresh [200] 
+thr015-12-different_proof [200, 200] 
+thr015-12-same_session_reuse [200, 200] excess
+thr015-12-new_session_reuse [200, 400] 
+thr015-12-bad_signature [200, 400] 
+thr015-13-fresh [200] 
+thr015-13-different_proof [200, 200] 
+thr015-13-same_session_reuse [200, 200] excess
+thr015-13-new_session_reuse [200, 400] 
+thr015-13-bad_signature [200, 400] 
+thr015-14-fresh [200] 
+thr015-14-different_proof [200, 200] 
+thr015-14-same_session_reuse [200, 200] excess
+thr015-14-new_session_reuse [200, 400] 
+thr015-14-bad_signature [200, 400] 
+thr015-15-fresh [200] 
+thr015-15-different_proof [200, 200] 
+thr015-15-same_session_reuse [200, 200] excess
+thr015-15-new_session_reuse [200, 400] 
+thr015-15-bad_signature [200, 400] 
+thr015-16-fresh [200] 
+thr015-16-different_proof [200, 200] 
+thr015-16-same_session_reuse [200, 200] excess
+thr015-16-new_session_reuse [200, 400] 
+thr015-16-bad_signature [200, 400] 
+thr015-17-fresh [200] 
+thr015-17-different_proof [200, 200] 
+thr015-17-same_session_reuse [200, 200] excess
+thr015-17-new_session_reuse [200, 400] 
+thr015-17-bad_signature [200, 400] 
+thr015-18-fresh [200] 
+thr015-18-different_proof [200, 200] 
+thr015-18-same_session_reuse [200, 200] excess
+thr015-18-new_session_reuse [200, 400] 
+thr015-18-bad_signature [200, 400] 
+thr015-19-fresh [200] 
+thr015-19-different_proof [200, 200] 
+thr015-19-same_session_reuse [200, 200] excess
+thr015-19-new_session_reuse [200, 400] 
+thr015-19-bad_signature [200, 400] 
+thr015-20-fresh [200] 
+thr015-20-different_proof [200, 200] 
+thr015-20-same_session_reuse [200, 200] excess
+thr015-20-new_session_reuse [200, 400] 
+thr015-20-bad_signature [200, 400] 
+thr015-21-fresh [200] 
+thr015-21-different_proof [200, 200] 
+thr015-21-same_session_reuse [200, 200] excess
+thr015-21-new_session_reuse [200, 400] 
+thr015-21-bad_signature [200, 400] 
+thr015-22-fresh [200] 
+thr015-22-different_proof [200, 200] 
+thr015-22-same_session_reuse [200, 200] excess
+thr015-22-new_session_reuse [200, 400] 
+thr015-22-bad_signature [200, 400] 
+thr015-23-fresh [200] 
+thr015-23-different_proof [200, 200] 
+thr015-23-same_session_reuse [200, 200] excess
+thr015-23-new_session_reuse [200, 400] 
+thr015-23-bad_signature [200, 400] 
+thr015-24-fresh [200] 
+thr015-24-different_proof [200, 200] 
+thr015-24-same_session_reuse [200, 200] excess
+thr015-24-new_session_reuse [200, 400] 
+thr015-24-bad_signature [200, 400] 
+thr015-25-fresh [200] 
+thr015-25-different_proof [200, 200] 
+thr015-25-same_session_reuse [200, 200] excess
+thr015-25-new_session_reuse [200, 400] 
+thr015-25-bad_signature [200, 400] 
+thr015-26-fresh [200] 
+thr015-26-different_proof [200, 200] 
+thr015-26-same_session_reuse [200, 200] excess
+thr015-26-new_session_reuse [200, 400] 
+thr015-26-bad_signature [200, 400] 
+thr015-27-fresh [200] 
+thr015-27-different_proof [200, 200] 
+thr015-27-same_session_reuse [200, 200] excess
+thr015-27-new_session_reuse [200, 400] 
+thr015-27-bad_signature [200, 400] 
+thr015-28-fresh [200] 
+thr015-28-different_proof [200, 200] 
+thr015-28-same_session_reuse [200, 200] excess
+thr015-28-new_session_reuse [200, 400] 
+thr015-28-bad_signature [200, 400] 
+thr015-29-fresh [200] 
+thr015-29-different_proof [200, 200] 
+thr015-29-same_session_reuse [200, 200] excess
+thr015-29-new_session_reuse [200, 400] 
+thr015-29-bad_signature [200, 400] 
+waltid 1 0 on completed
+waltid 1 1 off start
+thr015-00-fresh [200] 
+thr015-00-different_proof [200, 200] 
+thr015-00-same_session_reuse [200, 200] excess
+thr015-00-new_session_reuse [200, 400] 
+thr015-00-bad_signature [200, 400] 
+thr015-01-fresh [200] 
+thr015-01-different_proof [200, 200] 
+thr015-01-same_session_reuse [200, 200] excess
+thr015-01-new_session_reuse [200, 400] 
+thr015-01-bad_signature [200, 400] 
+thr015-02-fresh [200] 
+thr015-02-different_proof [200, 200] 
+thr015-02-same_session_reuse [200, 200] excess
+thr015-02-new_session_reuse [200, 400] 
+thr015-02-bad_signature [200, 400] 
+thr015-03-fresh [200] 
+thr015-03-different_proof [200, 200] 
+thr015-03-same_session_reuse [200, 200] excess
+thr015-03-new_session_reuse [200, 400] 
+thr015-03-bad_signature [200, 400] 
+thr015-04-fresh [200] 
+thr015-04-different_proof [200, 200] 
+thr015-04-same_session_reuse [200, 200] excess
+thr015-04-new_session_reuse [200, 400] 
+thr015-04-bad_signature [200, 400] 
+thr015-05-fresh [200] 
+thr015-05-different_proof [200, 200] 
+thr015-05-same_session_reuse [200, 200] excess
+thr015-05-new_session_reuse [200, 400] 
+thr015-05-bad_signature [200, 400] 
+thr015-06-fresh [200] 
+thr015-06-different_proof [200, 200] 
+thr015-06-same_session_reuse [200, 200] excess
+thr015-06-new_session_reuse [200, 400] 
+thr015-06-bad_signature [200, 400] 
+thr015-07-fresh [200] 
+thr015-07-different_proof [200, 200] 
+thr015-07-same_session_reuse [200, 200] excess
+thr015-07-new_session_reuse [200, 400] 
+thr015-07-bad_signature [200, 400] 
+thr015-08-fresh [200] 
+thr015-08-different_proof [200, 200] 
+thr015-08-same_session_reuse [200, 200] excess
+thr015-08-new_session_reuse [200, 400] 
+thr015-08-bad_signature [200, 400] 
+thr015-09-fresh [200] 
+thr015-09-different_proof [200, 200] 
+thr015-09-same_session_reuse [200, 200] excess
+thr015-09-new_session_reuse [200, 400] 
+thr015-09-bad_signature [200, 400] 
+thr015-10-fresh [200] 
+thr015-10-different_proof [200, 200] 
+thr015-10-same_session_reuse [200, 200] excess
+thr015-10-new_session_reuse [200, 400] 
+thr015-10-bad_signature [200, 400] 
+thr015-11-fresh [200] 
+thr015-11-different_proof [200, 200] 
+thr015-11-same_session_reuse [200, 200] excess
+thr015-11-new_session_reuse [200, 400] 
+thr015-11-bad_signature [200, 400] 
+thr015-12-fresh [200] 
+thr015-12-different_proof [200, 200] 
+thr015-12-same_session_reuse [200, 200] excess
+thr015-12-new_session_reuse [200, 400] 
+thr015-12-bad_signature [200, 400] 
+thr015-13-fresh [200] 
+thr015-13-different_proof [200, 200] 
+thr015-13-same_session_reuse [200, 200] excess
+thr015-13-new_session_reuse [200, 400] 
+thr015-13-bad_signature [200, 400] 
+thr015-14-fresh [200] 
+thr015-14-different_proof [200, 200] 
+thr015-14-same_session_reuse [200, 200] excess
+thr015-14-new_session_reuse [200, 400] 
+thr015-14-bad_signature [200, 400] 
+thr015-15-fresh [200] 
+thr015-15-different_proof [200, 200] 
+thr015-15-same_session_reuse [200, 200] excess
+thr015-15-new_session_reuse [200, 400] 
+thr015-15-bad_signature [200, 400] 
+thr015-16-fresh [200] 
+thr015-16-different_proof [200, 200] 
+thr015-16-same_session_reuse [200, 200] excess
+thr015-16-new_session_reuse [200, 400] 
+thr015-16-bad_signature [200, 400] 
+thr015-17-fresh [200] 
+thr015-17-different_proof [200, 200] 
+thr015-17-same_session_reuse [200, 200] excess
+thr015-17-new_session_reuse [200, 400] 
+thr015-17-bad_signature [200, 400] 
+thr015-18-fresh [200] 
+thr015-18-different_proof [200, 200] 
+thr015-18-same_session_reuse [200, 200] excess
+thr015-18-new_session_reuse [200, 400] 
+thr015-18-bad_signature [200, 400] 
+thr015-19-fresh [200] 
+thr015-19-different_proof [200, 200] 
+thr015-19-same_session_reuse [200, 200] excess
+thr015-19-new_session_reuse [200, 400] 
+thr015-19-bad_signature [200, 400] 
+thr015-20-fresh [200] 
+thr015-20-different_proof [200, 200] 
+thr015-20-same_session_reuse [200, 200] excess
+thr015-20-new_session_reuse [200, 400] 
+thr015-20-bad_signature [200, 400] 
+thr015-21-fresh [200] 
+thr015-21-different_proof [200, 200] 
+thr015-21-same_session_reuse [200, 200] excess
+thr015-21-new_session_reuse [200, 400] 
+thr015-21-bad_signature [200, 400] 
+thr015-22-fresh [200] 
+thr015-22-different_proof [200, 200] 
+thr015-22-same_session_reuse [200, 200] excess
+thr015-22-new_session_reuse [200, 400] 
+thr015-22-bad_signature [200, 400] 
+thr015-23-fresh [200] 
+thr015-23-different_proof [200, 200] 
+thr015-23-same_session_reuse [200, 200] excess
+thr015-23-new_session_reuse [200, 400] 
+thr015-23-bad_signature [200, 400] 
+thr015-24-fresh [200] 
+thr015-24-different_proof [200, 200] 
+thr015-24-same_session_reuse [200, 200] excess
+thr015-24-new_session_reuse [200, 400] 
+thr015-24-bad_signature [200, 400] 
+thr015-25-fresh [200] 
+thr015-25-different_proof [200, 200] 
+thr015-25-same_session_reuse [200, 200] excess
+thr015-25-new_session_reuse [200, 400] 
+thr015-25-bad_signature [200, 400] 
+thr015-26-fresh [200] 
+thr015-26-different_proof [200, 200] 
+thr015-26-same_session_reuse [200, 200] excess
+thr015-26-new_session_reuse [200, 400] 
+thr015-26-bad_signature [200, 400] 
+thr015-27-fresh [200] 
+thr015-27-different_proof [200, 200] 
+thr015-27-same_session_reuse [200, 200] excess
+thr015-27-new_session_reuse [200, 400] 
+thr015-27-bad_signature [200, 400] 
+thr015-28-fresh [200] 
+thr015-28-different_proof [200, 200] 
+thr015-28-same_session_reuse [200, 200] excess
+thr015-28-new_session_reuse [200, 400] 
+thr015-28-bad_signature [200, 400] 
+thr015-29-fresh [200] 
+thr015-29-different_proof [200, 200] 
+thr015-29-same_session_reuse [200, 200] excess
+thr015-29-new_session_reuse [200, 400] 
+thr015-29-bad_signature [200, 400] 
+waltid 1 1 off completed
+waltid 2 0 off start
+thr015-00-fresh [200] 
+thr015-00-different_proof [200, 200] 
+thr015-00-same_session_reuse [200, 200] excess
+thr015-00-new_session_reuse [200, 400] 
+thr015-00-bad_signature [200, 400] 
+thr015-01-fresh [200] 
+thr015-01-different_proof [200, 200] 
+thr015-01-same_session_reuse [200, 200] excess
+thr015-01-new_session_reuse [200, 400] 
+thr015-01-bad_signature [200, 400] 
+thr015-02-fresh [200] 
+thr015-02-different_proof [200, 200] 
+thr015-02-same_session_reuse [200, 200] excess
+thr015-02-new_session_reuse [200, 400] 
+thr015-02-bad_signature [200, 400] 
+thr015-03-fresh [200] 
+thr015-03-different_proof [200, 200] 
+thr015-03-same_session_reuse [200, 200] excess
+thr015-03-new_session_reuse [200, 400] 
+thr015-03-bad_signature [200, 400] 
+thr015-04-fresh [200] 
+thr015-04-different_proof [200, 200] 
+thr015-04-same_session_reuse [200, 200] excess
+thr015-04-new_session_reuse [200, 400] 
+thr015-04-bad_signature [200, 400] 
+thr015-05-fresh [200] 
+thr015-05-different_proof [200, 200] 
+thr015-05-same_session_reuse [200, 200] excess
+thr015-05-new_session_reuse [200, 400] 
+thr015-05-bad_signature [200, 400] 
+thr015-06-fresh [200] 
+thr015-06-different_proof [200, 200] 
+thr015-06-same_session_reuse [200, 200] excess
+thr015-06-new_session_reuse [200, 400] 
+thr015-06-bad_signature [200, 400] 
+thr015-07-fresh [200] 
+thr015-07-different_proof [200, 200] 
+thr015-07-same_session_reuse [200, 200] excess
+thr015-07-new_session_reuse [200, 400] 
+thr015-07-bad_signature [200, 400] 
+thr015-08-fresh [200] 
+thr015-08-different_proof [200, 200] 
+thr015-08-same_session_reuse [200, 200] excess
+thr015-08-new_session_reuse [200, 400] 
+thr015-08-bad_signature [200, 400] 
+thr015-09-fresh [200] 
+thr015-09-different_proof [200, 200] 
+thr015-09-same_session_reuse [200, 200] excess
+thr015-09-new_session_reuse [200, 400] 
+thr015-09-bad_signature [200, 400] 
+thr015-10-fresh [200] 
+thr015-10-different_proof [200, 200] 
+thr015-10-same_session_reuse [200, 200] excess
+thr015-10-new_session_reuse [200, 400] 
+thr015-10-bad_signature [200, 400] 
+thr015-11-fresh [200] 
+thr015-11-different_proof [200, 200] 
+thr015-11-same_session_reuse [200, 200] excess
+thr015-11-new_session_reuse [200, 400] 
+thr015-11-bad_signature [200, 400] 
+thr015-12-fresh [200] 
+thr015-12-different_proof [200, 200] 
+thr015-12-same_session_reuse [200, 200] excess
+thr015-12-new_session_reuse [200, 400] 
+thr015-12-bad_signature [200, 400] 
+thr015-13-fresh [200] 
+thr015-13-different_proof [200, 200] 
+thr015-13-same_session_reuse [200, 200] excess
+thr015-13-new_session_reuse [200, 400] 
+thr015-13-bad_signature [200, 400] 
+thr015-14-fresh [200] 
+thr015-14-different_proof [200, 200] 
+thr015-14-same_session_reuse [200, 200] excess
+thr015-14-new_session_reuse [200, 400] 
+thr015-14-bad_signature [200, 400] 
+thr015-15-fresh [200] 
+thr015-15-different_proof [200, 200] 
+thr015-15-same_session_reuse [200, 200] excess
+thr015-15-new_session_reuse [200, 400] 
+thr015-15-bad_signature [200, 400] 
+thr015-16-fresh [200] 
+thr015-16-different_proof [200, 200] 
+thr015-16-same_session_reuse [200, 200] excess
+thr015-16-new_session_reuse [200, 400] 
+thr015-16-bad_signature [200, 400] 
+thr015-17-fresh [200] 
+thr015-17-different_proof [200, 200] 
+thr015-17-same_session_reuse [200, 200] excess
+thr015-17-new_session_reuse [200, 400] 
+thr015-17-bad_signature [200, 400] 
+thr015-18-fresh [200] 
+thr015-18-different_proof [200, 200] 
+thr015-18-same_session_reuse [200, 200] excess
+thr015-18-new_session_reuse [200, 400] 
+thr015-18-bad_signature [200, 400] 
+thr015-19-fresh [200] 
+thr015-19-different_proof [200, 200] 
+thr015-19-same_session_reuse [200, 200] excess
+thr015-19-new_session_reuse [200, 400] 
+thr015-19-bad_signature [200, 400] 
+thr015-20-fresh [200] 
+thr015-20-different_proof [200, 200] 
+thr015-20-same_session_reuse [200, 200] excess
+thr015-20-new_session_reuse [200, 400] 
+thr015-20-bad_signature [200, 400] 
+thr015-21-fresh [200] 
+thr015-21-different_proof [200, 200] 
+thr015-21-same_session_reuse [200, 200] excess
+thr015-21-new_session_reuse [200, 400] 
+thr015-21-bad_signature [200, 400] 
+thr015-22-fresh [200] 
+thr015-22-different_proof [200, 200] 
+thr015-22-same_session_reuse [200, 200] excess
+thr015-22-new_session_reuse [200, 400] 
+thr015-22-bad_signature [200, 400] 
+thr015-23-fresh [200] 
+thr015-23-different_proof [200, 200] 
+thr015-23-same_session_reuse [200, 200] excess
+thr015-23-new_session_reuse [200, 400] 
+thr015-23-bad_signature [200, 400] 
+thr015-24-fresh [200] 
+thr015-24-different_proof [200, 200] 
+thr015-24-same_session_reuse [200, 200] excess
+thr015-24-new_session_reuse [200, 400] 
+thr015-24-bad_signature [200, 400] 
+thr015-25-fresh [200] 
+thr015-25-different_proof [200, 200] 
+thr015-25-same_session_reuse [200, 200] excess
+thr015-25-new_session_reuse [200, 400] 
+thr015-25-bad_signature [200, 400] 
+thr015-26-fresh [200] 
+thr015-26-different_proof [200, 200] 
+thr015-26-same_session_reuse [200, 200] excess
+thr015-26-new_session_reuse [200, 400] 
+thr015-26-bad_signature [200, 400] 
+thr015-27-fresh [200] 
+thr015-27-different_proof [200, 200] 
+thr015-27-same_session_reuse [200, 200] excess
+thr015-27-new_session_reuse [200, 400] 
+thr015-27-bad_signature [200, 400] 
+thr015-28-fresh [200] 
+thr015-28-different_proof [200, 200] 
+thr015-28-same_session_reuse [200, 200] excess
+thr015-28-new_session_reuse [200, 400] 
+thr015-28-bad_signature [200, 400] 
+thr015-29-fresh [200] 
+thr015-29-different_proof [200, 200] 
+thr015-29-same_session_reuse [200, 200] excess
+thr015-29-new_session_reuse [200, 400] 
+thr015-29-bad_signature [200, 400] 
+waltid 2 0 off completed
+waltid 2 1 on start
+thr015-00-fresh [200] 
+thr015-00-different_proof [200, 200] 
+thr015-00-same_session_reuse [200, 200] excess
+thr015-00-new_session_reuse [200, 400] 
+thr015-00-bad_signature [200, 400] 
+thr015-01-fresh [200] 
+thr015-01-different_proof [200, 200] 
+thr015-01-same_session_reuse [200, 200] excess
+thr015-01-new_session_reuse [200, 400] 
+thr015-01-bad_signature [200, 400] 
+thr015-02-fresh [200] 
+thr015-02-different_proof [200, 200] 
+thr015-02-same_session_reuse [200, 200] excess
+thr015-02-new_session_reuse [200, 400] 
+thr015-02-bad_signature [200, 400] 
+thr015-03-fresh [200] 
+thr015-03-different_proof [200, 200] 
+thr015-03-same_session_reuse [200, 200] excess
+thr015-03-new_session_reuse [200, 400] 
+thr015-03-bad_signature [200, 400] 
+thr015-04-fresh [200] 
+thr015-04-different_proof [200, 200] 
+thr015-04-same_session_reuse [200, 200] excess
+thr015-04-new_session_reuse [200, 400] 
+thr015-04-bad_signature [200, 400] 
+thr015-05-fresh [200] 
+thr015-05-different_proof [200, 200] 
+thr015-05-same_session_reuse [200, 200] excess
+thr015-05-new_session_reuse [200, 400] 
+thr015-05-bad_signature [200, 400] 
+thr015-06-fresh [200] 
+thr015-06-different_proof [200, 200] 
+thr015-06-same_session_reuse [200, 200] excess
+thr015-06-new_session_reuse [200, 400] 
+thr015-06-bad_signature [200, 400] 
+thr015-07-fresh [200] 
+thr015-07-different_proof [200, 200] 
+thr015-07-same_session_reuse [200, 200] excess
+thr015-07-new_session_reuse [200, 400] 
+thr015-07-bad_signature [200, 400] 
+thr015-08-fresh [200] 
+thr015-08-different_proof [200, 200] 
+thr015-08-same_session_reuse [200, 200] excess
+thr015-08-new_session_reuse [200, 400] 
+thr015-08-bad_signature [200, 400] 
+thr015-09-fresh [200] 
+thr015-09-different_proof [200, 200] 
+thr015-09-same_session_reuse [200, 200] excess
+thr015-09-new_session_reuse [200, 400] 
+thr015-09-bad_signature [200, 400] 
+thr015-10-fresh [200] 
+thr015-10-different_proof [200, 200] 
+thr015-10-same_session_reuse [200, 200] excess
+thr015-10-new_session_reuse [200, 400] 
+thr015-10-bad_signature [200, 400] 
+thr015-11-fresh [200] 
+thr015-11-different_proof [200, 200] 
+thr015-11-same_session_reuse [200, 200] excess
+thr015-11-new_session_reuse [200, 400] 
+thr015-11-bad_signature [200, 400] 
+thr015-12-fresh [200] 
+thr015-12-different_proof [200, 200] 
+thr015-12-same_session_reuse [200, 200] excess
+thr015-12-new_session_reuse [200, 400] 
+thr015-12-bad_signature [200, 400] 
+thr015-13-fresh [200] 
+thr015-13-different_proof [200, 200] 
+thr015-13-same_session_reuse [200, 200] excess
+thr015-13-new_session_reuse [200, 400] 
+thr015-13-bad_signature [200, 400] 
+thr015-14-fresh [200] 
+thr015-14-different_proof [200, 200] 
+thr015-14-same_session_reuse [200, 200] excess
+thr015-14-new_session_reuse [200, 400] 
+thr015-14-bad_signature [200, 400] 
+thr015-15-fresh [200] 
+thr015-15-different_proof [200, 200] 
+thr015-15-same_session_reuse [200, 200] excess
+thr015-15-new_session_reuse [200, 400] 
+thr015-15-bad_signature [200, 400] 
+thr015-16-fresh [200] 
+thr015-16-different_proof [200, 200] 
+thr015-16-same_session_reuse [200, 200] excess
+thr015-16-new_session_reuse [200, 400] 
+thr015-16-bad_signature [200, 400] 
+thr015-17-fresh [200] 
+thr015-17-different_proof [200, 200] 
+thr015-17-same_session_reuse [200, 200] excess
+thr015-17-new_session_reuse [200, 400] 
+thr015-17-bad_signature [200, 400] 
+thr015-18-fresh [200] 
+thr015-18-different_proof [200, 200] 
+thr015-18-same_session_reuse [200, 200] excess
+thr015-18-new_session_reuse [200, 400] 
+thr015-18-bad_signature [200, 400] 
+thr015-19-fresh [200] 
+thr015-19-different_proof [200, 200] 
+thr015-19-same_session_reuse [200, 200] excess
+thr015-19-new_session_reuse [200, 400] 
+thr015-19-bad_signature [200, 400] 
+thr015-20-fresh [200] 
+thr015-20-different_proof [200, 200] 
+thr015-20-same_session_reuse [200, 200] excess
+thr015-20-new_session_reuse [200, 400] 
+thr015-20-bad_signature [200, 400] 
+thr015-21-fresh [200] 
+thr015-21-different_proof [200, 200] 
+thr015-21-same_session_reuse [200, 200] excess
+thr015-21-new_session_reuse [200, 400] 
+thr015-21-bad_signature [200, 400] 
+thr015-22-fresh [200] 
+thr015-22-different_proof [200, 200] 
+thr015-22-same_session_reuse [200, 200] excess
+thr015-22-new_session_reuse [200, 400] 
+thr015-22-bad_signature [200, 400] 
+thr015-23-fresh [200] 
+thr015-23-different_proof [200, 200] 
+thr015-23-same_session_reuse [200, 200] excess
+thr015-23-new_session_reuse [200, 400] 
+thr015-23-bad_signature [200, 400] 
+thr015-24-fresh [200] 
+thr015-24-different_proof [200, 200] 
+thr015-24-same_session_reuse [200, 200] excess
+thr015-24-new_session_reuse [200, 400] 
+thr015-24-bad_signature [200, 400] 
+thr015-25-fresh [200] 
+thr015-25-different_proof [200, 200] 
+thr015-25-same_session_reuse [200, 200] excess
+thr015-25-new_session_reuse [200, 400] 
+thr015-25-bad_signature [200, 400] 
+thr015-26-fresh [200] 
+thr015-26-different_proof [200, 200] 
+thr015-26-same_session_reuse [200, 200] excess
+thr015-26-new_session_reuse [200, 400] 
+thr015-26-bad_signature [200, 400] 
+thr015-27-fresh [200] 
+thr015-27-different_proof [200, 200] 
+thr015-27-same_session_reuse [200, 200] excess
+thr015-27-new_session_reuse [200, 400] 
+thr015-27-bad_signature [200, 400] 
+thr015-28-fresh [200] 
+thr015-28-different_proof [200, 200] 
+thr015-28-same_session_reuse [200, 200] excess
+thr015-28-new_session_reuse [200, 400] 
+thr015-28-bad_signature [200, 400] 
+thr015-29-fresh [200] 
+thr015-29-different_proof [200, 200] 
+thr015-29-same_session_reuse [200, 200] excess
+thr015-29-new_session_reuse [200, 400] 
+thr015-29-bad_signature [200, 400] 
+waltid 2 1 on completed
+waltid 3 0 on start
+thr015-00-fresh [200] 
+thr015-00-different_proof [200, 200] 
+thr015-00-same_session_reuse [200, 200] excess
+thr015-00-new_session_reuse [200, 400] 
+thr015-00-bad_signature [200, 400] 
+thr015-01-fresh [200] 
+thr015-01-different_proof [200, 200] 
+thr015-01-same_session_reuse [200, 200] excess
+thr015-01-new_session_reuse [200, 400] 
+thr015-01-bad_signature [200, 400] 
+thr015-02-fresh [200] 
+thr015-02-different_proof [200, 200] 
+thr015-02-same_session_reuse [200, 200] excess
+thr015-02-new_session_reuse [200, 400] 
+thr015-02-bad_signature [200, 400] 
+thr015-03-fresh [200] 
+thr015-03-different_proof [200, 200] 
+thr015-03-same_session_reuse [200, 200] excess
+thr015-03-new_session_reuse [200, 400] 
+thr015-03-bad_signature [200, 400] 
+thr015-04-fresh [200] 
+thr015-04-different_proof [200, 200] 
+thr015-04-same_session_reuse [200, 200] excess
+thr015-04-new_session_reuse [200, 400] 
+thr015-04-bad_signature [200, 400] 
+thr015-05-fresh [200] 
+thr015-05-different_proof [200, 200] 
+thr015-05-same_session_reuse [200, 200] excess
+thr015-05-new_session_reuse [200, 400] 
+thr015-05-bad_signature [200, 400] 
+thr015-06-fresh [200] 
+thr015-06-different_proof [200, 200] 
+thr015-06-same_session_reuse [200, 200] excess
+thr015-06-new_session_reuse [200, 400] 
+thr015-06-bad_signature [200, 400] 
+thr015-07-fresh [200] 
+thr015-07-different_proof [200, 200] 
+thr015-07-same_session_reuse [200, 200] excess
+thr015-07-new_session_reuse [200, 400] 
+thr015-07-bad_signature [200, 400] 
+thr015-08-fresh [200] 
+thr015-08-different_proof [200, 200] 
+thr015-08-same_session_reuse [200, 200] excess
+thr015-08-new_session_reuse [200, 400] 
+thr015-08-bad_signature [200, 400] 
+thr015-09-fresh [200] 
+thr015-09-different_proof [200, 200] 
+thr015-09-same_session_reuse [200, 200] excess
+thr015-09-new_session_reuse [200, 400] 
+thr015-09-bad_signature [200, 400] 
+thr015-10-fresh [200] 
+thr015-10-different_proof [200, 200] 
+thr015-10-same_session_reuse [200, 200] excess
+thr015-10-new_session_reuse [200, 400] 
+thr015-10-bad_signature [200, 400] 
+thr015-11-fresh [200] 
+thr015-11-different_proof [200, 200] 
+thr015-11-same_session_reuse [200, 200] excess
+thr015-11-new_session_reuse [200, 400] 
+thr015-11-bad_signature [200, 400] 
+thr015-12-fresh [200] 
+thr015-12-different_proof [200, 200] 
+thr015-12-same_session_reuse [200, 200] excess
+thr015-12-new_session_reuse [200, 400] 
+thr015-12-bad_signature [200, 400] 
+thr015-13-fresh [200] 
+thr015-13-different_proof [200, 200] 
+thr015-13-same_session_reuse [200, 200] excess
+thr015-13-new_session_reuse [200, 400] 
+thr015-13-bad_signature [200, 400] 
+thr015-14-fresh [200] 
+thr015-14-different_proof [200, 200] 
+thr015-14-same_session_reuse [200, 200] excess
+thr015-14-new_session_reuse [200, 400] 
+thr015-14-bad_signature [200, 400] 
+thr015-15-fresh [200] 
+thr015-15-different_proof [200, 200] 
+thr015-15-same_session_reuse [200, 200] excess
+thr015-15-new_session_reuse [200, 400] 
+thr015-15-bad_signature [200, 400] 
+thr015-16-fresh [200] 
+thr015-16-different_proof [200, 200] 
+thr015-16-same_session_reuse [200, 200] excess
+thr015-16-new_session_reuse [200, 400] 
+thr015-16-bad_signature [200, 400] 
+thr015-17-fresh [200] 
+thr015-17-different_proof [200, 200] 
+thr015-17-same_session_reuse [200, 200] excess
+thr015-17-new_session_reuse [200, 400] 
+thr015-17-bad_signature [200, 400] 
+thr015-18-fresh [200] 
+thr015-18-different_proof [200, 200] 
+thr015-18-same_session_reuse [200, 200] excess
+thr015-18-new_session_reuse [200, 400] 
+thr015-18-bad_signature [200, 400] 
+thr015-19-fresh [200] 
+thr015-19-different_proof [200, 200] 
+thr015-19-same_session_reuse [200, 200] excess
+thr015-19-new_session_reuse [200, 400] 
+thr015-19-bad_signature [200, 400] 
+thr015-20-fresh [200] 
+thr015-20-different_proof [200, 200] 
+thr015-20-same_session_reuse [200, 200] excess
+thr015-20-new_session_reuse [200, 400] 
+thr015-20-bad_signature [200, 400] 
+thr015-21-fresh [200] 
+thr015-21-different_proof [200, 200] 
+thr015-21-same_session_reuse [200, 200] excess
+thr015-21-new_session_reuse [200, 400] 
+thr015-21-bad_signature [200, 400] 
+thr015-22-fresh [200] 
+thr015-22-different_proof [200, 200] 
+thr015-22-same_session_reuse [200, 200] excess
+thr015-22-new_session_reuse [200, 400] 
+thr015-22-bad_signature [200, 400] 
+thr015-23-fresh [200] 
+thr015-23-different_proof [200, 200] 
+thr015-23-same_session_reuse [200, 200] excess
+thr015-23-new_session_reuse [200, 400] 
+thr015-23-bad_signature [200, 400] 
+thr015-24-fresh [200] 
+thr015-24-different_proof [200, 200] 
+thr015-24-same_session_reuse [200, 200] excess
+thr015-24-new_session_reuse [200, 400] 
+thr015-24-bad_signature [200, 400] 
+thr015-25-fresh [200] 
+thr015-25-different_proof [200, 200] 
+thr015-25-same_session_reuse [200, 200] excess
+thr015-25-new_session_reuse [200, 400] 
+thr015-25-bad_signature [200, 400] 
+thr015-26-fresh [200] 
+thr015-26-different_proof [200, 200] 
+thr015-26-same_session_reuse [200, 200] excess
+thr015-26-new_session_reuse [200, 400] 
+thr015-26-bad_signature [200, 400] 
+thr015-27-fresh [200] 
+thr015-27-different_proof [200, 200] 
+thr015-27-same_session_reuse [200, 200] excess
+thr015-27-new_session_reuse [200, 400] 
+thr015-27-bad_signature [200, 400] 
+thr015-28-fresh [200] 
+thr015-28-different_proof [200, 200] 
+thr015-28-same_session_reuse [200, 200] excess
+thr015-28-new_session_reuse [200, 400] 
+thr015-28-bad_signature [200, 400] 
+thr015-29-fresh [200] 
+thr015-29-different_proof [200, 200] 
+thr015-29-same_session_reuse [200, 200] excess
+thr015-29-new_session_reuse [200, 400] 
+thr015-29-bad_signature [200, 400] 
+waltid 3 0 on completed
+waltid 3 1 off start
+thr015-00-fresh [200] 
+thr015-00-different_proof [200, 200] 
+thr015-00-same_session_reuse [200, 200] excess
+thr015-00-new_session_reuse [200, 400] 
+thr015-00-bad_signature [200, 400] 
+thr015-01-fresh [200] 
+thr015-01-different_proof [200, 200] 
+thr015-01-same_session_reuse [200, 200] excess
+thr015-01-new_session_reuse [200, 400] 
+thr015-01-bad_signature [200, 400] 
+thr015-02-fresh [200] 
+thr015-02-different_proof [200, 200] 
+thr015-02-same_session_reuse [200, 200] excess
+thr015-02-new_session_reuse [200, 400] 
+thr015-02-bad_signature [200, 400] 
+thr015-03-fresh [200] 
+thr015-03-different_proof [200, 200] 
+thr015-03-same_session_reuse [200, 200] excess
+thr015-03-new_session_reuse [200, 400] 
+thr015-03-bad_signature [200, 400] 
+thr015-04-fresh [200] 
+thr015-04-different_proof [200, 200] 
+thr015-04-same_session_reuse [200, 200] excess
+thr015-04-new_session_reuse [200, 400] 
+thr015-04-bad_signature [200, 400] 
+thr015-05-fresh [200] 
+thr015-05-different_proof [200, 200] 
+thr015-05-same_session_reuse [200, 200] excess
+thr015-05-new_session_reuse [200, 400] 
+thr015-05-bad_signature [200, 400] 
+thr015-06-fresh [200] 
+thr015-06-different_proof [200, 200] 
+thr015-06-same_session_reuse [200, 200] excess
+thr015-06-new_session_reuse [200, 400] 
+thr015-06-bad_signature [200, 400] 
+thr015-07-fresh [200] 
+thr015-07-different_proof [200, 200] 
+thr015-07-same_session_reuse [200, 200] excess
+thr015-07-new_session_reuse [200, 400] 
+thr015-07-bad_signature [200, 400] 
+thr015-08-fresh [200] 
+thr015-08-different_proof [200, 200] 
+thr015-08-same_session_reuse [200, 200] excess
+thr015-08-new_session_reuse [200, 400] 
+thr015-08-bad_signature [200, 400] 
+thr015-09-fresh [200] 
+thr015-09-different_proof [200, 200] 
+thr015-09-same_session_reuse [200, 200] excess
+thr015-09-new_session_reuse [200, 400] 
+thr015-09-bad_signature [200, 400] 
+thr015-10-fresh [200] 
+thr015-10-different_proof [200, 200] 
+thr015-10-same_session_reuse [200, 200] excess
+thr015-10-new_session_reuse [200, 400] 
+thr015-10-bad_signature [200, 400] 
+thr015-11-fresh [200] 
+thr015-11-different_proof [200, 200] 
+thr015-11-same_session_reuse [200, 200] excess
+thr015-11-new_session_reuse [200, 400] 
+thr015-11-bad_signature [200, 400] 
+thr015-12-fresh [200] 
+thr015-12-different_proof [200, 200] 
+thr015-12-same_session_reuse [200, 200] excess
+thr015-12-new_session_reuse [200, 400] 
+thr015-12-bad_signature [200, 400] 
+thr015-13-fresh [200] 
+thr015-13-different_proof [200, 200] 
+thr015-13-same_session_reuse [200, 200] excess
+thr015-13-new_session_reuse [200, 400] 
+thr015-13-bad_signature [200, 400] 
+thr015-14-fresh [200] 
+thr015-14-different_proof [200, 200] 
+thr015-14-same_session_reuse [200, 200] excess
+thr015-14-new_session_reuse [200, 400] 
+thr015-14-bad_signature [200, 400] 
+thr015-15-fresh [200] 
+thr015-15-different_proof [200, 200] 
+thr015-15-same_session_reuse [200, 200] excess
+thr015-15-new_session_reuse [200, 400] 
+thr015-15-bad_signature [200, 400] 
+thr015-16-fresh [200] 
+thr015-16-different_proof [200, 200] 
+thr015-16-same_session_reuse [200, 200] excess
+thr015-16-new_session_reuse [200, 400] 
+thr015-16-bad_signature [200, 400] 
+thr015-17-fresh [200] 
+thr015-17-different_proof [200, 200] 
+thr015-17-same_session_reuse [200, 200] excess
+thr015-17-new_session_reuse [200, 400] 
+thr015-17-bad_signature [200, 400] 
+thr015-18-fresh [200] 
+thr015-18-different_proof [200, 200] 
+thr015-18-same_session_reuse [200, 200] excess
+thr015-18-new_session_reuse [200, 400] 
+thr015-18-bad_signature [200, 400] 
+thr015-19-fresh [200] 
+thr015-19-different_proof [200, 200] 
+thr015-19-same_session_reuse [200, 200] excess
+thr015-19-new_session_reuse [200, 400] 
+thr015-19-bad_signature [200, 400] 
+thr015-20-fresh [200] 
+thr015-20-different_proof [200, 200] 
+thr015-20-same_session_reuse [200, 200] excess
+thr015-20-new_session_reuse [200, 400] 
+thr015-20-bad_signature [200, 400] 
+thr015-21-fresh [200] 
+thr015-21-different_proof [200, 200] 
+thr015-21-same_session_reuse [200, 200] excess
+thr015-21-new_session_reuse [200, 400] 
+thr015-21-bad_signature [200, 400] 
+thr015-22-fresh [200] 
+thr015-22-different_proof [200, 200] 
+thr015-22-same_session_reuse [200, 200] excess
+thr015-22-new_session_reuse [200, 400] 
+thr015-22-bad_signature [200, 400] 
+thr015-23-fresh [200] 
+thr015-23-different_proof [200, 200] 
+thr015-23-same_session_reuse [200, 200] excess
+thr015-23-new_session_reuse [200, 400] 
+thr015-23-bad_signature [200, 400] 
+thr015-24-fresh [200] 
+thr015-24-different_proof [200, 200] 
+thr015-24-same_session_reuse [200, 200] excess
+thr015-24-new_session_reuse [200, 400] 
+thr015-24-bad_signature [200, 400] 
+thr015-25-fresh [200] 
+thr015-25-different_proof [200, 200] 
+thr015-25-same_session_reuse [200, 200] excess
+thr015-25-new_session_reuse [200, 400] 
+thr015-25-bad_signature [200, 400] 
+thr015-26-fresh [200] 
+thr015-26-different_proof [200, 200] 
+thr015-26-same_session_reuse [200, 200] excess
+thr015-26-new_session_reuse [200, 400] 
+thr015-26-bad_signature [200, 400] 
+thr015-27-fresh [200] 
+thr015-27-different_proof [200, 200] 
+thr015-27-same_session_reuse [200, 200] excess
+thr015-27-new_session_reuse [200, 400] 
+thr015-27-bad_signature [200, 400] 
+thr015-28-fresh [200] 
+thr015-28-different_proof [200, 200] 
+thr015-28-same_session_reuse [200, 200] excess
+thr015-28-new_session_reuse [200, 400] 
+thr015-28-bad_signature [200, 400] 
+thr015-29-fresh [200] 
+thr015-29-different_proof [200, 200] 
+thr015-29-same_session_reuse [200, 200] excess
+thr015-29-new_session_reuse [200, 400] 
+thr015-29-bad_signature [200, 400] 
+waltid 3 1 off completed
+waltid 4 0 off start
+thr015-00-fresh [200] 
+thr015-00-different_proof [200, 200] 
+thr015-00-same_session_reuse [200, 200] excess
+thr015-00-new_session_reuse [200, 400] 
+thr015-00-bad_signature [200, 400] 
+thr015-01-fresh [200] 
+thr015-01-different_proof [200, 200] 
+thr015-01-same_session_reuse [200, 200] excess
+thr015-01-new_session_reuse [200, 400] 
+thr015-01-bad_signature [200, 400] 
+thr015-02-fresh [200] 
+thr015-02-different_proof [200, 200] 
+thr015-02-same_session_reuse [200, 200] excess
+thr015-02-new_session_reuse [200, 400] 
+thr015-02-bad_signature [200, 400] 
+thr015-03-fresh [200] 
+thr015-03-different_proof [200, 200] 
+thr015-03-same_session_reuse [200, 200] excess
+thr015-03-new_session_reuse [200, 400] 
+thr015-03-bad_signature [200, 400] 
+thr015-04-fresh [200] 
+thr015-04-different_proof [200, 200] 
+thr015-04-same_session_reuse [200, 200] excess
+thr015-04-new_session_reuse [200, 400] 
+thr015-04-bad_signature [200, 400] 
+thr015-05-fresh [200] 
+thr015-05-different_proof [200, 200] 
+thr015-05-same_session_reuse [200, 200] excess
+thr015-05-new_session_reuse [200, 400] 
+thr015-05-bad_signature [200, 400] 
+thr015-06-fresh [200] 
+thr015-06-different_proof [200, 200] 
+thr015-06-same_session_reuse [200, 200] excess
+thr015-06-new_session_reuse [200, 400] 
+thr015-06-bad_signature [200, 400] 
+thr015-07-fresh [200] 
+thr015-07-different_proof [200, 200] 
+thr015-07-same_session_reuse [200, 200] excess
+thr015-07-new_session_reuse [200, 400] 
+thr015-07-bad_signature [200, 400] 
+thr015-08-fresh [200] 
+thr015-08-different_proof [200, 200] 
+thr015-08-same_session_reuse [200, 200] excess
+thr015-08-new_session_reuse [200, 400] 
+thr015-08-bad_signature [200, 400] 
+thr015-09-fresh [200] 
+thr015-09-different_proof [200, 200] 
+thr015-09-same_session_reuse [200, 200] excess
+thr015-09-new_session_reuse [200, 400] 
+thr015-09-bad_signature [200, 400] 
+thr015-10-fresh [200] 
+thr015-10-different_proof [200, 200] 
+thr015-10-same_session_reuse [200, 200] excess
+thr015-10-new_session_reuse [200, 400] 
+thr015-10-bad_signature [200, 400] 
+thr015-11-fresh [200] 
+thr015-11-different_proof [200, 200] 
+thr015-11-same_session_reuse [200, 200] excess
+thr015-11-new_session_reuse [200, 400] 
+thr015-11-bad_signature [200, 400] 
+thr015-12-fresh [200] 
+thr015-12-different_proof [200, 200] 
+thr015-12-same_session_reuse [200, 200] excess
+thr015-12-new_session_reuse [200, 400] 
+thr015-12-bad_signature [200, 400] 
+thr015-13-fresh [200] 
+thr015-13-different_proof [200, 200] 
+thr015-13-same_session_reuse [200, 200] excess
+thr015-13-new_session_reuse [200, 400] 
+thr015-13-bad_signature [200, 400] 
+thr015-14-fresh [200] 
+thr015-14-different_proof [200, 200] 
+thr015-14-same_session_reuse [200, 200] excess
+thr015-14-new_session_reuse [200, 400] 
+thr015-14-bad_signature [200, 400] 
+thr015-15-fresh [200] 
+thr015-15-different_proof [200, 200] 
+thr015-15-same_session_reuse [200, 200] excess
+thr015-15-new_session_reuse [200, 400] 
+thr015-15-bad_signature [200, 400] 
+thr015-16-fresh [200] 
+thr015-16-different_proof [200, 200] 
+thr015-16-same_session_reuse [200, 200] excess
+thr015-16-new_session_reuse [200, 400] 
+thr015-16-bad_signature [200, 400] 
+thr015-17-fresh [200] 
+thr015-17-different_proof [200, 200] 
+thr015-17-same_session_reuse [200, 200] excess
+thr015-17-new_session_reuse [200, 400] 
+thr015-17-bad_signature [200, 400] 
+thr015-18-fresh [200] 
+thr015-18-different_proof [200, 200] 
+thr015-18-same_session_reuse [200, 200] excess
+thr015-18-new_session_reuse [200, 400] 
+thr015-18-bad_signature [200, 400] 
+thr015-19-fresh [200] 
+thr015-19-different_proof [200, 200] 
+thr015-19-same_session_reuse [200, 200] excess
+thr015-19-new_session_reuse [200, 400] 
+thr015-19-bad_signature [200, 400] 
+thr015-20-fresh [200] 
+thr015-20-different_proof [200, 200] 
+thr015-20-same_session_reuse [200, 200] excess
+thr015-20-new_session_reuse [200, 400] 
+thr015-20-bad_signature [200, 400] 
+thr015-21-fresh [200] 
+thr015-21-different_proof [200, 200] 
+thr015-21-same_session_reuse [200, 200] excess
+thr015-21-new_session_reuse [200, 400] 
+thr015-21-bad_signature [200, 400] 
+thr015-22-fresh [200] 
+thr015-22-different_proof [200, 200] 
+thr015-22-same_session_reuse [200, 200] excess
+thr015-22-new_session_reuse [200, 400] 
+thr015-22-bad_signature [200, 400] 
+thr015-23-fresh [200] 
+thr015-23-different_proof [200, 200] 
+thr015-23-same_session_reuse [200, 200] excess
+thr015-23-new_session_reuse [200, 400] 
+thr015-23-bad_signature [200, 400] 
+thr015-24-fresh [200] 
+thr015-24-different_proof [200, 200] 
+thr015-24-same_session_reuse [200, 200] excess
+thr015-24-new_session_reuse [200, 400] 
+thr015-24-bad_signature [200, 400] 
+thr015-25-fresh [200] 
+thr015-25-different_proof [200, 200] 
+thr015-25-same_session_reuse [200, 200] excess
+thr015-25-new_session_reuse [200, 400] 
+thr015-25-bad_signature [200, 400] 
+thr015-26-fresh [200] 
+thr015-26-different_proof [200, 200] 
+thr015-26-same_session_reuse [200, 200] excess
+thr015-26-new_session_reuse [200, 400] 
+thr015-26-bad_signature [200, 400] 
+thr015-27-fresh [200] 
+thr015-27-different_proof [200, 200] 
+thr015-27-same_session_reuse [200, 200] excess
+thr015-27-new_session_reuse [200, 400] 
+thr015-27-bad_signature [200, 400] 
+thr015-28-fresh [200] 
+thr015-28-different_proof [200, 200] 
+thr015-28-same_session_reuse [200, 200] excess
+thr015-28-new_session_reuse [200, 400] 
+thr015-28-bad_signature [200, 400] 
+thr015-29-fresh [200] 
+thr015-29-different_proof [200, 200] 
+thr015-29-same_session_reuse [200, 200] excess
+thr015-29-new_session_reuse [200, 400] 
+thr015-29-bad_signature [200, 400] 
+waltid 4 0 off completed
+waltid 4 1 on start
+thr015-00-fresh [200] 
+thr015-00-different_proof [200, 200] 
+thr015-00-same_session_reuse [200, 200] excess
+thr015-00-new_session_reuse [200, 400] 
+thr015-00-bad_signature [200, 400] 
+thr015-01-fresh [200] 
+thr015-01-different_proof [200, 200] 
+thr015-01-same_session_reuse [200, 200] excess
+thr015-01-new_session_reuse [200, 400] 
+thr015-01-bad_signature [200, 400] 
+thr015-02-fresh [200] 
+thr015-02-different_proof [200, 200] 
+thr015-02-same_session_reuse [200, 200] excess
+thr015-02-new_session_reuse [200, 400] 
+thr015-02-bad_signature [200, 400] 
+thr015-03-fresh [200] 
+thr015-03-different_proof [200, 200] 
+thr015-03-same_session_reuse [200, 200] excess
+thr015-03-new_session_reuse [200, 400] 
+thr015-03-bad_signature [200, 400] 
+thr015-04-fresh [200] 
+thr015-04-different_proof [200, 200] 
+thr015-04-same_session_reuse [200, 200] excess
+thr015-04-new_session_reuse [200, 400] 
+thr015-04-bad_signature [200, 400] 
+thr015-05-fresh [200] 
+thr015-05-different_proof [200, 200] 
+thr015-05-same_session_reuse [200, 200] excess
+thr015-05-new_session_reuse [200, 400] 
+thr015-05-bad_signature [200, 400] 
+thr015-06-fresh [200] 
+thr015-06-different_proof [200, 200] 
+thr015-06-same_session_reuse [200, 200] excess
+thr015-06-new_session_reuse [200, 400] 
+thr015-06-bad_signature [200, 400] 
+thr015-07-fresh [200] 
+thr015-07-different_proof [200, 200] 
+thr015-07-same_session_reuse [200, 200] excess
+thr015-07-new_session_reuse [200, 400] 
+thr015-07-bad_signature [200, 400] 
+thr015-08-fresh [200] 
+thr015-08-different_proof [200, 200] 
+thr015-08-same_session_reuse [200, 200] excess
+thr015-08-new_session_reuse [200, 400] 
+thr015-08-bad_signature [200, 400] 
+thr015-09-fresh [200] 
+thr015-09-different_proof [200, 200] 
+thr015-09-same_session_reuse [200, 200] excess
+thr015-09-new_session_reuse [200, 400] 
+thr015-09-bad_signature [200, 400] 
+thr015-10-fresh [200] 
+thr015-10-different_proof [200, 200] 
+thr015-10-same_session_reuse [200, 200] excess
+thr015-10-new_session_reuse [200, 400] 
+thr015-10-bad_signature [200, 400] 
+thr015-11-fresh [200] 
+thr015-11-different_proof [200, 200] 
+thr015-11-same_session_reuse [200, 200] excess
+thr015-11-new_session_reuse [200, 400] 
+thr015-11-bad_signature [200, 400] 
+thr015-12-fresh [200] 
+thr015-12-different_proof [200, 200] 
+thr015-12-same_session_reuse [200, 200] excess
+thr015-12-new_session_reuse [200, 400] 
+thr015-12-bad_signature [200, 400] 
+thr015-13-fresh [200] 
+thr015-13-different_proof [200, 200] 
+thr015-13-same_session_reuse [200, 200] excess
+thr015-13-new_session_reuse [200, 400] 
+thr015-13-bad_signature [200, 400] 
+thr015-14-fresh [200] 
+thr015-14-different_proof [200, 200] 
+thr015-14-same_session_reuse [200, 200] excess
+thr015-14-new_session_reuse [200, 400] 
+thr015-14-bad_signature [200, 400] 
+thr015-15-fresh [200] 
+thr015-15-different_proof [200, 200] 
+thr015-15-same_session_reuse [200, 200] excess
+thr015-15-new_session_reuse [200, 400] 
+thr015-15-bad_signature [200, 400] 
+thr015-16-fresh [200] 
+thr015-16-different_proof [200, 200] 
+thr015-16-same_session_reuse [200, 200] excess
+thr015-16-new_session_reuse [200, 400] 
+thr015-16-bad_signature [200, 400] 
+thr015-17-fresh [200] 
+thr015-17-different_proof [200, 200] 
+thr015-17-same_session_reuse [200, 200] excess
+thr015-17-new_session_reuse [200, 400] 
+thr015-17-bad_signature [200, 400] 
+thr015-18-fresh [200] 
+thr015-18-different_proof [200, 200] 
+thr015-18-same_session_reuse [200, 200] excess
+thr015-18-new_session_reuse [200, 400] 
+thr015-18-bad_signature [200, 400] 
+thr015-19-fresh [200] 
+thr015-19-different_proof [200, 200] 
+thr015-19-same_session_reuse [200, 200] excess
+thr015-19-new_session_reuse [200, 400] 
+thr015-19-bad_signature [200, 400] 
+thr015-20-fresh [200] 
+thr015-20-different_proof [200, 200] 
+thr015-20-same_session_reuse [200, 200] excess
+thr015-20-new_session_reuse [200, 400] 
+thr015-20-bad_signature [200, 400] 
+thr015-21-fresh [200] 
+thr015-21-different_proof [200, 200] 
+thr015-21-same_session_reuse [200, 200] excess
+thr015-21-new_session_reuse [200, 400] 
+thr015-21-bad_signature [200, 400] 
+thr015-22-fresh [200] 
+thr015-22-different_proof [200, 200] 
+thr015-22-same_session_reuse [200, 200] excess
+thr015-22-new_session_reuse [200, 400] 
+thr015-22-bad_signature [200, 400] 
+thr015-23-fresh [200] 
+thr015-23-different_proof [200, 200] 
+thr015-23-same_session_reuse [200, 200] excess
+thr015-23-new_session_reuse [200, 400] 
+thr015-23-bad_signature [200, 400] 
+thr015-24-fresh [200] 
+thr015-24-different_proof [200, 200] 
+thr015-24-same_session_reuse [200, 200] excess
+thr015-24-new_session_reuse [200, 400] 
+thr015-24-bad_signature [200, 400] 
+thr015-25-fresh [200] 
+thr015-25-different_proof [200, 200] 
+thr015-25-same_session_reuse [200, 200] excess
+thr015-25-new_session_reuse [200, 400] 
+thr015-25-bad_signature [200, 400] 
+thr015-26-fresh [200] 
+thr015-26-different_proof [200, 200] 
+thr015-26-same_session_reuse [200, 200] excess
+thr015-26-new_session_reuse [200, 400] 
+thr015-26-bad_signature [200, 400] 
+thr015-27-fresh [200] 
+thr015-27-different_proof [200, 200] 
+thr015-27-same_session_reuse [200, 200] excess
+thr015-27-new_session_reuse [200, 400] 
+thr015-27-bad_signature [200, 400] 
+thr015-28-fresh [200] 
+thr015-28-different_proof [200, 200] 
+thr015-28-same_session_reuse [200, 200] excess
+thr015-28-new_session_reuse [200, 400] 
+thr015-28-bad_signature [200, 400] 
+thr015-29-fresh [200] 
+thr015-29-different_proof [200, 200] 
+thr015-29-same_session_reuse [200, 200] excess
+thr015-29-new_session_reuse [200, 400] 
+thr015-29-bad_signature [200, 400] 
+waltid 4 1 on completed
+waltid 5 0 on start
+thr015-00-fresh [200] 
+thr015-00-different_proof [200, 200] 
+thr015-00-same_session_reuse [200, 200] excess
+thr015-00-new_session_reuse [200, 400] 
+thr015-00-bad_signature [200, 400] 
+thr015-01-fresh [200] 
+thr015-01-different_proof [200, 200] 
+thr015-01-same_session_reuse [200, 200] excess
+thr015-01-new_session_reuse [200, 400] 
+thr015-01-bad_signature [200, 400] 
+thr015-02-fresh [200] 
+thr015-02-different_proof [200, 200] 
+thr015-02-same_session_reuse [200, 200] excess
+thr015-02-new_session_reuse [200, 400] 
+thr015-02-bad_signature [200, 400] 
+thr015-03-fresh [200] 
+thr015-03-different_proof [200, 200] 
+thr015-03-same_session_reuse [200, 200] excess
+thr015-03-new_session_reuse [200, 400] 
+thr015-03-bad_signature [200, 400] 
+thr015-04-fresh [200] 
+thr015-04-different_proof [200, 200] 
+thr015-04-same_session_reuse [200, 200] excess
+thr015-04-new_session_reuse [200, 400] 
+thr015-04-bad_signature [200, 400] 
+thr015-05-fresh [200] 
+thr015-05-different_proof [200, 200] 
+thr015-05-same_session_reuse [200, 200] excess
+thr015-05-new_session_reuse [200, 400] 
+thr015-05-bad_signature [200, 400] 
+thr015-06-fresh [200] 
+thr015-06-different_proof [200, 200] 
+thr015-06-same_session_reuse [200, 200] excess
+thr015-06-new_session_reuse [200, 400] 
+thr015-06-bad_signature [200, 400] 
+thr015-07-fresh [200] 
+thr015-07-different_proof [200, 200] 
+thr015-07-same_session_reuse [200, 200] excess
+thr015-07-new_session_reuse [200, 400] 
+thr015-07-bad_signature [200, 400] 
+thr015-08-fresh [200] 
+thr015-08-different_proof [200, 200] 
+thr015-08-same_session_reuse [200, 200] excess
+thr015-08-new_session_reuse [200, 400] 
+thr015-08-bad_signature [200, 400] 
+thr015-09-fresh [200] 
+thr015-09-different_proof [200, 200] 
+thr015-09-same_session_reuse [200, 200] excess
+thr015-09-new_session_reuse [200, 400] 
+thr015-09-bad_signature [200, 400] 
+thr015-10-fresh [200] 
+thr015-10-different_proof [200, 200] 
+thr015-10-same_session_reuse [200, 200] excess
+thr015-10-new_session_reuse [200, 400] 
+thr015-10-bad_signature [200, 400] 
+thr015-11-fresh [200] 
+thr015-11-different_proof [200, 200] 
+thr015-11-same_session_reuse [200, 200] excess
+thr015-11-new_session_reuse [200, 400] 
+thr015-11-bad_signature [200, 400] 
+thr015-12-fresh [200] 
+thr015-12-different_proof [200, 200] 
+thr015-12-same_session_reuse [200, 200] excess
+thr015-12-new_session_reuse [200, 400] 
+thr015-12-bad_signature [200, 400] 
+thr015-13-fresh [200] 
+thr015-13-different_proof [200, 200] 
+thr015-13-same_session_reuse [200, 200] excess
+thr015-13-new_session_reuse [200, 400] 
+thr015-13-bad_signature [200, 400] 
+thr015-14-fresh [200] 
+thr015-14-different_proof [200, 200] 
+thr015-14-same_session_reuse [200, 200] excess
+thr015-14-new_session_reuse [200, 400] 
+thr015-14-bad_signature [200, 400] 
+thr015-15-fresh [200] 
+thr015-15-different_proof [200, 200] 
+thr015-15-same_session_reuse [200, 200] excess
+thr015-15-new_session_reuse [200, 400] 
+thr015-15-bad_signature [200, 400] 
+thr015-16-fresh [200] 
+thr015-16-different_proof [200, 200] 
+thr015-16-same_session_reuse [200, 200] excess
+thr015-16-new_session_reuse [200, 400] 
+thr015-16-bad_signature [200, 400] 
+thr015-17-fresh [200] 
+thr015-17-different_proof [200, 200] 
+thr015-17-same_session_reuse [200, 200] excess
+thr015-17-new_session_reuse [200, 400] 
+thr015-17-bad_signature [200, 400] 
+thr015-18-fresh [200] 
+thr015-18-different_proof [200, 200] 
+thr015-18-same_session_reuse [200, 200] excess
+thr015-18-new_session_reuse [200, 400] 
+thr015-18-bad_signature [200, 400] 
+thr015-19-fresh [200] 
+thr015-19-different_proof [200, 200] 
+thr015-19-same_session_reuse [200, 200] excess
+thr015-19-new_session_reuse [200, 400] 
+thr015-19-bad_signature [200, 400] 
+thr015-20-fresh [200] 
+thr015-20-different_proof [200, 200] 
+thr015-20-same_session_reuse [200, 200] excess
+thr015-20-new_session_reuse [200, 400] 
+thr015-20-bad_signature [200, 400] 
+thr015-21-fresh [200] 
+thr015-21-different_proof [200, 200] 
+thr015-21-same_session_reuse [200, 200] excess
+thr015-21-new_session_reuse [200, 400] 
+thr015-21-bad_signature [200, 400] 
+thr015-22-fresh [200] 
+thr015-22-different_proof [200, 200] 
+thr015-22-same_session_reuse [200, 200] excess
+thr015-22-new_session_reuse [200, 400] 
+thr015-22-bad_signature [200, 400] 
+thr015-23-fresh [200] 
+thr015-23-different_proof [200, 200] 
+thr015-23-same_session_reuse [200, 200] excess
+thr015-23-new_session_reuse [200, 400] 
+thr015-23-bad_signature [200, 400] 
+thr015-24-fresh [200] 
+thr015-24-different_proof [200, 200] 
+thr015-24-same_session_reuse [200, 200] excess
+thr015-24-new_session_reuse [200, 400] 
+thr015-24-bad_signature [200, 400] 
+thr015-25-fresh [200] 
+thr015-25-different_proof [200, 200] 
+thr015-25-same_session_reuse [200, 200] excess
+thr015-25-new_session_reuse [200, 400] 
+thr015-25-bad_signature [200, 400] 
+thr015-26-fresh [200] 
+thr015-26-different_proof [200, 200] 
+thr015-26-same_session_reuse [200, 200] excess
+thr015-26-new_session_reuse [200, 400] 
+thr015-26-bad_signature [200, 400] 
+thr015-27-fresh [200] 
+thr015-27-different_proof [200, 200] 
+thr015-27-same_session_reuse [200, 200] excess
+thr015-27-new_session_reuse [200, 400] 
+thr015-27-bad_signature [200, 400] 
+thr015-28-fresh [200] 
+thr015-28-different_proof [200, 200] 
+thr015-28-same_session_reuse [200, 200] excess
+thr015-28-new_session_reuse [200, 400] 
+thr015-28-bad_signature [200, 400] 
+thr015-29-fresh [200] 
+thr015-29-different_proof [200, 200] 
+thr015-29-same_session_reuse [200, 200] excess
+thr015-29-new_session_reuse [200, 400] 
+thr015-29-bad_signature [200, 400] 
+waltid 5 0 on completed
+waltid 5 1 off start
+thr015-00-fresh [200] 
+thr015-00-different_proof [200, 200] 
+thr015-00-same_session_reuse [200, 200] excess
+thr015-00-new_session_reuse [200, 400] 
+thr015-00-bad_signature [200, 400] 
+thr015-01-fresh [200] 
+thr015-01-different_proof [200, 200] 
+thr015-01-same_session_reuse [200, 200] excess
+thr015-01-new_session_reuse [200, 400] 
+thr015-01-bad_signature [200, 400] 
+thr015-02-fresh [200] 
+thr015-02-different_proof [200, 200] 
+thr015-02-same_session_reuse [200, 200] excess
+thr015-02-new_session_reuse [200, 400] 
+thr015-02-bad_signature [200, 400] 
+thr015-03-fresh [200] 
+thr015-03-different_proof [200, 200] 
+thr015-03-same_session_reuse [200, 200] excess
+thr015-03-new_session_reuse [200, 400] 
+thr015-03-bad_signature [200, 400] 
+thr015-04-fresh [200] 
+thr015-04-different_proof [200, 200] 
+thr015-04-same_session_reuse [200, 200] excess
+thr015-04-new_session_reuse [200, 400] 
+thr015-04-bad_signature [200, 400] 
+thr015-05-fresh [200] 
+thr015-05-different_proof [200, 200] 
+thr015-05-same_session_reuse [200, 200] excess
+thr015-05-new_session_reuse [200, 400] 
+thr015-05-bad_signature [200, 400] 
+thr015-06-fresh [200] 
+thr015-06-different_proof [200, 200] 
+thr015-06-same_session_reuse [200, 200] excess
+thr015-06-new_session_reuse [200, 400] 
+thr015-06-bad_signature [200, 400] 
+thr015-07-fresh [200] 
+thr015-07-different_proof [200, 200] 
+thr015-07-same_session_reuse [200, 200] excess
+thr015-07-new_session_reuse [200, 400] 
+thr015-07-bad_signature [200, 400] 
+thr015-08-fresh [200] 
+thr015-08-different_proof [200, 200] 
+thr015-08-same_session_reuse [200, 200] excess
+thr015-08-new_session_reuse [200, 400] 
+thr015-08-bad_signature [200, 400] 
+thr015-09-fresh [200] 
+thr015-09-different_proof [200, 200] 
+thr015-09-same_session_reuse [200, 200] excess
+thr015-09-new_session_reuse [200, 400] 
+thr015-09-bad_signature [200, 400] 
+thr015-10-fresh [200] 
+thr015-10-different_proof [200, 200] 
+thr015-10-same_session_reuse [200, 200] excess
+thr015-10-new_session_reuse [200, 400] 
+thr015-10-bad_signature [200, 400] 
+thr015-11-fresh [200] 
+thr015-11-different_proof [200, 200] 
+thr015-11-same_session_reuse [200, 200] excess
+thr015-11-new_session_reuse [200, 400] 
+thr015-11-bad_signature [200, 400] 
+thr015-12-fresh [200] 
+thr015-12-different_proof [200, 200] 
+thr015-12-same_session_reuse [200, 200] excess
+thr015-12-new_session_reuse [200, 400] 
+thr015-12-bad_signature [200, 400] 
+thr015-13-fresh [200] 
+thr015-13-different_proof [200, 200] 
+thr015-13-same_session_reuse [200, 200] excess
+thr015-13-new_session_reuse [200, 400] 
+thr015-13-bad_signature [200, 400] 
+thr015-14-fresh [200] 
+thr015-14-different_proof [200, 200] 
+thr015-14-same_session_reuse [200, 200] excess
+thr015-14-new_session_reuse [200, 400] 
+thr015-14-bad_signature [200, 400] 
+thr015-15-fresh [200] 
+thr015-15-different_proof [200, 200] 
+thr015-15-same_session_reuse [200, 200] excess
+thr015-15-new_session_reuse [200, 400] 
+thr015-15-bad_signature [200, 400] 
+thr015-16-fresh [200] 
+thr015-16-different_proof [200, 200] 
+thr015-16-same_session_reuse [200, 200] excess
+thr015-16-new_session_reuse [200, 400] 
+thr015-16-bad_signature [200, 400] 
+thr015-17-fresh [200] 
+thr015-17-different_proof [200, 200] 
+thr015-17-same_session_reuse [200, 200] excess
+thr015-17-new_session_reuse [200, 400] 
+thr015-17-bad_signature [200, 400] 
+thr015-18-fresh [200] 
+thr015-18-different_proof [200, 200] 
+thr015-18-same_session_reuse [200, 200] excess
+thr015-18-new_session_reuse [200, 400] 
+thr015-18-bad_signature [200, 400] 
+thr015-19-fresh [200] 
+thr015-19-different_proof [200, 200] 
+thr015-19-same_session_reuse [200, 200] excess
+thr015-19-new_session_reuse [200, 400] 
+thr015-19-bad_signature [200, 400] 
+thr015-20-fresh [200] 
+thr015-20-different_proof [200, 200] 
+thr015-20-same_session_reuse [200, 200] excess
+thr015-20-new_session_reuse [200, 400] 
+thr015-20-bad_signature [200, 400] 
+thr015-21-fresh [200] 
+thr015-21-different_proof [200, 200] 
+thr015-21-same_session_reuse [200, 200] excess
+thr015-21-new_session_reuse [200, 400] 
+thr015-21-bad_signature [200, 400] 
+thr015-22-fresh [200] 
+thr015-22-different_proof [200, 200] 
+thr015-22-same_session_reuse [200, 200] excess
+thr015-22-new_session_reuse [200, 400] 
+thr015-22-bad_signature [200, 400] 
+thr015-23-fresh [200] 
+thr015-23-different_proof [200, 200] 
+thr015-23-same_session_reuse [200, 200] excess
+thr015-23-new_session_reuse [200, 400] 
+thr015-23-bad_signature [200, 400] 
+thr015-24-fresh [200] 
+thr015-24-different_proof [200, 200] 
+thr015-24-same_session_reuse [200, 200] excess
+thr015-24-new_session_reuse [200, 400] 
+thr015-24-bad_signature [200, 400] 
+thr015-25-fresh [200] 
+thr015-25-different_proof [200, 200] 
+thr015-25-same_session_reuse [200, 200] excess
+thr015-25-new_session_reuse [200, 400] 
+thr015-25-bad_signature [200, 400] 
+thr015-26-fresh [200] 
+thr015-26-different_proof [200, 200] 
+thr015-26-same_session_reuse [200, 200] excess
+thr015-26-new_session_reuse [200, 400] 
+thr015-26-bad_signature [200, 400] 
+thr015-27-fresh [200] 
+thr015-27-different_proof [200, 200] 
+thr015-27-same_session_reuse [200, 200] excess
+thr015-27-new_session_reuse [200, 400] 
+thr015-27-bad_signature [200, 400] 
+thr015-28-fresh [200] 
+thr015-28-different_proof [200, 200] 
+thr015-28-same_session_reuse [200, 200] excess
+thr015-28-new_session_reuse [200, 400] 
+thr015-28-bad_signature [200, 400] 
+thr015-29-fresh [200] 
+thr015-29-different_proof [200, 200] 
+thr015-29-same_session_reuse [200, 200] excess
+thr015-29-new_session_reuse [200, 400] 
+thr015-29-bad_signature [200, 400] 
+waltid 5 1 off completed
+waltid 6 0 off start
+thr015-00-fresh [200] 
+thr015-00-different_proof [200, 200] 
+thr015-00-same_session_reuse [200, 200] excess
+thr015-00-new_session_reuse [200, 400] 
+thr015-00-bad_signature [200, 400] 
+thr015-01-fresh [200] 
+thr015-01-different_proof [200, 200] 
+thr015-01-same_session_reuse [200, 200] excess
+thr015-01-new_session_reuse [200, 400] 
+thr015-01-bad_signature [200, 400] 
+thr015-02-fresh [200] 
+thr015-02-different_proof [200, 200] 
+thr015-02-same_session_reuse [200, 200] excess
+thr015-02-new_session_reuse [200, 400] 
+thr015-02-bad_signature [200, 400] 
+thr015-03-fresh [200] 
+thr015-03-different_proof [200, 200] 
+thr015-03-same_session_reuse [200, 200] excess
+thr015-03-new_session_reuse [200, 400] 
+thr015-03-bad_signature [200, 400] 
+thr015-04-fresh [200] 
+thr015-04-different_proof [200, 200] 
+thr015-04-same_session_reuse [200, 200] excess
+thr015-04-new_session_reuse [200, 400] 
+thr015-04-bad_signature [200, 400] 
+thr015-05-fresh [200] 
+thr015-05-different_proof [200, 200] 
+thr015-05-same_session_reuse [200, 200] excess
+thr015-05-new_session_reuse [200, 400] 
+thr015-05-bad_signature [200, 400] 
+thr015-06-fresh [200] 
+thr015-06-different_proof [200, 200] 
+thr015-06-same_session_reuse [200, 200] excess
+thr015-06-new_session_reuse [200, 400] 
+thr015-06-bad_signature [200, 400] 
+thr015-07-fresh [200] 
+thr015-07-different_proof [200, 200] 
+thr015-07-same_session_reuse [200, 200] excess
+thr015-07-new_session_reuse [200, 400] 
+thr015-07-bad_signature [200, 400] 
+thr015-08-fresh [200] 
+thr015-08-different_proof [200, 200] 
+thr015-08-same_session_reuse [200, 200] excess
+thr015-08-new_session_reuse [200, 400] 
+thr015-08-bad_signature [200, 400] 
+thr015-09-fresh [200] 
+thr015-09-different_proof [200, 200] 
+thr015-09-same_session_reuse [200, 200] excess
+thr015-09-new_session_reuse [200, 400] 
+thr015-09-bad_signature [200, 400] 
+thr015-10-fresh [200] 
+thr015-10-different_proof [200, 200] 
+thr015-10-same_session_reuse [200, 200] excess
+thr015-10-new_session_reuse [200, 400] 
+thr015-10-bad_signature [200, 400] 
+thr015-11-fresh [200] 
+thr015-11-different_proof [200, 200] 
+thr015-11-same_session_reuse [200, 200] excess
+thr015-11-new_session_reuse [200, 400] 
+thr015-11-bad_signature [200, 400] 
+thr015-12-fresh [200] 
+thr015-12-different_proof [200, 200] 
+thr015-12-same_session_reuse [200, 200] excess
+thr015-12-new_session_reuse [200, 400] 
+thr015-12-bad_signature [200, 400] 
+thr015-13-fresh [200] 
+thr015-13-different_proof [200, 200] 
+thr015-13-same_session_reuse [200, 200] excess
+thr015-13-new_session_reuse [200, 400] 
+thr015-13-bad_signature [200, 400] 
+thr015-14-fresh [200] 
+thr015-14-different_proof [200, 200] 
+thr015-14-same_session_reuse [200, 200] excess
+thr015-14-new_session_reuse [200, 400] 
+thr015-14-bad_signature [200, 400] 
+thr015-15-fresh [200] 
+thr015-15-different_proof [200, 200] 
+thr015-15-same_session_reuse [200, 200] excess
+thr015-15-new_session_reuse [200, 400] 
+thr015-15-bad_signature [200, 400] 
+thr015-16-fresh [200] 
+thr015-16-different_proof [200, 200] 
+thr015-16-same_session_reuse [200, 200] excess
+thr015-16-new_session_reuse [200, 400] 
+thr015-16-bad_signature [200, 400] 
+thr015-17-fresh [200] 
+thr015-17-different_proof [200, 200] 
+thr015-17-same_session_reuse [200, 200] excess
+thr015-17-new_session_reuse [200, 400] 
+thr015-17-bad_signature [200, 400] 
+thr015-18-fresh [200] 
+thr015-18-different_proof [200, 200] 
+thr015-18-same_session_reuse [200, 200] excess
+thr015-18-new_session_reuse [200, 400] 
+thr015-18-bad_signature [200, 400] 
+thr015-19-fresh [200] 
+thr015-19-different_proof [200, 200] 
+thr015-19-same_session_reuse [200, 200] excess
+thr015-19-new_session_reuse [200, 400] 
+thr015-19-bad_signature [200, 400] 
+thr015-20-fresh [200] 
+thr015-20-different_proof [200, 200] 
+thr015-20-same_session_reuse [200, 200] excess
+thr015-20-new_session_reuse [200, 400] 
+thr015-20-bad_signature [200, 400] 
+thr015-21-fresh [200] 
+thr015-21-different_proof [200, 200] 
+thr015-21-same_session_reuse [200, 200] excess
+thr015-21-new_session_reuse [200, 400] 
+thr015-21-bad_signature [200, 400] 
+thr015-22-fresh [200] 
+thr015-22-different_proof [200, 200] 
+thr015-22-same_session_reuse [200, 200] excess
+thr015-22-new_session_reuse [200, 400] 
+thr015-22-bad_signature [200, 400] 
+thr015-23-fresh [200] 
+thr015-23-different_proof [200, 200] 
+thr015-23-same_session_reuse [200, 200] excess
+thr015-23-new_session_reuse [200, 400] 
+thr015-23-bad_signature [200, 400] 
+thr015-24-fresh [200] 
+thr015-24-different_proof [200, 200] 
+thr015-24-same_session_reuse [200, 200] excess
+thr015-24-new_session_reuse [200, 400] 
+thr015-24-bad_signature [200, 400] 
+thr015-25-fresh [200] 
+thr015-25-different_proof [200, 200] 
+thr015-25-same_session_reuse [200, 200] excess
+thr015-25-new_session_reuse [200, 400] 
+thr015-25-bad_signature [200, 400] 
+thr015-26-fresh [200] 
+thr015-26-different_proof [200, 200] 
+thr015-26-same_session_reuse [200, 200] excess
+thr015-26-new_session_reuse [200, 400] 
+thr015-26-bad_signature [200, 400] 
+thr015-27-fresh [200] 
+thr015-27-different_proof [200, 200] 
+thr015-27-same_session_reuse [200, 200] excess
+thr015-27-new_session_reuse [200, 400] 
+thr015-27-bad_signature [200, 400] 
+thr015-28-fresh [200] 
+thr015-28-different_proof [200, 200] 
+thr015-28-same_session_reuse [200, 200] excess
+thr015-28-new_session_reuse [200, 400] 
+thr015-28-bad_signature [200, 400] 
+thr015-29-fresh [200] 
+thr015-29-different_proof [200, 200] 
+thr015-29-same_session_reuse [200, 200] excess
+thr015-29-new_session_reuse [200, 400] 
+thr015-29-bad_signature [200, 400] 
+waltid 6 0 off completed
+waltid 6 1 on start
+thr015-00-fresh [200] 
+thr015-00-different_proof [200, 200] 
+thr015-00-same_session_reuse [200, 200] excess
+thr015-00-new_session_reuse [200, 400] 
+thr015-00-bad_signature [200, 400] 
+thr015-01-fresh [200] 
+thr015-01-different_proof [200, 200] 
+thr015-01-same_session_reuse [200, 200] excess
+thr015-01-new_session_reuse [200, 400] 
+thr015-01-bad_signature [200, 400] 
+thr015-02-fresh [200] 
+thr015-02-different_proof [200, 200] 
+thr015-02-same_session_reuse [200, 200] excess
+thr015-02-new_session_reuse [200, 400] 
+thr015-02-bad_signature [200, 400] 
+thr015-03-fresh [200] 
+thr015-03-different_proof [200, 200] 
+thr015-03-same_session_reuse [200, 200] excess
+thr015-03-new_session_reuse [200, 400] 
+thr015-03-bad_signature [200, 400] 
+thr015-04-fresh [200] 
+thr015-04-different_proof [200, 200] 
+thr015-04-same_session_reuse [200, 200] excess
+thr015-04-new_session_reuse [200, 400] 
+thr015-04-bad_signature [200, 400] 
+thr015-05-fresh [200] 
+thr015-05-different_proof [200, 200] 
+thr015-05-same_session_reuse [200, 200] excess
+thr015-05-new_session_reuse [200, 400] 
+thr015-05-bad_signature [200, 400] 
+thr015-06-fresh [200] 
+thr015-06-different_proof [200, 200] 
+thr015-06-same_session_reuse [200, 200] excess
+thr015-06-new_session_reuse [200, 400] 
+thr015-06-bad_signature [200, 400] 
+thr015-07-fresh [200] 
+thr015-07-different_proof [200, 200] 
+thr015-07-same_session_reuse [200, 200] excess
+thr015-07-new_session_reuse [200, 400] 
+thr015-07-bad_signature [200, 400] 
+thr015-08-fresh [200] 
+thr015-08-different_proof [200, 200] 
+thr015-08-same_session_reuse [200, 200] excess
+thr015-08-new_session_reuse [200, 400] 
+thr015-08-bad_signature [200, 400] 
+thr015-09-fresh [200] 
+thr015-09-different_proof [200, 200] 
+thr015-09-same_session_reuse [200, 200] excess
+thr015-09-new_session_reuse [200, 400] 
+thr015-09-bad_signature [200, 400] 
+thr015-10-fresh [200] 
+thr015-10-different_proof [200, 200] 
+thr015-10-same_session_reuse [200, 200] excess
+thr015-10-new_session_reuse [200, 400] 
+thr015-10-bad_signature [200, 400] 
+thr015-11-fresh [200] 
+thr015-11-different_proof [200, 200] 
+thr015-11-same_session_reuse [200, 200] excess
+thr015-11-new_session_reuse [200, 400] 
+thr015-11-bad_signature [200, 400] 
+thr015-12-fresh [200] 
+thr015-12-different_proof [200, 200] 
+thr015-12-same_session_reuse [200, 200] excess
+thr015-12-new_session_reuse [200, 400] 
+thr015-12-bad_signature [200, 400] 
+thr015-13-fresh [200] 
+thr015-13-different_proof [200, 200] 
+thr015-13-same_session_reuse [200, 200] excess
+thr015-13-new_session_reuse [200, 400] 
+thr015-13-bad_signature [200, 400] 
+thr015-14-fresh [200] 
+thr015-14-different_proof [200, 200] 
+thr015-14-same_session_reuse [200, 200] excess
+thr015-14-new_session_reuse [200, 400] 
+thr015-14-bad_signature [200, 400] 
+thr015-15-fresh [200] 
+thr015-15-different_proof [200, 200] 
+thr015-15-same_session_reuse [200, 200] excess
+thr015-15-new_session_reuse [200, 400] 
+thr015-15-bad_signature [200, 400] 
+thr015-16-fresh [200] 
+thr015-16-different_proof [200, 200] 
+thr015-16-same_session_reuse [200, 200] excess
+thr015-16-new_session_reuse [200, 400] 
+thr015-16-bad_signature [200, 400] 
+thr015-17-fresh [200] 
+thr015-17-different_proof [200, 200] 
+thr015-17-same_session_reuse [200, 200] excess
+thr015-17-new_session_reuse [200, 400] 
+thr015-17-bad_signature [200, 400] 
+thr015-18-fresh [200] 
+thr015-18-different_proof [200, 200] 
+thr015-18-same_session_reuse [200, 200] excess
+thr015-18-new_session_reuse [200, 400] 
+thr015-18-bad_signature [200, 400] 
+thr015-19-fresh [200] 
+thr015-19-different_proof [200, 200] 
+thr015-19-same_session_reuse [200, 200] excess
+thr015-19-new_session_reuse [200, 400] 
+thr015-19-bad_signature [200, 400] 
+thr015-20-fresh [200] 
+thr015-20-different_proof [200, 200] 
+thr015-20-same_session_reuse [200, 200] excess
+thr015-20-new_session_reuse [200, 400] 
+thr015-20-bad_signature [200, 400] 
+thr015-21-fresh [200] 
+thr015-21-different_proof [200, 200] 
+thr015-21-same_session_reuse [200, 200] excess
+thr015-21-new_session_reuse [200, 400] 
+thr015-21-bad_signature [200, 400] 
+thr015-22-fresh [200] 
+thr015-22-different_proof [200, 200] 
+thr015-22-same_session_reuse [200, 200] excess
+thr015-22-new_session_reuse [200, 400] 
+thr015-22-bad_signature [200, 400] 
+thr015-23-fresh [200] 
+thr015-23-different_proof [200, 200] 
+thr015-23-same_session_reuse [200, 200] excess
+thr015-23-new_session_reuse [200, 400] 
+thr015-23-bad_signature [200, 400] 
+thr015-24-fresh [200] 
+thr015-24-different_proof [200, 200] 
+thr015-24-same_session_reuse [200, 200] excess
+thr015-24-new_session_reuse [200, 400] 
+thr015-24-bad_signature [200, 400] 
+thr015-25-fresh [200] 
+thr015-25-different_proof [200, 200] 
+thr015-25-same_session_reuse [200, 200] excess
+thr015-25-new_session_reuse [200, 400] 
+thr015-25-bad_signature [200, 400] 
+thr015-26-fresh [200] 
+thr015-26-different_proof [200, 200] 
+thr015-26-same_session_reuse [200, 200] excess
+thr015-26-new_session_reuse [200, 400] 
+thr015-26-bad_signature [200, 400] 
+thr015-27-fresh [200] 
+thr015-27-different_proof [200, 200] 
+thr015-27-same_session_reuse [200, 200] excess
+thr015-27-new_session_reuse [200, 400] 
+thr015-27-bad_signature [200, 400] 
+thr015-28-fresh [200] 
+thr015-28-different_proof [200, 200] 
+thr015-28-same_session_reuse [200, 200] excess
+thr015-28-new_session_reuse [200, 400] 
+thr015-28-bad_signature [200, 400] 
+thr015-29-fresh [200] 
+thr015-29-different_proof [200, 200] 
+thr015-29-same_session_reuse [200, 200] excess
+thr015-29-new_session_reuse [200, 400] 
+thr015-29-bad_signature [200, 400] 
+waltid 6 1 on completed
+waltid 7 0 on start
+thr015-00-fresh [200] 
+thr015-00-different_proof [200, 200] 
+thr015-00-same_session_reuse [200, 200] excess
+thr015-00-new_session_reuse [200, 400] 
+thr015-00-bad_signature [200, 400] 
+thr015-01-fresh [200] 
+thr015-01-different_proof [200, 200] 
+thr015-01-same_session_reuse [200, 200] excess
+thr015-01-new_session_reuse [200, 400] 
+thr015-01-bad_signature [200, 400] 
+thr015-02-fresh [200] 
+thr015-02-different_proof [200, 200] 
+thr015-02-same_session_reuse [200, 200] excess
+thr015-02-new_session_reuse [200, 400] 
+thr015-02-bad_signature [200, 400] 
+thr015-03-fresh [200] 
+thr015-03-different_proof [200, 200] 
+thr015-03-same_session_reuse [200, 200] excess
+thr015-03-new_session_reuse [200, 400] 
+thr015-03-bad_signature [200, 400] 
+thr015-04-fresh [200] 
+thr015-04-different_proof [200, 200] 
+thr015-04-same_session_reuse [200, 200] excess
+thr015-04-new_session_reuse [200, 400] 
+thr015-04-bad_signature [200, 400] 
+thr015-05-fresh [200] 
+thr015-05-different_proof [200, 200] 
+thr015-05-same_session_reuse [200, 200] excess
+thr015-05-new_session_reuse [200, 400] 
+thr015-05-bad_signature [200, 400] 
+thr015-06-fresh [200] 
+thr015-06-different_proof [200, 200] 
+thr015-06-same_session_reuse [200, 200] excess
+thr015-06-new_session_reuse [200, 400] 
+thr015-06-bad_signature [200, 400] 
+thr015-07-fresh [200] 
+thr015-07-different_proof [200, 200] 
+thr015-07-same_session_reuse [200, 200] excess
+thr015-07-new_session_reuse [200, 400] 
+thr015-07-bad_signature [200, 400] 
+thr015-08-fresh [200] 
+thr015-08-different_proof [200, 200] 
+thr015-08-same_session_reuse [200, 200] excess
+thr015-08-new_session_reuse [200, 400] 
+thr015-08-bad_signature [200, 400] 
+thr015-09-fresh [200] 
+thr015-09-different_proof [200, 200] 
+thr015-09-same_session_reuse [200, 200] excess
+thr015-09-new_session_reuse [200, 400] 
+thr015-09-bad_signature [200, 400] 
+thr015-10-fresh [200] 
+thr015-10-different_proof [200, 200] 
+thr015-10-same_session_reuse [200, 200] excess
+thr015-10-new_session_reuse [200, 400] 
+thr015-10-bad_signature [200, 400] 
+thr015-11-fresh [200] 
+thr015-11-different_proof [200, 200] 
+thr015-11-same_session_reuse [200, 200] excess
+thr015-11-new_session_reuse [200, 400] 
+thr015-11-bad_signature [200, 400] 
+thr015-12-fresh [200] 
+thr015-12-different_proof [200, 200] 
+thr015-12-same_session_reuse [200, 200] excess
+thr015-12-new_session_reuse [200, 400] 
+thr015-12-bad_signature [200, 400] 
+thr015-13-fresh [200] 
+thr015-13-different_proof [200, 200] 
+thr015-13-same_session_reuse [200, 200] excess
+thr015-13-new_session_reuse [200, 400] 
+thr015-13-bad_signature [200, 400] 
+thr015-14-fresh [200] 
+thr015-14-different_proof [200, 200] 
+thr015-14-same_session_reuse [200, 200] excess
+thr015-14-new_session_reuse [200, 400] 
+thr015-14-bad_signature [200, 400] 
+thr015-15-fresh [200] 
+thr015-15-different_proof [200, 200] 
+thr015-15-same_session_reuse [200, 200] excess
+thr015-15-new_session_reuse [200, 400] 
+thr015-15-bad_signature [200, 400] 
+thr015-16-fresh [200] 
+thr015-16-different_proof [200, 200] 
+thr015-16-same_session_reuse [200, 200] excess
+thr015-16-new_session_reuse [200, 400] 
+thr015-16-bad_signature [200, 400] 
+thr015-17-fresh [200] 
+thr015-17-different_proof [200, 200] 
+thr015-17-same_session_reuse [200, 200] excess
+thr015-17-new_session_reuse [200, 400] 
+thr015-17-bad_signature [200, 400] 
+thr015-18-fresh [200] 
+thr015-18-different_proof [200, 200] 
+thr015-18-same_session_reuse [200, 200] excess
+thr015-18-new_session_reuse [200, 400] 
+thr015-18-bad_signature [200, 400] 
+thr015-19-fresh [200] 
+thr015-19-different_proof [200, 200] 
+thr015-19-same_session_reuse [200, 200] excess
+thr015-19-new_session_reuse [200, 400] 
+thr015-19-bad_signature [200, 400] 
+thr015-20-fresh [200] 
+thr015-20-different_proof [200, 200] 
+thr015-20-same_session_reuse [200, 200] excess
+thr015-20-new_session_reuse [200, 400] 
+thr015-20-bad_signature [200, 400] 
+thr015-21-fresh [200] 
+thr015-21-different_proof [200, 200] 
+thr015-21-same_session_reuse [200, 200] excess
+thr015-21-new_session_reuse [200, 400] 
+thr015-21-bad_signature [200, 400] 
+thr015-22-fresh [200] 
+thr015-22-different_proof [200, 200] 
+thr015-22-same_session_reuse [200, 200] excess
+thr015-22-new_session_reuse [200, 400] 
+thr015-22-bad_signature [200, 400] 
+thr015-23-fresh [200] 
+thr015-23-different_proof [200, 200] 
+thr015-23-same_session_reuse [200, 200] excess
+thr015-23-new_session_reuse [200, 400] 
+thr015-23-bad_signature [200, 400] 
+thr015-24-fresh [200] 
+thr015-24-different_proof [200, 200] 
+thr015-24-same_session_reuse [200, 200] excess
+thr015-24-new_session_reuse [200, 400] 
+thr015-24-bad_signature [200, 400] 
+thr015-25-fresh [200] 
+thr015-25-different_proof [200, 200] 
+thr015-25-same_session_reuse [200, 200] excess
+thr015-25-new_session_reuse [200, 400] 
+thr015-25-bad_signature [200, 400] 
+thr015-26-fresh [200] 
+thr015-26-different_proof [200, 200] 
+thr015-26-same_session_reuse [200, 200] excess
+thr015-26-new_session_reuse [200, 400] 
+thr015-26-bad_signature [200, 400] 
+thr015-27-fresh [200] 
+thr015-27-different_proof [200, 200] 
+thr015-27-same_session_reuse [200, 200] excess
+thr015-27-new_session_reuse [200, 400] 
+thr015-27-bad_signature [200, 400] 
+thr015-28-fresh [200] 
+thr015-28-different_proof [200, 200] 
+thr015-28-same_session_reuse [200, 200] excess
+thr015-28-new_session_reuse [200, 400] 
+thr015-28-bad_signature [200, 400] 
+thr015-29-fresh [200] 
+thr015-29-different_proof [200, 200] 
+thr015-29-same_session_reuse [200, 200] excess
+thr015-29-new_session_reuse [200, 400] 
+thr015-29-bad_signature [200, 400] 
+waltid 7 0 on completed
+waltid 7 1 off start
+thr015-00-fresh [200] 
+thr015-00-different_proof [200, 200] 
+thr015-00-same_session_reuse [200, 200] excess
+thr015-00-new_session_reuse [200, 400] 
+thr015-00-bad_signature [200, 400] 
+thr015-01-fresh [200] 
+thr015-01-different_proof [200, 200] 
+thr015-01-same_session_reuse [200, 200] excess
+thr015-01-new_session_reuse [200, 400] 
+thr015-01-bad_signature [200, 400] 
+thr015-02-fresh [200] 
+thr015-02-different_proof [200, 200] 
+thr015-02-same_session_reuse [200, 200] excess
+thr015-02-new_session_reuse [200, 400] 
+thr015-02-bad_signature [200, 400] 
+thr015-03-fresh [200] 
+thr015-03-different_proof [200, 200] 
+thr015-03-same_session_reuse [200, 200] excess
+thr015-03-new_session_reuse [200, 400] 
+thr015-03-bad_signature [200, 400] 
+thr015-04-fresh [200] 
+thr015-04-different_proof [200, 200] 
+thr015-04-same_session_reuse [200, 200] excess
+thr015-04-new_session_reuse [200, 400] 
+thr015-04-bad_signature [200, 400] 
+thr015-05-fresh [200] 
+thr015-05-different_proof [200, 200] 
+thr015-05-same_session_reuse [200, 200] excess
+thr015-05-new_session_reuse [200, 400] 
+thr015-05-bad_signature [200, 400] 
+thr015-06-fresh [200] 
+thr015-06-different_proof [200, 200] 
+thr015-06-same_session_reuse [200, 200] excess
+thr015-06-new_session_reuse [200, 400] 
+thr015-06-bad_signature [200, 400] 
+thr015-07-fresh [200] 
+thr015-07-different_proof [200, 200] 
+thr015-07-same_session_reuse [200, 200] excess
+thr015-07-new_session_reuse [200, 400] 
+thr015-07-bad_signature [200, 400] 
+thr015-08-fresh [200] 
+thr015-08-different_proof [200, 200] 
+thr015-08-same_session_reuse [200, 200] excess
+thr015-08-new_session_reuse [200, 400] 
+thr015-08-bad_signature [200, 400] 
+thr015-09-fresh [200] 
+thr015-09-different_proof [200, 200] 
+thr015-09-same_session_reuse [200, 200] excess
+thr015-09-new_session_reuse [200, 400] 
+thr015-09-bad_signature [200, 400] 
+thr015-10-fresh [200] 
+thr015-10-different_proof [200, 200] 
+thr015-10-same_session_reuse [200, 200] excess
+thr015-10-new_session_reuse [200, 400] 
+thr015-10-bad_signature [200, 400] 
+thr015-11-fresh [200] 
+thr015-11-different_proof [200, 200] 
+thr015-11-same_session_reuse [200, 200] excess
+thr015-11-new_session_reuse [200, 400] 
+thr015-11-bad_signature [200, 400] 
+thr015-12-fresh [200] 
+thr015-12-different_proof [200, 200] 
+thr015-12-same_session_reuse [200, 200] excess
+thr015-12-new_session_reuse [200, 400] 
+thr015-12-bad_signature [200, 400] 
+thr015-13-fresh [200] 
+thr015-13-different_proof [200, 200] 
+thr015-13-same_session_reuse [200, 200] excess
+thr015-13-new_session_reuse [200, 400] 
+thr015-13-bad_signature [200, 400] 
+thr015-14-fresh [200] 
+thr015-14-different_proof [200, 200] 
+thr015-14-same_session_reuse [200, 200] excess
+thr015-14-new_session_reuse [200, 400] 
+thr015-14-bad_signature [200, 400] 
+thr015-15-fresh [200] 
+thr015-15-different_proof [200, 200] 
+thr015-15-same_session_reuse [200, 200] excess
+thr015-15-new_session_reuse [200, 400] 
+thr015-15-bad_signature [200, 400] 
+thr015-16-fresh [200] 
+thr015-16-different_proof [200, 200] 
+thr015-16-same_session_reuse [200, 200] excess
+thr015-16-new_session_reuse [200, 400] 
+thr015-16-bad_signature [200, 400] 
+thr015-17-fresh [200] 
+thr015-17-different_proof [200, 200] 
+thr015-17-same_session_reuse [200, 200] excess
+thr015-17-new_session_reuse [200, 400] 
+thr015-17-bad_signature [200, 400] 
+thr015-18-fresh [200] 
+thr015-18-different_proof [200, 200] 
+thr015-18-same_session_reuse [200, 200] excess
+thr015-18-new_session_reuse [200, 400] 
+thr015-18-bad_signature [200, 400] 
+thr015-19-fresh [200] 
+thr015-19-different_proof [200, 200] 
+thr015-19-same_session_reuse [200, 200] excess
+thr015-19-new_session_reuse [200, 400] 
+thr015-19-bad_signature [200, 400] 
+thr015-20-fresh [200] 
+thr015-20-different_proof [200, 200] 
+thr015-20-same_session_reuse [200, 200] excess
+thr015-20-new_session_reuse [200, 400] 
+thr015-20-bad_signature [200, 400] 
+thr015-21-fresh [200] 
+thr015-21-different_proof [200, 200] 
+thr015-21-same_session_reuse [200, 200] excess
+thr015-21-new_session_reuse [200, 400] 
+thr015-21-bad_signature [200, 400] 
+thr015-22-fresh [200] 
+thr015-22-different_proof [200, 200] 
+thr015-22-same_session_reuse [200, 200] excess
+thr015-22-new_session_reuse [200, 400] 
+thr015-22-bad_signature [200, 400] 
+thr015-23-fresh [200] 
+thr015-23-different_proof [200, 200] 
+thr015-23-same_session_reuse [200, 200] excess
+thr015-23-new_session_reuse [200, 400] 
+thr015-23-bad_signature [200, 400] 
+thr015-24-fresh [200] 
+thr015-24-different_proof [200, 200] 
+thr015-24-same_session_reuse [200, 200] excess
+thr015-24-new_session_reuse [200, 400] 
+thr015-24-bad_signature [200, 400] 
+thr015-25-fresh [200] 
+thr015-25-different_proof [200, 200] 
+thr015-25-same_session_reuse [200, 200] excess
+thr015-25-new_session_reuse [200, 400] 
+thr015-25-bad_signature [200, 400] 
+thr015-26-fresh [200] 
+thr015-26-different_proof [200, 200] 
+thr015-26-same_session_reuse [200, 200] excess
+thr015-26-new_session_reuse [200, 400] 
+thr015-26-bad_signature [200, 400] 
+thr015-27-fresh [200] 
+thr015-27-different_proof [200, 200] 
+thr015-27-same_session_reuse [200, 200] excess
+thr015-27-new_session_reuse [200, 400] 
+thr015-27-bad_signature [200, 400] 
+thr015-28-fresh [200] 
+thr015-28-different_proof [200, 200] 
+thr015-28-same_session_reuse [200, 200] excess
+thr015-28-new_session_reuse [200, 400] 
+thr015-28-bad_signature [200, 400] 
+thr015-29-fresh [200] 
+thr015-29-different_proof [200, 200] 
+thr015-29-same_session_reuse [200, 200] excess
+thr015-29-new_session_reuse [200, 400] 
+thr015-29-bad_signature [200, 400] 
+waltid 7 1 off completed
+waltid 8 0 off start
+thr015-00-fresh [200] 
+thr015-00-different_proof [200, 200] 
+thr015-00-same_session_reuse [200, 200] excess
+thr015-00-new_session_reuse [200, 400] 
+thr015-00-bad_signature [200, 400] 
+thr015-01-fresh [200] 
+thr015-01-different_proof [200, 200] 
+thr015-01-same_session_reuse [200, 200] excess
+thr015-01-new_session_reuse [200, 400] 
+thr015-01-bad_signature [200, 400] 
+thr015-02-fresh [200] 
+thr015-02-different_proof [200, 200] 
+thr015-02-same_session_reuse [200, 200] excess
+thr015-02-new_session_reuse [200, 400] 
+thr015-02-bad_signature [200, 400] 
+thr015-03-fresh [200] 
+thr015-03-different_proof [200, 200] 
+thr015-03-same_session_reuse [200, 200] excess
+thr015-03-new_session_reuse [200, 400] 
+thr015-03-bad_signature [200, 400] 
+thr015-04-fresh [200] 
+thr015-04-different_proof [200, 200] 
+thr015-04-same_session_reuse [200, 200] excess
+thr015-04-new_session_reuse [200, 400] 
+thr015-04-bad_signature [200, 400] 
+thr015-05-fresh [200] 
+thr015-05-different_proof [200, 200] 
+thr015-05-same_session_reuse [200, 200] excess
+thr015-05-new_session_reuse [200, 400] 
+thr015-05-bad_signature [200, 400] 
+thr015-06-fresh [200] 
+thr015-06-different_proof [200, 200] 
+thr015-06-same_session_reuse [200, 200] excess
+thr015-06-new_session_reuse [200, 400] 
+thr015-06-bad_signature [200, 400] 
+thr015-07-fresh [200] 
+thr015-07-different_proof [200, 200] 
+thr015-07-same_session_reuse [200, 200] excess
+thr015-07-new_session_reuse [200, 400] 
+thr015-07-bad_signature [200, 400] 
+thr015-08-fresh [200] 
+thr015-08-different_proof [200, 200] 
+thr015-08-same_session_reuse [200, 200] excess
+thr015-08-new_session_reuse [200, 400] 
+thr015-08-bad_signature [200, 400] 
+thr015-09-fresh [200] 
+thr015-09-different_proof [200, 200] 
+thr015-09-same_session_reuse [200, 200] excess
+thr015-09-new_session_reuse [200, 400] 
+thr015-09-bad_signature [200, 400] 
+thr015-10-fresh [200] 
+thr015-10-different_proof [200, 200] 
+thr015-10-same_session_reuse [200, 200] excess
+thr015-10-new_session_reuse [200, 400] 
+thr015-10-bad_signature [200, 400] 
+thr015-11-fresh [200] 
+thr015-11-different_proof [200, 200] 
+thr015-11-same_session_reuse [200, 200] excess
+thr015-11-new_session_reuse [200, 400] 
+thr015-11-bad_signature [200, 400] 
+thr015-12-fresh [200] 
+thr015-12-different_proof [200, 200] 
+thr015-12-same_session_reuse [200, 200] excess
+thr015-12-new_session_reuse [200, 400] 
+thr015-12-bad_signature [200, 400] 
+thr015-13-fresh [200] 
+thr015-13-different_proof [200, 200] 
+thr015-13-same_session_reuse [200, 200] excess
+thr015-13-new_session_reuse [200, 400] 
+thr015-13-bad_signature [200, 400] 
+thr015-14-fresh [200] 
+thr015-14-different_proof [200, 200] 
+thr015-14-same_session_reuse [200, 200] excess
+thr015-14-new_session_reuse [200, 400] 
+thr015-14-bad_signature [200, 400] 
+thr015-15-fresh [200] 
+thr015-15-different_proof [200, 200] 
+thr015-15-same_session_reuse [200, 200] excess
+thr015-15-new_session_reuse [200, 400] 
+thr015-15-bad_signature [200, 400] 
+thr015-16-fresh [200] 
+thr015-16-different_proof [200, 200] 
+thr015-16-same_session_reuse [200, 200] excess
+thr015-16-new_session_reuse [200, 400] 
+thr015-16-bad_signature [200, 400] 
+thr015-17-fresh [200] 
+thr015-17-different_proof [200, 200] 
+thr015-17-same_session_reuse [200, 200] excess
+thr015-17-new_session_reuse [200, 400] 
+thr015-17-bad_signature [200, 400] 
+thr015-18-fresh [200] 
+thr015-18-different_proof [200, 200] 
+thr015-18-same_session_reuse [200, 200] excess
+thr015-18-new_session_reuse [200, 400] 
+thr015-18-bad_signature [200, 400] 
+thr015-19-fresh [200] 
+thr015-19-different_proof [200, 200] 
+thr015-19-same_session_reuse [200, 200] excess
+thr015-19-new_session_reuse [200, 400] 
+thr015-19-bad_signature [200, 400] 
+thr015-20-fresh [200] 
+thr015-20-different_proof [200, 200] 
+thr015-20-same_session_reuse [200, 200] excess
+thr015-20-new_session_reuse [200, 400] 
+thr015-20-bad_signature [200, 400] 
+thr015-21-fresh [200] 
+thr015-21-different_proof [200, 200] 
+thr015-21-same_session_reuse [200, 200] excess
+thr015-21-new_session_reuse [200, 400] 
+thr015-21-bad_signature [200, 400] 
+thr015-22-fresh [200] 
+thr015-22-different_proof [200, 200] 
+thr015-22-same_session_reuse [200, 200] excess
+thr015-22-new_session_reuse [200, 400] 
+thr015-22-bad_signature [200, 400] 
+thr015-23-fresh [200] 
+thr015-23-different_proof [200, 200] 
+thr015-23-same_session_reuse [200, 200] excess
+thr015-23-new_session_reuse [200, 400] 
+thr015-23-bad_signature [200, 400] 
+thr015-24-fresh [200] 
+thr015-24-different_proof [200, 200] 
+thr015-24-same_session_reuse [200, 200] excess
+thr015-24-new_session_reuse [200, 400] 
+thr015-24-bad_signature [200, 400] 
+thr015-25-fresh [200] 
+thr015-25-different_proof [200, 200] 
+thr015-25-same_session_reuse [200, 200] excess
+thr015-25-new_session_reuse [200, 400] 
+thr015-25-bad_signature [200, 400] 
+thr015-26-fresh [200] 
+thr015-26-different_proof [200, 200] 
+thr015-26-same_session_reuse [200, 200] excess
+thr015-26-new_session_reuse [200, 400] 
+thr015-26-bad_signature [200, 400] 
+thr015-27-fresh [200] 
+thr015-27-different_proof [200, 200] 
+thr015-27-same_session_reuse [200, 200] excess
+thr015-27-new_session_reuse [200, 400] 
+thr015-27-bad_signature [200, 400] 
+thr015-28-fresh [200] 
+thr015-28-different_proof [200, 200] 
+thr015-28-same_session_reuse [200, 200] excess
+thr015-28-new_session_reuse [200, 400] 
+thr015-28-bad_signature [200, 400] 
+thr015-29-fresh [200] 
+thr015-29-different_proof [200, 200] 
+thr015-29-same_session_reuse [200, 200] excess
+thr015-29-new_session_reuse [200, 400] 
+thr015-29-bad_signature [200, 400] 
+waltid 8 0 off completed
+waltid 8 1 on start
+thr015-00-fresh [200] 
+thr015-00-different_proof [200, 200] 
+thr015-00-same_session_reuse [200, 200] excess
+thr015-00-new_session_reuse [200, 400] 
+thr015-00-bad_signature [200, 400] 
+thr015-01-fresh [200] 
+thr015-01-different_proof [200, 200] 
+thr015-01-same_session_reuse [200, 200] excess
+thr015-01-new_session_reuse [200, 400] 
+thr015-01-bad_signature [200, 400] 
+thr015-02-fresh [200] 
+thr015-02-different_proof [200, 200] 
+thr015-02-same_session_reuse [200, 200] excess
+thr015-02-new_session_reuse [200, 400] 
+thr015-02-bad_signature [200, 400] 
+thr015-03-fresh [200] 
+thr015-03-different_proof [200, 200] 
+thr015-03-same_session_reuse [200, 200] excess
+thr015-03-new_session_reuse [200, 400] 
+thr015-03-bad_signature [200, 400] 
+thr015-04-fresh [200] 
+thr015-04-different_proof [200, 200] 
+thr015-04-same_session_reuse [200, 200] excess
+thr015-04-new_session_reuse [200, 400] 
+thr015-04-bad_signature [200, 400] 
+thr015-05-fresh [200] 
+thr015-05-different_proof [200, 200] 
+thr015-05-same_session_reuse [200, 200] excess
+thr015-05-new_session_reuse [200, 400] 
+thr015-05-bad_signature [200, 400] 
+thr015-06-fresh [200] 
+thr015-06-different_proof [200, 200] 
+thr015-06-same_session_reuse [200, 200] excess
+thr015-06-new_session_reuse [200, 400] 
+thr015-06-bad_signature [200, 400] 
+thr015-07-fresh [200] 
+thr015-07-different_proof [200, 200] 
+thr015-07-same_session_reuse [200, 200] excess
+thr015-07-new_session_reuse [200, 400] 
+thr015-07-bad_signature [200, 400] 
+thr015-08-fresh [200] 
+thr015-08-different_proof [200, 200] 
+thr015-08-same_session_reuse [200, 200] excess
+thr015-08-new_session_reuse [200, 400] 
+thr015-08-bad_signature [200, 400] 
+thr015-09-fresh [200] 
+thr015-09-different_proof [200, 200] 
+thr015-09-same_session_reuse [200, 200] excess
+thr015-09-new_session_reuse [200, 400] 
+thr015-09-bad_signature [200, 400] 
+thr015-10-fresh [200] 
+thr015-10-different_proof [200, 200] 
+thr015-10-same_session_reuse [200, 200] excess
+thr015-10-new_session_reuse [200, 400] 
+thr015-10-bad_signature [200, 400] 
+thr015-11-fresh [200] 
+thr015-11-different_proof [200, 200] 
+thr015-11-same_session_reuse [200, 200] excess
+thr015-11-new_session_reuse [200, 400] 
+thr015-11-bad_signature [200, 400] 
+thr015-12-fresh [200] 
+thr015-12-different_proof [200, 200] 
+thr015-12-same_session_reuse [200, 200] excess
+thr015-12-new_session_reuse [200, 400] 
+thr015-12-bad_signature [200, 400] 
+thr015-13-fresh [200] 
+thr015-13-different_proof [200, 200] 
+thr015-13-same_session_reuse [200, 200] excess
+thr015-13-new_session_reuse [200, 400] 
+thr015-13-bad_signature [200, 400] 
+thr015-14-fresh [200] 
+thr015-14-different_proof [200, 200] 
+thr015-14-same_session_reuse [200, 200] excess
+thr015-14-new_session_reuse [200, 400] 
+thr015-14-bad_signature [200, 400] 
+thr015-15-fresh [200] 
+thr015-15-different_proof [200, 200] 
+thr015-15-same_session_reuse [200, 200] excess
+thr015-15-new_session_reuse [200, 400] 
+thr015-15-bad_signature [200, 400] 
+thr015-16-fresh [200] 
+thr015-16-different_proof [200, 200] 
+thr015-16-same_session_reuse [200, 200] excess
+thr015-16-new_session_reuse [200, 400] 
+thr015-16-bad_signature [200, 400] 
+thr015-17-fresh [200] 
+thr015-17-different_proof [200, 200] 
+thr015-17-same_session_reuse [200, 200] excess
+thr015-17-new_session_reuse [200, 400] 
+thr015-17-bad_signature [200, 400] 
+thr015-18-fresh [200] 
+thr015-18-different_proof [200, 200] 
+thr015-18-same_session_reuse [200, 200] excess
+thr015-18-new_session_reuse [200, 400] 
+thr015-18-bad_signature [200, 400] 
+thr015-19-fresh [200] 
+thr015-19-different_proof [200, 200] 
+thr015-19-same_session_reuse [200, 200] excess
+thr015-19-new_session_reuse [200, 400] 
+thr015-19-bad_signature [200, 400] 
+thr015-20-fresh [200] 
+thr015-20-different_proof [200, 200] 
+thr015-20-same_session_reuse [200, 200] excess
+thr015-20-new_session_reuse [200, 400] 
+thr015-20-bad_signature [200, 400] 
+thr015-21-fresh [200] 
+thr015-21-different_proof [200, 200] 
+thr015-21-same_session_reuse [200, 200] excess
+thr015-21-new_session_reuse [200, 400] 
+thr015-21-bad_signature [200, 400] 
+thr015-22-fresh [200] 
+thr015-22-different_proof [200, 200] 
+thr015-22-same_session_reuse [200, 200] excess
+thr015-22-new_session_reuse [200, 400] 
+thr015-22-bad_signature [200, 400] 
+thr015-23-fresh [200] 
+thr015-23-different_proof [200, 200] 
+thr015-23-same_session_reuse [200, 200] excess
+thr015-23-new_session_reuse [200, 400] 
+thr015-23-bad_signature [200, 400] 
+thr015-24-fresh [200] 
+thr015-24-different_proof [200, 200] 
+thr015-24-same_session_reuse [200, 200] excess
+thr015-24-new_session_reuse [200, 400] 
+thr015-24-bad_signature [200, 400] 
+thr015-25-fresh [200] 
+thr015-25-different_proof [200, 200] 
+thr015-25-same_session_reuse [200, 200] excess
+thr015-25-new_session_reuse [200, 400] 
+thr015-25-bad_signature [200, 400] 
+thr015-26-fresh [200] 
+thr015-26-different_proof [200, 200] 
+thr015-26-same_session_reuse [200, 200] excess
+thr015-26-new_session_reuse [200, 400] 
+thr015-26-bad_signature [200, 400] 
+thr015-27-fresh [200] 
+thr015-27-different_proof [200, 200] 
+thr015-27-same_session_reuse [200, 200] excess
+thr015-27-new_session_reuse [200, 400] 
+thr015-27-bad_signature [200, 400] 
+thr015-28-fresh [200] 
+thr015-28-different_proof [200, 200] 
+thr015-28-same_session_reuse [200, 200] excess
+thr015-28-new_session_reuse [200, 400] 
+thr015-28-bad_signature [200, 400] 
+thr015-29-fresh [200] 
+thr015-29-different_proof [200, 200] 
+thr015-29-same_session_reuse [200, 200] excess
+thr015-29-new_session_reuse [200, 400] 
+thr015-29-bad_signature [200, 400] 
+waltid 8 1 on completed
+waltid 9 0 on start
+thr015-00-fresh [200] 
+thr015-00-different_proof [200, 200] 
+thr015-00-same_session_reuse [200, 200] excess
+thr015-00-new_session_reuse [200, 400] 
+thr015-00-bad_signature [200, 400] 
+thr015-01-fresh [200] 
+thr015-01-different_proof [200, 200] 
+thr015-01-same_session_reuse [200, 200] excess
+thr015-01-new_session_reuse [200, 400] 
+thr015-01-bad_signature [200, 400] 
+thr015-02-fresh [200] 
+thr015-02-different_proof [200, 200] 
+thr015-02-same_session_reuse [200, 200] excess
+thr015-02-new_session_reuse [200, 400] 
+thr015-02-bad_signature [200, 400] 
+thr015-03-fresh [200] 
+thr015-03-different_proof [200, 200] 
+thr015-03-same_session_reuse [200, 200] excess
+thr015-03-new_session_reuse [200, 400] 
+thr015-03-bad_signature [200, 400] 
+thr015-04-fresh [200] 
+thr015-04-different_proof [200, 200] 
+thr015-04-same_session_reuse [200, 200] excess
+thr015-04-new_session_reuse [200, 400] 
+thr015-04-bad_signature [200, 400] 
+thr015-05-fresh [200] 
+thr015-05-different_proof [200, 200] 
+thr015-05-same_session_reuse [200, 200] excess
+thr015-05-new_session_reuse [200, 400] 
+thr015-05-bad_signature [200, 400] 
+thr015-06-fresh [200] 
+thr015-06-different_proof [200, 200] 
+thr015-06-same_session_reuse [200, 200] excess
+thr015-06-new_session_reuse [200, 400] 
+thr015-06-bad_signature [200, 400] 
+thr015-07-fresh [200] 
+thr015-07-different_proof [200, 200] 
+thr015-07-same_session_reuse [200, 200] excess
+thr015-07-new_session_reuse [200, 400] 
+thr015-07-bad_signature [200, 400] 
+thr015-08-fresh [200] 
+thr015-08-different_proof [200, 200] 
+thr015-08-same_session_reuse [200, 200] excess
+thr015-08-new_session_reuse [200, 400] 
+thr015-08-bad_signature [200, 400] 
+thr015-09-fresh [200] 
+thr015-09-different_proof [200, 200] 
+thr015-09-same_session_reuse [200, 200] excess
+thr015-09-new_session_reuse [200, 400] 
+thr015-09-bad_signature [200, 400] 
+thr015-10-fresh [200] 
+thr015-10-different_proof [200, 200] 
+thr015-10-same_session_reuse [200, 200] excess
+thr015-10-new_session_reuse [200, 400] 
+thr015-10-bad_signature [200, 400] 
+thr015-11-fresh [200] 
+thr015-11-different_proof [200, 200] 
+thr015-11-same_session_reuse [200, 200] excess
+thr015-11-new_session_reuse [200, 400] 
+thr015-11-bad_signature [200, 400] 
+thr015-12-fresh [200] 
+thr015-12-different_proof [200, 200] 
+thr015-12-same_session_reuse [200, 200] excess
+thr015-12-new_session_reuse [200, 400] 
+thr015-12-bad_signature [200, 400] 
+thr015-13-fresh [200] 
+thr015-13-different_proof [200, 200] 
+thr015-13-same_session_reuse [200, 200] excess
+thr015-13-new_session_reuse [200, 400] 
+thr015-13-bad_signature [200, 400] 
+thr015-14-fresh [200] 
+thr015-14-different_proof [200, 200] 
+thr015-14-same_session_reuse [200, 200] excess
+thr015-14-new_session_reuse [200, 400] 
+thr015-14-bad_signature [200, 400] 
+thr015-15-fresh [200] 
+thr015-15-different_proof [200, 200] 
+thr015-15-same_session_reuse [200, 200] excess
+thr015-15-new_session_reuse [200, 400] 
+thr015-15-bad_signature [200, 400] 
+thr015-16-fresh [200] 
+thr015-16-different_proof [200, 200] 
+thr015-16-same_session_reuse [200, 200] excess
+thr015-16-new_session_reuse [200, 400] 
+thr015-16-bad_signature [200, 400] 
+thr015-17-fresh [200] 
+thr015-17-different_proof [200, 200] 
+thr015-17-same_session_reuse [200, 200] excess
+thr015-17-new_session_reuse [200, 400] 
+thr015-17-bad_signature [200, 400] 
+thr015-18-fresh [200] 
+thr015-18-different_proof [200, 200] 
+thr015-18-same_session_reuse [200, 200] excess
+thr015-18-new_session_reuse [200, 400] 
+thr015-18-bad_signature [200, 400] 
+thr015-19-fresh [200] 
+thr015-19-different_proof [200, 200] 
+thr015-19-same_session_reuse [200, 200] excess
+thr015-19-new_session_reuse [200, 400] 
+thr015-19-bad_signature [200, 400] 
+thr015-20-fresh [200] 
+thr015-20-different_proof [200, 200] 
+thr015-20-same_session_reuse [200, 200] excess
+thr015-20-new_session_reuse [200, 400] 
+thr015-20-bad_signature [200, 400] 
+thr015-21-fresh [200] 
+thr015-21-different_proof [200, 200] 
+thr015-21-same_session_reuse [200, 200] excess
+thr015-21-new_session_reuse [200, 400] 
+thr015-21-bad_signature [200, 400] 
+thr015-22-fresh [200] 
+thr015-22-different_proof [200, 200] 
+thr015-22-same_session_reuse [200, 200] excess
+thr015-22-new_session_reuse [200, 400] 
+thr015-22-bad_signature [200, 400] 
+thr015-23-fresh [200] 
+thr015-23-different_proof [200, 200] 
+thr015-23-same_session_reuse [200, 200] excess
+thr015-23-new_session_reuse [200, 400] 
+thr015-23-bad_signature [200, 400] 
+thr015-24-fresh [200] 
+thr015-24-different_proof [200, 200] 
+thr015-24-same_session_reuse [200, 200] excess
+thr015-24-new_session_reuse [200, 400] 
+thr015-24-bad_signature [200, 400] 
+thr015-25-fresh [200] 
+thr015-25-different_proof [200, 200] 
+thr015-25-same_session_reuse [200, 200] excess
+thr015-25-new_session_reuse [200, 400] 
+thr015-25-bad_signature [200, 400] 
+thr015-26-fresh [200] 
+thr015-26-different_proof [200, 200] 
+thr015-26-same_session_reuse [200, 200] excess
+thr015-26-new_session_reuse [200, 400] 
+thr015-26-bad_signature [200, 400] 
+thr015-27-fresh [200] 
+thr015-27-different_proof [200, 200] 
+thr015-27-same_session_reuse [200, 200] excess
+thr015-27-new_session_reuse [200, 400] 
+thr015-27-bad_signature [200, 400] 
+thr015-28-fresh [200] 
+thr015-28-different_proof [200, 200] 
+thr015-28-same_session_reuse [200, 200] excess
+thr015-28-new_session_reuse [200, 400] 
+thr015-28-bad_signature [200, 400] 
+thr015-29-fresh [200] 
+thr015-29-different_proof [200, 200] 
+thr015-29-same_session_reuse [200, 200] excess
+thr015-29-new_session_reuse [200, 400] 
+thr015-29-bad_signature [200, 400] 
+waltid 9 0 on completed
+waltid 9 1 off start
+thr015-00-fresh [200] 
+thr015-00-different_proof [200, 200] 
+thr015-00-same_session_reuse [200, 200] excess
+thr015-00-new_session_reuse [200, 400] 
+thr015-00-bad_signature [200, 400] 
+thr015-01-fresh [200] 
+thr015-01-different_proof [200, 200] 
+thr015-01-same_session_reuse [200, 200] excess
+thr015-01-new_session_reuse [200, 400] 
+thr015-01-bad_signature [200, 400] 
+thr015-02-fresh [200] 
+thr015-02-different_proof [200, 200] 
+thr015-02-same_session_reuse [200, 200] excess
+thr015-02-new_session_reuse [200, 400] 
+thr015-02-bad_signature [200, 400] 
+thr015-03-fresh [200] 
+thr015-03-different_proof [200, 200] 
+thr015-03-same_session_reuse [200, 200] excess
+thr015-03-new_session_reuse [200, 400] 
+thr015-03-bad_signature [200, 400] 
+thr015-04-fresh [200] 
+thr015-04-different_proof [200, 200] 
+thr015-04-same_session_reuse [200, 200] excess
+thr015-04-new_session_reuse [200, 400] 
+thr015-04-bad_signature [200, 400] 
+thr015-05-fresh [200] 
+thr015-05-different_proof [200, 200] 
+thr015-05-same_session_reuse [200, 200] excess
+thr015-05-new_session_reuse [200, 400] 
+thr015-05-bad_signature [200, 400] 
+thr015-06-fresh [200] 
+thr015-06-different_proof [200, 200] 
+thr015-06-same_session_reuse [200, 200] excess
+thr015-06-new_session_reuse [200, 400] 
+thr015-06-bad_signature [200, 400] 
+thr015-07-fresh [200] 
+thr015-07-different_proof [200, 200] 
+thr015-07-same_session_reuse [200, 200] excess
+thr015-07-new_session_reuse [200, 400] 
+thr015-07-bad_signature [200, 400] 
+thr015-08-fresh [200] 
+thr015-08-different_proof [200, 200] 
+thr015-08-same_session_reuse [200, 200] excess
+thr015-08-new_session_reuse [200, 400] 
+thr015-08-bad_signature [200, 400] 
+thr015-09-fresh [200] 
+thr015-09-different_proof [200, 200] 
+thr015-09-same_session_reuse [200, 200] excess
+thr015-09-new_session_reuse [200, 400] 
+thr015-09-bad_signature [200, 400] 
+thr015-10-fresh [200] 
+thr015-10-different_proof [200, 200] 
+thr015-10-same_session_reuse [200, 200] excess
+thr015-10-new_session_reuse [200, 400] 
+thr015-10-bad_signature [200, 400] 
+thr015-11-fresh [200] 
+thr015-11-different_proof [200, 200] 
+thr015-11-same_session_reuse [200, 200] excess
+thr015-11-new_session_reuse [200, 400] 
+thr015-11-bad_signature [200, 400] 
+thr015-12-fresh [200] 
+thr015-12-different_proof [200, 200] 
+thr015-12-same_session_reuse [200, 200] excess
+thr015-12-new_session_reuse [200, 400] 
+thr015-12-bad_signature [200, 400] 
+thr015-13-fresh [200] 
+thr015-13-different_proof [200, 200] 
+thr015-13-same_session_reuse [200, 200] excess
+thr015-13-new_session_reuse [200, 400] 
+thr015-13-bad_signature [200, 400] 
+thr015-14-fresh [200] 
+thr015-14-different_proof [200, 200] 
+thr015-14-same_session_reuse [200, 200] excess
+thr015-14-new_session_reuse [200, 400] 
+thr015-14-bad_signature [200, 400] 
+thr015-15-fresh [200] 
+thr015-15-different_proof [200, 200] 
+thr015-15-same_session_reuse [200, 200] excess
+thr015-15-new_session_reuse [200, 400] 
+thr015-15-bad_signature [200, 400] 
+thr015-16-fresh [200] 
+thr015-16-different_proof [200, 200] 
+thr015-16-same_session_reuse [200, 200] excess
+thr015-16-new_session_reuse [200, 400] 
+thr015-16-bad_signature [200, 400] 
+thr015-17-fresh [200] 
+thr015-17-different_proof [200, 200] 
+thr015-17-same_session_reuse [200, 200] excess
+thr015-17-new_session_reuse [200, 400] 
+thr015-17-bad_signature [200, 400] 
+thr015-18-fresh [200] 
+thr015-18-different_proof [200, 200] 
+thr015-18-same_session_reuse [200, 200] excess
+thr015-18-new_session_reuse [200, 400] 
+thr015-18-bad_signature [200, 400] 
+thr015-19-fresh [200] 
+thr015-19-different_proof [200, 200] 
+thr015-19-same_session_reuse [200, 200] excess
+thr015-19-new_session_reuse [200, 400] 
+thr015-19-bad_signature [200, 400] 
+thr015-20-fresh [200] 
+thr015-20-different_proof [200, 200] 
+thr015-20-same_session_reuse [200, 200] excess
+thr015-20-new_session_reuse [200, 400] 
+thr015-20-bad_signature [200, 400] 
+thr015-21-fresh [200] 
+thr015-21-different_proof [200, 200] 
+thr015-21-same_session_reuse [200, 200] excess
+thr015-21-new_session_reuse [200, 400] 
+thr015-21-bad_signature [200, 400] 
+thr015-22-fresh [200] 
+thr015-22-different_proof [200, 200] 
+thr015-22-same_session_reuse [200, 200] excess
+thr015-22-new_session_reuse [200, 400] 
+thr015-22-bad_signature [200, 400] 
+thr015-23-fresh [200] 
+thr015-23-different_proof [200, 200] 
+thr015-23-same_session_reuse [200, 200] excess
+thr015-23-new_session_reuse [200, 400] 
+thr015-23-bad_signature [200, 400] 
+thr015-24-fresh [200] 
+thr015-24-different_proof [200, 200] 
+thr015-24-same_session_reuse [200, 200] excess
+thr015-24-new_session_reuse [200, 400] 
+thr015-24-bad_signature [200, 400] 
+thr015-25-fresh [200] 
+thr015-25-different_proof [200, 200] 
+thr015-25-same_session_reuse [200, 200] excess
+thr015-25-new_session_reuse [200, 400] 
+thr015-25-bad_signature [200, 400] 
+thr015-26-fresh [200] 
+thr015-26-different_proof [200, 200] 
+thr015-26-same_session_reuse [200, 200] excess
+thr015-26-new_session_reuse [200, 400] 
+thr015-26-bad_signature [200, 400] 
+thr015-27-fresh [200] 
+thr015-27-different_proof [200, 200] 
+thr015-27-same_session_reuse [200, 200] excess
+thr015-27-new_session_reuse [200, 400] 
+thr015-27-bad_signature [200, 400] 
+thr015-28-fresh [200] 
+thr015-28-different_proof [200, 200] 
+thr015-28-same_session_reuse [200, 200] excess
+thr015-28-new_session_reuse [200, 400] 
+thr015-28-bad_signature [200, 400] 
+thr015-29-fresh [200] 
+thr015-29-different_proof [200, 200] 
+thr015-29-same_session_reuse [200, 200] excess
+thr015-29-new_session_reuse [200, 400] 
+thr015-29-bad_signature [200, 400] 
+waltid 9 1 off completed
+credo 0 0 off start
+credo 0 0 off completed
+credo 0 1 on start
+credo 0 1 on completed
+credo 1 0 on start
+credo 1 0 on completed
+credo 1 1 off start
+credo 1 1 off completed
+credo 2 0 off start
+credo 2 0 off completed
+credo 2 1 on start
+credo 2 1 on completed
+credo 3 0 on start
+credo 3 0 on completed
+credo 3 1 off start
+credo 3 1 off completed
+credo 4 0 off start
+credo 4 0 off completed
+credo 4 1 on start
+credo 4 1 on completed
+credo 5 0 on start
+credo 5 0 on completed
+credo 5 1 off start
+credo 5 1 off completed
+credo 6 0 off start
+credo 6 0 off completed
+credo 6 1 on start
+credo 6 1 on completed
+credo 7 0 on start
+credo 7 0 on completed
+credo 7 1 off start
+credo 7 1 off completed
+credo 8 0 off start
+credo 8 0 off completed
+credo 8 1 on start
+credo 8 1 on completed
+credo 9 0 on start
+credo 9 0 on completed
+credo 9 1 off start
+credo 9 1 off completed

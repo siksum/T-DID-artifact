@@ -1,0 +1,329 @@
+{
+  "per_standard": {
+    "THR-015": {
+      "core": {
+        "ocsf": {
+          "attack": 0,
+          "no_attack": 0,
+          "withheld": 27,
+          "none": 0,
+          "wrong": 0
+        },
+        "ecs": {
+          "attack": 0,
+          "no_attack": 0,
+          "withheld": 27,
+          "none": 0,
+          "wrong": 0
+        },
+        "otel": {
+          "attack": 0,
+          "no_attack": 0,
+          "withheld": 27,
+          "none": 0,
+          "wrong": 0
+        },
+        "cloudevents": {
+          "attack": 0,
+          "no_attack": 0,
+          "withheld": 27,
+          "none": 0,
+          "wrong": 0
+        }
+      },
+      "ext": {
+        "ocsf": {
+          "attack": 0,
+          "no_attack": 0,
+          "withheld": 27,
+          "none": 0,
+          "wrong": 0
+        },
+        "ecs": {
+          "attack": 0,
+          "no_attack": 0,
+          "withheld": 27,
+          "none": 0,
+          "wrong": 0
+        },
+        "otel": {
+          "attack": 0,
+          "no_attack": 0,
+          "withheld": 27,
+          "none": 0,
+          "wrong": 0
+        },
+        "cloudevents": {
+          "attack": 0,
+          "no_attack": 0,
+          "withheld": 27,
+          "none": 0,
+          "wrong": 0
+        }
+      }
+    },
+    "THR-019": {
+      "core": {
+        "ocsf": {
+          "attack": 0,
+          "no_attack": 3,
+          "withheld": 9,
+          "none": 0,
+          "wrong": 0
+        },
+        "ecs": {
+          "attack": 0,
+          "no_attack": 0,
+          "withheld": 12,
+          "none": 0,
+          "wrong": 0
+        },
+        "otel": {
+          "attack": 0,
+          "no_attack": 0,
+          "withheld": 12,
+          "none": 0,
+          "wrong": 0
+        },
+        "cloudevents": {
+          "attack": 0,
+          "no_attack": 0,
+          "withheld": 12,
+          "none": 0,
+          "wrong": 0
+        }
+      },
+      "ext": {
+        "ocsf": {
+          "attack": 0,
+          "no_attack": 3,
+          "withheld": 9,
+          "none": 0,
+          "wrong": 0
+        },
+        "ecs": {
+          "attack": 0,
+          "no_attack": 0,
+          "withheld": 12,
+          "none": 0,
+          "wrong": 0
+        },
+        "otel": {
+          "attack": 0,
+          "no_attack": 0,
+          "withheld": 12,
+          "none": 0,
+          "wrong": 0
+        },
+        "cloudevents": {
+          "attack": 0,
+          "no_attack": 0,
+          "withheld": 12,
+          "none": 0,
+          "wrong": 0
+        }
+      }
+    }
+  },
+  "panels": {
+    "THR-015": {
+      "best_core": [
+        "ocsf",
+        "ecs",
+        "otel",
+        "cloudevents"
+      ],
+      "best_ext": [
+        "ocsf",
+        "ecs",
+        "otel",
+        "cloudevents"
+      ],
+      "counts": {
+        "product_log": {
+          "attack": 0,
+          "no_attack": 6,
+          "withheld": 21,
+          "none": 0,
+          "wrong": 0
+        },
+        "std_core": {
+          "attack": 0,
+          "no_attack": 0,
+          "withheld": 27,
+          "none": 0,
+          "wrong": 0
+        },
+        "std_ext": {
+          "attack": 0,
+          "no_attack": 0,
+          "withheld": 27,
+          "none": 0,
+          "wrong": 0
+        },
+        "tdid": {
+          "attack": 6,
+          "no_attack": 21,
+          "withheld": 0,
+          "none": 0,
+          "wrong": 0
+        }
+      },
+      "n": 27
+    },
+    "THR-019": {
+      "best_core": [
+        "ocsf"
+      ],
+      "best_ext": [
+        "ocsf"
+      ],
+      "counts": {
+        "product_log": {
+          "attack": 0,
+          "no_attack": 0,
+          "withheld": 12,
+          "none": 0,
+          "wrong": 0
+        },
+        "std_core": {
+          "attack": 0,
+          "no_attack": 3,
+          "withheld": 9,
+          "none": 0,
+          "wrong": 0
+        },
+        "std_ext": {
+          "attack": 0,
+          "no_attack": 3,
+          "withheld": 9,
+          "none": 0,
+          "wrong": 0
+        },
+        "tdid": {
+          "attack": 0,
+          "no_attack": 3,
+          "withheld": 9,
+          "none": 0,
+          "wrong": 0
+        }
+      },
+      "n": 12
+    }
+  },
+  "per_request": {
+    "waltid": {
+      "product_log": {
+        "incomplete": 21,
+        "not_succeeded": 6
+      },
+      "tdid": {
+        "not_succeeded": 24,
+        "succeeded": 3
+      },
+      "ocsf_core": {
+        "incomplete": 21,
+        "not_succeeded": 6
+      },
+      "ecs_core": {
+        "incomplete": 21,
+        "not_succeeded": 6
+      },
+      "otel_core": {
+        "incomplete": 27
+      },
+      "cloudevents_core": {
+        "incomplete": 27
+      },
+      "ocsf_ext": {
+        "incomplete": 21,
+        "not_succeeded": 6
+      },
+      "ecs_ext": {
+        "incomplete": 21,
+        "not_succeeded": 6
+      },
+      "otel_ext": {
+        "incomplete": 27
+      },
+      "cloudevents_ext": {
+        "incomplete": 27
+      }
+    },
+    "credo": {
+      "product_log": {
+        "not_succeeded": 18,
+        "incomplete": 9
+      },
+      "tdid": {
+        "not_succeeded": 21,
+        "incomplete": 3,
+        "succeeded": 3
+      },
+      "ocsf_core": {
+        "incomplete": 24,
+        "not_succeeded": 3
+      },
+      "ecs_core": {
+        "incomplete": 24,
+        "not_succeeded": 3
+      },
+      "otel_core": {
+        "incomplete": 27
+      },
+      "cloudevents_core": {
+        "incomplete": 27
+      },
+      "ocsf_ext": {
+        "incomplete": 24,
+        "not_succeeded": 3
+      },
+      "ecs_ext": {
+        "incomplete": 24,
+        "not_succeeded": 3
+      },
+      "otel_ext": {
+        "incomplete": 27
+      },
+      "cloudevents_ext": {
+        "incomplete": 27
+      }
+    },
+    "credo-vp": {
+      "product_log": {
+        "incomplete": 12
+      },
+      "tdid": {
+        "incomplete": 9,
+        "not_succeeded": 3
+      },
+      "ocsf_core": {
+        "incomplete": 9,
+        "not_succeeded": 3
+      },
+      "ecs_core": {
+        "incomplete": 12
+      },
+      "otel_core": {
+        "incomplete": 24
+      },
+      "cloudevents_core": {
+        "incomplete": 12
+      },
+      "ocsf_ext": {
+        "incomplete": 9,
+        "not_succeeded": 3
+      },
+      "ecs_ext": {
+        "incomplete": 21,
+        "not_succeeded": 3
+      },
+      "otel_ext": {
+        "incomplete": 12
+      },
+      "cloudevents_ext": {
+        "incomplete": 24
+      }
+    }
+  }
+}

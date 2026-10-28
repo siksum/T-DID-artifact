@@ -1,0 +1,7 @@
+Fig. 1. From six DID/VC specifications to threat success conditions, security logging requirements, and runtime verdicts. Taxonomy correspondence is separate from threat admission.
+
+Fig. 2. T-DID runtime evidence flow. Rules read prior state; state changes are committed after rule evaluation. Verdicts retain evidence identifiers and unknown conditions.
+
+Fig. 3. Effects of field deletion on (a) wrong determinate verdicts / 39 workflows, (b) incomplete verdicts / 39 workflows, and (c) detected attacks / nine known attacks. Curves show means over 30 deletion seeds. Equal-valued series are combined in each panel. Missing values follow each monitor's explicit encoding; see docs/REPRODUCING.md.
+
+Fig. 4. (a) Scheduled-to-verdict latency with all 21 T-DID rules enabled, reported as the median of three run-level p95 measurements. (b) Peak resident memory for a matched 10,000-proof THR-015 workload, reported as the median of three repetitions; the T-DID memory configuration enables one rule. MonPoly's recorded memory is the sum for its Python streaming wrapper and MonPoly child process. Memory figures and latency configurations have different rule counts, as recorded in data/figures.

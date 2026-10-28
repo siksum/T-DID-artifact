@@ -1,0 +1,131 @@
+{
+  "case_id": "vp-3-4",
+  "stage_events": [
+    {
+      "schema_version": "D-M9-15F-credo-stage-event/v1",
+      "workflow_ref": "a34c181f513dc3f38e907f219f5f5640d8be9be7c0f3773fae5a74aadd20d58f",
+      "sequence": 1,
+      "stage_id": "workflow_bound",
+      "facts": {
+        "initial_session_state": "RequestCreated"
+      }
+    },
+    {
+      "schema_version": "D-M9-15F-credo-stage-event/v1",
+      "workflow_ref": "a34c181f513dc3f38e907f219f5f5640d8be9be7c0f3773fae5a74aadd20d58f",
+      "sequence": 2,
+      "stage_id": "request_initiated",
+      "facts": {
+        "initiating_context_ref": "0ddd8cefe50be4dc21faaf4e97c01981d5106763a2ea0621126ce80437b1a4e6"
+      }
+    },
+    {
+      "schema_version": "D-M9-15F-credo-stage-event/v1",
+      "workflow_ref": "a34c181f513dc3f38e907f219f5f5640d8be9be7c0f3773fae5a74aadd20d58f",
+      "sequence": 3,
+      "stage_id": "delivery_observed",
+      "facts": {
+        "request_delivery_path": "relayed"
+      }
+    },
+    {
+      "schema_version": "D-M9-15F-credo-stage-event/v1",
+      "workflow_ref": "a34c181f513dc3f38e907f219f5f5640d8be9be7c0f3773fae5a74aadd20d58f",
+      "sequence": 4,
+      "stage_id": "wallet_received",
+      "facts": {
+        "completing_context_ref": "295568e7708b36bd36c6e964a9decca7bbde2bb8811421558261223df49d1a55"
+      }
+    },
+    {
+      "schema_version": "D-M9-15F-credo-stage-event/v1",
+      "workflow_ref": "a34c181f513dc3f38e907f219f5f5640d8be9be7c0f3773fae5a74aadd20d58f",
+      "sequence": 5,
+      "stage_id": "wallet_submitted",
+      "facts": {
+        "submission_accepted": true
+      }
+    },
+    {
+      "schema_version": "D-M9-15F-credo-stage-event/v1",
+      "workflow_ref": "a34c181f513dc3f38e907f219f5f5640d8be9be7c0f3773fae5a74aadd20d58f",
+      "sequence": 6,
+      "stage_id": "direct_post_joined",
+      "facts": {
+        "response_mode": "direct_post",
+        "state_matches": true
+      }
+    },
+    {
+      "schema_version": "D-M9-15F-credo-stage-event/v1",
+      "workflow_ref": "a34c181f513dc3f38e907f219f5f5640d8be9be7c0f3773fae5a74aadd20d58f",
+      "sequence": 7,
+      "stage_id": "result_requested",
+      "facts": {}
+    },
+    {
+      "schema_version": "D-M9-15F-credo-stage-event/v1",
+      "workflow_ref": "a34c181f513dc3f38e907f219f5f5640d8be9be7c0f3773fae5a74aadd20d58f",
+      "sequence": 8,
+      "stage_id": "result_returned",
+      "facts": {
+        "final_session_state": "ResponseVerified",
+        "proof_validated": true,
+        "query_validated": true
+      }
+    },
+    {
+      "schema_version": "D-M9-15F-credo-stage-event/v1",
+      "workflow_ref": "a34c181f513dc3f38e907f219f5f5640d8be9be7c0f3773fae5a74aadd20d58f",
+      "sequence": 9,
+      "stage_id": "proxy_forwarded",
+      "facts": {
+        "forwarded": true
+      }
+    },
+    {
+      "schema_version": "D-M9-15F-credo-stage-event/v1",
+      "workflow_ref": "a34c181f513dc3f38e907f219f5f5640d8be9be7c0f3773fae5a74aadd20d58f",
+      "sequence": 10,
+      "stage_id": "client_received",
+      "facts": {
+        "received": true
+      }
+    },
+    {
+      "schema_version": "D-M9-15F-credo-stage-event/v1",
+      "workflow_ref": "a34c181f513dc3f38e907f219f5f5640d8be9be7c0f3773fae5a74aadd20d58f",
+      "sequence": 11,
+      "stage_id": "result_consumed",
+      "facts": {
+        "completion_profile": "generic_verification",
+        "completion_value_generated": false,
+        "completion_value_supplied": false,
+        "completion_value_matches": false
+      }
+    },
+    {
+      "schema_version": "D-M9-15F-credo-stage-event/v1",
+      "workflow_ref": "a34c181f513dc3f38e907f219f5f5640d8be9be7c0f3773fae5a74aadd20d58f",
+      "sequence": 12,
+      "stage_id": "relying_decision",
+      "facts": {
+        "relying_action": "rejected",
+        "finalization_valid": true
+      }
+    }
+  ],
+  "binding_evidence": {
+    "workflow_ref": "a34c181f513dc3f38e907f219f5f5640d8be9be7c0f3773fae5a74aadd20d58f",
+    "result_session_ref": "a34c181f513dc3f38e907f219f5f5640d8be9be7c0f3773fae5a74aadd20d58f",
+    "request_transaction_ref": "a805c2a1509f8c9f2b6dd3d70eb46ee50e65dae68a599a8e618e5b1e9b6b21bc",
+    "result_transaction_ref": "a805c2a1509f8c9f2b6dd3d70eb46ee50e65dae68a599a8e618e5b1e9b6b21bc",
+    "consumer_session_ref": "a34c181f513dc3f38e907f219f5f5640d8be9be7c0f3773fae5a74aadd20d58f",
+    "request_source_ref": "868a2e802f8ea44f79c6008dc5bb687b8063ef79819c083ad6e60a41e6dd8c27",
+    "request_wallet_ref": "868a2e802f8ea44f79c6008dc5bb687b8063ef79819c083ad6e60a41e6dd8c27",
+    "verified_state": "ResponseVerified",
+    "result_present": true,
+    "consumed": true,
+    "completion_secret_used": false
+  }
+}

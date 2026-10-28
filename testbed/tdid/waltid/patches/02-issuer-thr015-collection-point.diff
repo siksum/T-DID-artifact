@@ -1,0 +1,123 @@
+--- a/waltid-libraries/protocols/waltid-openid4vc/src/commonMain/kotlin/id/walt/oid4vc/OpenID4VCI.kt
++++ b/waltid-libraries/protocols/waltid-openid4vc/src/commonMain/kotlin/id/walt/oid4vc/OpenID4VCI.kt
+@@ -66,7 +66,9 @@
+     class CredentialRequestValidationResult(
+         val success: Boolean,
+         errorCode: CredentialErrorCode? = null,
+-        val message: String? = null
++        val message: String? = null,
++        // T-DID testbed: value returned by validateProofOfPossession; null when it was not called
++        val proofValid: Boolean? = null
+     )
+ 
+     fun getCredentialOfferRequestUrl(
+@@ -645,11 +647,14 @@
+         openIDProviderMetadata: OpenIDProviderMetadata
+     ): CredentialRequestValidationResult {
+         log.debug { "Credential request to validate: $credentialRequest" }
+-        if (credentialRequest.proof == null || !validateProofOfPossession(credentialRequest, nonce)) {
++        // T-DID testbed: same short-circuit as before, keeping the validator's returned value.
++        val proofValid: Boolean? = credentialRequest.proof?.let { validateProofOfPossession(credentialRequest, nonce) }
++        if (proofValid != true) {
+             return CredentialRequestValidationResult(
+                 success = false,
+                 errorCode = CredentialErrorCode.invalid_or_missing_proof,
+-                message = "Invalid proof of possession"
++                message = "Invalid proof of possession",
++                proofValid = proofValid
+             )
+         }
+ 
+@@ -665,10 +670,11 @@
+             return CredentialRequestValidationResult(
+                 success = false,
+                 errorCode = CredentialErrorCode.unsupported_credential_format,
+-                message = "Credential format not supported"
++                message = "Credential format not supported",
++                proofValid = true
+             )
+ 
+-        return CredentialRequestValidationResult(true)
++        return CredentialRequestValidationResult(true, proofValid = true)
+     }
+ 
+     suspend fun generateDeferredCredentialToken(
+--- a/waltid-services/waltid-issuer-api/src/main/kotlin/id/walt/issuer/issuance/CIProvider.kt
++++ b/waltid-services/waltid-issuer-api/src/main/kotlin/id/walt/issuer/issuance/CIProvider.kt
+@@ -9,6 +9,7 @@
+ import com.upokecenter.cbor.CBORObject
+ import id.walt.commons.config.ConfigManager
+ import id.walt.commons.persistence.ConfiguredPersistence
++import id.walt.commons.tdid.TdidEvents
+ import id.walt.crypto.keys.KeyManager
+ import id.walt.crypto.keys.jwk.JWKKey
+ import id.walt.crypto.utils.Base64Utils.base64UrlDecode
+@@ -844,6 +845,9 @@
+         session: IssuanceSession
+     ): CredentialResponse =
+         runBlocking {
++            // T-DID collection point: one ISSUANCE_DECISION per credential request that reaches here
++            var tdidProofCheck = "not_performed"
++            try {
+             // access_token should be validated on API level and issuance session extracted
+             // Validate credential request (proof of possession, etc.)
+             val nonce = session.cNonce
+@@ -858,6 +862,7 @@
+                 nonce = nonce,
+                 openIDProviderMetadata = metadata
+             )
++            validationResult.proofValid?.let { tdidProofCheck = if (it) "pass" else "fail" }
+ 
+             if (!validationResult.success) throw CredentialError(
+                 credentialRequest = credentialRequest,
+@@ -874,9 +879,49 @@
+             return@runBlocking createCredentialResponseFor(
+                 credentialResult = credentialResult,
+                 session = session
+-            )
++            ).also { tdidIssuanceDecision(credentialRequest, session, tdidProofCheck, it, null) }
++            } catch (e: Throwable) {
++                tdidIssuanceDecision(credentialRequest, session, tdidProofCheck, null, e)
++                throw e
++            }
+         }
+ 
++    private fun tdidIssuanceDecision(
++        credentialRequest: CredentialRequest,
++        session: IssuanceSession,
++        proofCheck: String,
++        response: CredentialResponse?,
++        failure: Throwable?,
++    ) = runCatching {
++        if (!TdidEvents.enabled) return@runCatching
++        val sessionRef = TdidEvents.local("issuance_session", session.id)
++        val refs = mutableMapOf("session_ref" to sessionRef)
++        // full serialized key-proof bytes (jwt or cwt) as received
++        (credentialRequest.proof?.jwt ?: credentialRequest.proof?.cwt)?.let { refs["proof_ref"] = TdidEvents.local("proof", it) }
++        val credential = response?.credential
++        val credentialBytes = when (credential) {
++            null, is JsonNull -> null
++            is JsonPrimitive -> credential.content
++            else -> credential.toString()
++        }
++        credentialBytes?.let { refs["output_ref"] = TdidEvents.local("credential", it) }
++        val (outcome, reason) = when {
++            failure is CredentialError -> "reject" to failure.errorCode.name
++            failure != null -> "error" to (failure::class.simpleName ?: "exception")
++            credentialBytes != null -> "issue" to null
++            else -> "pending" to "deferred"
++        }
++        TdidEvents.emit(
++            eventType = "ISSUANCE_DECISION",
++            workflowRef = "issuer-session:$sessionRef",
++            required = listOf("credential_key_proof_validation"),
++            results = mapOf("credential_key_proof_validation" to proofCheck),
++            outcome = outcome,
++            reason = reason,
++            refs = refs,
++        )
++    }.onFailure { log.error(it) { "T-DID collection point failed" } }
++
+     fun generateDeferredCredentialResponse(acceptanceToken: String): CredentialResponse = runBlocking {
+         val accessInfo =
+             OpenID4VC.verifyAndParseToken(

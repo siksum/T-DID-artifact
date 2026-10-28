@@ -1,0 +1,20 @@
+{
+  "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+  "python": "3.12.3",
+  "node": "v20.20.2",
+  "java": "openjdk version \"21.0.12.1\" 2026-08-18 LTS\nOpenJDK Runtime Environment Temurin-21.0.12.1+1 (build 21.0.12.1+1-LTS)\nOpenJDK 64-Bit Server VM Temurin-21.0.12.1+1 (build 21.0.12.1+1-LTS, mixed mode, sharing)\n",
+  "cpu": "AMD EPYC Processor (with IBPB)",
+  "pinned_product_commits": {
+    "waltid": "f5b5995059c4ab69d6bc73f434c72d1574188963",
+    "credo": "3c32928107639bc355f82d4ba11c4d91901e11cb"
+  },
+  "measurement_source_commit": "0d8718cb5ea1fdf5998c1503a8933432ffdb40f2",
+  "files": {
+    "experiments/eval/product_cost.py": "59783caeebcb96df3eca3b050cfa44eb20eda81a4c61df5de8f9636c5f55d258",
+    "testbed/tdid/waltid/run_waltid.py": "6c0e2f443fcc22fe77d0cdec8e3391771ff14f101578e24ddb602e82885cb985",
+    "testbed/tdid/credo/tdid-cost.e2e.test.ts": "b5fd1d0fde4da1465058d881300f5d86b784574ba9d4a6794d289ec6aa560d6b",
+    "waltid-issuer-api-1.0.0-SNAPSHOT.jar": "6f413616b9e70e09754dc500670e2c02d5d77754d0211d16d414c82c2c1b73a1",
+    "waltid-service-commons-1.0.0-SNAPSHOT.jar": "02167b328c591fece64df5f9fa48178ac5f65ac86ee479efab686ce6698c9fa3",
+    "waltid-openid4vc-jvm-1.0.0-SNAPSHOT.jar": "c1eb975bbf66bbe63a079fbeffa6b19446bb4abbd97e8d9df9c4082e4dcc93fa"
+  }
+}

@@ -1,0 +1,69 @@
+# TDID-THR-012 Credential-use tracking through an issuer-created one-to-one status handle
+# Source analysis: research/candidates/CAND-20260814-OBS-GAP-THR-011-015.yaml (TDID-THR-012 row),
+# CAND-20260908-CH6-THR-012-REAFFIRMED.yaml (unchanged definition); primary sources Bitstring Status List 1.0
+# 6.6 and VC Data Model 2.0 8.11.
+# Three producers, two joins:
+#   issuer ISSUANCE_DECISION (outcome issue): status_handle_ref, credential_ref  -> handle cardinality
+#   status_service STATUS_FETCHED (receipt): status_handle_ref, status_request_ref, control/mapping facts
+#   verifier STATUS_FETCHED (request sent): status_request_ref, status_fetch_for_validation
+# Handle cardinality: preferably the allocation monitor's count on the receipt
+# (status_handle_assigned_credentials, covers assignments made before collection); otherwise counted by the
+# rule from issuer history that is complete from a declared stream start. "One-to-one" itself is never a
+# producer field.
+# Where the join runs (privacy): the whole rule runs in one T-DID instance operated for the issuer's
+# allocation audit, the party that holds the allocation-audit key of status_handle_ref. The issuer and its
+# status service export only keyed handle refs, the count and the control facts; the verifier exports only
+# status_request_ref and status_fetch_for_validation over the already authorized telemetry edge. Raw status
+# URLs, indexes, credentials and request logs never leave their producers, and the per-request verdict is the
+# only output shared beyond that instance.
+# Producer contract: an issued credential that carries a status reference must carry status_handle_ref or
+# declare it in `missing` / provenance Unavailable; an undeclared absence means no status was assigned.
+threat: TDID-THR-012
+refs:
+  status_handle_ref:
+    produced_by: [issuer, status_service]
+    meaning: >-
+      Commitment over one status resource or status verification key (for example a status list credential
+      URL) as assigned at issuance and as requested at the status service. Keyed with an allocation-audit key
+      held by the issuer's T-DID collector for one audit epoch and shared only with the collector of a status
+      service the issuer operates; an independent status service cannot compute it and omits it.
+    reveals: Which issued credentials share a status resource and which status-service receipts ask for it (equality only); never the URL, index, credential or holder.
+  status_request_ref:
+    produced_by: [verifier, status_service]
+    meaning: >-
+      Commitment over a per-request value that already exists on the status retrieval edge and both ends
+      observe (for example an existing request identifier or a TLS exporter value of the connection), keyed
+      with a key shared by the two collectors over an already authorized telemetry edge. Never added to the
+      status protocol request for monitoring; absent when no such value exists.
+    reveals: That one verifier status request and one status-service receipt are the same request.
+facts:
+  status_fetch_for_validation:
+    type: boolean
+    produced_by: [verifier]
+    meaning: >-
+      True when the verifier sent the status request while validating a presented credential in an active
+      validation workflow; false for prefetch, cache refresh or any request not tied to a validation.
+    reveals: Whether a status request was validation-time.
+  status_server_issuer_controlled:
+    type: boolean
+    produced_by: [status_service]
+    meaning: >-
+      Configured governance fact of the serving party: true when the party that received the status request
+      is the issuer or a service operated under the issuer's control.
+    reveals: Whether the status observer is issuer-controlled; not its identity.
+  status_server_mapping_access:
+    type: boolean
+    produced_by: [status_service]
+    meaning: >-
+      Configured fact of the serving party: true when it can read the issuer's assignment of status resources
+      to credentials.
+    reveals: Whether the observer can map a requested status resource to a credential.
+  status_handle_assigned_credentials:
+    type: integer
+    produced_by: [status_service]
+    meaning: >-
+      Number of issued credentials the issuer's allocation assigns to the requested status resource when this
+      request was served, read from the issuer's allocation monitor by the collector of an issuer-operated
+      status service (one that has mapping access). Includes assignments made before T-DID collection began.
+      Absent when the serving party cannot read the allocation.
+    reveals: Whether the requested status resource is shared; local to the audit instance, never exported with the handle or request.

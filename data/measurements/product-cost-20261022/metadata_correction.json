@@ -1,0 +1,15 @@
+{
+  "scope": "metadata only; raw timing, event, oracle and per-block plan files remain unchanged",
+  "credo_plan_template": {
+    "inherited_run_id": "RUN-20261020-CREDO-001",
+    "inherited_unused_threat": "TDID-THR-021"
+  },
+  "authoritative_run": "product-cost-20261022",
+  "authoritative_block_identity": "directory name and completion.json",
+  "actual_executed_threats": [
+    "TDID-THR-015"
+  ],
+  "actual_protocol": "protocol.json at run root; 10 paired blocks/product, warmup50+measured100 cases/block",
+  "reason": "cost fixture reused the existing request/collector helpers and inherited their historical descriptive plan; no THR-021 case executes",
+  "measurement_source_commit": "0d8718cb5ea1fdf5998c1503a8933432ffdb40f2"
+}

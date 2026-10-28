@@ -1,0 +1,103 @@
+--- /dev/null
++++ b/waltid-services/waltid-service-commons/src/main/kotlin/id/walt/commons/tdid/TdidEvents.kt
+@@ -0,0 +1,100 @@
++package id.walt.commons.tdid
++
++import kotlinx.serialization.json.*
++import java.io.File
++import java.io.FileOutputStream
++import java.time.Instant
++import java.time.temporal.ChronoUnit
++import javax.crypto.Mac
++import javax.crypto.spec.SecretKeySpec
++
++/**
++ * T-DID collection point writer (testbed instrumentation, off unless TDID_EVENTS_PATH is set).
++ *
++ * Writes T-DID security events (schema tdid-event/1.0) as JSON lines. One writer per process: the
++ * sequence number is gap-free per process and seq 0 carries stream_start, because the process starts
++ * with empty in-memory state. Refs are HMAC-SHA256 commitments; keys come from the environment and stay
++ * in process memory. No raw proof, token, credential or presentation is ever written.
++ *
++ * TDID_EVENTS_PATH  file to append to          TDID_INSTANCE  producer instance name
++ * TDID_ROLE         producer role               TDID_POLICY    JSON {id, version, params} the deployment enforces
++ * TDID_LOCAL_KEY    hex key, this producer only TDID_JOINT_KEY hex key shared with one partner (joint refs)
++ */
++private fun unhex(s: String): ByteArray = ByteArray(s.length / 2) { s.substring(2 * it, 2 * it + 2).toInt(16).toByte() }
++
++object TdidEvents {
++    private val path: String? = System.getenv("TDID_EVENTS_PATH")
++    val enabled: Boolean = path != null
++    private val localKey: ByteArray? = System.getenv("TDID_LOCAL_KEY")?.let(::unhex)
++    private val jointKey: ByteArray? = System.getenv("TDID_JOINT_KEY")?.let(::unhex)
++    private val role: String = System.getenv("TDID_ROLE") ?: "unknown"
++    private val instance: String = System.getenv("TDID_INSTANCE") ?: "walt.id $role"
++    private val policy: JsonObject? = System.getenv("TDID_POLICY")?.let { Json.parseToJsonElement(it).jsonObject }
++    private val lock = Any()
++    private var seq = 0L
++
++    private fun hmac(key: ByteArray?, domain: String, value: String): String {
++        requireNotNull(key) { "T-DID commitment key not configured" }
++        val mac = Mac.getInstance("HmacSHA256")
++        mac.init(SecretKeySpec(key, "HmacSHA256"))
++        return mac.doFinal("$domain\u0000$value".toByteArray(Charsets.UTF_8)).joinToString("") { "%02x".format(it) }
++    }
++
++    /** Commitment only this producer can compute. */
++    fun local(domain: String, value: String) = hmac(localKey, domain, value)
++
++    /** Commitment shared with exactly one partner producer (same input -> same value at both). */
++    fun joint(domain: String, value: String) = hmac(jointKey, domain, value)
++
++    fun emit(
++        eventType: String,
++        workflowRef: String,
++        required: List<String>,
++        results: Map<String, String>,
++        outcome: String,
++        reason: String? = null,
++        refs: Map<String, String> = emptyMap(),
++    ) {
++        if (!enabled) return
++        val occurredAt = Instant.now().truncatedTo(ChronoUnit.MICROS).toString()
++        synchronized(lock) {
++            val n = seq
++            val event = buildJsonObject {
++                put("schema_version", "tdid-event/1.0")
++                put("event_id", "$instance#$n")
++                put("event_type", eventType)
++                put("occurred_at", occurredAt)
++                putJsonObject("producer") {
++                    put("role", role)
++                    put("implementation", "walt.id")
++                    put("instance", instance)
++                    put("seq", n)
++                    if (n == 0L) put("stream_start", true)
++                }
++                put("workflow_ref", workflowRef)
++                put("policy", policy ?: buildJsonObject { put("id", "unspecified"); put("version", "0") })
++                putJsonObject("checks") {
++                    putJsonArray("required") { required.forEach { add(it) } }
++                    putJsonArray("performed") {
++                        results.filterValues { it in setOf("pass", "fail", "error") }.keys.forEach { add(it) }
++                    }
++                    putJsonObject("results") { results.forEach { (k, v) -> put(k, v) } }
++                }
++                putJsonObject("decision") {
++                    put("outcome", outcome)
++                    if (reason != null) put("reason_class", reason)
++                }
++                if (refs.isNotEmpty()) putJsonObject("refs") { refs.forEach { (k, v) -> put(k, v) } }
++                putJsonObject("provenance") {
++                    put("occurred_at", "Instrumented")
++                    put("decision.outcome", "Instrumented")
++                    results.keys.forEach { put("checks.$it", "Instrumented") }
++                    refs.keys.forEach { put("refs.$it", "Instrumented") }
++                }
++                putJsonObject("integrity") { put("result", "not_checked") }
++            }
++            FileOutputStream(File(path!!), true).use { it.write((event.toString() + "\n").toByteArray(Charsets.UTF_8)) }
++            seq = n + 1
++        }
++    }
++}

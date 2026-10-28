@@ -1,0 +1,16 @@
+{
+  "status": "completed",
+  "product": "credo",
+  "mode": "on",
+  "repetitions": 30,
+  "command": [
+    "node",
+    "node_modules/vitest/vitest.mjs",
+    "run",
+    "--project",
+    "e2e",
+    "--no-cache",
+    "packages/openid4vc/tests/tdid-cost.e2e.test.ts"
+  ],
+  "source_commit": "3c32928107639bc355f82d4ba11c4d91901e11cb"
+}

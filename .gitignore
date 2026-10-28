@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+*.egg-info/
+.venv*/
+.pytest_cache/
+.ruff_cache/
+dist/
+build/
+results/
+experiments/eval/monitors/vendor/*
+!experiments/eval/monitors/vendor/README.md
+.DS_Store

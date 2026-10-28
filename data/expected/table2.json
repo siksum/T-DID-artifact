@@ -1,0 +1,222 @@
+{
+  "rows": [
+    {
+      "row": "Earlier records (history)",
+      "cells": [
+        "V",
+        "V",
+        "V",
+        "V",
+        "-",
+        "-"
+      ],
+      "counts": [
+        {
+          "no_attack->withheld": 12
+        },
+        {
+          "attack->withheld": 3
+        },
+        {
+          "no_attack->withheld": 9
+        },
+        {
+          "attack->withheld": 3
+        },
+        {
+          "no_attack->no_attack": 3,
+          "withheld->withheld": 6
+        },
+        {
+          "withheld->withheld": 3
+        }
+      ]
+    },
+    {
+      "row": "Missing-evidence verdict",
+      "cells": [
+        "-",
+        "-",
+        "-",
+        "-",
+        "X",
+        "X"
+      ],
+      "counts": [
+        {
+          "no_attack->no_attack": 12
+        },
+        {
+          "attack->attack": 3
+        },
+        {
+          "no_attack->no_attack": 9
+        },
+        {
+          "attack->attack": 3
+        },
+        {
+          "no_attack->no_attack": 3,
+          "withheld->no_attack": 6
+        },
+        {
+          "withheld->no_attack": 3
+        }
+      ]
+    },
+    {
+      "row": "Final result",
+      "cells": [
+        "-",
+        "V",
+        "-",
+        "V",
+        "V",
+        "-"
+      ],
+      "counts": [
+        {
+          "no_attack->no_attack": 12
+        },
+        {
+          "attack->withheld": 3
+        },
+        {
+          "no_attack->no_attack": 9
+        },
+        {
+          "attack->withheld": 3
+        },
+        {
+          "no_attack->withheld": 3,
+          "withheld->withheld": 6
+        },
+        {
+          "withheld->withheld": 3
+        }
+      ]
+    },
+    {
+      "row": "Flow link (proof / request / session refs)",
+      "cells": [
+        "V",
+        "V",
+        "V",
+        "V",
+        "V",
+        "-"
+      ],
+      "counts": [
+        {
+          "no_attack->withheld": 12
+        },
+        {
+          "attack->withheld": 3
+        },
+        {
+          "no_attack->withheld": 9
+        },
+        {
+          "attack->withheld": 3
+        },
+        {
+          "no_attack->withheld": 3,
+          "withheld->withheld": 6
+        },
+        {
+          "withheld->withheld": 3
+        }
+      ]
+    },
+    {
+      "row": "Security-check result",
+      "cells": [
+        "-",
+        "V",
+        "-",
+        "V",
+        "-",
+        "-"
+      ],
+      "counts": [
+        {
+          "no_attack->no_attack": 12
+        },
+        {
+          "attack->withheld": 3
+        },
+        {
+          "no_attack->no_attack": 9
+        },
+        {
+          "attack->withheld": 3
+        },
+        {
+          "no_attack->no_attack": 3,
+          "withheld->withheld": 6
+        },
+        {
+          "withheld->withheld": 3
+        }
+      ]
+    },
+    {
+      "row": "Provenance, integrity",
+      "cells": [
+        "-",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-"
+      ],
+      "counts": [
+        {
+          "no_attack->no_attack": 12
+        },
+        {
+          "attack->attack": 3
+        },
+        {
+          "no_attack->no_attack": 9
+        },
+        {
+          "attack->attack": 3
+        },
+        {
+          "no_attack->no_attack": 3,
+          "withheld->withheld": 6
+        },
+        {
+          "withheld->withheld": 3
+        }
+      ]
+    }
+  ],
+  "columns": [
+    {
+      "product": "waltid",
+      "truth": "no_attack"
+    },
+    {
+      "product": "waltid",
+      "truth": "attack"
+    },
+    {
+      "product": "credo",
+      "truth": "no_attack"
+    },
+    {
+      "product": "credo",
+      "truth": "attack"
+    },
+    {
+      "product": "credo-vp",
+      "truth": "no_attack"
+    },
+    {
+      "product": "credo-vp",
+      "truth": "attack"
+    }
+  ]
+}

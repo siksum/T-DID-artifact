@@ -1,0 +1,69 @@
+# TDID-THR-009 Resolver denial of service through attacker-requested cache bypass
+# Source analysis: research/candidates/CAND-20260814-OBS-GAP-THR-006-010.yaml (TDID-THR-009 row),
+# definition reaffirmed unchanged by CAND-20260908-CH6-THR-009-REAFFIRMED.yaml.
+# Carried on the common RESOLUTION_DECISION of every resolution request. Rate, work and attribution are
+# computed by the rule from the resolver's history inside one rate window.
+# Reuses from _common: RESOLUTION_DECISION, check resolver_availability_slo (on this decision: the resolver's
+# comparison of its trailing rate-window latency, error and denial rates with its availability objective).
+threat: TDID-THR-009
+refs:
+  requester_scoped_ref:
+    produced_by: [resolver]
+    meaning: >-
+      Resolver-local keyed bucket over the authenticated rate-limit principal (or, only where privacy and legal
+      policy allow, the network origin), rotated every rate window. Raw IP, account, tenant or DID never leave the resolver.
+    reveals: Which requests inside one rate window came from the same requester bucket; nothing across windows.
+facts:
+  requester_scope_class:
+    type: enum
+    enum: [untrusted, trusted, authorized_maintenance, authorized_test]
+    produced_by: [resolver]
+    meaning: Use class the resolver's configured trust policy assigns to the requester. A public endpoint that permits noCache still classifies anonymous callers as untrusted.
+    reveals: Whether the requester is outside the operator's trusted or explicitly authorized uses.
+  no_cache_admission:
+    type: enum
+    enum: [admitted, rejected, not_requested]
+    produced_by: [resolver]
+    meaning: Whether the request asked for noCache and, if so, whether the resolver admitted that option.
+    reveals: Whether a cache-bypass request was honoured at the entry point.
+  cache_enabled:
+    type: boolean
+    produced_by: [resolver]
+    meaning: True when the resolver's cache was enabled for this request's method and target class by configuration.
+    reveals: Whether there was cached work that a bypass could defeat.
+  cache_bypassed:
+    type: boolean
+    produced_by: [resolver]
+    meaning: True when the enabled cache skipped both lookup and reuse for this request.
+    reveals: Whether the bypass was actually applied, not only requested.
+  upstream_requests:
+    type: integer
+    produced_by: [resolver]
+    meaning: Number of outbound requests to method drivers, ledgers or networks performed for this request (count).
+    reveals: The uncached upstream work this request caused.
+  window_upstream_requests:
+    type: integer
+    produced_by: [resolver]
+    meaning: Total outbound upstream requests of the resolver instance over the trailing policy rate window ending at this decision, for all requesters (count).
+    reveals: The total upstream work against which one requester's share is measured.
+checks:
+  no_cache_authorization:
+    produced_by: [resolver]
+    meaning: The resolver's authorization of the requester for the noCache option. A separate obligation, not a threat-success condition.
+policy_params:
+  rate_window_seconds:
+    type: number
+    example: 60
+    meaning: Length of the rate window used for bucket rotation, request counting and the window metrics. A deployment policy, not mandated by DID Resolution 0.3; unset leaves the dependent condition unknown.
+  max_bypass_requests_per_window:
+    type: integer
+    example: 10
+    meaning: Admitted and applied noCache requests one requester bucket may make per rate window. A deployment policy, not mandated by DID Resolution 0.3; unset leaves the dependent condition unknown.
+  bypass_work_threshold:
+    type: integer
+    example: 50
+    meaning: Upstream requests caused by one bucket's applied bypasses per rate window that count as expensive work. A deployment policy, not mandated by DID Resolution 0.3; unset leaves the dependent condition unknown.
+  attributed_work_share_min:
+    type: number
+    example: 0.5
+    meaning: Minimum share of the window's upstream work caused by one bucket's applied bypasses for degradation to be attributed to it rather than to unrelated load. A deployment policy, not mandated by DID Resolution 0.3; unset leaves the dependent condition unknown.

@@ -1,0 +1,60 @@
+{
+  "run_id": "RUN-20261020-CREDO-001",
+  "written_at": "2026-10-21T16:45:50.717Z",
+  "product": {
+    "name": "Credo TS (@credo-ts/openid4vc)",
+    "source_commit": "3c32928107639bc355f82d4ba11c4d91901e11cb",
+    "node": "v20.20.2"
+  },
+  "collection": {
+    "added": "tdid-events.jsonl written by collection points wrapping OpenId4VcIssuerService.createCredentialResponse / verifyCredentialRequestProofs and OpenId4VpVerifierService.verifyAuthorizationResponse; nonce/audience comparison reports from patches/",
+    "native": "sdk.jsonl: IssuanceSessionStateChanged, VerificationSessionStateChanged, credentialRequestToCredentialMapper calls (commitments only)",
+    "client": "http.jsonl: test-client and holder HTTP traffic (body hashes only)",
+    "truth": "oracle.jsonl, case-design.jsonl: computed by the harness from client responses and the relying party session store"
+  },
+  "repetitions": 30,
+  "threats": {
+    "TDID-THR-015": {
+      "scenarios": [
+        "fresh",
+        "different_proof",
+        "same_session_reuse",
+        "new_session_reuse",
+        "bad_signature"
+      ],
+      "issuer_policy": {
+        "id": "tdid-credo-issuer",
+        "version": "1",
+        "params": {
+          "allowed_proof_uses": 1
+        }
+      },
+      "expected_truth": {
+        "fresh": "not_succeeded",
+        "different_proof": "not_succeeded",
+        "same_session_reuse": "succeeded (second offered configuration; Credo nonce is a stateless signed JWT, no seen-proof cache)",
+        "new_session_reuse": "succeeded (same reason)",
+        "bad_signature": "not_succeeded (invalid_proof)"
+      }
+    },
+    "TDID-THR-021": {
+      "scenarios": [
+        "own_login",
+        "replay_new_session",
+        "retry_same_transaction"
+      ],
+      "formats": [
+        "dc+sd-jwt",
+        "jwt_vc_json"
+      ],
+      "verifier_policy": {
+        "id": "tdid-credo-verifier",
+        "version": "1",
+        "params": {
+          "presentation_without_holder_binding_accepted": false
+        }
+      },
+      "expected_truth": "not_succeeded everywhere (Credo verifier always enforces key-binding nonce and audience)"
+    }
+  }
+}

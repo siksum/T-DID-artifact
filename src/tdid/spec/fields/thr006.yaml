@@ -1,0 +1,32 @@
+# TDID-THR-006 Consumption of tampered external content during DID or VC processing
+# Source analysis: research/candidates/CAND-20260814-OBS-GAP-THR-006-010.yaml (TDID-THR-006 row),
+# definition reaffirmed unchanged by CAND-20260908-CH6-THR-006-REAFFIRMED.yaml.
+threat: TDID-THR-006
+event_types:
+  CONTENT_USE_DECISION:
+    produced_by: [verifier, wallet, resolver, issuer]
+    meaning: >-
+      The consuming component decided whether one retrieved external resource (JSON-LD context, schema,
+      status object or linked resource) enters a processing stage of a DID or VC operation. accept means
+      the content was handed to that stage, reject means it was refused before use, error means the stage
+      failed. Retrieving the content without handing it to a processing stage is not consumption and is not
+      recorded by this event.
+refs:
+  trusted_content_ref:
+    produced_by: [verifier, wallet, resolver, issuer]
+    meaning: >-
+      Commitment, with the same algorithm and key as content_ref, over the content bytes that the trusted
+      registry or pinned policy designates for this resource at use time, including permitted publisher updates.
+    reveals: Whether the bytes actually used equal the trusted version (equality only).
+  processing_output_ref:
+    produced_by: [verifier, wallet, resolver, issuer]
+    meaning: Commitment over the output of the processing stage (for example expanded or canonicalized statements, schema validation result, decoded status) computed with the content that was used.
+    reveals: Together with baseline_output_ref, whether the used content changed the processing result.
+  baseline_output_ref:
+    produced_by: [verifier, wallet, resolver, issuer]
+    meaning: Commitment over the output of the same processing stage on the same input computed with the trusted content instead of the used content.
+    reveals: The processing result the operation would have had with the trusted version.
+checks:
+  external_resource_integrity:
+    produced_by: [verifier, wallet, resolver, issuer]
+    meaning: The consuming component's comparison of the retrieved content with the trusted version or commitment before use.

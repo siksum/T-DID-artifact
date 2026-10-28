@@ -1,0 +1,46 @@
+# TDID-THR-017 Cross-service Transaction Code phishing through credential issuance
+# Source analysis: research/candidates/CAND-20260815-OBS-GAP-THR-016-020.yaml (TDID-THR-017 row)
+# Definition: research/candidates/CAND-20260908-CH6-THR-017-REAFFIRMED.yaml (unchanged definition).
+# The OBS-GAP named checks transaction_code_origin_confinement and cross_service_transaction_code_join are
+# computed by the rule from the refs below. malicious_token_endpoint_receipt is narrowed to the Wallet's own
+# acknowledged delivery. attacker_external_redemption_attribution has no honest producer and is not a field.
+# Observability limit: tx_code_ref, receiving_endpoint_ref and code_origin_ref need one comparison key shared
+# by the Wallet and the code-issuing service. In the attack the code comes from an arbitrary external service
+# the Wallet cannot identify, so that key cannot be provisioned in advance; the join exists only where the
+# Wallet and the service are already federated. Outside such a federation the service record carries no
+# joinable tx_code_ref, EndpointOutsideCodeOrigin and SameCodeRedeemedAtOrigin stay unknown, and the threat is
+# structurally blind beyond CodeDeliveredToEndpoint. The rule never returns succeeded.
+threat: TDID-THR-017
+event_types:
+  TRANSACTION_CODE_SUBMITTED:
+    produced_by: [wallet]
+    meaning: The Wallet sent a user-entered Transaction Code in a pre-authorized-code token request to a Token Endpoint.
+  TRANSACTION_CODE_REDEEMED:
+    produced_by: [issuer, relying_party, external_service]
+    meaning: The service that issued a Transaction Code decided on one redemption of that code (accept = the code was accepted and access granted).
+refs:
+  tx_code_ref:
+    produced_by: [wallet, issuer, relying_party, external_service]
+    meaning: Commitment over the Transaction Code bytes under a comparison key held by both the Wallet and the code-issuing service for one authorized comparison; never a raw or globally reusable digest. Computable only when the Wallet and that service share such a key in advance (a federation); the Wallet cannot tell which service issued a code a user types, so for an arbitrary external service the value cannot be joined.
+    reveals: Whether the code a Wallet sent is the code a service later redeemed (equality only).
+  receiving_endpoint_ref:
+    produced_by: [wallet]
+    meaning: Commitment, under the same comparison key, over the TLS-authenticated origin of the Token Endpoint the Wallet delivered the code to.
+    reveals: Whether the receiving endpoint is the code's originating service (equality only).
+  code_origin_ref:
+    produced_by: [issuer, relying_party, external_service]
+    meaning: Commitment, under the same comparison key, over the origin the code-issuing service authorizes to receive its codes (its own Token Endpoint or login origin).
+    reveals: The code's origin scope (equality only).
+checks:
+  token_request_delivery:
+    produced_by: [wallet]
+    meaning: The Wallet's transport confirmed that the token request carrying the code was delivered over TLS to the authenticated endpoint and a response was received. fail = not delivered; a constructed or attempted request alone is not pass.
+  transaction_code_validation:
+    produced_by: [issuer, relying_party, external_service]
+    meaning: The code-issuing service checked that the presented code matches an unexpired code it issued.
+policy_params:
+  max_clock_skew_seconds:
+    produced_by: [wallet, issuer, relying_party, external_service]
+    type: integer
+    example: 5
+    meaning: Clock difference between the Wallet and the code-issuing service within which the order of delivery and redemption is treated as unknown. A deployment choice. Read from the redemption record, else from the delivery record; unset on both = order unknown.

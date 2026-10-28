@@ -1,0 +1,1087 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://t-did.org/schema/event-1.0.json",
+  "title": "T-DID security event",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "event_id",
+    "event_type",
+    "occurred_at",
+    "producer",
+    "workflow_ref",
+    "policy",
+    "checks",
+    "decision",
+    "integrity"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "tdid-event/1.0"
+    },
+    "event_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 512
+    },
+    "event_type": {
+      "enum": [
+        "ACCOUNT_CLAIM_BOUND",
+        "CONTENT_RENDERED",
+        "CONTENT_USE_DECISION",
+        "DCQL_QUERY_EVALUATED",
+        "DID_URL_CONSTRUCTED",
+        "DID_URL_RESULT_USE_DECISION",
+        "ISSUANCE_DECISION",
+        "ISSUANCE_SECRET_ROUTED",
+        "KEY_LIFECYCLE_CHANGED",
+        "PAIRWISE_CONTEXT_BOUND",
+        "PRESENTATION_DECISION",
+        "PRESENTATION_OUTCOME_OBSERVED",
+        "PRESENTATION_REQUESTED",
+        "PROTECTED_RESOURCE_RESPONSE",
+        "RELYING_AUTHENTICATION_DECISION",
+        "RESOLUTION_DECISION",
+        "RESOLUTION_GATEWAY_DECISION",
+        "RESOLVER_HEALTH_MEASURED",
+        "STATUS_DECISION",
+        "STATUS_FETCHED",
+        "TOKEN_ISSUED",
+        "TRANSACTION_CODE_REDEEMED",
+        "TRANSACTION_CODE_SUBMITTED",
+        "WALLET_CREDENTIAL_REQUEST_SENT",
+        "WALLET_RESPONSE_SENT"
+      ]
+    },
+    "occurred_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "observed_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "producer": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "role",
+        "implementation",
+        "instance",
+        "seq"
+      ],
+      "properties": {
+        "role": {
+          "enum": [
+            "issuer",
+            "wallet",
+            "verifier",
+            "relying_party",
+            "resolver",
+            "status_service",
+            "did_controller",
+            "content_host",
+            "intermediary",
+            "external_service"
+          ]
+        },
+        "implementation": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 512
+        },
+        "instance": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 512
+        },
+        "seq": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "stream_start": {
+          "type": "boolean"
+        },
+        "service": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 512
+        }
+      }
+    },
+    "workflow_ref": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 512
+    },
+    "policy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "version"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 512
+        },
+        "version": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 512
+        },
+        "params": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "pairwise_separation_required": {
+              "type": "boolean"
+            },
+            "pairwise_shared_service_permitted": {
+              "type": "boolean"
+            },
+            "variant_allocation_limit": {
+              "type": "integer"
+            },
+            "variant_window_seconds": {
+              "type": "integer"
+            },
+            "attribution_min_share": {
+              "type": "number"
+            },
+            "cycle_work_share_min": {
+              "type": "number"
+            },
+            "rate_window_seconds": {
+              "type": "number"
+            },
+            "max_bypass_requests_per_window": {
+              "type": "integer"
+            },
+            "bypass_work_threshold": {
+              "type": "integer"
+            },
+            "attributed_work_share_min": {
+              "type": "number"
+            },
+            "status_evaluation_retention_seconds": {
+              "type": "integer"
+            },
+            "status_retry_window_seconds": {
+              "type": "integer"
+            },
+            "status_monitoring_authorized": {
+              "type": "boolean"
+            },
+            "issuer_render_templates_trusted": {
+              "type": "boolean"
+            },
+            "unlinkability_required": {
+              "type": "boolean"
+            },
+            "unlinkability_exception": {
+              "type": "boolean"
+            },
+            "allowed_proof_uses": {
+              "type": "integer"
+            },
+            "max_clock_skew_seconds": {
+              "type": "integer"
+            },
+            "probe_window_seconds": {
+              "type": "integer"
+            },
+            "pre_response_interaction_required": {
+              "type": "boolean"
+            },
+            "timing_distinguish_threshold_ms": {
+              "type": "integer"
+            },
+            "presentation_without_holder_binding_accepted": {
+              "type": "boolean"
+            }
+          }
+        }
+      }
+    },
+    "checks": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "required",
+        "performed",
+        "results"
+      ],
+      "properties": {
+        "required": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "application_role_authorization",
+              "caller_authentication",
+              "compromise_signal_authority",
+              "consumed_document_reverification",
+              "credential_key_proof_validation",
+              "did_document_verification",
+              "did_url_parameter_validation",
+              "external_resource_integrity",
+              "no_cache_authorization",
+              "presentation_response_delivery",
+              "presented_credential_issuer_signature",
+              "relative_ref_full_decoding",
+              "render_effect_monitoring",
+              "render_isolation",
+              "resolver_availability_slo",
+              "resolver_resource_threshold",
+              "rp_verification_result_check",
+              "service_base_path_confinement",
+              "status_entry_evaluation",
+              "token_request_delivery",
+              "transaction_code_validation",
+              "vp_client_id_binding_validation",
+              "vp_nonce_binding_validation",
+              "vp_response_code_validation"
+            ]
+          }
+        },
+        "performed": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "application_role_authorization",
+              "caller_authentication",
+              "compromise_signal_authority",
+              "consumed_document_reverification",
+              "credential_key_proof_validation",
+              "did_document_verification",
+              "did_url_parameter_validation",
+              "external_resource_integrity",
+              "no_cache_authorization",
+              "presentation_response_delivery",
+              "presented_credential_issuer_signature",
+              "relative_ref_full_decoding",
+              "render_effect_monitoring",
+              "render_isolation",
+              "resolver_availability_slo",
+              "resolver_resource_threshold",
+              "rp_verification_result_check",
+              "service_base_path_confinement",
+              "status_entry_evaluation",
+              "token_request_delivery",
+              "transaction_code_validation",
+              "vp_client_id_binding_validation",
+              "vp_nonce_binding_validation",
+              "vp_response_code_validation"
+            ]
+          }
+        },
+        "results": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "rp_verification_result_check": {
+              "enum": [
+                "pass",
+                "fail",
+                "not_performed",
+                "unavailable",
+                "error"
+              ]
+            },
+            "resolver_availability_slo": {
+              "enum": [
+                "pass",
+                "fail",
+                "not_performed",
+                "unavailable",
+                "error"
+              ]
+            },
+            "compromise_signal_authority": {
+              "enum": [
+                "pass",
+                "fail",
+                "not_performed",
+                "unavailable",
+                "error"
+              ]
+            },
+            "did_document_verification": {
+              "enum": [
+                "pass",
+                "fail",
+                "not_performed",
+                "unavailable",
+                "error"
+              ]
+            },
+            "consumed_document_reverification": {
+              "enum": [
+                "pass",
+                "fail",
+                "not_performed",
+                "unavailable",
+                "error"
+              ]
+            },
+            "resolver_resource_threshold": {
+              "enum": [
+                "pass",
+                "fail",
+                "not_performed",
+                "unavailable",
+                "error"
+              ]
+            },
+            "external_resource_integrity": {
+              "enum": [
+                "pass",
+                "fail",
+                "not_performed",
+                "unavailable",
+                "error"
+              ]
+            },
+            "did_url_parameter_validation": {
+              "enum": [
+                "pass",
+                "fail",
+                "not_performed",
+                "unavailable",
+                "error"
+              ]
+            },
+            "no_cache_authorization": {
+              "enum": [
+                "pass",
+                "fail",
+                "not_performed",
+                "unavailable",
+                "error"
+              ]
+            },
+            "relative_ref_full_decoding": {
+              "enum": [
+                "pass",
+                "fail",
+                "not_performed",
+                "unavailable",
+                "error"
+              ]
+            },
+            "service_base_path_confinement": {
+              "enum": [
+                "pass",
+                "fail",
+                "not_performed",
+                "unavailable",
+                "error"
+              ]
+            },
+            "status_entry_evaluation": {
+              "enum": [
+                "pass",
+                "fail",
+                "not_performed",
+                "unavailable",
+                "error"
+              ]
+            },
+            "render_isolation": {
+              "enum": [
+                "pass",
+                "fail",
+                "not_performed",
+                "unavailable",
+                "error"
+              ]
+            },
+            "render_effect_monitoring": {
+              "enum": [
+                "pass",
+                "fail",
+                "not_performed",
+                "unavailable",
+                "error"
+              ]
+            },
+            "presentation_response_delivery": {
+              "enum": [
+                "pass",
+                "fail",
+                "not_performed",
+                "unavailable",
+                "error"
+              ]
+            },
+            "credential_key_proof_validation": {
+              "enum": [
+                "pass",
+                "fail",
+                "not_performed",
+                "unavailable",
+                "error"
+              ]
+            },
+            "application_role_authorization": {
+              "enum": [
+                "pass",
+                "fail",
+                "not_performed",
+                "unavailable",
+                "error"
+              ]
+            },
+            "caller_authentication": {
+              "enum": [
+                "pass",
+                "fail",
+                "not_performed",
+                "unavailable",
+                "error"
+              ]
+            },
+            "token_request_delivery": {
+              "enum": [
+                "pass",
+                "fail",
+                "not_performed",
+                "unavailable",
+                "error"
+              ]
+            },
+            "transaction_code_validation": {
+              "enum": [
+                "pass",
+                "fail",
+                "not_performed",
+                "unavailable",
+                "error"
+              ]
+            },
+            "vp_response_code_validation": {
+              "enum": [
+                "pass",
+                "fail",
+                "not_performed",
+                "unavailable",
+                "error"
+              ]
+            },
+            "presented_credential_issuer_signature": {
+              "enum": [
+                "pass",
+                "fail",
+                "not_performed",
+                "unavailable",
+                "error"
+              ]
+            },
+            "vp_nonce_binding_validation": {
+              "enum": [
+                "pass",
+                "fail",
+                "not_performed",
+                "unavailable",
+                "error"
+              ]
+            },
+            "vp_client_id_binding_validation": {
+              "enum": [
+                "pass",
+                "fail",
+                "not_performed",
+                "unavailable",
+                "error"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "decision": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "outcome"
+      ],
+      "properties": {
+        "outcome": {
+          "enum": [
+            "issue",
+            "accept",
+            "reject",
+            "resolve",
+            "error",
+            "pending",
+            "none"
+          ]
+        },
+        "reason_class": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 512
+        }
+      }
+    },
+    "refs": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "session_ref": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 512
+        },
+        "account_ref": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 512
+        },
+        "subject_ref": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 512
+        },
+        "presentation_ref": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 512
+        },
+        "request_ref": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 512
+        },
+        "credential_ref": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 512
+        },
+        "issuer_ref": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 512
+        },
+        "verifier_ref": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 512
+        },
+        "did_ref": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 512
+        },
+        "did_url_ref": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 512
+        },
+        "document_ref": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 512
+        },
+        "content_ref": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 512
+        },
+        "relationship_ref": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 512
+        },
+        "holder_ref": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 512
+        },
+        "verification_material_ref": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 512
+        },
+        "service_material_ref": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 512
+        },
+        "key_scoped_ref": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 512
+        },
+        "signal_scope_ref": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 512
+        },
+        "document_object_ref": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 512
+        },
+        "cache_key_ref": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 512
+        },
+        "raw_did_url_ref": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 512
+        },
+        "decision_output_ref": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 512
+        },
+        "baseline_decision_output_ref": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 512
+        },
+        "trusted_content_ref": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 512
+        },
+        "processing_output_ref": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 512
+        },
+        "baseline_output_ref": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 512
+        },
+        "requester_did_ref": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 512
+        },
+        "edge_request_token": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 512
+        },
+        "selected_parameters_ref": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 512
+        },
+        "resolution_target_ref": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 512
+        },
+        "requester_scoped_ref": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 512
+        },
+        "service_base_ref": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 512
+        },
+        "target_scope_ref": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 512
+        },
+        "composed_target_ref": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 512
+        },
+        "first_dispatch_target_ref": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 512
+        },
+        "status_entry_ref": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 512
+        },
+        "processing_purpose_ref": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 512
+        },
+        "status_handle_ref": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 512
+        },
+        "status_request_ref": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 512
+        },
+        "stable_material_ref": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 512
+        },
+        "observer_domain_ref": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 512
+        },
+        "proof_ref": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 512
+        },
+        "output_ref": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 512
+        },
+        "issuance_secret_ref": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 512
+        },
+        "routed_component_ref": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 512
+        },
+        "authenticated_caller_ref": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 512
+        },
+        "tx_code_ref": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 512
+        },
+        "receiving_endpoint_ref": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 512
+        },
+        "code_origin_ref": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 512
+        },
+        "dcql_shape_ref": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 512
+        },
+        "frontend_session_ref": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 512
+        },
+        "account_claim_ref": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 512
+        }
+      }
+    },
+    "facts": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "compromise_reason_class": {
+          "enum": [
+            "compromised",
+            "rotated",
+            "revoked",
+            "other"
+          ]
+        },
+        "cache_allocation": {
+          "enum": [
+            "allocated",
+            "hit",
+            "not_cached"
+          ]
+        },
+        "cache_entry_count": {
+          "type": "integer"
+        },
+        "did_url_construction_method": {
+          "enum": [
+            "structured",
+            "concatenation",
+            "interpolation"
+          ]
+        },
+        "authorized_did_parameter_names": {
+          "type": "array"
+        },
+        "parsed_did_parameter_names": {
+          "type": "array"
+        },
+        "applied_did_parameter_names": {
+          "type": "array"
+        },
+        "dereference_trace": {
+          "type": "array"
+        },
+        "dereference_trace_complete": {
+          "type": "boolean"
+        },
+        "dereference_termination_reason": {
+          "enum": [
+            "completed",
+            "cycle_rejected",
+            "depth_limit",
+            "work_limit",
+            "timeout",
+            "overflow",
+            "resource_exhaustion",
+            "service_unavailable",
+            "error"
+          ]
+        },
+        "duplicate_parameter_names": {
+          "type": "integer"
+        },
+        "gateway_decision_basis": {
+          "enum": [
+            "authorization",
+            "cache_key",
+            "none"
+          ]
+        },
+        "requester_scope_class": {
+          "enum": [
+            "untrusted",
+            "trusted",
+            "authorized_maintenance",
+            "authorized_test"
+          ]
+        },
+        "no_cache_admission": {
+          "enum": [
+            "admitted",
+            "rejected",
+            "not_requested"
+          ]
+        },
+        "cache_enabled": {
+          "type": "boolean"
+        },
+        "cache_bypassed": {
+          "type": "boolean"
+        },
+        "upstream_requests": {
+          "type": "integer"
+        },
+        "window_upstream_requests": {
+          "type": "integer"
+        },
+        "resource_retrieval_outcome": {
+          "enum": [
+            "constructed_only",
+            "rejected",
+            "request_sent",
+            "access_succeeded",
+            "content_consumed"
+          ]
+        },
+        "status_evaluation_in_session": {
+          "type": "boolean"
+        },
+        "status_monitoring_consented": {
+          "type": "boolean"
+        },
+        "status_fetch_for_validation": {
+          "type": "boolean"
+        },
+        "status_server_issuer_controlled": {
+          "type": "boolean"
+        },
+        "status_server_mapping_access": {
+          "type": "boolean"
+        },
+        "status_handle_assigned_credentials": {
+          "type": "integer"
+        },
+        "rendered_content_source": {
+          "enum": [
+            "credential_claim",
+            "credential_display_metadata",
+            "issuer_render_template",
+            "external_resource",
+            "wallet_ui"
+          ]
+        },
+        "rendered_content_active": {
+          "type": "boolean"
+        },
+        "render_sink": {
+          "enum": [
+            "native_text",
+            "native_image",
+            "html_dom",
+            "html_webview",
+            "html_sandboxed_frame",
+            "template_engine",
+            "uri_handler"
+          ]
+        },
+        "sink_input_active": {
+          "type": "boolean"
+        },
+        "render_effect": {
+          "enum": [
+            "none",
+            "script_execution",
+            "network_request",
+            "storage_access",
+            "privileged_api_call",
+            "navigation",
+            "ui_action"
+          ]
+        },
+        "render_effect_origin": {
+          "enum": [
+            "content_context",
+            "host_application"
+          ]
+        },
+        "render_context_exclusive": {
+          "type": "boolean"
+        },
+        "material_profile": {
+          "type": "string"
+        },
+        "secret_readable_by_recipient": {
+          "type": "boolean"
+        },
+        "recipient_holds_application_credentials": {
+          "type": "boolean"
+        },
+        "dcql_value_refs": {
+          "type": "array"
+        },
+        "dcql_match_result": {
+          "enum": [
+            "match",
+            "no_match"
+          ]
+        },
+        "dcql_user_interaction": {
+          "enum": [
+            "none",
+            "completed_authorized",
+            "completed_declined"
+          ]
+        },
+        "dcql_visible_outcome_class": {
+          "enum": [
+            "presentation",
+            "error",
+            "no_response"
+          ]
+        },
+        "dcql_visible_outcome_delay_ms": {
+          "type": "integer"
+        },
+        "observed_outcome_class": {
+          "enum": [
+            "presentation",
+            "error",
+            "no_response"
+          ]
+        },
+        "vp_response_mode": {
+          "enum": [
+            "direct_post",
+            "direct_post.jwt",
+            "fragment",
+            "query",
+            "dc_api",
+            "dc_api.jwt",
+            "other"
+          ]
+        },
+        "account_claim_issuer_refs": {
+          "type": "array"
+        }
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": {
+        "enum": [
+          "Native",
+          "Instrumented",
+          "Derived",
+          "External",
+          "Unavailable",
+          "Configured"
+        ]
+      }
+    },
+    "missing": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "field",
+          "owner"
+        ],
+        "properties": {
+          "field": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 512
+          },
+          "owner": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 512
+          }
+        }
+      }
+    },
+    "integrity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "result"
+      ],
+      "properties": {
+        "commitment": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 512
+        },
+        "result": {
+          "enum": [
+            "verified",
+            "failed",
+            "not_checked"
+          ]
+        }
+      }
+    },
+    "visibility": {
+      "enum": [
+        "local_only",
+        "shareable"
+      ]
+    }
+  }
+}

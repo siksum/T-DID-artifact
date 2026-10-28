@@ -1,0 +1,46 @@
+# TDID-THR-010 DID service resource access outside the base path through relativeRef traversal
+# Source analysis: research/candidates/CAND-20260814-OBS-GAP-THR-006-010.yaml (TDID-THR-010 row),
+# definition reaffirmed unchanged by CAND-20260908-CH6-THR-010-REAFFIRMED.yaml.
+# Carried on the common RESOLUTION_DECISION of one service-resource dereference. All commitments use one
+# per-request key held by the dereferencer and its in-process resource client.
+threat: TDID-THR-010
+refs:
+  service_base_ref:
+    produced_by: [resolver]
+    meaning: >-
+      Commitment over the normalized origin and the path segments of the authorized service endpoint base path,
+      taken from the service entry of the resolved DID document version.
+    reveals: Together with target_scope_ref, whether the target stays inside the authorized origin and base path (equality only).
+  target_scope_ref:
+    produced_by: [resolver]
+    meaning: >-
+      Commitment over the origin and the first N path segments of the composed target after every encoding
+      layer of relativeRef was decoded and the URL was RFC 3986 normalized, where N is the number of segments
+      of the service base path (fewer segments are committed as they are).
+    reveals: Whether the composed target escaped the authorized origin or base path (equality with service_base_ref).
+  composed_target_ref:
+    produced_by: [resolver]
+    meaning: Commitment over the complete fully decoded and normalized target URL that relativeRef composition produced.
+    reveals: Which target the dereferencer constructed (equality only).
+  first_dispatch_target_ref:
+    produced_by: [resolver]
+    meaning: Commitment, computed by the resource client, over the normalized target of the first outbound request it actually sent for this dereference (before any redirect).
+    reveals: Whether the composed target is the one actually requested (equality with composed_target_ref).
+facts:
+  resource_retrieval_outcome:
+    type: enum
+    enum: [constructed_only, rejected, request_sent, access_succeeded, content_consumed]
+    produced_by: [resolver]
+    meaning: >-
+      Furthest step reached for the first dispatch target. constructed_only means a URL was returned without
+      a request, rejected means the dereferencer refused before any request, request_sent means the request
+      left the client, access_succeeded means a success response came back, content_consumed means the response
+      content was used by the dereferencer or relying component.
+    reveals: Whether an out-of-scope target was only constructed or actually requested or used.
+checks:
+  relative_ref_full_decoding:
+    produced_by: [resolver]
+    meaning: Decoding of every policy-recognized encoding layer of relativeRef before normalization and commitment, executed by the dereferencer or its instrumentation.
+  service_base_path_confinement:
+    produced_by: [resolver]
+    meaning: The dereferencer's own check that the composed target stays inside the authorized service origin and base path before dispatch.

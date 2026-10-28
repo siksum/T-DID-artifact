@@ -1,0 +1,78 @@
+{
+  "checked": 30,
+  "mismatches": [],
+  "withheld_by_tdid": [
+    {
+      "product": "credo-vp",
+      "case": "vp-1-1",
+      "pltl": "no_attack",
+      "fo": "no_attack",
+      "ltl3": "no_attack",
+      "tdid": "withheld"
+    },
+    {
+      "product": "credo-vp",
+      "case": "vp-1-2",
+      "pltl": "no_attack",
+      "fo": "no_attack",
+      "ltl3": "no_attack",
+      "tdid": "withheld"
+    },
+    {
+      "product": "credo-vp",
+      "case": "vp-1-3",
+      "pltl": "no_attack",
+      "fo": "no_attack",
+      "ltl3": "no_attack",
+      "tdid": "withheld"
+    },
+    {
+      "product": "credo-vp",
+      "case": "vp-2-1",
+      "pltl": "no_attack",
+      "fo": "no_attack",
+      "ltl3": "no_attack",
+      "tdid": "withheld"
+    },
+    {
+      "product": "credo-vp",
+      "case": "vp-2-2",
+      "pltl": "no_attack",
+      "fo": "no_attack",
+      "ltl3": "no_attack",
+      "tdid": "withheld"
+    },
+    {
+      "product": "credo-vp",
+      "case": "vp-2-3",
+      "pltl": "no_attack",
+      "fo": "no_attack",
+      "ltl3": "no_attack",
+      "tdid": "withheld"
+    },
+    {
+      "product": "credo-vp",
+      "case": "vp-3-1",
+      "pltl": "no_attack",
+      "fo": "no_attack",
+      "ltl3": "no_attack",
+      "tdid": "withheld"
+    },
+    {
+      "product": "credo-vp",
+      "case": "vp-3-2",
+      "pltl": "no_attack",
+      "fo": "no_attack",
+      "ltl3": "no_attack",
+      "tdid": "withheld"
+    },
+    {
+      "product": "credo-vp",
+      "case": "vp-3-3",
+      "pltl": "no_attack",
+      "fo": "no_attack",
+      "ltl3": "no_attack",
+      "tdid": "withheld"
+    }
+  ]
+}

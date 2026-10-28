@@ -1,0 +1,49 @@
+# TDID-THR-008 DID parameter injection through cross-component duplicate handling
+# Source analysis: research/candidates/CAND-20260814-OBS-GAP-THR-006-010.yaml (TDID-THR-008 row),
+# definition reaffirmed unchanged by CAND-20260908-CH6-THR-008-REAFFIRMED.yaml.
+# Cooperative: the outer component (role intermediary) emits RESOLUTION_GATEWAY_DECISION, the upstream resolver emits the common
+# RESOLUTION_DECISION; both carry the same edge_request_token and commitments under one comparison key.
+threat: TDID-THR-008
+event_types:
+  RESOLUTION_GATEWAY_DECISION:
+    produced_by: [intermediary]
+    meaning: >-
+      An outer proxy, gateway or cache in front of a DID resolver decided one resolution request. accept means
+      it forwarded the request upstream, resolve means it answered from its own cache without forwarding,
+      reject means it refused the request.
+refs:
+  edge_request_token:
+    produced_by: [intermediary, resolver]
+    meaning: >-
+      Fresh random token minted by the outer component for one incoming request and forwarded unchanged to the
+      upstream resolver, which records the value it received. Never derived from request content.
+    reveals: Which outer and upstream records concern the exact same request.
+  selected_parameters_ref:
+    produced_by: [intermediary, resolver]
+    meaning: >-
+      Keyed commitment, under a per-request comparison key shared only by the outer component and the upstream
+      resolver, over the canonicalized name-value pairs this component selected after its own duplicate-parameter handling.
+    reveals: Whether the two components selected the same parameter values (equality only, values stay local).
+  resolution_target_ref:
+    produced_by: [intermediary, resolver]
+    meaning: >-
+      Commitment, under the same per-request comparison key, over the resolution target (DID, version selector,
+      service selector, path) as this component interprets the request: for the outer component the target it
+      authorized or keyed its cache on, for the upstream resolver the target it actually resolved.
+    reveals: Whether the upstream operation acted on a different target than the outer decision was made for.
+facts:
+  duplicate_parameter_names:
+    type: integer
+    produced_by: [intermediary]
+    meaning: Number of DID URL parameter names that occur more than once in the original request, counted at ingress before any parser collapses them.
+    reveals: Whether the request carried duplicate parameters (count only, names and values stay local).
+  gateway_decision_basis:
+    type: enum
+    enum: [authorization, cache_key, none]
+    produced_by: [intermediary]
+    meaning: What the outer component used its selected parameters for. authorization means an access decision, cache_key means cache lookup or storage, none means it forwarded without a security or cache decision.
+    reveals: Whether an outer security or cache decision depended on the outer parameter selection.
+checks:
+  did_url_parameter_validation:
+    produced_by: [intermediary, resolver]
+    meaning: Syntax and duplicate-parameter policy validation of the DID URL executed by the component before acting on it; fail means the component refused the parameters.

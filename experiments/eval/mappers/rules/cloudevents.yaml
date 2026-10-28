@@ -1,0 +1,67 @@
+# T-DID event <-> CloudEvents 1.0.2 event. Primary-source copies: docs/eval-handoff/std-sources/ce_spec.md,
+# ce_distributed-tracing.md, ce_sequence.md, ce_partitioning.md.
+# Levels (see _common.yaml): core = context attributes of the core spec (id, source, specversion, type,
+# time, ...); ext = core + documented extensions distributed-tracing (traceparent), sequence
+# (sequence/sequencetype), partitioning (partitionkey). Arbitrary extension attributes and `data` are never used.
+standard: cloudevents
+layout: flat
+version: 1.0.2
+constants:
+  specversion: "1.0"
+slots:
+  event_id:
+    path: id
+    level: core
+    codec: verbatim
+    source: https://github.com/cloudevents/spec/blob/v1.0.2/cloudevents/spec.md#id (required)
+    why: Identifies the event; unique per source.
+  producer.instance:
+    path: source
+    level: core
+    codec: uri
+    source: https://github.com/cloudevents/spec/blob/v1.0.2/cloudevents/spec.md#source-1 (required, URI-reference)
+    why: "'Identifies the context in which an event happened' = the producing instance (percent-encoded)."
+  event_type:
+    path: type
+    level: core
+    codec: verbatim
+    source: https://github.com/cloudevents/spec/blob/v1.0.2/cloudevents/spec.md#type (required)
+    why: Type of event related to the originating occurrence.
+  occurred_at:
+    path: time
+    level: core
+    codec: verbatim
+    source: https://github.com/cloudevents/spec/blob/v1.0.2/cloudevents/spec.md#time (optional, RFC 3339)
+    why: Timestamp of when the occurrence happened.
+  producer.seq:
+    path: sequence
+    level: ext
+    codec: decimal_string
+    source: https://github.com/cloudevents/spec/blob/v1.0.2/cloudevents/extensions/sequence.md (sequence + sequencetype Integer)
+    why: "'Value expressing the relative order of the event' per source."
+  workflow_ref:
+    path: partitionkey
+    level: ext
+    codec: verbatim
+    source: https://github.com/cloudevents/spec/blob/v1.0.2/cloudevents/extensions/partitioning.md
+    why: "'defining a causal relationship/grouping between multiple events' (may be rewritten across hops)."
+  refs.request_ref:
+    path: traceparent
+    level: ext
+    codec: traceparent
+    source: https://github.com/cloudevents/spec/blob/v1.0.2/cloudevents/extensions/distributed-tracing.md (W3C traceparent)
+    why: Trace-id of the request across components; an equality-preserving 128-bit projection of request_ref.
+lost:
+  producer.role: No field; derived from type only when the T-DID event type has one producing role.
+  producer.implementation: No field (source identifies the instance, not the product).
+  producer.stream_start: No field.
+  producer.service: No field.
+  decision.outcome: No outcome attribute.
+  decision.reason_class: No field.
+  checks: No outcome attribute, so no per-check event can be carried.
+  refs.session_ref: No session attribute.
+  refs.frontend_session_ref: No session attribute.
+  other refs: No attribute for the identity of a cryptographic object.
+  facts: No attribute (e.g. vp_response_mode).
+  policy: No attribute.
+split: null

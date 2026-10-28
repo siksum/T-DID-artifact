@@ -1,0 +1,103 @@
+# T-DID event <-> OCSF 1.6.0 record. Primary-source copies: docs/eval-handoff/std-sources/ocsf_*.json.
+# Levels (see _common.yaml): core = required/recommended attributes of Base Event and API Activity (6003)
+# and of the objects they require; ext = core + OCSF optional attributes and OCSF 1.6.0 registered
+# profiles (datetime). Free-form `unmapped`, `metadata.tags`, `metadata.labels`, `policy.data` are never used.
+# Class: API Activity (class_uid 6003, category 6) for every T-DID event type; activity_id 99 (Other) with
+# api.operation naming the T-DID event type. OCSF validity of objects we have no value for (src_endpoint)
+# is out of scope; they are emitted empty.
+standard: ocsf
+layout: nested
+version: 1.6.0
+constants:
+  class_uid: 6003
+  category_uid: 6
+  activity_id: 99
+  type_uid: 600399
+  severity_id: 1
+  metadata.version: 1.6.0
+  src_endpoint: {}
+slots:
+  event_type:
+    path: api.operation
+    level: core
+    codec: verbatim
+    source: https://schema.ocsf.io/1.6.0/objects/api (operation, required; std-sources/ocsf_o_api.json)
+    why: "'Verb/Operation associated with the request'; api is required in API Activity."
+  occurred_at:
+    path: time
+    level: core
+    codec: epoch_ms
+    source: https://schema.ocsf.io/1.6.0/classes/base_event (time, required, timestamp_t ms)
+    why: Event time; millisecond resolution, so sub-millisecond digits are lost at core.
+  occurred_at@ext:
+    path: time_dt
+    level: ext
+    codec: verbatim
+    source: https://schema.ocsf.io/1.6.0/profiles/datetime (datetime profile listed in base_event profiles)
+    why: RFC 3339 datetime form of `time`, exact.
+  decision.outcome:
+    path: status_id
+    level: core
+    codec: ocsf_status
+    source: https://schema.ocsf.io/1.6.0/classes/base_event (status_id recommended; 0 Unknown, 1 Success, 2 Failure, 99 Other)
+    why: Normalized event status; Unknown is distinct from Failure. Omitted for action records.
+  decision.reason_class:
+    path: status_detail
+    level: core
+    codec: verbatim
+    source: https://schema.ocsf.io/1.6.0/classes/base_event (status_detail, recommended)
+    why: Status detail text of the event, as reported by the source.
+  producer.implementation:
+    path: metadata.product.name
+    level: core
+    codec: verbatim
+    source: https://schema.ocsf.io/1.6.0/objects/product (metadata.product required; 'The product that reported the event.')
+    why: Product that reported the event = implementation.
+  event_id:
+    path: metadata.uid
+    level: core
+    codec: verbatim
+    source: https://schema.ocsf.io/1.6.0/objects/metadata (uid, optional)
+    why: "'The logging system-assigned unique identifier of an event instance.'"
+  producer.seq:
+    path: metadata.sequence
+    level: core
+    codec: verbatim
+    source: https://schema.ocsf.io/1.6.0/objects/metadata (sequence, optional, integer_t)
+    why: Sequence number of the event; usable only with a producer instance, which OCSF does not carry here.
+  refs.request_ref:
+    path: metadata.correlation_uid
+    level: core
+    codec: verbatim
+    source: https://schema.ocsf.io/1.6.0/objects/metadata (correlation_uid, optional)
+    why: "'The unique identifier used to correlate events.' The cross-component join key of a request (verifier, wallet, relying party)."
+  refs.frontend_session_ref:
+    path: actor.session.uid
+    level: core
+    codec: verbatim
+    source: https://schema.ocsf.io/1.6.0/objects/actor (session optional) + objects/session (uid)
+    why: "'The user session from which the activity was initiated'. Most favourable reading for the standard: the deployment lets the verifier frontend and the relying party record one shared frontend-session id here, so it is read back as T-DID's joint frontend_session_ref (2026-10-20 main-agent decision, handoff section 8). The component-local session_ref is then not carried."
+lost:
+  producer.role: No producer-role field; derived from api.operation only when the T-DID event type has one producing role.
+  producer.instance: No instance field for the reporting component (product.uid identifies the product, not a deployment instance).
+  producer.service: No field.
+  producer.stream_start: No field.
+  workflow_ref: correlation_uid already carries request_ref (one role per field); no second grouping field.
+  refs.session_ref: The one session field carries the joint frontend session (favourable reading); the component-local session id is not carried.
+  other refs (proof_ref, output_ref, ...): No field for the identity of a cryptographic object; fingerprint/observables have no T-DID role.
+  facts: No field (e.g. vp_response_mode has no OCSF attribute).
+  policy: API Activity has no policy object; policy.data is free-form.
+  checks.required: No field for a declaration of required checks.
+# One extra record per named check, joined to the decision record by api.request.uid.
+split:
+  level: ext
+  kind_path: api.operation
+  kind_prefix: "check:"
+  outcome_path: status_id
+  outcome_codec: ocsf_status
+  join_path: api.request.uid
+  source: https://schema.ocsf.io/1.6.0/objects/request (uid 'The unique request identifier')
+  why: >-
+    The decision and the checks performed while handling it belong to one handled API request; api.request.uid
+    (set to the T-DID event_id) joins them. The check name goes in api.operation, the result in status_id.
+    not_performed/error/unavailable -> Unknown -> unavailable.

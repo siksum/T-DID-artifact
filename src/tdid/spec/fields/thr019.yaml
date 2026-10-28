@@ -1,0 +1,45 @@
+# TDID-THR-019 OpenID4VP direct_post session fixation through a relayed request
+# Source analysis: research/candidates/CAND-20260815-OBS-GAP-THR-016-020.yaml (TDID-THR-019 row),
+# CAND-20260908-CH6-THR-019-REAFFIRMED.yaml; primary source OpenID4VP 1.0 section 14.2.
+# Joins: verifier PRESENTATION_REQUESTED (request_ref, frontend_session_ref = initiating frontend session),
+# wallet WALLET_RESPONSE_SENT (request_ref; outcome none, event type in _common), relying-party
+# RELYING_AUTHENTICATION_DECISION (request_ref of the result it consumed, frontend_session_ref = session it
+# concluded).
+# request_ref (common vocabulary) is a joint ref here with three key holders: the verifier that creates the
+# request object, the wallet that answers it and the relying party that consumes its result. Their T-DID
+# collectors compute it over the same request object bytes under one commitment key they share for this
+# relationship (one key per verifier/relying-party deployment and wallet, not per request); the value is fresh
+# per request because every request object carries its own nonce, so it joins the three records of one
+# request and does not link different requests.
+# session_ref (common vocabulary) is component-local and is never compared across producers by this rule;
+# the cross-producer session comparison uses the joint frontend_session_ref below. With only local
+# session_ref values, InitiatingSessionConcluded stays unknown.
+# Judged: each relying decision, one subject per (request, concluding frontend session). The initiating
+# session's subject carries a provisional incomplete verdict from the request record until its decision
+# arrives.
+threat: TDID-THR-019
+refs:
+  frontend_session_ref:
+    produced_by: [verifier, relying_party]
+    meaning: >-
+      Joint commitment over the frontend (browser) session identifier: on PRESENTATION_REQUESTED the session
+      in which the verifier frontend created the request, on RELYING_AUTHENTICATION_DECISION the session the
+      relying party concluded with the result. Key holders: the verifier frontend and the relying party only,
+      which share one commitment key for this relationship, so equal values mean the same frontend session at
+      both. Absent when the two do not share such a key.
+    reveals: Whether the session that concluded with a request's result is the session that initiated the request (equality only); never the session identifier or cookie.
+facts:
+  vp_response_mode:
+    type: enum
+    enum: [direct_post, direct_post.jwt, fragment, query, dc_api, dc_api.jwt, other]
+    produced_by: [verifier]
+    meaning: OpenID4VP response_mode of the presentation request, as configured by the verifier that created it.
+    reveals: Whether the response went to a verifier endpoint by direct_post rather than back through the browser that started the request.
+checks:
+  vp_response_code_validation:
+    produced_by: [verifier, relying_party]
+    meaning: >-
+      When the result of a direct_post request is fetched for a frontend session, the verifier compares the
+      Response Code presented by that session with the one it returned in the Wallet's redirect_uri
+      (OpenID4VP 1.0 section 14.2). pass = matched; fail = absent or different; not_performed = no Response
+      Code mechanism is used on this retrieval path.

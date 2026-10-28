@@ -1,0 +1,9 @@
+
+ RUN  v4.1.7 T-DID/research/runs/RUN-20260908-CHAPTER6-FIVE-AXIS-002/apparatus/PAIRED-EVIDENCE-CREDO-001
+
+
+ Test Files  1 passed (1)
+      Tests  1 passed (1)
+   Start at  11:12:27
+   Duration  21.96s (transform 10.05s, setup 197ms, import 14.36s, tests 7.13s, environment 0ms)
+

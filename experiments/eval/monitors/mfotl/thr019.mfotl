@@ -1,0 +1,13 @@
+(* TDID-THR-019 attack at relying decision e (request r, concluding session s). Outputs = attack decisions.
+   preq(r,s,m): presentation request r created in frontend session s with response mode m.
+   wsent(r): Wallet sent a response for r. rpd(e,r,s): relying decision e for r in session s.
+   notuser(e): initiator is not the Wallet user; no component records it, so it never occurs in a log. *)
+EXISTS r, s.
+     rpd(e,r,s)
+ AND ONCE[1,*) (EXISTS s2. preq(r,s2,"direct_post") OR preq(r,s2,"direct_post.jwt"))
+ AND ONCE[1,*) wsent(r)
+ AND ONCE[1,*) (EXISTS m. preq(r,s,m))
+ AND (code(e,"fail") OR code(e,"not_performed"))
+ AND code(e,"fail")
+ AND notuser(e)
+ AND accept(e)

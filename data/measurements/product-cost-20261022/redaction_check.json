@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "pattern_counts": {
+    "compact_jwt": 0,
+    "private_json": 0,
+    "private_pem": 0
+  }
+}

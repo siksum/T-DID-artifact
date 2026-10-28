@@ -1,0 +1,9 @@
+(* Same condition as thr015.mfotl; one output (e, v) at every decision, v in {attack, no_attack}. *)
+LET attack(e) =
+  EXISTS p, o, n, c.
+       dec(e,p,o) AND pass(e) AND issue(e) AND allowed(e,n)
+   AND (c <- CNT o2; p ONCE[1,*) (EXISTS e2. dec(e2,p,o2) AND pass(e2) AND issue(e2)))
+   AND n < c + 1
+   AND NOT ONCE[1,*) (EXISTS e2. dec(e2,p,o) AND pass(e2) AND issue(e2))
+IN ((EXISTS p, o. dec(e,p,o)) AND attack(e) AND v = "attack")
+   OR ((EXISTS p, o. dec(e,p,o)) AND NOT attack(e) AND v = "no_attack")

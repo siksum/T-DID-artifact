@@ -1,0 +1,11 @@
+
+[1m[30m[46m RUN [49m[39m[22m [36mv4.1.7 [39m[90mbuild/credo-ts-3c32928107639bc355f82d4ba11c4d91901e11cb[39m
+
+ [32m✓[39m [30m[45m e2e [49m[39m packages/openid4vc/tests/tdid-cost.e2e.test.ts [2m([22m[2m1 test[22m[2m)[22m[33m 12675[2mms[22m[39m[35m 259 MB heap used[39m
+     [33m[2m✓[22m[39m THR-015 key-proof replay [33m 12669[2mms[22m[39m[35m 259 MB heap used[39m
+
+[2m Test Files [22m [1m[32m1 passed[39m[22m[90m (1)[39m
+[2m      Tests [22m [1m[32m1 passed[39m[22m[90m (1)[39m
+[2m   Start at [22m 18:46:35
+[2m   Duration [22m 28.48s[2m (transform 10.88s, setup 165ms, import 15.41s, tests 12.67s, environment 0ms)[22m
+

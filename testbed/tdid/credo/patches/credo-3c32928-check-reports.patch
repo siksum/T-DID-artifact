@@ -1,0 +1,74 @@
+--- a/packages/core/src/modules/sd-jwt-vc/SdJwtVcService.ts
++++ b/packages/core/src/modules/sd-jwt-vc/SdJwtVcService.ts
+@@ -393,13 +393,19 @@
+           }
+ 
+           // Assert `aud` and `nonce` claims
++          // T-DID collection point: report the audience and nonce comparisons Credo executes
++          const tdidCheck = (globalThis as { __tdidCheck?: (name: string, result: string) => void }).__tdidCheck
+           if (sdJwtVc.kbJwt.payload.aud !== keyBinding.audience) {
++            tdidCheck?.('vp_client_id_binding_validation', 'fail')
+             throw new SdJwtVcError('The key binding JWT does not contain the expected audience')
+           }
++          tdidCheck?.('vp_client_id_binding_validation', 'pass')
+ 
+           if (sdJwtVc.kbJwt.payload.nonce !== keyBinding.nonce) {
++            tdidCheck?.('vp_nonce_binding_validation', 'fail')
+             throw new SdJwtVcError('The key binding JWT does not contain the expected nonce')
+           }
++          tdidCheck?.('vp_nonce_binding_validation', 'pass')
+         }
+       } catch (error) {
+         return {
+--- a/packages/core/src/modules/vc/jwt-vc/W3cJwtCredentialService.ts
++++ b/packages/core/src/modules/vc/jwt-vc/W3cJwtCredentialService.ts
+@@ -299,15 +299,21 @@
+           skewSeconds: agentContext.config.validitySkewSeconds,
+         })
+ 
++        // T-DID collection point: report the nonce and audience comparisons Credo executes
++        const tdidCheck = (globalThis as { __tdidCheck?: (name: string, result: string) => void }).__tdidCheck
+         // Make sure challenge matches nonce
+         if (options.challenge !== presentation.jwt.payload.additionalClaims.nonce) {
++          tdidCheck?.('vp_nonce_binding_validation', 'fail')
+           throw new CredoError(`JWT payload 'nonce' does not match challenge '${options.challenge}'`)
+         }
++        tdidCheck?.('vp_nonce_binding_validation', 'pass')
+ 
+         const audArray = asArray(presentation.jwt.payload.aud)
+         if (options.domain && !audArray.includes(options.domain)) {
++          tdidCheck?.('vp_client_id_binding_validation', 'fail')
+           throw new CredoError(`JWT payload 'aud' does not include domain '${options.domain}'`)
+         }
++        if (options.domain) tdidCheck?.('vp_client_id_binding_validation', 'pass')
+ 
+         validationResults.validations.dataModel = {
+           isValid: true,
+--- a/node_modules/.pnpm/@sd-jwt+core@0.20.0/node_modules/@sd-jwt/core/dist/index.mjs
++++ b/node_modules/.pnpm/@sd-jwt+core@0.20.0/node_modules/@sd-jwt/core/dist/index.mjs
+@@ -695,8 +695,11 @@
+         throw new SDJWTException("Invalid Key Binding Jwt");
+       }
+       if (this.payload.nonce !== values.nonce) {
++        // T-DID collection point: report the key-binding nonce comparison this library executes
++        globalThis.__tdidCheck?.("vp_nonce_binding_validation", "fail");
+         throw new SDJWTException("Verify Error: Invalid Nonce");
+       }
++      globalThis.__tdidCheck?.("vp_nonce_binding_validation", "pass");
+       yield this.verify(
+         (data, sig) => values.verifier(data, sig, values.payload),
+         values.options
+--- a/node_modules/.pnpm/@sd-jwt+core@0.20.0/node_modules/@sd-jwt/core/dist/index.js
++++ b/node_modules/.pnpm/@sd-jwt+core@0.20.0/node_modules/@sd-jwt/core/dist/index.js
+@@ -754,8 +754,11 @@
+         throw new SDJWTException("Invalid Key Binding Jwt");
+       }
+       if (this.payload.nonce !== values.nonce) {
++        // T-DID collection point: report the key-binding nonce comparison this library executes
++        globalThis.__tdidCheck?.("vp_nonce_binding_validation", "fail");
+         throw new SDJWTException("Verify Error: Invalid Nonce");
+       }
++      globalThis.__tdidCheck?.("vp_nonce_binding_validation", "pass");
+       yield this.verify(
+         (data, sig) => values.verifier(data, sig, values.payload),
+         values.options

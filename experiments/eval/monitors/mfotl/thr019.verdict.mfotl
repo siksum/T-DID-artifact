@@ -1,0 +1,13 @@
+(* Same condition as thr019.mfotl; one output (e, v) at every decision, v in {attack, no_attack}. *)
+LET attack(e) =
+  EXISTS r, s.
+       rpd(e,r,s)
+   AND ONCE[1,*) (EXISTS s2. preq(r,s2,"direct_post") OR preq(r,s2,"direct_post.jwt"))
+   AND ONCE[1,*) wsent(r)
+   AND ONCE[1,*) (EXISTS m. preq(r,s,m))
+   AND (code(e,"fail") OR code(e,"not_performed"))
+   AND code(e,"fail")
+   AND notuser(e)
+   AND accept(e)
+IN ((EXISTS r, s. rpd(e,r,s)) AND attack(e) AND v = "attack")
+   OR ((EXISTS r, s. rpd(e,r,s)) AND NOT attack(e) AND v = "no_attack")

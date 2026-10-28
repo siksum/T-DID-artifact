@@ -1,0 +1,51 @@
+[
+  {
+    "recorded_source_id": "research/candidates/chapter6-paired-evidence-20260908-001/paired_audit.e2e.test.ts",
+    "expected_sha256": "c7ce3f607fd9803180b2195e0118998a02f5c2acb78a4edfaad077624c12280f",
+    "source_available": true,
+    "source_hash_matches": true,
+    "published_path": "testbed/acquisition/thr015/paired_audit.e2e.test.ts"
+  },
+  {
+    "recorded_source_id": "research/candidates/chapter6-paired-evidence-20260908-001/credo_observation.ts",
+    "expected_sha256": "7f3bc7df50d85ba6f661b9afdb9be639648083cf7a424e9e0263f38ce2ae3f5f",
+    "source_available": true,
+    "source_hash_matches": true,
+    "published_path": "testbed/acquisition/thr015/credo_observation.ts"
+  },
+  {
+    "recorded_source_id": "research/candidates/chapter6-paired-evidence-20260908-001/pair_oracle.py",
+    "expected_sha256": "624f99dabefe85a3a1200dbcb9b9b582012363bb88b02f866effd946b6af6be6",
+    "source_available": true,
+    "source_hash_matches": true,
+    "published_path": "testbed/acquisition/thr015/pair_oracle.py"
+  },
+  {
+    "recorded_source_id": "research/candidates/chapter6-product-apparatus-20260908-001/workflow_http.py",
+    "expected_sha256": "7016ee377e2ffbc5e350b5f167cfc8b463a7d24953429e0a4168c758e76b2b83",
+    "source_available": true,
+    "source_hash_matches": true,
+    "published_path": "testbed/acquisition/thr015/workflow_http.py"
+  },
+  {
+    "recorded_source_id": "research/candidates/chapter6-product-apparatus-20260908-001/http_measurement.py",
+    "expected_sha256": "5250bc959a9f8b3114a85fe59609e69ac5b6b70d732340abe43db52b4ee648fe",
+    "source_available": true,
+    "source_hash_matches": true,
+    "published_path": "testbed/acquisition/thr015/http_measurement.py"
+  },
+  {
+    "recorded_source_id": "research/candidates/chapter6-development-vs-security-20260908-001/logger-sink.ts",
+    "expected_sha256": "c8c45258dd964af514deb3bc12c5daa09bb1112980753e77a8ceac36a48904ac",
+    "source_available": true,
+    "source_hash_matches": true,
+    "published_path": "testbed/acquisition/thr019/logger-sink.ts"
+  },
+  {
+    "recorded_source_id": "research/runs/RUN-20260908-CHAPTER6-FIVE-AXIS-002/apparatus/DEVELOPMENT-VS-SECURITY-001/packages/openid4vc/tests/information_boundary.e2e.test.ts",
+    "expected_sha256": "f41e4cd72f98950b91490727d72ba18b9686310c3292bd7b97fc0d1bb36dff36",
+    "source_available": true,
+    "source_hash_matches": true,
+    "published_path": "testbed/acquisition/thr019/information_boundary.e2e.test.ts"
+  }
+]

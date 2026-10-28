@@ -1,0 +1,48 @@
+# TDID-THR-007 DID dereferencing cycle causing bounded-resource or availability failure
+# Source analysis: research/candidates/CAND-20260814-OBS-GAP-THR-006-010.yaml (TDID-THR-007 row),
+# definition reaffirmed unchanged by CAND-20260908-CH6-THR-007-REAFFIRMED.yaml.
+# Carried on the common RESOLUTION_DECISION of the root dereference request.
+threat: TDID-THR-007
+refs:
+  requester_did_ref:
+    produced_by: [resolver]
+    meaning: >-
+      Commitment, under the same per-traversal key as the hop_did_ref values in dereference_trace, over the DID
+      the requester authenticated as for this request. Absent for unauthenticated requests.
+    reveals: Whether the requester controls a DID whose document is a node of the traversal (equality only).
+facts:
+  dereference_trace:
+    type: array
+    produced_by: [resolver]
+    meaning: >-
+      Ordered list of the hops the dereferencer performed for this root request. Each item is an object with
+      node_ref (per-traversal keyed commitment over the fully normalized hop identifier), hop_did_ref
+      (per-traversal keyed commitment over the DID whose document was read at this hop, same key as
+      requester_did_ref; deliberately not the common did_ref, so hops cannot be linked across traversals),
+      trusted (true when the
+      policy's trusted DID or registry set contains that DID) and elapsed_ms (wall-clock milliseconds spent on
+      this hop).
+    reveals: Whether a normalized node was revisited, which hops were on the loop, and how much work the revisits consumed; identifiers stay local.
+  dereference_trace_complete:
+    type: boolean
+    produced_by: [resolver]
+    meaning: True when dereference_trace lists every hop of the traversal; false when the trace was capped or partially lost.
+    reveals: Whether the absence of a revisit in the trace is conclusive.
+  dereference_termination_reason:
+    type: enum
+    enum: [completed, cycle_rejected, depth_limit, work_limit, timeout, overflow, resource_exhaustion, service_unavailable, error]
+    produced_by: [resolver]
+    meaning: >-
+      How the root traversal ended. completed, cycle_rejected, depth_limit and work_limit are terminations
+      within configured bounds; timeout, overflow, resource_exhaustion and service_unavailable are failures;
+      error is an unspecified failure. A process crash that leaves no decision must be reported by the host
+      monitor on the resolver's behalf.
+    reveals: Whether the traversal ended safely or through a bounded-resource or availability failure.
+policy_params:
+  cycle_work_share_min:
+    type: number
+    example: 0.5
+    meaning: >-
+      Minimum share of the traversal's measured hop time spent on revisited nodes for the failure to be
+      attributed to the cycle rather than to a slow dependency. A deployment policy, not mandated by DID
+      Resolution 0.3; unset leaves the attribution unknown.

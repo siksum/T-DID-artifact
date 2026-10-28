@@ -1,0 +1,38 @@
+# TDID-THR-020 End-user impersonation through an issuer-unqualified credential claim
+# Source analysis: research/candidates/CAND-20260815-OBS-GAP-THR-016-020.yaml (TDID-THR-020 row),
+# CAND-20260908-CH6-THR-020-REAFFIRMED.yaml; primary source OpenID4VP 1.0 section 14.4.
+# Joins (one local operator): verifier PRESENTATION_DECISION (presentation_ref, issuer_ref authenticated by
+# the signature check), relying-party ACCOUNT_CLAIM_BOUND (stored account bindings), relying-party
+# RELYING_AUTHENTICATION_DECISION (presentation_ref of the result it consumed, account_ref selected,
+# account_claim_ref used for lookup, account_claim_issuer_refs = the selected account's issuer scope for that
+# claim). Whether the lookup ignored the issuer is computed by the rule from that scope (or, without it, from
+# complete binding history); no component reports it.
+# issuer_ref is the common commitment over an issuer identifier, produced here by the verifier (authenticated
+# issuer of the presented credential) and by the relying party on ACCOUNT_CLAIM_BOUND (issuer of the stored
+# binding); both use the operator's one key, so the values compare.
+threat: TDID-THR-020
+event_types:
+  ACCOUNT_CLAIM_BOUND:
+    produced_by: [relying_party]
+    meaning: The relying party stored a binding between a local account and a credential claim from an issuer (enrollment or account linking).
+refs:
+  account_claim_ref:
+    produced_by: [relying_party]
+    meaning: >-
+      Relying-party-local commitment over the credential claim value used as account lookup key, after the
+      relying party's own lookup normalization, without the issuer identifier.
+    reveals: Whether the claim used in one authentication equals a claim stored for an account (equality only; the value stays local).
+checks:
+  presented_credential_issuer_signature:
+    produced_by: [verifier]
+    meaning: The verifier validated the presented credential's signature against a key of the issuer identified by issuer_ref.
+facts:
+  account_claim_issuer_refs:
+    type: array
+    produced_by: [relying_party]
+    meaning: >-
+      On RELYING_AUTHENTICATION_DECISION: commitments (the operator's issuer_ref key) over every issuer under
+      which the selected account holds a stored binding of the lookup claim (account_claim_ref), read from the
+      account store when the decision was made; empty when the account holds no binding of that claim. The
+      account's issuer scope, not a verdict: the rule compares it with the verifier's authenticated issuer.
+    reveals: Which issuers the selected account is bound under for this claim (equality only); never the claim, account or issuer.

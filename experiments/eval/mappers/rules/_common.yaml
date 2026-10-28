@@ -1,0 +1,65 @@
+# Shared definitions for the four standard mappings (OCSF 1.6.0, ECS 9.1.0, OTel Logs Data Model,
+# CloudEvents 1.0.2). Read by experiments/eval/mappers/core.py.
+#
+# LEVELS (identical wording in every mapping file)
+#   core: fields the standard defines in its core schema / data model (required or optional), used with
+#         their defined meaning.
+#   ext:  core + what the standard adds outside its base definition, with defined semantics: ECS
+#         extended-level fields; OTel semantic-convention attributes; CloudEvents documented extensions
+#         (traceparent, sequence/sequencetype, partitionkey); OCSF profiles registered in 1.6.0 (e.g.
+#         datetime). Optional attributes of an OCSF class or object are base definition, hence core
+#         (2026-10-21 correction after the independent review, consistent with OTel TraceId and
+#         CloudEvents time/subject at core). Splitting one event into one record per check is ext.
+#
+# FREE-FORM BAGS ARE NOT USED AT EITHER LEVEL: OCSF `unmapped` / `metadata.tags` / `policy.data`,
+# ECS `labels` and custom fields, OTel arbitrary `Attributes` keys, CloudEvents arbitrary extension
+# attributes and `data`. Their keys carry no meaning defined by the standard; putting T-DID fields there
+# means adopting a new specification for the keys, which is exactly what T-DID's field dictionary is.
+#
+# ROUND-TRIP RULES (implemented in core.py)
+# - A T-DID value is reconstructed only from a field whose role is unambiguous. Nothing is invented.
+# - Lost refs/facts read by a rule triggered by the event type and produced by its role: absent, provenance
+#   Unavailable, and {"field": "refs.<name>"|"facts.<name>", "owner": role} in `missing`.
+# - Lost check results: result `unavailable` (never in `performed`) + missing "checks.<name>".
+# - Policy: no standard has a field for a deployment policy's id/version/params ->
+#   {"id": "unspecified", "version": "0"} without params; read params declared missing.
+# - checks.required (a policy declaration) is carried by no standard. The T-DID Gate rejects issue/accept
+#   with empty `required`, so a reconstructed issue/accept becomes `pending` with missing decision.outcome.
+# - producer.stream_start is carried by no standard. Like the policy it is operator knowledge ("this
+#   component started with empty state"), given to the T-DID collectors as --fresh-start; the reader
+#   receives the same operator statement (deployment["fresh"]) and sets it on each instance's first
+#   record (provenance Configured). Without that statement T-DID cannot rule out earlier records. producer.seq is taken from the standard's
+#   sequence field only when the producer instance also survives; otherwise it is the record's ordinal
+#   within the (placeholder) instance.
+# - A value the Gate requires but the standard does not carry gets a placeholder starting with
+#   "unrecorded:" (never a guess of the original value). Tests treat such values as "not reconstructed".
+# - W3C Trace Context fields (OTel TraceId, CloudEvents traceparent) are fixed-size byte strings that
+#   cannot hold a T-DID string. The forward mapping writes the first 128 bits of SHA-256(value) (what a
+#   producer that derives its trace id from the request would emit); the reverse returns
+#   "w3c-trace:<32 hex>". This preserves equality (the only operation rules apply to refs) but not the
+#   value; it counts as surviving "with its role" and tests accept exactly this pseudonym.
+placeholder_prefix: "unrecorded:"
+
+# Decision outcome <-> standard tri-state (only OCSF status_id and ECS event.outcome have one).
+outcome_to_tri: {issue: success, accept: success, resolve: success, reject: failure, error: unknown, pending: unknown}
+# success -> the event type's positive outcome; everything else -> accept.
+positive_outcome: {ISSUANCE_DECISION: issue, TOKEN_ISSUED: issue, RESOLUTION_DECISION: resolve}
+default_positive_outcome: accept
+tri_to_outcome: {failure: reject, unknown: pending}
+
+# Action / observation records: T-DID gives them outcome `none` (spec/fields/_common.yaml: "events that
+# record an action or observation rather than a decision ... use outcome none"). Selected by the
+# registry meaning of each event type ("sent", "created", "built", "routed", "retrieved", "measured",
+# "rendered", "recorded what it observed"). When the event kind survives and no outcome is carried, these
+# keep `none`; any other event type becomes `pending` with missing decision.outcome.
+action_event_types:
+  - PRESENTATION_REQUESTED          # "The verifier created a presentation request."
+  - WALLET_RESPONSE_SENT            # "The wallet sent an Authorization Response ..."
+  - WALLET_CREDENTIAL_REQUEST_SENT  # "The wallet sent one Credential Request ... An action record"
+  - TRANSACTION_CODE_SUBMITTED      # "The Wallet sent a user-entered Transaction Code ..."
+  - ISSUANCE_SECRET_ROUTED          # "... handed one issuance secret ..."
+  - DID_URL_CONSTRUCTED             # "... built a DID URL ..."
+  - STATUS_FETCHED                  # "A credential status entry was retrieved."
+  - RESOLVER_HEALTH_MEASURED        # "A resolver service health probe measured ..."
+  - CONTENT_RENDERED                # "Credential content was rendered or executed ..."
+  - PRESENTATION_OUTCOME_OBSERVED   # "The Verifier recorded what it observed ..."

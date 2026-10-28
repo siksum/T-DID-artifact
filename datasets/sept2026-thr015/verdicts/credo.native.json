@@ -1,0 +1,3891 @@
+{
+  "accepted_events": 27,
+  "duplicate_events": 0,
+  "findings": [
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "credo-sdk-0"
+      ],
+      "notes": [],
+      "predicates": {
+        "ReasonCompromised": null,
+        "SignalAuthoritative": null,
+        "SignalForSameMethod": null,
+        "SignalIntegrityVerified": null,
+        "UseAccepted": true,
+        "UseAtOrAfterEffectiveTime": null
+      },
+      "subject": "use:credo-sdk-0",
+      "threat_id": "TDID-THR-002",
+      "trigger_event_id": "credo-sdk-0",
+      "unknown_conditions": [
+        "SignalForSameMethod",
+        "SignalAuthoritative",
+        "SignalIntegrityVerified",
+        "ReasonCompromised",
+        "UseAtOrAfterEffectiveTime"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:cd36e739be897fd6729aea9413da682dab6d9267f2b8cae86656f087f3346d0f"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "credo-sdk-0"
+      ],
+      "notes": [],
+      "predicates": {
+        "ConsumedCommitmentUnverified": null,
+        "NotReverifiedAtUse": null,
+        "SecurityRelevantUse": true,
+        "VerifiedEarlier": null
+      },
+      "subject": "use:credo-sdk-0",
+      "threat_id": "TDID-THR-003",
+      "trigger_event_id": "credo-sdk-0",
+      "unknown_conditions": [
+        "VerifiedEarlier",
+        "ConsumedCommitmentUnverified",
+        "NotReverifiedAtUse"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:cd36e739be897fd6729aea9413da682dab6d9267f2b8cae86656f087f3346d0f"
+    },
+    {
+      "established_conditions": 3,
+      "evidence_event_ids": [
+        "credo-sdk-0"
+      ],
+      "notes": [],
+      "predicates": {
+        "ExceedsAllowedUses": false,
+        "Issued": true,
+        "KeyProofValidated": true,
+        "ReturnsNewCredential": null,
+        "SameProofAcceptedBefore": false
+      },
+      "subject": "event:credo-sdk-0",
+      "threat_id": "TDID-THR-015",
+      "trigger_event_id": "credo-sdk-0",
+      "unknown_conditions": [
+        "ReturnsNewCredential"
+      ],
+      "verdict": "not_succeeded",
+      "workflow_ref": "session:cd36e739be897fd6729aea9413da682dab6d9267f2b8cae86656f087f3346d0f"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "credo-sdk-0"
+      ],
+      "notes": [
+        "no issuance_secret_ref: Wallet and Issuer records cannot be joined"
+      ],
+      "predicates": {
+        "RecipientOutsideApplicationRole": null,
+        "ResultObtained": null,
+        "ReusedByRecipient": null,
+        "SecretReadableByRecipient": null
+      },
+      "subject": "event:credo-sdk-0",
+      "threat_id": "TDID-THR-016",
+      "trigger_event_id": "credo-sdk-0",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "SecretReadableByRecipient",
+        "ReusedByRecipient",
+        "ResultObtained"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:cd36e739be897fd6729aea9413da682dab6d9267f2b8cae86656f087f3346d0f"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "credo-sdk-1"
+      ],
+      "notes": [],
+      "predicates": {
+        "ReasonCompromised": null,
+        "SignalAuthoritative": null,
+        "SignalForSameMethod": null,
+        "SignalIntegrityVerified": null,
+        "UseAccepted": true,
+        "UseAtOrAfterEffectiveTime": null
+      },
+      "subject": "use:credo-sdk-1",
+      "threat_id": "TDID-THR-002",
+      "trigger_event_id": "credo-sdk-1",
+      "unknown_conditions": [
+        "SignalForSameMethod",
+        "SignalAuthoritative",
+        "SignalIntegrityVerified",
+        "ReasonCompromised",
+        "UseAtOrAfterEffectiveTime"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:dba3ecd5262213eed2ceb0affb8d7a4e95396b9d597eaaeee9cf44a845213da8"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "credo-sdk-1"
+      ],
+      "notes": [],
+      "predicates": {
+        "ConsumedCommitmentUnverified": null,
+        "NotReverifiedAtUse": null,
+        "SecurityRelevantUse": true,
+        "VerifiedEarlier": null
+      },
+      "subject": "use:credo-sdk-1",
+      "threat_id": "TDID-THR-003",
+      "trigger_event_id": "credo-sdk-1",
+      "unknown_conditions": [
+        "VerifiedEarlier",
+        "ConsumedCommitmentUnverified",
+        "NotReverifiedAtUse"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:dba3ecd5262213eed2ceb0affb8d7a4e95396b9d597eaaeee9cf44a845213da8"
+    },
+    {
+      "established_conditions": 3,
+      "evidence_event_ids": [
+        "credo-sdk-1"
+      ],
+      "notes": [],
+      "predicates": {
+        "ExceedsAllowedUses": false,
+        "Issued": true,
+        "KeyProofValidated": true,
+        "ReturnsNewCredential": null,
+        "SameProofAcceptedBefore": false
+      },
+      "subject": "event:credo-sdk-1",
+      "threat_id": "TDID-THR-015",
+      "trigger_event_id": "credo-sdk-1",
+      "unknown_conditions": [
+        "ReturnsNewCredential"
+      ],
+      "verdict": "not_succeeded",
+      "workflow_ref": "session:dba3ecd5262213eed2ceb0affb8d7a4e95396b9d597eaaeee9cf44a845213da8"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "credo-sdk-1"
+      ],
+      "notes": [
+        "no issuance_secret_ref: Wallet and Issuer records cannot be joined"
+      ],
+      "predicates": {
+        "RecipientOutsideApplicationRole": null,
+        "ResultObtained": null,
+        "ReusedByRecipient": null,
+        "SecretReadableByRecipient": null
+      },
+      "subject": "event:credo-sdk-1",
+      "threat_id": "TDID-THR-016",
+      "trigger_event_id": "credo-sdk-1",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "SecretReadableByRecipient",
+        "ReusedByRecipient",
+        "ResultObtained"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:dba3ecd5262213eed2ceb0affb8d7a4e95396b9d597eaaeee9cf44a845213da8"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "credo-sdk-2"
+      ],
+      "notes": [],
+      "predicates": {
+        "ReasonCompromised": null,
+        "SignalAuthoritative": null,
+        "SignalForSameMethod": null,
+        "SignalIntegrityVerified": null,
+        "UseAccepted": true,
+        "UseAtOrAfterEffectiveTime": null
+      },
+      "subject": "use:credo-sdk-2",
+      "threat_id": "TDID-THR-002",
+      "trigger_event_id": "credo-sdk-2",
+      "unknown_conditions": [
+        "SignalForSameMethod",
+        "SignalAuthoritative",
+        "SignalIntegrityVerified",
+        "ReasonCompromised",
+        "UseAtOrAfterEffectiveTime"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:be86ae59a37cd10cffd96f2a57e47d1d667427d32dd3d1694448451efdfde75a"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "credo-sdk-2"
+      ],
+      "notes": [],
+      "predicates": {
+        "ConsumedCommitmentUnverified": null,
+        "NotReverifiedAtUse": null,
+        "SecurityRelevantUse": true,
+        "VerifiedEarlier": null
+      },
+      "subject": "use:credo-sdk-2",
+      "threat_id": "TDID-THR-003",
+      "trigger_event_id": "credo-sdk-2",
+      "unknown_conditions": [
+        "VerifiedEarlier",
+        "ConsumedCommitmentUnverified",
+        "NotReverifiedAtUse"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:be86ae59a37cd10cffd96f2a57e47d1d667427d32dd3d1694448451efdfde75a"
+    },
+    {
+      "established_conditions": 3,
+      "evidence_event_ids": [
+        "credo-sdk-2"
+      ],
+      "notes": [],
+      "predicates": {
+        "ExceedsAllowedUses": false,
+        "Issued": true,
+        "KeyProofValidated": true,
+        "ReturnsNewCredential": null,
+        "SameProofAcceptedBefore": false
+      },
+      "subject": "event:credo-sdk-2",
+      "threat_id": "TDID-THR-015",
+      "trigger_event_id": "credo-sdk-2",
+      "unknown_conditions": [
+        "ReturnsNewCredential"
+      ],
+      "verdict": "not_succeeded",
+      "workflow_ref": "session:be86ae59a37cd10cffd96f2a57e47d1d667427d32dd3d1694448451efdfde75a"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "credo-sdk-2"
+      ],
+      "notes": [
+        "no issuance_secret_ref: Wallet and Issuer records cannot be joined"
+      ],
+      "predicates": {
+        "RecipientOutsideApplicationRole": null,
+        "ResultObtained": null,
+        "ReusedByRecipient": null,
+        "SecretReadableByRecipient": null
+      },
+      "subject": "event:credo-sdk-2",
+      "threat_id": "TDID-THR-016",
+      "trigger_event_id": "credo-sdk-2",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "SecretReadableByRecipient",
+        "ReusedByRecipient",
+        "ResultObtained"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:be86ae59a37cd10cffd96f2a57e47d1d667427d32dd3d1694448451efdfde75a"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "credo-sdk-3"
+      ],
+      "notes": [],
+      "predicates": {
+        "ReasonCompromised": null,
+        "SignalAuthoritative": null,
+        "SignalForSameMethod": null,
+        "SignalIntegrityVerified": null,
+        "UseAccepted": true,
+        "UseAtOrAfterEffectiveTime": null
+      },
+      "subject": "use:credo-sdk-3",
+      "threat_id": "TDID-THR-002",
+      "trigger_event_id": "credo-sdk-3",
+      "unknown_conditions": [
+        "SignalForSameMethod",
+        "SignalAuthoritative",
+        "SignalIntegrityVerified",
+        "ReasonCompromised",
+        "UseAtOrAfterEffectiveTime"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:4b904d4bc4d63f974fc8801563d384170869f9bdd0d2aed04ad517e11177cd7f"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "credo-sdk-3"
+      ],
+      "notes": [],
+      "predicates": {
+        "ConsumedCommitmentUnverified": null,
+        "NotReverifiedAtUse": null,
+        "SecurityRelevantUse": true,
+        "VerifiedEarlier": null
+      },
+      "subject": "use:credo-sdk-3",
+      "threat_id": "TDID-THR-003",
+      "trigger_event_id": "credo-sdk-3",
+      "unknown_conditions": [
+        "VerifiedEarlier",
+        "ConsumedCommitmentUnverified",
+        "NotReverifiedAtUse"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:4b904d4bc4d63f974fc8801563d384170869f9bdd0d2aed04ad517e11177cd7f"
+    },
+    {
+      "established_conditions": 3,
+      "evidence_event_ids": [
+        "credo-sdk-3"
+      ],
+      "notes": [],
+      "predicates": {
+        "ExceedsAllowedUses": false,
+        "Issued": true,
+        "KeyProofValidated": true,
+        "ReturnsNewCredential": null,
+        "SameProofAcceptedBefore": false
+      },
+      "subject": "event:credo-sdk-3",
+      "threat_id": "TDID-THR-015",
+      "trigger_event_id": "credo-sdk-3",
+      "unknown_conditions": [
+        "ReturnsNewCredential"
+      ],
+      "verdict": "not_succeeded",
+      "workflow_ref": "session:4b904d4bc4d63f974fc8801563d384170869f9bdd0d2aed04ad517e11177cd7f"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "credo-sdk-3"
+      ],
+      "notes": [
+        "no issuance_secret_ref: Wallet and Issuer records cannot be joined"
+      ],
+      "predicates": {
+        "RecipientOutsideApplicationRole": null,
+        "ResultObtained": null,
+        "ReusedByRecipient": null,
+        "SecretReadableByRecipient": null
+      },
+      "subject": "event:credo-sdk-3",
+      "threat_id": "TDID-THR-016",
+      "trigger_event_id": "credo-sdk-3",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "SecretReadableByRecipient",
+        "ReusedByRecipient",
+        "ResultObtained"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:4b904d4bc4d63f974fc8801563d384170869f9bdd0d2aed04ad517e11177cd7f"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "credo-sdk-4"
+      ],
+      "notes": [],
+      "predicates": {
+        "ReasonCompromised": null,
+        "SignalAuthoritative": null,
+        "SignalForSameMethod": null,
+        "SignalIntegrityVerified": null,
+        "UseAccepted": null,
+        "UseAtOrAfterEffectiveTime": null
+      },
+      "subject": "use:credo-sdk-4",
+      "threat_id": "TDID-THR-002",
+      "trigger_event_id": "credo-sdk-4",
+      "unknown_conditions": [
+        "SignalForSameMethod",
+        "SignalAuthoritative",
+        "SignalIntegrityVerified",
+        "ReasonCompromised",
+        "UseAtOrAfterEffectiveTime",
+        "UseAccepted"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:4b904d4bc4d63f974fc8801563d384170869f9bdd0d2aed04ad517e11177cd7f"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "credo-sdk-4"
+      ],
+      "notes": [],
+      "predicates": {
+        "ConsumedCommitmentUnverified": null,
+        "NotReverifiedAtUse": null,
+        "SecurityRelevantUse": null,
+        "VerifiedEarlier": null
+      },
+      "subject": "use:credo-sdk-4",
+      "threat_id": "TDID-THR-003",
+      "trigger_event_id": "credo-sdk-4",
+      "unknown_conditions": [
+        "VerifiedEarlier",
+        "ConsumedCommitmentUnverified",
+        "NotReverifiedAtUse",
+        "SecurityRelevantUse"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:4b904d4bc4d63f974fc8801563d384170869f9bdd0d2aed04ad517e11177cd7f"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "credo-sdk-4"
+      ],
+      "notes": [],
+      "predicates": {
+        "ExceedsAllowedUses": null,
+        "Issued": null,
+        "KeyProofValidated": null,
+        "ReturnsNewCredential": null,
+        "SameProofAcceptedBefore": null
+      },
+      "subject": "event:credo-sdk-4",
+      "threat_id": "TDID-THR-015",
+      "trigger_event_id": "credo-sdk-4",
+      "unknown_conditions": [
+        "SameProofAcceptedBefore",
+        "KeyProofValidated",
+        "ExceedsAllowedUses",
+        "Issued",
+        "ReturnsNewCredential"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:4b904d4bc4d63f974fc8801563d384170869f9bdd0d2aed04ad517e11177cd7f"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "credo-sdk-4"
+      ],
+      "notes": [
+        "no issuance_secret_ref: Wallet and Issuer records cannot be joined"
+      ],
+      "predicates": {
+        "RecipientOutsideApplicationRole": null,
+        "ResultObtained": null,
+        "ReusedByRecipient": null,
+        "SecretReadableByRecipient": null
+      },
+      "subject": "event:credo-sdk-4",
+      "threat_id": "TDID-THR-016",
+      "trigger_event_id": "credo-sdk-4",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "SecretReadableByRecipient",
+        "ReusedByRecipient",
+        "ResultObtained"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:4b904d4bc4d63f974fc8801563d384170869f9bdd0d2aed04ad517e11177cd7f"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "credo-sdk-5"
+      ],
+      "notes": [],
+      "predicates": {
+        "ReasonCompromised": null,
+        "SignalAuthoritative": null,
+        "SignalForSameMethod": null,
+        "SignalIntegrityVerified": null,
+        "UseAccepted": true,
+        "UseAtOrAfterEffectiveTime": null
+      },
+      "subject": "use:credo-sdk-5",
+      "threat_id": "TDID-THR-002",
+      "trigger_event_id": "credo-sdk-5",
+      "unknown_conditions": [
+        "SignalForSameMethod",
+        "SignalAuthoritative",
+        "SignalIntegrityVerified",
+        "ReasonCompromised",
+        "UseAtOrAfterEffectiveTime"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:37bce36d0cc8d54ae4f2c137a9009d3c3b9cacdf84a4d97994658da7ae55014b"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "credo-sdk-5"
+      ],
+      "notes": [],
+      "predicates": {
+        "ConsumedCommitmentUnverified": null,
+        "NotReverifiedAtUse": null,
+        "SecurityRelevantUse": true,
+        "VerifiedEarlier": null
+      },
+      "subject": "use:credo-sdk-5",
+      "threat_id": "TDID-THR-003",
+      "trigger_event_id": "credo-sdk-5",
+      "unknown_conditions": [
+        "VerifiedEarlier",
+        "ConsumedCommitmentUnverified",
+        "NotReverifiedAtUse"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:37bce36d0cc8d54ae4f2c137a9009d3c3b9cacdf84a4d97994658da7ae55014b"
+    },
+    {
+      "established_conditions": 3,
+      "evidence_event_ids": [
+        "credo-sdk-5"
+      ],
+      "notes": [],
+      "predicates": {
+        "ExceedsAllowedUses": false,
+        "Issued": true,
+        "KeyProofValidated": true,
+        "ReturnsNewCredential": null,
+        "SameProofAcceptedBefore": false
+      },
+      "subject": "event:credo-sdk-5",
+      "threat_id": "TDID-THR-015",
+      "trigger_event_id": "credo-sdk-5",
+      "unknown_conditions": [
+        "ReturnsNewCredential"
+      ],
+      "verdict": "not_succeeded",
+      "workflow_ref": "session:37bce36d0cc8d54ae4f2c137a9009d3c3b9cacdf84a4d97994658da7ae55014b"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "credo-sdk-5"
+      ],
+      "notes": [
+        "no issuance_secret_ref: Wallet and Issuer records cannot be joined"
+      ],
+      "predicates": {
+        "RecipientOutsideApplicationRole": null,
+        "ResultObtained": null,
+        "ReusedByRecipient": null,
+        "SecretReadableByRecipient": null
+      },
+      "subject": "event:credo-sdk-5",
+      "threat_id": "TDID-THR-016",
+      "trigger_event_id": "credo-sdk-5",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "SecretReadableByRecipient",
+        "ReusedByRecipient",
+        "ResultObtained"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:37bce36d0cc8d54ae4f2c137a9009d3c3b9cacdf84a4d97994658da7ae55014b"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "credo-sdk-6"
+      ],
+      "notes": [],
+      "predicates": {
+        "ReasonCompromised": null,
+        "SignalAuthoritative": null,
+        "SignalForSameMethod": null,
+        "SignalIntegrityVerified": null,
+        "UseAccepted": true,
+        "UseAtOrAfterEffectiveTime": null
+      },
+      "subject": "use:credo-sdk-6",
+      "threat_id": "TDID-THR-002",
+      "trigger_event_id": "credo-sdk-6",
+      "unknown_conditions": [
+        "SignalForSameMethod",
+        "SignalAuthoritative",
+        "SignalIntegrityVerified",
+        "ReasonCompromised",
+        "UseAtOrAfterEffectiveTime"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:f0b3e3ad6a026c4763986225d5453573763123d429a63048d2ae47221ebc4b1d"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "credo-sdk-6"
+      ],
+      "notes": [],
+      "predicates": {
+        "ConsumedCommitmentUnverified": null,
+        "NotReverifiedAtUse": null,
+        "SecurityRelevantUse": true,
+        "VerifiedEarlier": null
+      },
+      "subject": "use:credo-sdk-6",
+      "threat_id": "TDID-THR-003",
+      "trigger_event_id": "credo-sdk-6",
+      "unknown_conditions": [
+        "VerifiedEarlier",
+        "ConsumedCommitmentUnverified",
+        "NotReverifiedAtUse"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:f0b3e3ad6a026c4763986225d5453573763123d429a63048d2ae47221ebc4b1d"
+    },
+    {
+      "established_conditions": 1,
+      "evidence_event_ids": [
+        "credo-sdk-5",
+        "credo-sdk-6"
+      ],
+      "notes": [],
+      "predicates": {
+        "ExceedsAllowedUses": null,
+        "Issued": true,
+        "KeyProofValidated": true,
+        "ReturnsNewCredential": null,
+        "SameProofAcceptedBefore": null
+      },
+      "subject": "event:credo-sdk-6",
+      "threat_id": "TDID-THR-015",
+      "trigger_event_id": "credo-sdk-6",
+      "unknown_conditions": [
+        "SameProofAcceptedBefore",
+        "ExceedsAllowedUses",
+        "ReturnsNewCredential"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:f0b3e3ad6a026c4763986225d5453573763123d429a63048d2ae47221ebc4b1d"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "credo-sdk-6"
+      ],
+      "notes": [
+        "no issuance_secret_ref: Wallet and Issuer records cannot be joined"
+      ],
+      "predicates": {
+        "RecipientOutsideApplicationRole": null,
+        "ResultObtained": null,
+        "ReusedByRecipient": null,
+        "SecretReadableByRecipient": null
+      },
+      "subject": "event:credo-sdk-6",
+      "threat_id": "TDID-THR-016",
+      "trigger_event_id": "credo-sdk-6",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "SecretReadableByRecipient",
+        "ReusedByRecipient",
+        "ResultObtained"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:f0b3e3ad6a026c4763986225d5453573763123d429a63048d2ae47221ebc4b1d"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "credo-sdk-7"
+      ],
+      "notes": [],
+      "predicates": {
+        "ReasonCompromised": null,
+        "SignalAuthoritative": null,
+        "SignalForSameMethod": null,
+        "SignalIntegrityVerified": null,
+        "UseAccepted": true,
+        "UseAtOrAfterEffectiveTime": null
+      },
+      "subject": "use:credo-sdk-7",
+      "threat_id": "TDID-THR-002",
+      "trigger_event_id": "credo-sdk-7",
+      "unknown_conditions": [
+        "SignalForSameMethod",
+        "SignalAuthoritative",
+        "SignalIntegrityVerified",
+        "ReasonCompromised",
+        "UseAtOrAfterEffectiveTime"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:df539a6083c9f0ab7f37f694d6da93ce9529bef002936eb45be12a6411c2f3e5"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "credo-sdk-7"
+      ],
+      "notes": [],
+      "predicates": {
+        "ConsumedCommitmentUnverified": null,
+        "NotReverifiedAtUse": null,
+        "SecurityRelevantUse": true,
+        "VerifiedEarlier": null
+      },
+      "subject": "use:credo-sdk-7",
+      "threat_id": "TDID-THR-003",
+      "trigger_event_id": "credo-sdk-7",
+      "unknown_conditions": [
+        "VerifiedEarlier",
+        "ConsumedCommitmentUnverified",
+        "NotReverifiedAtUse"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:df539a6083c9f0ab7f37f694d6da93ce9529bef002936eb45be12a6411c2f3e5"
+    },
+    {
+      "established_conditions": 3,
+      "evidence_event_ids": [
+        "credo-sdk-7"
+      ],
+      "notes": [],
+      "predicates": {
+        "ExceedsAllowedUses": false,
+        "Issued": true,
+        "KeyProofValidated": true,
+        "ReturnsNewCredential": null,
+        "SameProofAcceptedBefore": false
+      },
+      "subject": "event:credo-sdk-7",
+      "threat_id": "TDID-THR-015",
+      "trigger_event_id": "credo-sdk-7",
+      "unknown_conditions": [
+        "ReturnsNewCredential"
+      ],
+      "verdict": "not_succeeded",
+      "workflow_ref": "session:df539a6083c9f0ab7f37f694d6da93ce9529bef002936eb45be12a6411c2f3e5"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "credo-sdk-7"
+      ],
+      "notes": [
+        "no issuance_secret_ref: Wallet and Issuer records cannot be joined"
+      ],
+      "predicates": {
+        "RecipientOutsideApplicationRole": null,
+        "ResultObtained": null,
+        "ReusedByRecipient": null,
+        "SecretReadableByRecipient": null
+      },
+      "subject": "event:credo-sdk-7",
+      "threat_id": "TDID-THR-016",
+      "trigger_event_id": "credo-sdk-7",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "SecretReadableByRecipient",
+        "ReusedByRecipient",
+        "ResultObtained"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:df539a6083c9f0ab7f37f694d6da93ce9529bef002936eb45be12a6411c2f3e5"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "credo-sdk-8"
+      ],
+      "notes": [],
+      "predicates": {
+        "ReasonCompromised": null,
+        "SignalAuthoritative": null,
+        "SignalForSameMethod": null,
+        "SignalIntegrityVerified": null,
+        "UseAccepted": null,
+        "UseAtOrAfterEffectiveTime": null
+      },
+      "subject": "use:credo-sdk-8",
+      "threat_id": "TDID-THR-002",
+      "trigger_event_id": "credo-sdk-8",
+      "unknown_conditions": [
+        "SignalForSameMethod",
+        "SignalAuthoritative",
+        "SignalIntegrityVerified",
+        "ReasonCompromised",
+        "UseAtOrAfterEffectiveTime",
+        "UseAccepted"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:5d0b4465051a2d3b84f30963a740c3f1161642457d3e62fd88e48f4d4b87c92a"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "credo-sdk-8"
+      ],
+      "notes": [],
+      "predicates": {
+        "ConsumedCommitmentUnverified": null,
+        "NotReverifiedAtUse": null,
+        "SecurityRelevantUse": null,
+        "VerifiedEarlier": null
+      },
+      "subject": "use:credo-sdk-8",
+      "threat_id": "TDID-THR-003",
+      "trigger_event_id": "credo-sdk-8",
+      "unknown_conditions": [
+        "VerifiedEarlier",
+        "ConsumedCommitmentUnverified",
+        "NotReverifiedAtUse",
+        "SecurityRelevantUse"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:5d0b4465051a2d3b84f30963a740c3f1161642457d3e62fd88e48f4d4b87c92a"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "credo-sdk-8"
+      ],
+      "notes": [],
+      "predicates": {
+        "ExceedsAllowedUses": null,
+        "Issued": null,
+        "KeyProofValidated": null,
+        "ReturnsNewCredential": null,
+        "SameProofAcceptedBefore": null
+      },
+      "subject": "event:credo-sdk-8",
+      "threat_id": "TDID-THR-015",
+      "trigger_event_id": "credo-sdk-8",
+      "unknown_conditions": [
+        "SameProofAcceptedBefore",
+        "KeyProofValidated",
+        "ExceedsAllowedUses",
+        "Issued",
+        "ReturnsNewCredential"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:5d0b4465051a2d3b84f30963a740c3f1161642457d3e62fd88e48f4d4b87c92a"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "credo-sdk-8"
+      ],
+      "notes": [
+        "no issuance_secret_ref: Wallet and Issuer records cannot be joined"
+      ],
+      "predicates": {
+        "RecipientOutsideApplicationRole": null,
+        "ResultObtained": null,
+        "ReusedByRecipient": null,
+        "SecretReadableByRecipient": null
+      },
+      "subject": "event:credo-sdk-8",
+      "threat_id": "TDID-THR-016",
+      "trigger_event_id": "credo-sdk-8",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "SecretReadableByRecipient",
+        "ReusedByRecipient",
+        "ResultObtained"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:5d0b4465051a2d3b84f30963a740c3f1161642457d3e62fd88e48f4d4b87c92a"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "credo-sdk-9"
+      ],
+      "notes": [],
+      "predicates": {
+        "ReasonCompromised": null,
+        "SignalAuthoritative": null,
+        "SignalForSameMethod": null,
+        "SignalIntegrityVerified": null,
+        "UseAccepted": true,
+        "UseAtOrAfterEffectiveTime": null
+      },
+      "subject": "use:credo-sdk-9",
+      "threat_id": "TDID-THR-002",
+      "trigger_event_id": "credo-sdk-9",
+      "unknown_conditions": [
+        "SignalForSameMethod",
+        "SignalAuthoritative",
+        "SignalIntegrityVerified",
+        "ReasonCompromised",
+        "UseAtOrAfterEffectiveTime"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:5b22c722ba940cba7286bad894bfc522de238b772cf3d5f1487058b1e993c3dd"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "credo-sdk-9"
+      ],
+      "notes": [],
+      "predicates": {
+        "ConsumedCommitmentUnverified": null,
+        "NotReverifiedAtUse": null,
+        "SecurityRelevantUse": true,
+        "VerifiedEarlier": null
+      },
+      "subject": "use:credo-sdk-9",
+      "threat_id": "TDID-THR-003",
+      "trigger_event_id": "credo-sdk-9",
+      "unknown_conditions": [
+        "VerifiedEarlier",
+        "ConsumedCommitmentUnverified",
+        "NotReverifiedAtUse"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:5b22c722ba940cba7286bad894bfc522de238b772cf3d5f1487058b1e993c3dd"
+    },
+    {
+      "established_conditions": 3,
+      "evidence_event_ids": [
+        "credo-sdk-9"
+      ],
+      "notes": [],
+      "predicates": {
+        "ExceedsAllowedUses": false,
+        "Issued": true,
+        "KeyProofValidated": true,
+        "ReturnsNewCredential": null,
+        "SameProofAcceptedBefore": false
+      },
+      "subject": "event:credo-sdk-9",
+      "threat_id": "TDID-THR-015",
+      "trigger_event_id": "credo-sdk-9",
+      "unknown_conditions": [
+        "ReturnsNewCredential"
+      ],
+      "verdict": "not_succeeded",
+      "workflow_ref": "session:5b22c722ba940cba7286bad894bfc522de238b772cf3d5f1487058b1e993c3dd"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "credo-sdk-9"
+      ],
+      "notes": [
+        "no issuance_secret_ref: Wallet and Issuer records cannot be joined"
+      ],
+      "predicates": {
+        "RecipientOutsideApplicationRole": null,
+        "ResultObtained": null,
+        "ReusedByRecipient": null,
+        "SecretReadableByRecipient": null
+      },
+      "subject": "event:credo-sdk-9",
+      "threat_id": "TDID-THR-016",
+      "trigger_event_id": "credo-sdk-9",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "SecretReadableByRecipient",
+        "ReusedByRecipient",
+        "ResultObtained"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:5b22c722ba940cba7286bad894bfc522de238b772cf3d5f1487058b1e993c3dd"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "credo-sdk-10"
+      ],
+      "notes": [],
+      "predicates": {
+        "ReasonCompromised": null,
+        "SignalAuthoritative": null,
+        "SignalForSameMethod": null,
+        "SignalIntegrityVerified": null,
+        "UseAccepted": true,
+        "UseAtOrAfterEffectiveTime": null
+      },
+      "subject": "use:credo-sdk-10",
+      "threat_id": "TDID-THR-002",
+      "trigger_event_id": "credo-sdk-10",
+      "unknown_conditions": [
+        "SignalForSameMethod",
+        "SignalAuthoritative",
+        "SignalIntegrityVerified",
+        "ReasonCompromised",
+        "UseAtOrAfterEffectiveTime"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:e764d590aaa962be5e8964155ebc028e9af9a3070f338e131111f34bf49d297c"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "credo-sdk-10"
+      ],
+      "notes": [],
+      "predicates": {
+        "ConsumedCommitmentUnverified": null,
+        "NotReverifiedAtUse": null,
+        "SecurityRelevantUse": true,
+        "VerifiedEarlier": null
+      },
+      "subject": "use:credo-sdk-10",
+      "threat_id": "TDID-THR-003",
+      "trigger_event_id": "credo-sdk-10",
+      "unknown_conditions": [
+        "VerifiedEarlier",
+        "ConsumedCommitmentUnverified",
+        "NotReverifiedAtUse"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:e764d590aaa962be5e8964155ebc028e9af9a3070f338e131111f34bf49d297c"
+    },
+    {
+      "established_conditions": 3,
+      "evidence_event_ids": [
+        "credo-sdk-10"
+      ],
+      "notes": [],
+      "predicates": {
+        "ExceedsAllowedUses": false,
+        "Issued": true,
+        "KeyProofValidated": true,
+        "ReturnsNewCredential": null,
+        "SameProofAcceptedBefore": false
+      },
+      "subject": "event:credo-sdk-10",
+      "threat_id": "TDID-THR-015",
+      "trigger_event_id": "credo-sdk-10",
+      "unknown_conditions": [
+        "ReturnsNewCredential"
+      ],
+      "verdict": "not_succeeded",
+      "workflow_ref": "session:e764d590aaa962be5e8964155ebc028e9af9a3070f338e131111f34bf49d297c"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "credo-sdk-10"
+      ],
+      "notes": [
+        "no issuance_secret_ref: Wallet and Issuer records cannot be joined"
+      ],
+      "predicates": {
+        "RecipientOutsideApplicationRole": null,
+        "ResultObtained": null,
+        "ReusedByRecipient": null,
+        "SecretReadableByRecipient": null
+      },
+      "subject": "event:credo-sdk-10",
+      "threat_id": "TDID-THR-016",
+      "trigger_event_id": "credo-sdk-10",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "SecretReadableByRecipient",
+        "ReusedByRecipient",
+        "ResultObtained"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:e764d590aaa962be5e8964155ebc028e9af9a3070f338e131111f34bf49d297c"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "credo-sdk-11"
+      ],
+      "notes": [],
+      "predicates": {
+        "ReasonCompromised": null,
+        "SignalAuthoritative": null,
+        "SignalForSameMethod": null,
+        "SignalIntegrityVerified": null,
+        "UseAccepted": true,
+        "UseAtOrAfterEffectiveTime": null
+      },
+      "subject": "use:credo-sdk-11",
+      "threat_id": "TDID-THR-002",
+      "trigger_event_id": "credo-sdk-11",
+      "unknown_conditions": [
+        "SignalForSameMethod",
+        "SignalAuthoritative",
+        "SignalIntegrityVerified",
+        "ReasonCompromised",
+        "UseAtOrAfterEffectiveTime"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:ef2081a0ab38747772a5707d0e7d675166122e28a653fc38b6687bb2bc27e3a7"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "credo-sdk-11"
+      ],
+      "notes": [],
+      "predicates": {
+        "ConsumedCommitmentUnverified": null,
+        "NotReverifiedAtUse": null,
+        "SecurityRelevantUse": true,
+        "VerifiedEarlier": null
+      },
+      "subject": "use:credo-sdk-11",
+      "threat_id": "TDID-THR-003",
+      "trigger_event_id": "credo-sdk-11",
+      "unknown_conditions": [
+        "VerifiedEarlier",
+        "ConsumedCommitmentUnverified",
+        "NotReverifiedAtUse"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:ef2081a0ab38747772a5707d0e7d675166122e28a653fc38b6687bb2bc27e3a7"
+    },
+    {
+      "established_conditions": 3,
+      "evidence_event_ids": [
+        "credo-sdk-11"
+      ],
+      "notes": [],
+      "predicates": {
+        "ExceedsAllowedUses": false,
+        "Issued": true,
+        "KeyProofValidated": true,
+        "ReturnsNewCredential": null,
+        "SameProofAcceptedBefore": false
+      },
+      "subject": "event:credo-sdk-11",
+      "threat_id": "TDID-THR-015",
+      "trigger_event_id": "credo-sdk-11",
+      "unknown_conditions": [
+        "ReturnsNewCredential"
+      ],
+      "verdict": "not_succeeded",
+      "workflow_ref": "session:ef2081a0ab38747772a5707d0e7d675166122e28a653fc38b6687bb2bc27e3a7"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "credo-sdk-11"
+      ],
+      "notes": [
+        "no issuance_secret_ref: Wallet and Issuer records cannot be joined"
+      ],
+      "predicates": {
+        "RecipientOutsideApplicationRole": null,
+        "ResultObtained": null,
+        "ReusedByRecipient": null,
+        "SecretReadableByRecipient": null
+      },
+      "subject": "event:credo-sdk-11",
+      "threat_id": "TDID-THR-016",
+      "trigger_event_id": "credo-sdk-11",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "SecretReadableByRecipient",
+        "ReusedByRecipient",
+        "ResultObtained"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:ef2081a0ab38747772a5707d0e7d675166122e28a653fc38b6687bb2bc27e3a7"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "credo-sdk-12"
+      ],
+      "notes": [],
+      "predicates": {
+        "ReasonCompromised": null,
+        "SignalAuthoritative": null,
+        "SignalForSameMethod": null,
+        "SignalIntegrityVerified": null,
+        "UseAccepted": true,
+        "UseAtOrAfterEffectiveTime": null
+      },
+      "subject": "use:credo-sdk-12",
+      "threat_id": "TDID-THR-002",
+      "trigger_event_id": "credo-sdk-12",
+      "unknown_conditions": [
+        "SignalForSameMethod",
+        "SignalAuthoritative",
+        "SignalIntegrityVerified",
+        "ReasonCompromised",
+        "UseAtOrAfterEffectiveTime"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:216572920d491804a46c0b16befdd842454b9697721eaf723687c2cf875eedaf"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "credo-sdk-12"
+      ],
+      "notes": [],
+      "predicates": {
+        "ConsumedCommitmentUnverified": null,
+        "NotReverifiedAtUse": null,
+        "SecurityRelevantUse": true,
+        "VerifiedEarlier": null
+      },
+      "subject": "use:credo-sdk-12",
+      "threat_id": "TDID-THR-003",
+      "trigger_event_id": "credo-sdk-12",
+      "unknown_conditions": [
+        "VerifiedEarlier",
+        "ConsumedCommitmentUnverified",
+        "NotReverifiedAtUse"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:216572920d491804a46c0b16befdd842454b9697721eaf723687c2cf875eedaf"
+    },
+    {
+      "established_conditions": 3,
+      "evidence_event_ids": [
+        "credo-sdk-12"
+      ],
+      "notes": [],
+      "predicates": {
+        "ExceedsAllowedUses": false,
+        "Issued": true,
+        "KeyProofValidated": true,
+        "ReturnsNewCredential": null,
+        "SameProofAcceptedBefore": false
+      },
+      "subject": "event:credo-sdk-12",
+      "threat_id": "TDID-THR-015",
+      "trigger_event_id": "credo-sdk-12",
+      "unknown_conditions": [
+        "ReturnsNewCredential"
+      ],
+      "verdict": "not_succeeded",
+      "workflow_ref": "session:216572920d491804a46c0b16befdd842454b9697721eaf723687c2cf875eedaf"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "credo-sdk-12"
+      ],
+      "notes": [
+        "no issuance_secret_ref: Wallet and Issuer records cannot be joined"
+      ],
+      "predicates": {
+        "RecipientOutsideApplicationRole": null,
+        "ResultObtained": null,
+        "ReusedByRecipient": null,
+        "SecretReadableByRecipient": null
+      },
+      "subject": "event:credo-sdk-12",
+      "threat_id": "TDID-THR-016",
+      "trigger_event_id": "credo-sdk-12",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "SecretReadableByRecipient",
+        "ReusedByRecipient",
+        "ResultObtained"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:216572920d491804a46c0b16befdd842454b9697721eaf723687c2cf875eedaf"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "credo-sdk-13"
+      ],
+      "notes": [],
+      "predicates": {
+        "ReasonCompromised": null,
+        "SignalAuthoritative": null,
+        "SignalForSameMethod": null,
+        "SignalIntegrityVerified": null,
+        "UseAccepted": null,
+        "UseAtOrAfterEffectiveTime": null
+      },
+      "subject": "use:credo-sdk-13",
+      "threat_id": "TDID-THR-002",
+      "trigger_event_id": "credo-sdk-13",
+      "unknown_conditions": [
+        "SignalForSameMethod",
+        "SignalAuthoritative",
+        "SignalIntegrityVerified",
+        "ReasonCompromised",
+        "UseAtOrAfterEffectiveTime",
+        "UseAccepted"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:216572920d491804a46c0b16befdd842454b9697721eaf723687c2cf875eedaf"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "credo-sdk-13"
+      ],
+      "notes": [],
+      "predicates": {
+        "ConsumedCommitmentUnverified": null,
+        "NotReverifiedAtUse": null,
+        "SecurityRelevantUse": null,
+        "VerifiedEarlier": null
+      },
+      "subject": "use:credo-sdk-13",
+      "threat_id": "TDID-THR-003",
+      "trigger_event_id": "credo-sdk-13",
+      "unknown_conditions": [
+        "VerifiedEarlier",
+        "ConsumedCommitmentUnverified",
+        "NotReverifiedAtUse",
+        "SecurityRelevantUse"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:216572920d491804a46c0b16befdd842454b9697721eaf723687c2cf875eedaf"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "credo-sdk-13"
+      ],
+      "notes": [],
+      "predicates": {
+        "ExceedsAllowedUses": null,
+        "Issued": null,
+        "KeyProofValidated": null,
+        "ReturnsNewCredential": null,
+        "SameProofAcceptedBefore": null
+      },
+      "subject": "event:credo-sdk-13",
+      "threat_id": "TDID-THR-015",
+      "trigger_event_id": "credo-sdk-13",
+      "unknown_conditions": [
+        "SameProofAcceptedBefore",
+        "KeyProofValidated",
+        "ExceedsAllowedUses",
+        "Issued",
+        "ReturnsNewCredential"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:216572920d491804a46c0b16befdd842454b9697721eaf723687c2cf875eedaf"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "credo-sdk-13"
+      ],
+      "notes": [
+        "no issuance_secret_ref: Wallet and Issuer records cannot be joined"
+      ],
+      "predicates": {
+        "RecipientOutsideApplicationRole": null,
+        "ResultObtained": null,
+        "ReusedByRecipient": null,
+        "SecretReadableByRecipient": null
+      },
+      "subject": "event:credo-sdk-13",
+      "threat_id": "TDID-THR-016",
+      "trigger_event_id": "credo-sdk-13",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "SecretReadableByRecipient",
+        "ReusedByRecipient",
+        "ResultObtained"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:216572920d491804a46c0b16befdd842454b9697721eaf723687c2cf875eedaf"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "credo-sdk-14"
+      ],
+      "notes": [],
+      "predicates": {
+        "ReasonCompromised": null,
+        "SignalAuthoritative": null,
+        "SignalForSameMethod": null,
+        "SignalIntegrityVerified": null,
+        "UseAccepted": true,
+        "UseAtOrAfterEffectiveTime": null
+      },
+      "subject": "use:credo-sdk-14",
+      "threat_id": "TDID-THR-002",
+      "trigger_event_id": "credo-sdk-14",
+      "unknown_conditions": [
+        "SignalForSameMethod",
+        "SignalAuthoritative",
+        "SignalIntegrityVerified",
+        "ReasonCompromised",
+        "UseAtOrAfterEffectiveTime"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:fcff13707fa04a04340ecc36e8df902c42e2927d39339094ea2c7a4d4c69cf8b"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "credo-sdk-14"
+      ],
+      "notes": [],
+      "predicates": {
+        "ConsumedCommitmentUnverified": null,
+        "NotReverifiedAtUse": null,
+        "SecurityRelevantUse": true,
+        "VerifiedEarlier": null
+      },
+      "subject": "use:credo-sdk-14",
+      "threat_id": "TDID-THR-003",
+      "trigger_event_id": "credo-sdk-14",
+      "unknown_conditions": [
+        "VerifiedEarlier",
+        "ConsumedCommitmentUnverified",
+        "NotReverifiedAtUse"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:fcff13707fa04a04340ecc36e8df902c42e2927d39339094ea2c7a4d4c69cf8b"
+    },
+    {
+      "established_conditions": 3,
+      "evidence_event_ids": [
+        "credo-sdk-14"
+      ],
+      "notes": [],
+      "predicates": {
+        "ExceedsAllowedUses": false,
+        "Issued": true,
+        "KeyProofValidated": true,
+        "ReturnsNewCredential": null,
+        "SameProofAcceptedBefore": false
+      },
+      "subject": "event:credo-sdk-14",
+      "threat_id": "TDID-THR-015",
+      "trigger_event_id": "credo-sdk-14",
+      "unknown_conditions": [
+        "ReturnsNewCredential"
+      ],
+      "verdict": "not_succeeded",
+      "workflow_ref": "session:fcff13707fa04a04340ecc36e8df902c42e2927d39339094ea2c7a4d4c69cf8b"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "credo-sdk-14"
+      ],
+      "notes": [
+        "no issuance_secret_ref: Wallet and Issuer records cannot be joined"
+      ],
+      "predicates": {
+        "RecipientOutsideApplicationRole": null,
+        "ResultObtained": null,
+        "ReusedByRecipient": null,
+        "SecretReadableByRecipient": null
+      },
+      "subject": "event:credo-sdk-14",
+      "threat_id": "TDID-THR-016",
+      "trigger_event_id": "credo-sdk-14",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "SecretReadableByRecipient",
+        "ReusedByRecipient",
+        "ResultObtained"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:fcff13707fa04a04340ecc36e8df902c42e2927d39339094ea2c7a4d4c69cf8b"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "credo-sdk-15"
+      ],
+      "notes": [],
+      "predicates": {
+        "ReasonCompromised": null,
+        "SignalAuthoritative": null,
+        "SignalForSameMethod": null,
+        "SignalIntegrityVerified": null,
+        "UseAccepted": true,
+        "UseAtOrAfterEffectiveTime": null
+      },
+      "subject": "use:credo-sdk-15",
+      "threat_id": "TDID-THR-002",
+      "trigger_event_id": "credo-sdk-15",
+      "unknown_conditions": [
+        "SignalForSameMethod",
+        "SignalAuthoritative",
+        "SignalIntegrityVerified",
+        "ReasonCompromised",
+        "UseAtOrAfterEffectiveTime"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:d55e687e063af659896b8ffb54e77763da7d8e1da4e5dc4e83ab190494d8224a"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "credo-sdk-15"
+      ],
+      "notes": [],
+      "predicates": {
+        "ConsumedCommitmentUnverified": null,
+        "NotReverifiedAtUse": null,
+        "SecurityRelevantUse": true,
+        "VerifiedEarlier": null
+      },
+      "subject": "use:credo-sdk-15",
+      "threat_id": "TDID-THR-003",
+      "trigger_event_id": "credo-sdk-15",
+      "unknown_conditions": [
+        "VerifiedEarlier",
+        "ConsumedCommitmentUnverified",
+        "NotReverifiedAtUse"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:d55e687e063af659896b8ffb54e77763da7d8e1da4e5dc4e83ab190494d8224a"
+    },
+    {
+      "established_conditions": 1,
+      "evidence_event_ids": [
+        "credo-sdk-14",
+        "credo-sdk-15"
+      ],
+      "notes": [],
+      "predicates": {
+        "ExceedsAllowedUses": null,
+        "Issued": true,
+        "KeyProofValidated": true,
+        "ReturnsNewCredential": null,
+        "SameProofAcceptedBefore": null
+      },
+      "subject": "event:credo-sdk-15",
+      "threat_id": "TDID-THR-015",
+      "trigger_event_id": "credo-sdk-15",
+      "unknown_conditions": [
+        "SameProofAcceptedBefore",
+        "ExceedsAllowedUses",
+        "ReturnsNewCredential"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:d55e687e063af659896b8ffb54e77763da7d8e1da4e5dc4e83ab190494d8224a"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "credo-sdk-15"
+      ],
+      "notes": [
+        "no issuance_secret_ref: Wallet and Issuer records cannot be joined"
+      ],
+      "predicates": {
+        "RecipientOutsideApplicationRole": null,
+        "ResultObtained": null,
+        "ReusedByRecipient": null,
+        "SecretReadableByRecipient": null
+      },
+      "subject": "event:credo-sdk-15",
+      "threat_id": "TDID-THR-016",
+      "trigger_event_id": "credo-sdk-15",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "SecretReadableByRecipient",
+        "ReusedByRecipient",
+        "ResultObtained"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:d55e687e063af659896b8ffb54e77763da7d8e1da4e5dc4e83ab190494d8224a"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "credo-sdk-16"
+      ],
+      "notes": [],
+      "predicates": {
+        "ReasonCompromised": null,
+        "SignalAuthoritative": null,
+        "SignalForSameMethod": null,
+        "SignalIntegrityVerified": null,
+        "UseAccepted": true,
+        "UseAtOrAfterEffectiveTime": null
+      },
+      "subject": "use:credo-sdk-16",
+      "threat_id": "TDID-THR-002",
+      "trigger_event_id": "credo-sdk-16",
+      "unknown_conditions": [
+        "SignalForSameMethod",
+        "SignalAuthoritative",
+        "SignalIntegrityVerified",
+        "ReasonCompromised",
+        "UseAtOrAfterEffectiveTime"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:26857b61d39be8f310660c72392c16c3063d23f5153ce05e6790cca55c335e5e"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "credo-sdk-16"
+      ],
+      "notes": [],
+      "predicates": {
+        "ConsumedCommitmentUnverified": null,
+        "NotReverifiedAtUse": null,
+        "SecurityRelevantUse": true,
+        "VerifiedEarlier": null
+      },
+      "subject": "use:credo-sdk-16",
+      "threat_id": "TDID-THR-003",
+      "trigger_event_id": "credo-sdk-16",
+      "unknown_conditions": [
+        "VerifiedEarlier",
+        "ConsumedCommitmentUnverified",
+        "NotReverifiedAtUse"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:26857b61d39be8f310660c72392c16c3063d23f5153ce05e6790cca55c335e5e"
+    },
+    {
+      "established_conditions": 3,
+      "evidence_event_ids": [
+        "credo-sdk-16"
+      ],
+      "notes": [],
+      "predicates": {
+        "ExceedsAllowedUses": false,
+        "Issued": true,
+        "KeyProofValidated": true,
+        "ReturnsNewCredential": null,
+        "SameProofAcceptedBefore": false
+      },
+      "subject": "event:credo-sdk-16",
+      "threat_id": "TDID-THR-015",
+      "trigger_event_id": "credo-sdk-16",
+      "unknown_conditions": [
+        "ReturnsNewCredential"
+      ],
+      "verdict": "not_succeeded",
+      "workflow_ref": "session:26857b61d39be8f310660c72392c16c3063d23f5153ce05e6790cca55c335e5e"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "credo-sdk-16"
+      ],
+      "notes": [
+        "no issuance_secret_ref: Wallet and Issuer records cannot be joined"
+      ],
+      "predicates": {
+        "RecipientOutsideApplicationRole": null,
+        "ResultObtained": null,
+        "ReusedByRecipient": null,
+        "SecretReadableByRecipient": null
+      },
+      "subject": "event:credo-sdk-16",
+      "threat_id": "TDID-THR-016",
+      "trigger_event_id": "credo-sdk-16",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "SecretReadableByRecipient",
+        "ReusedByRecipient",
+        "ResultObtained"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:26857b61d39be8f310660c72392c16c3063d23f5153ce05e6790cca55c335e5e"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "credo-sdk-17"
+      ],
+      "notes": [],
+      "predicates": {
+        "ReasonCompromised": null,
+        "SignalAuthoritative": null,
+        "SignalForSameMethod": null,
+        "SignalIntegrityVerified": null,
+        "UseAccepted": null,
+        "UseAtOrAfterEffectiveTime": null
+      },
+      "subject": "use:credo-sdk-17",
+      "threat_id": "TDID-THR-002",
+      "trigger_event_id": "credo-sdk-17",
+      "unknown_conditions": [
+        "SignalForSameMethod",
+        "SignalAuthoritative",
+        "SignalIntegrityVerified",
+        "ReasonCompromised",
+        "UseAtOrAfterEffectiveTime",
+        "UseAccepted"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:6fb04a19672b10eba3afce62172928bda0d82623070adcf7c4c8a8175569a661"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "credo-sdk-17"
+      ],
+      "notes": [],
+      "predicates": {
+        "ConsumedCommitmentUnverified": null,
+        "NotReverifiedAtUse": null,
+        "SecurityRelevantUse": null,
+        "VerifiedEarlier": null
+      },
+      "subject": "use:credo-sdk-17",
+      "threat_id": "TDID-THR-003",
+      "trigger_event_id": "credo-sdk-17",
+      "unknown_conditions": [
+        "VerifiedEarlier",
+        "ConsumedCommitmentUnverified",
+        "NotReverifiedAtUse",
+        "SecurityRelevantUse"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:6fb04a19672b10eba3afce62172928bda0d82623070adcf7c4c8a8175569a661"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "credo-sdk-17"
+      ],
+      "notes": [],
+      "predicates": {
+        "ExceedsAllowedUses": null,
+        "Issued": null,
+        "KeyProofValidated": null,
+        "ReturnsNewCredential": null,
+        "SameProofAcceptedBefore": null
+      },
+      "subject": "event:credo-sdk-17",
+      "threat_id": "TDID-THR-015",
+      "trigger_event_id": "credo-sdk-17",
+      "unknown_conditions": [
+        "SameProofAcceptedBefore",
+        "KeyProofValidated",
+        "ExceedsAllowedUses",
+        "Issued",
+        "ReturnsNewCredential"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:6fb04a19672b10eba3afce62172928bda0d82623070adcf7c4c8a8175569a661"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "credo-sdk-17"
+      ],
+      "notes": [
+        "no issuance_secret_ref: Wallet and Issuer records cannot be joined"
+      ],
+      "predicates": {
+        "RecipientOutsideApplicationRole": null,
+        "ResultObtained": null,
+        "ReusedByRecipient": null,
+        "SecretReadableByRecipient": null
+      },
+      "subject": "event:credo-sdk-17",
+      "threat_id": "TDID-THR-016",
+      "trigger_event_id": "credo-sdk-17",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "SecretReadableByRecipient",
+        "ReusedByRecipient",
+        "ResultObtained"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:6fb04a19672b10eba3afce62172928bda0d82623070adcf7c4c8a8175569a661"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "credo-sdk-18"
+      ],
+      "notes": [],
+      "predicates": {
+        "ReasonCompromised": null,
+        "SignalAuthoritative": null,
+        "SignalForSameMethod": null,
+        "SignalIntegrityVerified": null,
+        "UseAccepted": true,
+        "UseAtOrAfterEffectiveTime": null
+      },
+      "subject": "use:credo-sdk-18",
+      "threat_id": "TDID-THR-002",
+      "trigger_event_id": "credo-sdk-18",
+      "unknown_conditions": [
+        "SignalForSameMethod",
+        "SignalAuthoritative",
+        "SignalIntegrityVerified",
+        "ReasonCompromised",
+        "UseAtOrAfterEffectiveTime"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:defb645b133c953e77bdfe61ae18318f6ffdf08071bc28e7dfac0f5f4733e45a"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "credo-sdk-18"
+      ],
+      "notes": [],
+      "predicates": {
+        "ConsumedCommitmentUnverified": null,
+        "NotReverifiedAtUse": null,
+        "SecurityRelevantUse": true,
+        "VerifiedEarlier": null
+      },
+      "subject": "use:credo-sdk-18",
+      "threat_id": "TDID-THR-003",
+      "trigger_event_id": "credo-sdk-18",
+      "unknown_conditions": [
+        "VerifiedEarlier",
+        "ConsumedCommitmentUnverified",
+        "NotReverifiedAtUse"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:defb645b133c953e77bdfe61ae18318f6ffdf08071bc28e7dfac0f5f4733e45a"
+    },
+    {
+      "established_conditions": 3,
+      "evidence_event_ids": [
+        "credo-sdk-18"
+      ],
+      "notes": [],
+      "predicates": {
+        "ExceedsAllowedUses": false,
+        "Issued": true,
+        "KeyProofValidated": true,
+        "ReturnsNewCredential": null,
+        "SameProofAcceptedBefore": false
+      },
+      "subject": "event:credo-sdk-18",
+      "threat_id": "TDID-THR-015",
+      "trigger_event_id": "credo-sdk-18",
+      "unknown_conditions": [
+        "ReturnsNewCredential"
+      ],
+      "verdict": "not_succeeded",
+      "workflow_ref": "session:defb645b133c953e77bdfe61ae18318f6ffdf08071bc28e7dfac0f5f4733e45a"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "credo-sdk-18"
+      ],
+      "notes": [
+        "no issuance_secret_ref: Wallet and Issuer records cannot be joined"
+      ],
+      "predicates": {
+        "RecipientOutsideApplicationRole": null,
+        "ResultObtained": null,
+        "ReusedByRecipient": null,
+        "SecretReadableByRecipient": null
+      },
+      "subject": "event:credo-sdk-18",
+      "threat_id": "TDID-THR-016",
+      "trigger_event_id": "credo-sdk-18",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "SecretReadableByRecipient",
+        "ReusedByRecipient",
+        "ResultObtained"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:defb645b133c953e77bdfe61ae18318f6ffdf08071bc28e7dfac0f5f4733e45a"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "credo-sdk-19"
+      ],
+      "notes": [],
+      "predicates": {
+        "ReasonCompromised": null,
+        "SignalAuthoritative": null,
+        "SignalForSameMethod": null,
+        "SignalIntegrityVerified": null,
+        "UseAccepted": true,
+        "UseAtOrAfterEffectiveTime": null
+      },
+      "subject": "use:credo-sdk-19",
+      "threat_id": "TDID-THR-002",
+      "trigger_event_id": "credo-sdk-19",
+      "unknown_conditions": [
+        "SignalForSameMethod",
+        "SignalAuthoritative",
+        "SignalIntegrityVerified",
+        "ReasonCompromised",
+        "UseAtOrAfterEffectiveTime"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:533cc763bf03a4d0f6a244a18b39e987f60a43436cb23b32ed278afb3d97e857"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "credo-sdk-19"
+      ],
+      "notes": [],
+      "predicates": {
+        "ConsumedCommitmentUnverified": null,
+        "NotReverifiedAtUse": null,
+        "SecurityRelevantUse": true,
+        "VerifiedEarlier": null
+      },
+      "subject": "use:credo-sdk-19",
+      "threat_id": "TDID-THR-003",
+      "trigger_event_id": "credo-sdk-19",
+      "unknown_conditions": [
+        "VerifiedEarlier",
+        "ConsumedCommitmentUnverified",
+        "NotReverifiedAtUse"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:533cc763bf03a4d0f6a244a18b39e987f60a43436cb23b32ed278afb3d97e857"
+    },
+    {
+      "established_conditions": 3,
+      "evidence_event_ids": [
+        "credo-sdk-19"
+      ],
+      "notes": [],
+      "predicates": {
+        "ExceedsAllowedUses": false,
+        "Issued": true,
+        "KeyProofValidated": true,
+        "ReturnsNewCredential": null,
+        "SameProofAcceptedBefore": false
+      },
+      "subject": "event:credo-sdk-19",
+      "threat_id": "TDID-THR-015",
+      "trigger_event_id": "credo-sdk-19",
+      "unknown_conditions": [
+        "ReturnsNewCredential"
+      ],
+      "verdict": "not_succeeded",
+      "workflow_ref": "session:533cc763bf03a4d0f6a244a18b39e987f60a43436cb23b32ed278afb3d97e857"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "credo-sdk-19"
+      ],
+      "notes": [
+        "no issuance_secret_ref: Wallet and Issuer records cannot be joined"
+      ],
+      "predicates": {
+        "RecipientOutsideApplicationRole": null,
+        "ResultObtained": null,
+        "ReusedByRecipient": null,
+        "SecretReadableByRecipient": null
+      },
+      "subject": "event:credo-sdk-19",
+      "threat_id": "TDID-THR-016",
+      "trigger_event_id": "credo-sdk-19",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "SecretReadableByRecipient",
+        "ReusedByRecipient",
+        "ResultObtained"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:533cc763bf03a4d0f6a244a18b39e987f60a43436cb23b32ed278afb3d97e857"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "credo-sdk-20"
+      ],
+      "notes": [],
+      "predicates": {
+        "ReasonCompromised": null,
+        "SignalAuthoritative": null,
+        "SignalForSameMethod": null,
+        "SignalIntegrityVerified": null,
+        "UseAccepted": true,
+        "UseAtOrAfterEffectiveTime": null
+      },
+      "subject": "use:credo-sdk-20",
+      "threat_id": "TDID-THR-002",
+      "trigger_event_id": "credo-sdk-20",
+      "unknown_conditions": [
+        "SignalForSameMethod",
+        "SignalAuthoritative",
+        "SignalIntegrityVerified",
+        "ReasonCompromised",
+        "UseAtOrAfterEffectiveTime"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:399eebe4d6d9638984a1efd9f5b5a08f854dc095850b560874e069b88f7fc06d"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "credo-sdk-20"
+      ],
+      "notes": [],
+      "predicates": {
+        "ConsumedCommitmentUnverified": null,
+        "NotReverifiedAtUse": null,
+        "SecurityRelevantUse": true,
+        "VerifiedEarlier": null
+      },
+      "subject": "use:credo-sdk-20",
+      "threat_id": "TDID-THR-003",
+      "trigger_event_id": "credo-sdk-20",
+      "unknown_conditions": [
+        "VerifiedEarlier",
+        "ConsumedCommitmentUnverified",
+        "NotReverifiedAtUse"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:399eebe4d6d9638984a1efd9f5b5a08f854dc095850b560874e069b88f7fc06d"
+    },
+    {
+      "established_conditions": 3,
+      "evidence_event_ids": [
+        "credo-sdk-20"
+      ],
+      "notes": [],
+      "predicates": {
+        "ExceedsAllowedUses": false,
+        "Issued": true,
+        "KeyProofValidated": true,
+        "ReturnsNewCredential": null,
+        "SameProofAcceptedBefore": false
+      },
+      "subject": "event:credo-sdk-20",
+      "threat_id": "TDID-THR-015",
+      "trigger_event_id": "credo-sdk-20",
+      "unknown_conditions": [
+        "ReturnsNewCredential"
+      ],
+      "verdict": "not_succeeded",
+      "workflow_ref": "session:399eebe4d6d9638984a1efd9f5b5a08f854dc095850b560874e069b88f7fc06d"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "credo-sdk-20"
+      ],
+      "notes": [
+        "no issuance_secret_ref: Wallet and Issuer records cannot be joined"
+      ],
+      "predicates": {
+        "RecipientOutsideApplicationRole": null,
+        "ResultObtained": null,
+        "ReusedByRecipient": null,
+        "SecretReadableByRecipient": null
+      },
+      "subject": "event:credo-sdk-20",
+      "threat_id": "TDID-THR-016",
+      "trigger_event_id": "credo-sdk-20",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "SecretReadableByRecipient",
+        "ReusedByRecipient",
+        "ResultObtained"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:399eebe4d6d9638984a1efd9f5b5a08f854dc095850b560874e069b88f7fc06d"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "credo-sdk-21"
+      ],
+      "notes": [],
+      "predicates": {
+        "ReasonCompromised": null,
+        "SignalAuthoritative": null,
+        "SignalForSameMethod": null,
+        "SignalIntegrityVerified": null,
+        "UseAccepted": true,
+        "UseAtOrAfterEffectiveTime": null
+      },
+      "subject": "use:credo-sdk-21",
+      "threat_id": "TDID-THR-002",
+      "trigger_event_id": "credo-sdk-21",
+      "unknown_conditions": [
+        "SignalForSameMethod",
+        "SignalAuthoritative",
+        "SignalIntegrityVerified",
+        "ReasonCompromised",
+        "UseAtOrAfterEffectiveTime"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:df527907d987d975dd15397e63e5467355e8431072850e31f668e264a362f200"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "credo-sdk-21"
+      ],
+      "notes": [],
+      "predicates": {
+        "ConsumedCommitmentUnverified": null,
+        "NotReverifiedAtUse": null,
+        "SecurityRelevantUse": true,
+        "VerifiedEarlier": null
+      },
+      "subject": "use:credo-sdk-21",
+      "threat_id": "TDID-THR-003",
+      "trigger_event_id": "credo-sdk-21",
+      "unknown_conditions": [
+        "VerifiedEarlier",
+        "ConsumedCommitmentUnverified",
+        "NotReverifiedAtUse"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:df527907d987d975dd15397e63e5467355e8431072850e31f668e264a362f200"
+    },
+    {
+      "established_conditions": 3,
+      "evidence_event_ids": [
+        "credo-sdk-21"
+      ],
+      "notes": [],
+      "predicates": {
+        "ExceedsAllowedUses": false,
+        "Issued": true,
+        "KeyProofValidated": true,
+        "ReturnsNewCredential": null,
+        "SameProofAcceptedBefore": false
+      },
+      "subject": "event:credo-sdk-21",
+      "threat_id": "TDID-THR-015",
+      "trigger_event_id": "credo-sdk-21",
+      "unknown_conditions": [
+        "ReturnsNewCredential"
+      ],
+      "verdict": "not_succeeded",
+      "workflow_ref": "session:df527907d987d975dd15397e63e5467355e8431072850e31f668e264a362f200"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "credo-sdk-21"
+      ],
+      "notes": [
+        "no issuance_secret_ref: Wallet and Issuer records cannot be joined"
+      ],
+      "predicates": {
+        "RecipientOutsideApplicationRole": null,
+        "ResultObtained": null,
+        "ReusedByRecipient": null,
+        "SecretReadableByRecipient": null
+      },
+      "subject": "event:credo-sdk-21",
+      "threat_id": "TDID-THR-016",
+      "trigger_event_id": "credo-sdk-21",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "SecretReadableByRecipient",
+        "ReusedByRecipient",
+        "ResultObtained"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:df527907d987d975dd15397e63e5467355e8431072850e31f668e264a362f200"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "credo-sdk-22"
+      ],
+      "notes": [],
+      "predicates": {
+        "ReasonCompromised": null,
+        "SignalAuthoritative": null,
+        "SignalForSameMethod": null,
+        "SignalIntegrityVerified": null,
+        "UseAccepted": null,
+        "UseAtOrAfterEffectiveTime": null
+      },
+      "subject": "use:credo-sdk-22",
+      "threat_id": "TDID-THR-002",
+      "trigger_event_id": "credo-sdk-22",
+      "unknown_conditions": [
+        "SignalForSameMethod",
+        "SignalAuthoritative",
+        "SignalIntegrityVerified",
+        "ReasonCompromised",
+        "UseAtOrAfterEffectiveTime",
+        "UseAccepted"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:df527907d987d975dd15397e63e5467355e8431072850e31f668e264a362f200"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "credo-sdk-22"
+      ],
+      "notes": [],
+      "predicates": {
+        "ConsumedCommitmentUnverified": null,
+        "NotReverifiedAtUse": null,
+        "SecurityRelevantUse": null,
+        "VerifiedEarlier": null
+      },
+      "subject": "use:credo-sdk-22",
+      "threat_id": "TDID-THR-003",
+      "trigger_event_id": "credo-sdk-22",
+      "unknown_conditions": [
+        "VerifiedEarlier",
+        "ConsumedCommitmentUnverified",
+        "NotReverifiedAtUse",
+        "SecurityRelevantUse"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:df527907d987d975dd15397e63e5467355e8431072850e31f668e264a362f200"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "credo-sdk-22"
+      ],
+      "notes": [],
+      "predicates": {
+        "ExceedsAllowedUses": null,
+        "Issued": null,
+        "KeyProofValidated": null,
+        "ReturnsNewCredential": null,
+        "SameProofAcceptedBefore": null
+      },
+      "subject": "event:credo-sdk-22",
+      "threat_id": "TDID-THR-015",
+      "trigger_event_id": "credo-sdk-22",
+      "unknown_conditions": [
+        "SameProofAcceptedBefore",
+        "KeyProofValidated",
+        "ExceedsAllowedUses",
+        "Issued",
+        "ReturnsNewCredential"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:df527907d987d975dd15397e63e5467355e8431072850e31f668e264a362f200"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "credo-sdk-22"
+      ],
+      "notes": [
+        "no issuance_secret_ref: Wallet and Issuer records cannot be joined"
+      ],
+      "predicates": {
+        "RecipientOutsideApplicationRole": null,
+        "ResultObtained": null,
+        "ReusedByRecipient": null,
+        "SecretReadableByRecipient": null
+      },
+      "subject": "event:credo-sdk-22",
+      "threat_id": "TDID-THR-016",
+      "trigger_event_id": "credo-sdk-22",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "SecretReadableByRecipient",
+        "ReusedByRecipient",
+        "ResultObtained"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:df527907d987d975dd15397e63e5467355e8431072850e31f668e264a362f200"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "credo-sdk-23"
+      ],
+      "notes": [],
+      "predicates": {
+        "ReasonCompromised": null,
+        "SignalAuthoritative": null,
+        "SignalForSameMethod": null,
+        "SignalIntegrityVerified": null,
+        "UseAccepted": true,
+        "UseAtOrAfterEffectiveTime": null
+      },
+      "subject": "use:credo-sdk-23",
+      "threat_id": "TDID-THR-002",
+      "trigger_event_id": "credo-sdk-23",
+      "unknown_conditions": [
+        "SignalForSameMethod",
+        "SignalAuthoritative",
+        "SignalIntegrityVerified",
+        "ReasonCompromised",
+        "UseAtOrAfterEffectiveTime"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:35fd34e78436c4b5f073bd8c90e48c80c9a612d29c79ffd74060ad5910084bd5"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "credo-sdk-23"
+      ],
+      "notes": [],
+      "predicates": {
+        "ConsumedCommitmentUnverified": null,
+        "NotReverifiedAtUse": null,
+        "SecurityRelevantUse": true,
+        "VerifiedEarlier": null
+      },
+      "subject": "use:credo-sdk-23",
+      "threat_id": "TDID-THR-003",
+      "trigger_event_id": "credo-sdk-23",
+      "unknown_conditions": [
+        "VerifiedEarlier",
+        "ConsumedCommitmentUnverified",
+        "NotReverifiedAtUse"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:35fd34e78436c4b5f073bd8c90e48c80c9a612d29c79ffd74060ad5910084bd5"
+    },
+    {
+      "established_conditions": 3,
+      "evidence_event_ids": [
+        "credo-sdk-23"
+      ],
+      "notes": [],
+      "predicates": {
+        "ExceedsAllowedUses": false,
+        "Issued": true,
+        "KeyProofValidated": true,
+        "ReturnsNewCredential": null,
+        "SameProofAcceptedBefore": false
+      },
+      "subject": "event:credo-sdk-23",
+      "threat_id": "TDID-THR-015",
+      "trigger_event_id": "credo-sdk-23",
+      "unknown_conditions": [
+        "ReturnsNewCredential"
+      ],
+      "verdict": "not_succeeded",
+      "workflow_ref": "session:35fd34e78436c4b5f073bd8c90e48c80c9a612d29c79ffd74060ad5910084bd5"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "credo-sdk-23"
+      ],
+      "notes": [
+        "no issuance_secret_ref: Wallet and Issuer records cannot be joined"
+      ],
+      "predicates": {
+        "RecipientOutsideApplicationRole": null,
+        "ResultObtained": null,
+        "ReusedByRecipient": null,
+        "SecretReadableByRecipient": null
+      },
+      "subject": "event:credo-sdk-23",
+      "threat_id": "TDID-THR-016",
+      "trigger_event_id": "credo-sdk-23",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "SecretReadableByRecipient",
+        "ReusedByRecipient",
+        "ResultObtained"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:35fd34e78436c4b5f073bd8c90e48c80c9a612d29c79ffd74060ad5910084bd5"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "credo-sdk-24"
+      ],
+      "notes": [],
+      "predicates": {
+        "ReasonCompromised": null,
+        "SignalAuthoritative": null,
+        "SignalForSameMethod": null,
+        "SignalIntegrityVerified": null,
+        "UseAccepted": true,
+        "UseAtOrAfterEffectiveTime": null
+      },
+      "subject": "use:credo-sdk-24",
+      "threat_id": "TDID-THR-002",
+      "trigger_event_id": "credo-sdk-24",
+      "unknown_conditions": [
+        "SignalForSameMethod",
+        "SignalAuthoritative",
+        "SignalIntegrityVerified",
+        "ReasonCompromised",
+        "UseAtOrAfterEffectiveTime"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:4f1c94e31075e5c443d1949d7a65cee5adfb4111567f26f17c50ae24dbbbb4f4"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "credo-sdk-24"
+      ],
+      "notes": [],
+      "predicates": {
+        "ConsumedCommitmentUnverified": null,
+        "NotReverifiedAtUse": null,
+        "SecurityRelevantUse": true,
+        "VerifiedEarlier": null
+      },
+      "subject": "use:credo-sdk-24",
+      "threat_id": "TDID-THR-003",
+      "trigger_event_id": "credo-sdk-24",
+      "unknown_conditions": [
+        "VerifiedEarlier",
+        "ConsumedCommitmentUnverified",
+        "NotReverifiedAtUse"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:4f1c94e31075e5c443d1949d7a65cee5adfb4111567f26f17c50ae24dbbbb4f4"
+    },
+    {
+      "established_conditions": 1,
+      "evidence_event_ids": [
+        "credo-sdk-23",
+        "credo-sdk-24"
+      ],
+      "notes": [],
+      "predicates": {
+        "ExceedsAllowedUses": null,
+        "Issued": true,
+        "KeyProofValidated": true,
+        "ReturnsNewCredential": null,
+        "SameProofAcceptedBefore": null
+      },
+      "subject": "event:credo-sdk-24",
+      "threat_id": "TDID-THR-015",
+      "trigger_event_id": "credo-sdk-24",
+      "unknown_conditions": [
+        "SameProofAcceptedBefore",
+        "ExceedsAllowedUses",
+        "ReturnsNewCredential"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:4f1c94e31075e5c443d1949d7a65cee5adfb4111567f26f17c50ae24dbbbb4f4"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "credo-sdk-24"
+      ],
+      "notes": [
+        "no issuance_secret_ref: Wallet and Issuer records cannot be joined"
+      ],
+      "predicates": {
+        "RecipientOutsideApplicationRole": null,
+        "ResultObtained": null,
+        "ReusedByRecipient": null,
+        "SecretReadableByRecipient": null
+      },
+      "subject": "event:credo-sdk-24",
+      "threat_id": "TDID-THR-016",
+      "trigger_event_id": "credo-sdk-24",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "SecretReadableByRecipient",
+        "ReusedByRecipient",
+        "ResultObtained"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:4f1c94e31075e5c443d1949d7a65cee5adfb4111567f26f17c50ae24dbbbb4f4"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "credo-sdk-25"
+      ],
+      "notes": [],
+      "predicates": {
+        "ReasonCompromised": null,
+        "SignalAuthoritative": null,
+        "SignalForSameMethod": null,
+        "SignalIntegrityVerified": null,
+        "UseAccepted": true,
+        "UseAtOrAfterEffectiveTime": null
+      },
+      "subject": "use:credo-sdk-25",
+      "threat_id": "TDID-THR-002",
+      "trigger_event_id": "credo-sdk-25",
+      "unknown_conditions": [
+        "SignalForSameMethod",
+        "SignalAuthoritative",
+        "SignalIntegrityVerified",
+        "ReasonCompromised",
+        "UseAtOrAfterEffectiveTime"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:17999185fc3085fb4e2b624dabd43c67fb5c3dfe45b9dc1305fc28bc165e223c"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "credo-sdk-25"
+      ],
+      "notes": [],
+      "predicates": {
+        "ConsumedCommitmentUnverified": null,
+        "NotReverifiedAtUse": null,
+        "SecurityRelevantUse": true,
+        "VerifiedEarlier": null
+      },
+      "subject": "use:credo-sdk-25",
+      "threat_id": "TDID-THR-003",
+      "trigger_event_id": "credo-sdk-25",
+      "unknown_conditions": [
+        "VerifiedEarlier",
+        "ConsumedCommitmentUnverified",
+        "NotReverifiedAtUse"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:17999185fc3085fb4e2b624dabd43c67fb5c3dfe45b9dc1305fc28bc165e223c"
+    },
+    {
+      "established_conditions": 3,
+      "evidence_event_ids": [
+        "credo-sdk-25"
+      ],
+      "notes": [],
+      "predicates": {
+        "ExceedsAllowedUses": false,
+        "Issued": true,
+        "KeyProofValidated": true,
+        "ReturnsNewCredential": null,
+        "SameProofAcceptedBefore": false
+      },
+      "subject": "event:credo-sdk-25",
+      "threat_id": "TDID-THR-015",
+      "trigger_event_id": "credo-sdk-25",
+      "unknown_conditions": [
+        "ReturnsNewCredential"
+      ],
+      "verdict": "not_succeeded",
+      "workflow_ref": "session:17999185fc3085fb4e2b624dabd43c67fb5c3dfe45b9dc1305fc28bc165e223c"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "credo-sdk-25"
+      ],
+      "notes": [
+        "no issuance_secret_ref: Wallet and Issuer records cannot be joined"
+      ],
+      "predicates": {
+        "RecipientOutsideApplicationRole": null,
+        "ResultObtained": null,
+        "ReusedByRecipient": null,
+        "SecretReadableByRecipient": null
+      },
+      "subject": "event:credo-sdk-25",
+      "threat_id": "TDID-THR-016",
+      "trigger_event_id": "credo-sdk-25",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "SecretReadableByRecipient",
+        "ReusedByRecipient",
+        "ResultObtained"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:17999185fc3085fb4e2b624dabd43c67fb5c3dfe45b9dc1305fc28bc165e223c"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "credo-sdk-26"
+      ],
+      "notes": [],
+      "predicates": {
+        "ReasonCompromised": null,
+        "SignalAuthoritative": null,
+        "SignalForSameMethod": null,
+        "SignalIntegrityVerified": null,
+        "UseAccepted": null,
+        "UseAtOrAfterEffectiveTime": null
+      },
+      "subject": "use:credo-sdk-26",
+      "threat_id": "TDID-THR-002",
+      "trigger_event_id": "credo-sdk-26",
+      "unknown_conditions": [
+        "SignalForSameMethod",
+        "SignalAuthoritative",
+        "SignalIntegrityVerified",
+        "ReasonCompromised",
+        "UseAtOrAfterEffectiveTime",
+        "UseAccepted"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:70dc459670cc86400a13761b288b6d0d77da86bb9bbffd47915c074e941f5a58"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "credo-sdk-26"
+      ],
+      "notes": [],
+      "predicates": {
+        "ConsumedCommitmentUnverified": null,
+        "NotReverifiedAtUse": null,
+        "SecurityRelevantUse": null,
+        "VerifiedEarlier": null
+      },
+      "subject": "use:credo-sdk-26",
+      "threat_id": "TDID-THR-003",
+      "trigger_event_id": "credo-sdk-26",
+      "unknown_conditions": [
+        "VerifiedEarlier",
+        "ConsumedCommitmentUnverified",
+        "NotReverifiedAtUse",
+        "SecurityRelevantUse"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:70dc459670cc86400a13761b288b6d0d77da86bb9bbffd47915c074e941f5a58"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "credo-sdk-26"
+      ],
+      "notes": [],
+      "predicates": {
+        "ExceedsAllowedUses": null,
+        "Issued": null,
+        "KeyProofValidated": null,
+        "ReturnsNewCredential": null,
+        "SameProofAcceptedBefore": null
+      },
+      "subject": "event:credo-sdk-26",
+      "threat_id": "TDID-THR-015",
+      "trigger_event_id": "credo-sdk-26",
+      "unknown_conditions": [
+        "SameProofAcceptedBefore",
+        "KeyProofValidated",
+        "ExceedsAllowedUses",
+        "Issued",
+        "ReturnsNewCredential"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:70dc459670cc86400a13761b288b6d0d77da86bb9bbffd47915c074e941f5a58"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "credo-sdk-26"
+      ],
+      "notes": [
+        "no issuance_secret_ref: Wallet and Issuer records cannot be joined"
+      ],
+      "predicates": {
+        "RecipientOutsideApplicationRole": null,
+        "ResultObtained": null,
+        "ReusedByRecipient": null,
+        "SecretReadableByRecipient": null
+      },
+      "subject": "event:credo-sdk-26",
+      "threat_id": "TDID-THR-016",
+      "trigger_event_id": "credo-sdk-26",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "SecretReadableByRecipient",
+        "ReusedByRecipient",
+        "ResultObtained"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:70dc459670cc86400a13761b288b6d0d77da86bb9bbffd47915c074e941f5a58"
+    }
+  ],
+  "incomplete_streams": {},
+  "rejected_records": [],
+  "schema_version": "tdid-event/1.0",
+  "tdid_version": "1.0.0.dev0",
+  "workflows": [
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-002",
+      "unknown_conditions": [
+        "ReasonCompromised",
+        "SignalAuthoritative",
+        "SignalForSameMethod",
+        "SignalIntegrityVerified",
+        "UseAtOrAfterEffectiveTime"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:17999185fc3085fb4e2b624dabd43c67fb5c3dfe45b9dc1305fc28bc165e223c"
+    },
+    {
+      "decisions": 2,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-002",
+      "unknown_conditions": [
+        "ReasonCompromised",
+        "SignalAuthoritative",
+        "SignalForSameMethod",
+        "SignalIntegrityVerified",
+        "UseAccepted",
+        "UseAtOrAfterEffectiveTime"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:216572920d491804a46c0b16befdd842454b9697721eaf723687c2cf875eedaf"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-002",
+      "unknown_conditions": [
+        "ReasonCompromised",
+        "SignalAuthoritative",
+        "SignalForSameMethod",
+        "SignalIntegrityVerified",
+        "UseAtOrAfterEffectiveTime"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:26857b61d39be8f310660c72392c16c3063d23f5153ce05e6790cca55c335e5e"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-002",
+      "unknown_conditions": [
+        "ReasonCompromised",
+        "SignalAuthoritative",
+        "SignalForSameMethod",
+        "SignalIntegrityVerified",
+        "UseAtOrAfterEffectiveTime"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:35fd34e78436c4b5f073bd8c90e48c80c9a612d29c79ffd74060ad5910084bd5"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-002",
+      "unknown_conditions": [
+        "ReasonCompromised",
+        "SignalAuthoritative",
+        "SignalForSameMethod",
+        "SignalIntegrityVerified",
+        "UseAtOrAfterEffectiveTime"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:37bce36d0cc8d54ae4f2c137a9009d3c3b9cacdf84a4d97994658da7ae55014b"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-002",
+      "unknown_conditions": [
+        "ReasonCompromised",
+        "SignalAuthoritative",
+        "SignalForSameMethod",
+        "SignalIntegrityVerified",
+        "UseAtOrAfterEffectiveTime"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:399eebe4d6d9638984a1efd9f5b5a08f854dc095850b560874e069b88f7fc06d"
+    },
+    {
+      "decisions": 2,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-002",
+      "unknown_conditions": [
+        "ReasonCompromised",
+        "SignalAuthoritative",
+        "SignalForSameMethod",
+        "SignalIntegrityVerified",
+        "UseAccepted",
+        "UseAtOrAfterEffectiveTime"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:4b904d4bc4d63f974fc8801563d384170869f9bdd0d2aed04ad517e11177cd7f"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-002",
+      "unknown_conditions": [
+        "ReasonCompromised",
+        "SignalAuthoritative",
+        "SignalForSameMethod",
+        "SignalIntegrityVerified",
+        "UseAtOrAfterEffectiveTime"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:4f1c94e31075e5c443d1949d7a65cee5adfb4111567f26f17c50ae24dbbbb4f4"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-002",
+      "unknown_conditions": [
+        "ReasonCompromised",
+        "SignalAuthoritative",
+        "SignalForSameMethod",
+        "SignalIntegrityVerified",
+        "UseAtOrAfterEffectiveTime"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:533cc763bf03a4d0f6a244a18b39e987f60a43436cb23b32ed278afb3d97e857"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-002",
+      "unknown_conditions": [
+        "ReasonCompromised",
+        "SignalAuthoritative",
+        "SignalForSameMethod",
+        "SignalIntegrityVerified",
+        "UseAtOrAfterEffectiveTime"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:5b22c722ba940cba7286bad894bfc522de238b772cf3d5f1487058b1e993c3dd"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-002",
+      "unknown_conditions": [
+        "ReasonCompromised",
+        "SignalAuthoritative",
+        "SignalForSameMethod",
+        "SignalIntegrityVerified",
+        "UseAccepted",
+        "UseAtOrAfterEffectiveTime"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:5d0b4465051a2d3b84f30963a740c3f1161642457d3e62fd88e48f4d4b87c92a"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-002",
+      "unknown_conditions": [
+        "ReasonCompromised",
+        "SignalAuthoritative",
+        "SignalForSameMethod",
+        "SignalIntegrityVerified",
+        "UseAccepted",
+        "UseAtOrAfterEffectiveTime"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:6fb04a19672b10eba3afce62172928bda0d82623070adcf7c4c8a8175569a661"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-002",
+      "unknown_conditions": [
+        "ReasonCompromised",
+        "SignalAuthoritative",
+        "SignalForSameMethod",
+        "SignalIntegrityVerified",
+        "UseAccepted",
+        "UseAtOrAfterEffectiveTime"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:70dc459670cc86400a13761b288b6d0d77da86bb9bbffd47915c074e941f5a58"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-002",
+      "unknown_conditions": [
+        "ReasonCompromised",
+        "SignalAuthoritative",
+        "SignalForSameMethod",
+        "SignalIntegrityVerified",
+        "UseAtOrAfterEffectiveTime"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:be86ae59a37cd10cffd96f2a57e47d1d667427d32dd3d1694448451efdfde75a"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-002",
+      "unknown_conditions": [
+        "ReasonCompromised",
+        "SignalAuthoritative",
+        "SignalForSameMethod",
+        "SignalIntegrityVerified",
+        "UseAtOrAfterEffectiveTime"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:cd36e739be897fd6729aea9413da682dab6d9267f2b8cae86656f087f3346d0f"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-002",
+      "unknown_conditions": [
+        "ReasonCompromised",
+        "SignalAuthoritative",
+        "SignalForSameMethod",
+        "SignalIntegrityVerified",
+        "UseAtOrAfterEffectiveTime"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:d55e687e063af659896b8ffb54e77763da7d8e1da4e5dc4e83ab190494d8224a"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-002",
+      "unknown_conditions": [
+        "ReasonCompromised",
+        "SignalAuthoritative",
+        "SignalForSameMethod",
+        "SignalIntegrityVerified",
+        "UseAtOrAfterEffectiveTime"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:dba3ecd5262213eed2ceb0affb8d7a4e95396b9d597eaaeee9cf44a845213da8"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-002",
+      "unknown_conditions": [
+        "ReasonCompromised",
+        "SignalAuthoritative",
+        "SignalForSameMethod",
+        "SignalIntegrityVerified",
+        "UseAtOrAfterEffectiveTime"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:defb645b133c953e77bdfe61ae18318f6ffdf08071bc28e7dfac0f5f4733e45a"
+    },
+    {
+      "decisions": 2,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-002",
+      "unknown_conditions": [
+        "ReasonCompromised",
+        "SignalAuthoritative",
+        "SignalForSameMethod",
+        "SignalIntegrityVerified",
+        "UseAccepted",
+        "UseAtOrAfterEffectiveTime"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:df527907d987d975dd15397e63e5467355e8431072850e31f668e264a362f200"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-002",
+      "unknown_conditions": [
+        "ReasonCompromised",
+        "SignalAuthoritative",
+        "SignalForSameMethod",
+        "SignalIntegrityVerified",
+        "UseAtOrAfterEffectiveTime"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:df539a6083c9f0ab7f37f694d6da93ce9529bef002936eb45be12a6411c2f3e5"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-002",
+      "unknown_conditions": [
+        "ReasonCompromised",
+        "SignalAuthoritative",
+        "SignalForSameMethod",
+        "SignalIntegrityVerified",
+        "UseAtOrAfterEffectiveTime"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:e764d590aaa962be5e8964155ebc028e9af9a3070f338e131111f34bf49d297c"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-002",
+      "unknown_conditions": [
+        "ReasonCompromised",
+        "SignalAuthoritative",
+        "SignalForSameMethod",
+        "SignalIntegrityVerified",
+        "UseAtOrAfterEffectiveTime"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:ef2081a0ab38747772a5707d0e7d675166122e28a653fc38b6687bb2bc27e3a7"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-002",
+      "unknown_conditions": [
+        "ReasonCompromised",
+        "SignalAuthoritative",
+        "SignalForSameMethod",
+        "SignalIntegrityVerified",
+        "UseAtOrAfterEffectiveTime"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:f0b3e3ad6a026c4763986225d5453573763123d429a63048d2ae47221ebc4b1d"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-002",
+      "unknown_conditions": [
+        "ReasonCompromised",
+        "SignalAuthoritative",
+        "SignalForSameMethod",
+        "SignalIntegrityVerified",
+        "UseAtOrAfterEffectiveTime"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:fcff13707fa04a04340ecc36e8df902c42e2927d39339094ea2c7a4d4c69cf8b"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-003",
+      "unknown_conditions": [
+        "ConsumedCommitmentUnverified",
+        "NotReverifiedAtUse",
+        "VerifiedEarlier"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:17999185fc3085fb4e2b624dabd43c67fb5c3dfe45b9dc1305fc28bc165e223c"
+    },
+    {
+      "decisions": 2,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-003",
+      "unknown_conditions": [
+        "ConsumedCommitmentUnverified",
+        "NotReverifiedAtUse",
+        "SecurityRelevantUse",
+        "VerifiedEarlier"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:216572920d491804a46c0b16befdd842454b9697721eaf723687c2cf875eedaf"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-003",
+      "unknown_conditions": [
+        "ConsumedCommitmentUnverified",
+        "NotReverifiedAtUse",
+        "VerifiedEarlier"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:26857b61d39be8f310660c72392c16c3063d23f5153ce05e6790cca55c335e5e"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-003",
+      "unknown_conditions": [
+        "ConsumedCommitmentUnverified",
+        "NotReverifiedAtUse",
+        "VerifiedEarlier"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:35fd34e78436c4b5f073bd8c90e48c80c9a612d29c79ffd74060ad5910084bd5"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-003",
+      "unknown_conditions": [
+        "ConsumedCommitmentUnverified",
+        "NotReverifiedAtUse",
+        "VerifiedEarlier"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:37bce36d0cc8d54ae4f2c137a9009d3c3b9cacdf84a4d97994658da7ae55014b"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-003",
+      "unknown_conditions": [
+        "ConsumedCommitmentUnverified",
+        "NotReverifiedAtUse",
+        "VerifiedEarlier"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:399eebe4d6d9638984a1efd9f5b5a08f854dc095850b560874e069b88f7fc06d"
+    },
+    {
+      "decisions": 2,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-003",
+      "unknown_conditions": [
+        "ConsumedCommitmentUnverified",
+        "NotReverifiedAtUse",
+        "SecurityRelevantUse",
+        "VerifiedEarlier"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:4b904d4bc4d63f974fc8801563d384170869f9bdd0d2aed04ad517e11177cd7f"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-003",
+      "unknown_conditions": [
+        "ConsumedCommitmentUnverified",
+        "NotReverifiedAtUse",
+        "VerifiedEarlier"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:4f1c94e31075e5c443d1949d7a65cee5adfb4111567f26f17c50ae24dbbbb4f4"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-003",
+      "unknown_conditions": [
+        "ConsumedCommitmentUnverified",
+        "NotReverifiedAtUse",
+        "VerifiedEarlier"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:533cc763bf03a4d0f6a244a18b39e987f60a43436cb23b32ed278afb3d97e857"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-003",
+      "unknown_conditions": [
+        "ConsumedCommitmentUnverified",
+        "NotReverifiedAtUse",
+        "VerifiedEarlier"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:5b22c722ba940cba7286bad894bfc522de238b772cf3d5f1487058b1e993c3dd"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-003",
+      "unknown_conditions": [
+        "ConsumedCommitmentUnverified",
+        "NotReverifiedAtUse",
+        "SecurityRelevantUse",
+        "VerifiedEarlier"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:5d0b4465051a2d3b84f30963a740c3f1161642457d3e62fd88e48f4d4b87c92a"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-003",
+      "unknown_conditions": [
+        "ConsumedCommitmentUnverified",
+        "NotReverifiedAtUse",
+        "SecurityRelevantUse",
+        "VerifiedEarlier"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:6fb04a19672b10eba3afce62172928bda0d82623070adcf7c4c8a8175569a661"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-003",
+      "unknown_conditions": [
+        "ConsumedCommitmentUnverified",
+        "NotReverifiedAtUse",
+        "SecurityRelevantUse",
+        "VerifiedEarlier"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:70dc459670cc86400a13761b288b6d0d77da86bb9bbffd47915c074e941f5a58"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-003",
+      "unknown_conditions": [
+        "ConsumedCommitmentUnverified",
+        "NotReverifiedAtUse",
+        "VerifiedEarlier"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:be86ae59a37cd10cffd96f2a57e47d1d667427d32dd3d1694448451efdfde75a"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-003",
+      "unknown_conditions": [
+        "ConsumedCommitmentUnverified",
+        "NotReverifiedAtUse",
+        "VerifiedEarlier"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:cd36e739be897fd6729aea9413da682dab6d9267f2b8cae86656f087f3346d0f"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-003",
+      "unknown_conditions": [
+        "ConsumedCommitmentUnverified",
+        "NotReverifiedAtUse",
+        "VerifiedEarlier"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:d55e687e063af659896b8ffb54e77763da7d8e1da4e5dc4e83ab190494d8224a"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-003",
+      "unknown_conditions": [
+        "ConsumedCommitmentUnverified",
+        "NotReverifiedAtUse",
+        "VerifiedEarlier"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:dba3ecd5262213eed2ceb0affb8d7a4e95396b9d597eaaeee9cf44a845213da8"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-003",
+      "unknown_conditions": [
+        "ConsumedCommitmentUnverified",
+        "NotReverifiedAtUse",
+        "VerifiedEarlier"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:defb645b133c953e77bdfe61ae18318f6ffdf08071bc28e7dfac0f5f4733e45a"
+    },
+    {
+      "decisions": 2,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-003",
+      "unknown_conditions": [
+        "ConsumedCommitmentUnverified",
+        "NotReverifiedAtUse",
+        "SecurityRelevantUse",
+        "VerifiedEarlier"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:df527907d987d975dd15397e63e5467355e8431072850e31f668e264a362f200"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-003",
+      "unknown_conditions": [
+        "ConsumedCommitmentUnverified",
+        "NotReverifiedAtUse",
+        "VerifiedEarlier"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:df539a6083c9f0ab7f37f694d6da93ce9529bef002936eb45be12a6411c2f3e5"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-003",
+      "unknown_conditions": [
+        "ConsumedCommitmentUnverified",
+        "NotReverifiedAtUse",
+        "VerifiedEarlier"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:e764d590aaa962be5e8964155ebc028e9af9a3070f338e131111f34bf49d297c"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-003",
+      "unknown_conditions": [
+        "ConsumedCommitmentUnverified",
+        "NotReverifiedAtUse",
+        "VerifiedEarlier"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:ef2081a0ab38747772a5707d0e7d675166122e28a653fc38b6687bb2bc27e3a7"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-003",
+      "unknown_conditions": [
+        "ConsumedCommitmentUnverified",
+        "NotReverifiedAtUse",
+        "VerifiedEarlier"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:f0b3e3ad6a026c4763986225d5453573763123d429a63048d2ae47221ebc4b1d"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-003",
+      "unknown_conditions": [
+        "ConsumedCommitmentUnverified",
+        "NotReverifiedAtUse",
+        "VerifiedEarlier"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:fcff13707fa04a04340ecc36e8df902c42e2927d39339094ea2c7a4d4c69cf8b"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": false,
+      "threat_id": "TDID-THR-015",
+      "unknown_conditions": [],
+      "verdict": "not_succeeded",
+      "workflow_ref": "session:17999185fc3085fb4e2b624dabd43c67fb5c3dfe45b9dc1305fc28bc165e223c"
+    },
+    {
+      "decisions": 2,
+      "no_relevant_record": false,
+      "threat_id": "TDID-THR-015",
+      "unknown_conditions": [
+        "ExceedsAllowedUses",
+        "Issued",
+        "KeyProofValidated",
+        "ReturnsNewCredential",
+        "SameProofAcceptedBefore"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:216572920d491804a46c0b16befdd842454b9697721eaf723687c2cf875eedaf"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": false,
+      "threat_id": "TDID-THR-015",
+      "unknown_conditions": [],
+      "verdict": "not_succeeded",
+      "workflow_ref": "session:26857b61d39be8f310660c72392c16c3063d23f5153ce05e6790cca55c335e5e"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": false,
+      "threat_id": "TDID-THR-015",
+      "unknown_conditions": [],
+      "verdict": "not_succeeded",
+      "workflow_ref": "session:35fd34e78436c4b5f073bd8c90e48c80c9a612d29c79ffd74060ad5910084bd5"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": false,
+      "threat_id": "TDID-THR-015",
+      "unknown_conditions": [],
+      "verdict": "not_succeeded",
+      "workflow_ref": "session:37bce36d0cc8d54ae4f2c137a9009d3c3b9cacdf84a4d97994658da7ae55014b"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": false,
+      "threat_id": "TDID-THR-015",
+      "unknown_conditions": [],
+      "verdict": "not_succeeded",
+      "workflow_ref": "session:399eebe4d6d9638984a1efd9f5b5a08f854dc095850b560874e069b88f7fc06d"
+    },
+    {
+      "decisions": 2,
+      "no_relevant_record": false,
+      "threat_id": "TDID-THR-015",
+      "unknown_conditions": [
+        "ExceedsAllowedUses",
+        "Issued",
+        "KeyProofValidated",
+        "ReturnsNewCredential",
+        "SameProofAcceptedBefore"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:4b904d4bc4d63f974fc8801563d384170869f9bdd0d2aed04ad517e11177cd7f"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": false,
+      "threat_id": "TDID-THR-015",
+      "unknown_conditions": [
+        "ExceedsAllowedUses",
+        "ReturnsNewCredential",
+        "SameProofAcceptedBefore"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:4f1c94e31075e5c443d1949d7a65cee5adfb4111567f26f17c50ae24dbbbb4f4"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": false,
+      "threat_id": "TDID-THR-015",
+      "unknown_conditions": [],
+      "verdict": "not_succeeded",
+      "workflow_ref": "session:533cc763bf03a4d0f6a244a18b39e987f60a43436cb23b32ed278afb3d97e857"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": false,
+      "threat_id": "TDID-THR-015",
+      "unknown_conditions": [],
+      "verdict": "not_succeeded",
+      "workflow_ref": "session:5b22c722ba940cba7286bad894bfc522de238b772cf3d5f1487058b1e993c3dd"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-015",
+      "unknown_conditions": [
+        "ExceedsAllowedUses",
+        "Issued",
+        "KeyProofValidated",
+        "ReturnsNewCredential",
+        "SameProofAcceptedBefore"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:5d0b4465051a2d3b84f30963a740c3f1161642457d3e62fd88e48f4d4b87c92a"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-015",
+      "unknown_conditions": [
+        "ExceedsAllowedUses",
+        "Issued",
+        "KeyProofValidated",
+        "ReturnsNewCredential",
+        "SameProofAcceptedBefore"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:6fb04a19672b10eba3afce62172928bda0d82623070adcf7c4c8a8175569a661"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-015",
+      "unknown_conditions": [
+        "ExceedsAllowedUses",
+        "Issued",
+        "KeyProofValidated",
+        "ReturnsNewCredential",
+        "SameProofAcceptedBefore"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:70dc459670cc86400a13761b288b6d0d77da86bb9bbffd47915c074e941f5a58"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": false,
+      "threat_id": "TDID-THR-015",
+      "unknown_conditions": [],
+      "verdict": "not_succeeded",
+      "workflow_ref": "session:be86ae59a37cd10cffd96f2a57e47d1d667427d32dd3d1694448451efdfde75a"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": false,
+      "threat_id": "TDID-THR-015",
+      "unknown_conditions": [],
+      "verdict": "not_succeeded",
+      "workflow_ref": "session:cd36e739be897fd6729aea9413da682dab6d9267f2b8cae86656f087f3346d0f"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": false,
+      "threat_id": "TDID-THR-015",
+      "unknown_conditions": [
+        "ExceedsAllowedUses",
+        "ReturnsNewCredential",
+        "SameProofAcceptedBefore"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:d55e687e063af659896b8ffb54e77763da7d8e1da4e5dc4e83ab190494d8224a"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": false,
+      "threat_id": "TDID-THR-015",
+      "unknown_conditions": [],
+      "verdict": "not_succeeded",
+      "workflow_ref": "session:dba3ecd5262213eed2ceb0affb8d7a4e95396b9d597eaaeee9cf44a845213da8"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": false,
+      "threat_id": "TDID-THR-015",
+      "unknown_conditions": [],
+      "verdict": "not_succeeded",
+      "workflow_ref": "session:defb645b133c953e77bdfe61ae18318f6ffdf08071bc28e7dfac0f5f4733e45a"
+    },
+    {
+      "decisions": 2,
+      "no_relevant_record": false,
+      "threat_id": "TDID-THR-015",
+      "unknown_conditions": [
+        "ExceedsAllowedUses",
+        "Issued",
+        "KeyProofValidated",
+        "ReturnsNewCredential",
+        "SameProofAcceptedBefore"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:df527907d987d975dd15397e63e5467355e8431072850e31f668e264a362f200"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": false,
+      "threat_id": "TDID-THR-015",
+      "unknown_conditions": [],
+      "verdict": "not_succeeded",
+      "workflow_ref": "session:df539a6083c9f0ab7f37f694d6da93ce9529bef002936eb45be12a6411c2f3e5"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": false,
+      "threat_id": "TDID-THR-015",
+      "unknown_conditions": [],
+      "verdict": "not_succeeded",
+      "workflow_ref": "session:e764d590aaa962be5e8964155ebc028e9af9a3070f338e131111f34bf49d297c"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": false,
+      "threat_id": "TDID-THR-015",
+      "unknown_conditions": [],
+      "verdict": "not_succeeded",
+      "workflow_ref": "session:ef2081a0ab38747772a5707d0e7d675166122e28a653fc38b6687bb2bc27e3a7"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": false,
+      "threat_id": "TDID-THR-015",
+      "unknown_conditions": [
+        "ExceedsAllowedUses",
+        "ReturnsNewCredential",
+        "SameProofAcceptedBefore"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:f0b3e3ad6a026c4763986225d5453573763123d429a63048d2ae47221ebc4b1d"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": false,
+      "threat_id": "TDID-THR-015",
+      "unknown_conditions": [],
+      "verdict": "not_succeeded",
+      "workflow_ref": "session:fcff13707fa04a04340ecc36e8df902c42e2927d39339094ea2c7a4d4c69cf8b"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-016",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "ResultObtained",
+        "ReusedByRecipient",
+        "SecretReadableByRecipient"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:17999185fc3085fb4e2b624dabd43c67fb5c3dfe45b9dc1305fc28bc165e223c"
+    },
+    {
+      "decisions": 2,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-016",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "ResultObtained",
+        "ReusedByRecipient",
+        "SecretReadableByRecipient"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:216572920d491804a46c0b16befdd842454b9697721eaf723687c2cf875eedaf"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-016",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "ResultObtained",
+        "ReusedByRecipient",
+        "SecretReadableByRecipient"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:26857b61d39be8f310660c72392c16c3063d23f5153ce05e6790cca55c335e5e"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-016",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "ResultObtained",
+        "ReusedByRecipient",
+        "SecretReadableByRecipient"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:35fd34e78436c4b5f073bd8c90e48c80c9a612d29c79ffd74060ad5910084bd5"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-016",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "ResultObtained",
+        "ReusedByRecipient",
+        "SecretReadableByRecipient"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:37bce36d0cc8d54ae4f2c137a9009d3c3b9cacdf84a4d97994658da7ae55014b"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-016",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "ResultObtained",
+        "ReusedByRecipient",
+        "SecretReadableByRecipient"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:399eebe4d6d9638984a1efd9f5b5a08f854dc095850b560874e069b88f7fc06d"
+    },
+    {
+      "decisions": 2,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-016",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "ResultObtained",
+        "ReusedByRecipient",
+        "SecretReadableByRecipient"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:4b904d4bc4d63f974fc8801563d384170869f9bdd0d2aed04ad517e11177cd7f"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-016",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "ResultObtained",
+        "ReusedByRecipient",
+        "SecretReadableByRecipient"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:4f1c94e31075e5c443d1949d7a65cee5adfb4111567f26f17c50ae24dbbbb4f4"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-016",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "ResultObtained",
+        "ReusedByRecipient",
+        "SecretReadableByRecipient"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:533cc763bf03a4d0f6a244a18b39e987f60a43436cb23b32ed278afb3d97e857"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-016",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "ResultObtained",
+        "ReusedByRecipient",
+        "SecretReadableByRecipient"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:5b22c722ba940cba7286bad894bfc522de238b772cf3d5f1487058b1e993c3dd"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-016",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "ResultObtained",
+        "ReusedByRecipient",
+        "SecretReadableByRecipient"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:5d0b4465051a2d3b84f30963a740c3f1161642457d3e62fd88e48f4d4b87c92a"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-016",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "ResultObtained",
+        "ReusedByRecipient",
+        "SecretReadableByRecipient"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:6fb04a19672b10eba3afce62172928bda0d82623070adcf7c4c8a8175569a661"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-016",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "ResultObtained",
+        "ReusedByRecipient",
+        "SecretReadableByRecipient"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:70dc459670cc86400a13761b288b6d0d77da86bb9bbffd47915c074e941f5a58"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-016",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "ResultObtained",
+        "ReusedByRecipient",
+        "SecretReadableByRecipient"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:be86ae59a37cd10cffd96f2a57e47d1d667427d32dd3d1694448451efdfde75a"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-016",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "ResultObtained",
+        "ReusedByRecipient",
+        "SecretReadableByRecipient"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:cd36e739be897fd6729aea9413da682dab6d9267f2b8cae86656f087f3346d0f"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-016",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "ResultObtained",
+        "ReusedByRecipient",
+        "SecretReadableByRecipient"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:d55e687e063af659896b8ffb54e77763da7d8e1da4e5dc4e83ab190494d8224a"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-016",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "ResultObtained",
+        "ReusedByRecipient",
+        "SecretReadableByRecipient"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:dba3ecd5262213eed2ceb0affb8d7a4e95396b9d597eaaeee9cf44a845213da8"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-016",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "ResultObtained",
+        "ReusedByRecipient",
+        "SecretReadableByRecipient"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:defb645b133c953e77bdfe61ae18318f6ffdf08071bc28e7dfac0f5f4733e45a"
+    },
+    {
+      "decisions": 2,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-016",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "ResultObtained",
+        "ReusedByRecipient",
+        "SecretReadableByRecipient"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:df527907d987d975dd15397e63e5467355e8431072850e31f668e264a362f200"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-016",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "ResultObtained",
+        "ReusedByRecipient",
+        "SecretReadableByRecipient"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:df539a6083c9f0ab7f37f694d6da93ce9529bef002936eb45be12a6411c2f3e5"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-016",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "ResultObtained",
+        "ReusedByRecipient",
+        "SecretReadableByRecipient"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:e764d590aaa962be5e8964155ebc028e9af9a3070f338e131111f34bf49d297c"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-016",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "ResultObtained",
+        "ReusedByRecipient",
+        "SecretReadableByRecipient"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:ef2081a0ab38747772a5707d0e7d675166122e28a653fc38b6687bb2bc27e3a7"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-016",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "ResultObtained",
+        "ReusedByRecipient",
+        "SecretReadableByRecipient"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:f0b3e3ad6a026c4763986225d5453573763123d429a63048d2ae47221ebc4b1d"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-016",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "ResultObtained",
+        "ReusedByRecipient",
+        "SecretReadableByRecipient"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "session:fcff13707fa04a04340ecc36e8df902c42e2927d39339094ea2c7a4d4c69cf8b"
+    }
+  ]
+}

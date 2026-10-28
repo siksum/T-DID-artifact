@@ -1,0 +1,58 @@
+{
+  "decision": "D-M9-134",
+  "status": "candidate execution, not human-reviewed paper claim",
+  "threat": "TDID-THR-015",
+  "products": [
+    "walt.id",
+    "Credo TS"
+  ],
+  "scenarios": [
+    "fresh",
+    "different_proof",
+    "same_session_reuse",
+    "new_session_reuse",
+    "bad_signature"
+  ],
+  "repetitions": 3,
+  "case_denominator_per_product": 15,
+  "credential_request_denominator_per_product": 27,
+  "policy": {
+    "proof_allowed_use_count": 1,
+    "scope": "same issuer, across these controlled sessions",
+    "authority": "explicit experiment policy; NOT product default or universal standards requirement"
+  },
+  "boundary": [
+    "actual native HTTP request/response",
+    "default product logs",
+    "existing native callback/event/state APIs"
+  ],
+  "conditions": [
+    "native_direct",
+    "native_with_source_inference",
+    "proposed_native_plus_augmented"
+  ],
+  "forbidden_inputs": [
+    "oracle in evaluator",
+    "augmented evidence in native lift",
+    "scenario labels in evaluator"
+  ],
+  "oracle_5xx": "unscorable, preserve separately; never assume no issuance from HTTP failure",
+  "comparison": "paired projections of the same execution; all conditions use identical state and predicate engine",
+  "sources": {
+    "research/candidates/chapter6-paired-evidence-20260908-001/run_paired.py": "ba417eaedf09fd6e94553129fe6a2534073b9abd4d6d4aa03de82d450f6c883e",
+    "research/candidates/chapter6-paired-evidence-20260908-001/paired_audit.e2e.test.ts": "c7ce3f607fd9803180b2195e0118998a02f5c2acb78a4edfaad077624c12280f",
+    "research/candidates/chapter6-paired-evidence-20260908-001/credo_observation.ts": "7f3bc7df50d85ba6f661b9afdb9be639648083cf7a424e9e0263f38ce2ae3f5f",
+    "research/candidates/chapter6-paired-evidence-20260908-001/pair_oracle.py": "624f99dabefe85a3a1200dbcb9b9b582012363bb88b02f866effd946b6af6be6",
+    "research/candidates/chapter6-paired-evidence-20260908-001/evaluate_paired.py": "0b8b160280de68be3e95896f3c421b852a833d0f682f836278713d99d6826cee",
+    "research/candidates/chapter6-native-audit-20260908-001/analyze_native.py": "e36d076bf2b0d8b379b3896af209ef63a055f24db68666c4b13e202e27b59a6f",
+    "research/candidates/chapter6-product-apparatus-20260908-001/workflow_http.py": "7016ee377e2ffbc5e350b5f167cfc8b463a7d24953429e0a4168c758e76b2b83",
+    "research/candidates/chapter6-product-apparatus-20260908-001/http_measurement.py": "5250bc959a9f8b3114a85fe59609e69ac5b6b70d732340abe43db52b4ee648fe",
+    "src/didmon/final_paper/core.py": "d06187924cf2daec23f7adb1c5971bad26b9c675ab34ddc754fb1d1b3a6fd305",
+    "research/runs/RUN-20260908-CHAPTER6-FIVE-AXIS-002/apparatus/PRODUCT-BUILD-001/BUILD-RECEIPT-006.json": "df02533f8c01ff89077659bc5aa26937a250e5f51428b5a26251b34efe3fdf47"
+  },
+  "source_commits": {
+    "walt.id": "f5b5995059c4ab69d6bc73f434c72d1574188963",
+    "Credo TS": "3c32928107639bc355f82d4ba11c4d91901e11cb"
+  },
+  "created_before_execution_ns": 1788858734509016453
+}

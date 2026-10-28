@@ -1,0 +1,89 @@
+# TDID-THR-011 Monitoring a known credential status entry outside an authorized session
+# Source analysis: research/candidates/CAND-20260814-OBS-GAP-THR-011-015.yaml (TDID-THR-011 row),
+# CAND-20260908-CH6-THR-011-REAFFIRMED.yaml (unchanged definition); primary source Bitstring Status List 1.0 6.7.
+# Two record kinds are joined on status_entry_ref:
+#   authorization side: verifier PRESENTATION_DECISION in which the holder disclosed the credential
+#     (status_entry_ref, session_ref, processing_purpose_ref, status_monitoring_consented, retention policy);
+#   evaluation side:    verifier STATUS_DECISION for every evaluation of that entry
+#     (status_entry_ref, session_ref, processing_purpose_ref, status_evaluation_in_session,
+#     status_entry_evaluation, outcome).
+# Declared purpose (source: authorized session, declared purpose and retention, purpose given by the policy):
+# an evaluation is covered by a disclosure only under the purpose declared for that disclosure, compared as
+# processing_purpose_ref equality. policy.id/version is not compared: it names the policy document, and a
+# new policy version does not by itself change the purpose.
+# What is judged: each STATUS_DECISION (one subject per evaluation, in its own workflow). A one-time startup
+# sweep is one evaluation per entry and is never positive by itself (source row detection_predicate).
+# STATUS_DECISION outcome: accept = entry state read and acceptable, reject = entry state read as revoked or
+# suspended, error = failed mid-way (state not established).
+# Producer contract: a PRESENTATION_DECISION whose disclosed credential carries a status entry must carry
+# status_entry_ref, or declare it in `missing` / provenance Unavailable; an undeclared absence means the
+# presented credential has no status entry.
+threat: TDID-THR-011
+refs:
+  status_entry_ref:
+    produced_by: [verifier]
+    meaning: >-
+      Verifier-local keyed commitment over the exact status resource and entry (for example statusListCredential
+      plus statusListIndex) of one credential. The key is held only by the verifier's T-DID collector, fixed for
+      one monitoring-policy window and destroyed at window close, so values never join across windows.
+    reveals: Whether two verifier records within one window concern the same status entry (equality only); never the list URL, index, credential or holder.
+  processing_purpose_ref:
+    produced_by: [verifier]
+    meaning: >-
+      Verifier-local keyed commitment, same key lifecycle as status_entry_ref, over the purpose identifier
+      that the verifier's privacy policy (policy.id, policy.version) assigns to this processing: on
+      PRESENTATION_DECISION the purpose declared for the disclosure; on STATUS_DECISION the purpose under which
+      this evaluation runs. Absent when the policy assigns no purpose to the processing.
+    reveals: Whether a status evaluation ran under the purpose declared for the disclosure (equality only); never the purpose text.
+facts:
+  status_evaluation_in_session:
+    type: boolean
+    produced_by: [verifier]
+    meaning: >-
+      True when the verifier evaluated the entry while processing an active presentation or verification
+      session (named by session_ref); false when the evaluation was invoked outside any session, for example by
+      a scheduled job, a startup sweep or a transactionless utility call.
+    reveals: Whether one status evaluation was bound to a session; not the session, purpose or trigger detail.
+  status_monitoring_consented:
+    type: boolean
+    produced_by: [verifier]
+    meaning: >-
+      On the presentation decision that disclosed the credential: true when that transaction recorded the
+      holder's consent, under the declared purpose, to later status evaluations of the disclosed credential
+      outside the session; false when no such consent was given.
+    reveals: Whether the holder authorized later status checks for this disclosure.
+checks:
+  status_entry_evaluation:
+    produced_by: [verifier]
+    meaning: >-
+      The verifier decoded the exact entry from a status list it retrieved and verified. pass = the entry value
+      was read; fail = the entry could not be read (index out of range, list invalid); not_performed = the list
+      was fetched or served from cache without reading this entry.
+policy_params:
+  status_evaluation_retention_seconds:
+    type: integer
+    example: 3600
+    produced_by: [verifier]
+    meaning: >-
+      Read from the authorizing presentation decision. How long after that decision an evaluation bound to the
+      same session stays authorized (a deployment without a time bound records its session lifetime).
+      Unset = whether a later in-session evaluation is still authorized is unknown. Bitstring Status List 1.0
+      defines no value; a deployment privacy-policy choice.
+  status_retry_window_seconds:
+    type: integer
+    example: 0
+    produced_by: [verifier]
+    meaning: >-
+      An evaluation of the same entry by the same verifier instance within this many seconds after the
+      previous counted one is a policy-approved idempotent retry and is not counted again. 0 = the policy
+      approves no retries. Unset = whether a repeated evaluation was a retry is unknown, so repetition by the
+      same instance stays unknown.
+  status_monitoring_authorized:
+    type: boolean
+    example: false
+    produced_by: [verifier]
+    meaning: >-
+      Read from the evaluation. The deployment's privacy policy explicitly authorizes repeated status
+      evaluation of retained entries (for example a regulated continuous-verification service); false = it
+      does not. Unset = an evaluation outside every recorded holder authorization is not established as out of
+      scope.

@@ -1,0 +1,576 @@
+{
+  "accepted_events": 12,
+  "duplicate_events": 0,
+  "findings": [
+    {
+      "established_conditions": 1,
+      "evidence_event_ids": [
+        "vp-1-1-verifier-request"
+      ],
+      "notes": [
+        "no relying decision of the initiating session recorded yet",
+        "InitiatorIsNotWalletUser is structurally unobservable: no honest component sees who controls the initiating frontend (OpenID4VP 1.0 section 14.2)"
+      ],
+      "predicates": {
+        "CompletingContextDiffers": null,
+        "CompletionBindingIneffective": null,
+        "DirectPostResponseMode": true,
+        "InitiatingSessionConcluded": null,
+        "InitiatorIsNotWalletUser": null,
+        "RelyingDecisionAccepted": null,
+        "WalletCompletedRequest": null
+      },
+      "subject": "rp-decision:4db0b07694c2cbd76e56833b9bce1fd9cf0fd51f0283a208cb3b189dea02eafe|?",
+      "threat_id": "TDID-THR-019",
+      "trigger_event_id": "vp-1-1-verifier-request",
+      "unknown_conditions": [
+        "WalletCompletedRequest",
+        "InitiatingSessionConcluded",
+        "CompletionBindingIneffective",
+        "CompletingContextDiffers",
+        "InitiatorIsNotWalletUser",
+        "RelyingDecisionAccepted"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "vp-transaction:aa2eb510fefa6d6e378a972ddbdff37a92ed3793d5304f1b7e2739bbbd99abe0"
+    },
+    {
+      "established_conditions": 1,
+      "evidence_event_ids": [
+        "vp-1-2-verifier-request"
+      ],
+      "notes": [
+        "no relying decision of the initiating session recorded yet",
+        "InitiatorIsNotWalletUser is structurally unobservable: no honest component sees who controls the initiating frontend (OpenID4VP 1.0 section 14.2)"
+      ],
+      "predicates": {
+        "CompletingContextDiffers": null,
+        "CompletionBindingIneffective": null,
+        "DirectPostResponseMode": true,
+        "InitiatingSessionConcluded": null,
+        "InitiatorIsNotWalletUser": null,
+        "RelyingDecisionAccepted": null,
+        "WalletCompletedRequest": null
+      },
+      "subject": "rp-decision:ef48dc63cb5cd55163ef102a00c5065dec9aacd5908dad7384c27591e37eb6f6|?",
+      "threat_id": "TDID-THR-019",
+      "trigger_event_id": "vp-1-2-verifier-request",
+      "unknown_conditions": [
+        "WalletCompletedRequest",
+        "InitiatingSessionConcluded",
+        "CompletionBindingIneffective",
+        "CompletingContextDiffers",
+        "InitiatorIsNotWalletUser",
+        "RelyingDecisionAccepted"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "vp-transaction:096c7e081f08101bf3d604df127dec6759f6340a57dd5f457e27d7a64a8cc920"
+    },
+    {
+      "established_conditions": 1,
+      "evidence_event_ids": [
+        "vp-1-3-verifier-request"
+      ],
+      "notes": [
+        "no relying decision of the initiating session recorded yet",
+        "InitiatorIsNotWalletUser is structurally unobservable: no honest component sees who controls the initiating frontend (OpenID4VP 1.0 section 14.2)"
+      ],
+      "predicates": {
+        "CompletingContextDiffers": null,
+        "CompletionBindingIneffective": null,
+        "DirectPostResponseMode": true,
+        "InitiatingSessionConcluded": null,
+        "InitiatorIsNotWalletUser": null,
+        "RelyingDecisionAccepted": null,
+        "WalletCompletedRequest": null
+      },
+      "subject": "rp-decision:68b5fc2dcdabbe44dfe20fae6c0b13685bf91ac7c1c5d7059ad372997b84ef4b|?",
+      "threat_id": "TDID-THR-019",
+      "trigger_event_id": "vp-1-3-verifier-request",
+      "unknown_conditions": [
+        "WalletCompletedRequest",
+        "InitiatingSessionConcluded",
+        "CompletionBindingIneffective",
+        "CompletingContextDiffers",
+        "InitiatorIsNotWalletUser",
+        "RelyingDecisionAccepted"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "vp-transaction:7ef47ff0d8d822f015e618d62823f83c189cc74e7ecc9cd8b1c2d7d55e7b0a72"
+    },
+    {
+      "established_conditions": 1,
+      "evidence_event_ids": [
+        "vp-1-4-verifier-request"
+      ],
+      "notes": [
+        "no relying decision of the initiating session recorded yet",
+        "InitiatorIsNotWalletUser is structurally unobservable: no honest component sees who controls the initiating frontend (OpenID4VP 1.0 section 14.2)"
+      ],
+      "predicates": {
+        "CompletingContextDiffers": null,
+        "CompletionBindingIneffective": null,
+        "DirectPostResponseMode": true,
+        "InitiatingSessionConcluded": null,
+        "InitiatorIsNotWalletUser": null,
+        "RelyingDecisionAccepted": null,
+        "WalletCompletedRequest": null
+      },
+      "subject": "rp-decision:6c90763f45677658cf8a5de595e7fdce33fae439cfd1b62ae01406158ff9217c|?",
+      "threat_id": "TDID-THR-019",
+      "trigger_event_id": "vp-1-4-verifier-request",
+      "unknown_conditions": [
+        "WalletCompletedRequest",
+        "InitiatingSessionConcluded",
+        "CompletionBindingIneffective",
+        "CompletingContextDiffers",
+        "InitiatorIsNotWalletUser",
+        "RelyingDecisionAccepted"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "vp-transaction:cd085666df1c94ad4366dbaf5c9c9e380ce049a83c3fde3e7636459c344c203a"
+    },
+    {
+      "established_conditions": 1,
+      "evidence_event_ids": [
+        "vp-2-1-verifier-request"
+      ],
+      "notes": [
+        "no relying decision of the initiating session recorded yet",
+        "InitiatorIsNotWalletUser is structurally unobservable: no honest component sees who controls the initiating frontend (OpenID4VP 1.0 section 14.2)"
+      ],
+      "predicates": {
+        "CompletingContextDiffers": null,
+        "CompletionBindingIneffective": null,
+        "DirectPostResponseMode": true,
+        "InitiatingSessionConcluded": null,
+        "InitiatorIsNotWalletUser": null,
+        "RelyingDecisionAccepted": null,
+        "WalletCompletedRequest": null
+      },
+      "subject": "rp-decision:3159c473be5f8757848f1cfa06915e8b0ac6c8e48b8bf1c6b6b91c8d00a8d9b3|?",
+      "threat_id": "TDID-THR-019",
+      "trigger_event_id": "vp-2-1-verifier-request",
+      "unknown_conditions": [
+        "WalletCompletedRequest",
+        "InitiatingSessionConcluded",
+        "CompletionBindingIneffective",
+        "CompletingContextDiffers",
+        "InitiatorIsNotWalletUser",
+        "RelyingDecisionAccepted"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "vp-transaction:e9a4f54bf5622b29ec9cd26e0b1ea96948ca6147aa318ff9fa48dcc598110cac"
+    },
+    {
+      "established_conditions": 1,
+      "evidence_event_ids": [
+        "vp-2-2-verifier-request"
+      ],
+      "notes": [
+        "no relying decision of the initiating session recorded yet",
+        "InitiatorIsNotWalletUser is structurally unobservable: no honest component sees who controls the initiating frontend (OpenID4VP 1.0 section 14.2)"
+      ],
+      "predicates": {
+        "CompletingContextDiffers": null,
+        "CompletionBindingIneffective": null,
+        "DirectPostResponseMode": true,
+        "InitiatingSessionConcluded": null,
+        "InitiatorIsNotWalletUser": null,
+        "RelyingDecisionAccepted": null,
+        "WalletCompletedRequest": null
+      },
+      "subject": "rp-decision:a81d2f84f0d6ac06ea8256ba51d48b7ef7c388742613552a9650359735b1f2f0|?",
+      "threat_id": "TDID-THR-019",
+      "trigger_event_id": "vp-2-2-verifier-request",
+      "unknown_conditions": [
+        "WalletCompletedRequest",
+        "InitiatingSessionConcluded",
+        "CompletionBindingIneffective",
+        "CompletingContextDiffers",
+        "InitiatorIsNotWalletUser",
+        "RelyingDecisionAccepted"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "vp-transaction:2e00913ee4e4c5cd57797b87c75a1b41c73c92fcc415e90f255d8234c17cdd6c"
+    },
+    {
+      "established_conditions": 1,
+      "evidence_event_ids": [
+        "vp-2-3-verifier-request"
+      ],
+      "notes": [
+        "no relying decision of the initiating session recorded yet",
+        "InitiatorIsNotWalletUser is structurally unobservable: no honest component sees who controls the initiating frontend (OpenID4VP 1.0 section 14.2)"
+      ],
+      "predicates": {
+        "CompletingContextDiffers": null,
+        "CompletionBindingIneffective": null,
+        "DirectPostResponseMode": true,
+        "InitiatingSessionConcluded": null,
+        "InitiatorIsNotWalletUser": null,
+        "RelyingDecisionAccepted": null,
+        "WalletCompletedRequest": null
+      },
+      "subject": "rp-decision:1b1f1ff0ec100ade27b6379b14231ca4b9601993267561c340cdc454731e8ba4|?",
+      "threat_id": "TDID-THR-019",
+      "trigger_event_id": "vp-2-3-verifier-request",
+      "unknown_conditions": [
+        "WalletCompletedRequest",
+        "InitiatingSessionConcluded",
+        "CompletionBindingIneffective",
+        "CompletingContextDiffers",
+        "InitiatorIsNotWalletUser",
+        "RelyingDecisionAccepted"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "vp-transaction:11ccfea5ebee448d35ddac8894125dbc7ab31d15cc6959fc65335392a78123b7"
+    },
+    {
+      "established_conditions": 1,
+      "evidence_event_ids": [
+        "vp-2-4-verifier-request"
+      ],
+      "notes": [
+        "no relying decision of the initiating session recorded yet",
+        "InitiatorIsNotWalletUser is structurally unobservable: no honest component sees who controls the initiating frontend (OpenID4VP 1.0 section 14.2)"
+      ],
+      "predicates": {
+        "CompletingContextDiffers": null,
+        "CompletionBindingIneffective": null,
+        "DirectPostResponseMode": true,
+        "InitiatingSessionConcluded": null,
+        "InitiatorIsNotWalletUser": null,
+        "RelyingDecisionAccepted": null,
+        "WalletCompletedRequest": null
+      },
+      "subject": "rp-decision:3e4409f71679157e6818006a5ce8a19cb67784a7656b1d3a4cad2c323b88b5b8|?",
+      "threat_id": "TDID-THR-019",
+      "trigger_event_id": "vp-2-4-verifier-request",
+      "unknown_conditions": [
+        "WalletCompletedRequest",
+        "InitiatingSessionConcluded",
+        "CompletionBindingIneffective",
+        "CompletingContextDiffers",
+        "InitiatorIsNotWalletUser",
+        "RelyingDecisionAccepted"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "vp-transaction:0076a3a30449852b1c0156808a53a14a9955f48f7971fa23335a458120165744"
+    },
+    {
+      "established_conditions": 1,
+      "evidence_event_ids": [
+        "vp-3-1-verifier-request"
+      ],
+      "notes": [
+        "no relying decision of the initiating session recorded yet",
+        "InitiatorIsNotWalletUser is structurally unobservable: no honest component sees who controls the initiating frontend (OpenID4VP 1.0 section 14.2)"
+      ],
+      "predicates": {
+        "CompletingContextDiffers": null,
+        "CompletionBindingIneffective": null,
+        "DirectPostResponseMode": true,
+        "InitiatingSessionConcluded": null,
+        "InitiatorIsNotWalletUser": null,
+        "RelyingDecisionAccepted": null,
+        "WalletCompletedRequest": null
+      },
+      "subject": "rp-decision:10f7b55e14f523e3d1e5a9aebc38ccff4a338967e902eadbc82de1f394a2b911|?",
+      "threat_id": "TDID-THR-019",
+      "trigger_event_id": "vp-3-1-verifier-request",
+      "unknown_conditions": [
+        "WalletCompletedRequest",
+        "InitiatingSessionConcluded",
+        "CompletionBindingIneffective",
+        "CompletingContextDiffers",
+        "InitiatorIsNotWalletUser",
+        "RelyingDecisionAccepted"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "vp-transaction:994eff60eb87a7795e6c47a3345a7b8596d230dedb400ff885db2f12ab109c24"
+    },
+    {
+      "established_conditions": 1,
+      "evidence_event_ids": [
+        "vp-3-2-verifier-request"
+      ],
+      "notes": [
+        "no relying decision of the initiating session recorded yet",
+        "InitiatorIsNotWalletUser is structurally unobservable: no honest component sees who controls the initiating frontend (OpenID4VP 1.0 section 14.2)"
+      ],
+      "predicates": {
+        "CompletingContextDiffers": null,
+        "CompletionBindingIneffective": null,
+        "DirectPostResponseMode": true,
+        "InitiatingSessionConcluded": null,
+        "InitiatorIsNotWalletUser": null,
+        "RelyingDecisionAccepted": null,
+        "WalletCompletedRequest": null
+      },
+      "subject": "rp-decision:c5c39032f1b99e1b3ac25074df96e7497f6d9a3703e578cba5e62080ba7cd3db|?",
+      "threat_id": "TDID-THR-019",
+      "trigger_event_id": "vp-3-2-verifier-request",
+      "unknown_conditions": [
+        "WalletCompletedRequest",
+        "InitiatingSessionConcluded",
+        "CompletionBindingIneffective",
+        "CompletingContextDiffers",
+        "InitiatorIsNotWalletUser",
+        "RelyingDecisionAccepted"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "vp-transaction:b53bfa00c8f026e1e8c28718fd86c21ee16f1e450a02816128ddc3f0a45a6807"
+    },
+    {
+      "established_conditions": 1,
+      "evidence_event_ids": [
+        "vp-3-3-verifier-request"
+      ],
+      "notes": [
+        "no relying decision of the initiating session recorded yet",
+        "InitiatorIsNotWalletUser is structurally unobservable: no honest component sees who controls the initiating frontend (OpenID4VP 1.0 section 14.2)"
+      ],
+      "predicates": {
+        "CompletingContextDiffers": null,
+        "CompletionBindingIneffective": null,
+        "DirectPostResponseMode": true,
+        "InitiatingSessionConcluded": null,
+        "InitiatorIsNotWalletUser": null,
+        "RelyingDecisionAccepted": null,
+        "WalletCompletedRequest": null
+      },
+      "subject": "rp-decision:b5aa866a411057d0ac194074c48de84231b89e7ff762378ab6a7493b12093e86|?",
+      "threat_id": "TDID-THR-019",
+      "trigger_event_id": "vp-3-3-verifier-request",
+      "unknown_conditions": [
+        "WalletCompletedRequest",
+        "InitiatingSessionConcluded",
+        "CompletionBindingIneffective",
+        "CompletingContextDiffers",
+        "InitiatorIsNotWalletUser",
+        "RelyingDecisionAccepted"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "vp-transaction:0c2d13e85c6e00b79bb3bc66747a17ebaa9c8e8b80d4a9f27e87f0b036922766"
+    },
+    {
+      "established_conditions": 1,
+      "evidence_event_ids": [
+        "vp-3-4-verifier-request"
+      ],
+      "notes": [
+        "no relying decision of the initiating session recorded yet",
+        "InitiatorIsNotWalletUser is structurally unobservable: no honest component sees who controls the initiating frontend (OpenID4VP 1.0 section 14.2)"
+      ],
+      "predicates": {
+        "CompletingContextDiffers": null,
+        "CompletionBindingIneffective": null,
+        "DirectPostResponseMode": true,
+        "InitiatingSessionConcluded": null,
+        "InitiatorIsNotWalletUser": null,
+        "RelyingDecisionAccepted": null,
+        "WalletCompletedRequest": null
+      },
+      "subject": "rp-decision:868a2e802f8ea44f79c6008dc5bb687b8063ef79819c083ad6e60a41e6dd8c27|?",
+      "threat_id": "TDID-THR-019",
+      "trigger_event_id": "vp-3-4-verifier-request",
+      "unknown_conditions": [
+        "WalletCompletedRequest",
+        "InitiatingSessionConcluded",
+        "CompletionBindingIneffective",
+        "CompletingContextDiffers",
+        "InitiatorIsNotWalletUser",
+        "RelyingDecisionAccepted"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "vp-transaction:a805c2a1509f8c9f2b6dd3d70eb46ee50e65dae68a599a8e618e5b1e9b6b21bc"
+    }
+  ],
+  "incomplete_streams": {},
+  "rejected_records": [],
+  "schema_version": "tdid-event/1.0",
+  "tdid_version": "1.0.0.dev0",
+  "workflows": [
+    {
+      "decisions": 1,
+      "no_relevant_record": false,
+      "threat_id": "TDID-THR-019",
+      "unknown_conditions": [
+        "CompletingContextDiffers",
+        "CompletionBindingIneffective",
+        "InitiatingSessionConcluded",
+        "InitiatorIsNotWalletUser",
+        "RelyingDecisionAccepted",
+        "WalletCompletedRequest"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "vp-transaction:0076a3a30449852b1c0156808a53a14a9955f48f7971fa23335a458120165744"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": false,
+      "threat_id": "TDID-THR-019",
+      "unknown_conditions": [
+        "CompletingContextDiffers",
+        "CompletionBindingIneffective",
+        "InitiatingSessionConcluded",
+        "InitiatorIsNotWalletUser",
+        "RelyingDecisionAccepted",
+        "WalletCompletedRequest"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "vp-transaction:096c7e081f08101bf3d604df127dec6759f6340a57dd5f457e27d7a64a8cc920"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": false,
+      "threat_id": "TDID-THR-019",
+      "unknown_conditions": [
+        "CompletingContextDiffers",
+        "CompletionBindingIneffective",
+        "InitiatingSessionConcluded",
+        "InitiatorIsNotWalletUser",
+        "RelyingDecisionAccepted",
+        "WalletCompletedRequest"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "vp-transaction:0c2d13e85c6e00b79bb3bc66747a17ebaa9c8e8b80d4a9f27e87f0b036922766"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": false,
+      "threat_id": "TDID-THR-019",
+      "unknown_conditions": [
+        "CompletingContextDiffers",
+        "CompletionBindingIneffective",
+        "InitiatingSessionConcluded",
+        "InitiatorIsNotWalletUser",
+        "RelyingDecisionAccepted",
+        "WalletCompletedRequest"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "vp-transaction:11ccfea5ebee448d35ddac8894125dbc7ab31d15cc6959fc65335392a78123b7"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": false,
+      "threat_id": "TDID-THR-019",
+      "unknown_conditions": [
+        "CompletingContextDiffers",
+        "CompletionBindingIneffective",
+        "InitiatingSessionConcluded",
+        "InitiatorIsNotWalletUser",
+        "RelyingDecisionAccepted",
+        "WalletCompletedRequest"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "vp-transaction:2e00913ee4e4c5cd57797b87c75a1b41c73c92fcc415e90f255d8234c17cdd6c"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": false,
+      "threat_id": "TDID-THR-019",
+      "unknown_conditions": [
+        "CompletingContextDiffers",
+        "CompletionBindingIneffective",
+        "InitiatingSessionConcluded",
+        "InitiatorIsNotWalletUser",
+        "RelyingDecisionAccepted",
+        "WalletCompletedRequest"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "vp-transaction:7ef47ff0d8d822f015e618d62823f83c189cc74e7ecc9cd8b1c2d7d55e7b0a72"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": false,
+      "threat_id": "TDID-THR-019",
+      "unknown_conditions": [
+        "CompletingContextDiffers",
+        "CompletionBindingIneffective",
+        "InitiatingSessionConcluded",
+        "InitiatorIsNotWalletUser",
+        "RelyingDecisionAccepted",
+        "WalletCompletedRequest"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "vp-transaction:994eff60eb87a7795e6c47a3345a7b8596d230dedb400ff885db2f12ab109c24"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": false,
+      "threat_id": "TDID-THR-019",
+      "unknown_conditions": [
+        "CompletingContextDiffers",
+        "CompletionBindingIneffective",
+        "InitiatingSessionConcluded",
+        "InitiatorIsNotWalletUser",
+        "RelyingDecisionAccepted",
+        "WalletCompletedRequest"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "vp-transaction:a805c2a1509f8c9f2b6dd3d70eb46ee50e65dae68a599a8e618e5b1e9b6b21bc"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": false,
+      "threat_id": "TDID-THR-019",
+      "unknown_conditions": [
+        "CompletingContextDiffers",
+        "CompletionBindingIneffective",
+        "InitiatingSessionConcluded",
+        "InitiatorIsNotWalletUser",
+        "RelyingDecisionAccepted",
+        "WalletCompletedRequest"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "vp-transaction:aa2eb510fefa6d6e378a972ddbdff37a92ed3793d5304f1b7e2739bbbd99abe0"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": false,
+      "threat_id": "TDID-THR-019",
+      "unknown_conditions": [
+        "CompletingContextDiffers",
+        "CompletionBindingIneffective",
+        "InitiatingSessionConcluded",
+        "InitiatorIsNotWalletUser",
+        "RelyingDecisionAccepted",
+        "WalletCompletedRequest"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "vp-transaction:b53bfa00c8f026e1e8c28718fd86c21ee16f1e450a02816128ddc3f0a45a6807"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": false,
+      "threat_id": "TDID-THR-019",
+      "unknown_conditions": [
+        "CompletingContextDiffers",
+        "CompletionBindingIneffective",
+        "InitiatingSessionConcluded",
+        "InitiatorIsNotWalletUser",
+        "RelyingDecisionAccepted",
+        "WalletCompletedRequest"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "vp-transaction:cd085666df1c94ad4366dbaf5c9c9e380ce049a83c3fde3e7636459c344c203a"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": false,
+      "threat_id": "TDID-THR-019",
+      "unknown_conditions": [
+        "CompletingContextDiffers",
+        "CompletionBindingIneffective",
+        "InitiatingSessionConcluded",
+        "InitiatorIsNotWalletUser",
+        "RelyingDecisionAccepted",
+        "WalletCompletedRequest"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "vp-transaction:e9a4f54bf5622b29ec9cd26e0b1ea96948ca6147aa318ff9fa48dcc598110cac"
+    }
+  ]
+}

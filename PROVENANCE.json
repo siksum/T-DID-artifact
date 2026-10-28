@@ -1,0 +1,489 @@
+{
+  "source_revision": "3766faeaa4f9e061943f13a5c9b29ca032aea9cf",
+  "measurement_revisions": {
+    "dense_cost": "4dabd8886a3942103d73a7d2e80f6b5662aa73f0",
+    "product_cost": "0d8718cb5ea1fdf5998c1503a8933432ffdb40f2"
+  },
+  "publication_changes": [
+    "Only selected source, tests, 42-workflow datasets, analysis ledgers, figure data and cost records are included.",
+    "Private repository Git history, agent/workspace notes, manuscript files, D1 preliminary workbook and the 660-workflow campaign are excluded.",
+    "Host filesystem prefixes and generated-result locations made portable; detector predicates and monitor encodings unchanged.",
+    "Fig. 3(b) label changed from Unknown to Incomplete; captions made self-contained and MonPoly process-tree memory stated.",
+    "External monitor binaries retrieved separately by digest/hash; no third-party binary is redistributed.",
+    "Private campaign-locator columns omitted from the workflow ledger; oracle fields and outcomes preserved."
+  ],
+  "host_path_transforms": [
+    {
+      "file": "data/static/workflow_evidence_42.csv",
+      "change": "host filesystem prefix normalized",
+      "original_sha256": "65b2eb7423bb66b3ad2bc4f8479e287f7f5806052be7c26018e4c4deb65794dc",
+      "published_sha256": "4d14331815785cd4b6f49c1929f908dde9abe08f429a9fb2a83d204d9cfc8903"
+    },
+    {
+      "file": "data/measurements/product-cost-20261022/waltid-pair06-off/block.json",
+      "change": "host filesystem prefix normalized",
+      "original_sha256": "42763086b90812a44d103146e632325dc65b64f357297779bb25246fbdf59ee9",
+      "published_sha256": "54833d0d5a03cf94e69d86d74afeb25d8950207bf3b3aa9d311846f4382d2e75"
+    },
+    {
+      "file": "data/measurements/product-cost-20261022/waltid-pair06-off/completion.json",
+      "change": "host filesystem prefix normalized",
+      "original_sha256": "42763086b90812a44d103146e632325dc65b64f357297779bb25246fbdf59ee9",
+      "published_sha256": "54833d0d5a03cf94e69d86d74afeb25d8950207bf3b3aa9d311846f4382d2e75"
+    },
+    {
+      "file": "data/measurements/product-cost-20261022/credo-pair08-on/runner.log",
+      "change": "host filesystem prefix normalized",
+      "original_sha256": "fcd9d2b4d7e914c70564d76de4626ed053b801ce6edc2c8075f76eac11c70846",
+      "published_sha256": "91f9680f06f5b65dd149d317af1b9938a4979259fb0ff13304fb2d039ee51bef"
+    },
+    {
+      "file": "data/measurements/product-cost-20261022/waltid-pair09-on/block.json",
+      "change": "host filesystem prefix normalized",
+      "original_sha256": "8aca1f3423a26bb8ef331b12ab339667367c855cfdff0d5f1d56c77ae7151abe",
+      "published_sha256": "7509cb26a5f590bccb1fdf61fa175f80eea653b93e182c134ef544a86475c8c1"
+    },
+    {
+      "file": "data/measurements/product-cost-20261022/waltid-pair09-on/completion.json",
+      "change": "host filesystem prefix normalized",
+      "original_sha256": "8aca1f3423a26bb8ef331b12ab339667367c855cfdff0d5f1d56c77ae7151abe",
+      "published_sha256": "7509cb26a5f590bccb1fdf61fa175f80eea653b93e182c134ef544a86475c8c1"
+    },
+    {
+      "file": "data/measurements/product-cost-20261022/waltid-pair00-on/block.json",
+      "change": "host filesystem prefix normalized",
+      "original_sha256": "a470b5ed0342c2eef907a5a6da4c7ef468bb3da67198fb6b0ff1b4959717c2d0",
+      "published_sha256": "c4a8d03c4778e29bb6f39e6647e77bc08861d94f8a34f784906e5e3d64235ce1"
+    },
+    {
+      "file": "data/measurements/product-cost-20261022/waltid-pair00-on/completion.json",
+      "change": "host filesystem prefix normalized",
+      "original_sha256": "a470b5ed0342c2eef907a5a6da4c7ef468bb3da67198fb6b0ff1b4959717c2d0",
+      "published_sha256": "c4a8d03c4778e29bb6f39e6647e77bc08861d94f8a34f784906e5e3d64235ce1"
+    },
+    {
+      "file": "data/measurements/product-cost-20261022/waltid-pair04-off/block.json",
+      "change": "host filesystem prefix normalized",
+      "original_sha256": "453e6472bb1f08cc67c9e23e80831d8e82b52fe967e9cc047695ce50a0fddf91",
+      "published_sha256": "79a0fe04b04a2a683d67ec59d1fdd01bfed98a747fd79c68a4108c0ec8cbc468"
+    },
+    {
+      "file": "data/measurements/product-cost-20261022/waltid-pair04-off/completion.json",
+      "change": "host filesystem prefix normalized",
+      "original_sha256": "453e6472bb1f08cc67c9e23e80831d8e82b52fe967e9cc047695ce50a0fddf91",
+      "published_sha256": "79a0fe04b04a2a683d67ec59d1fdd01bfed98a747fd79c68a4108c0ec8cbc468"
+    },
+    {
+      "file": "data/measurements/product-cost-20261022/waltid-pair08-on/block.json",
+      "change": "host filesystem prefix normalized",
+      "original_sha256": "4995cfe759451cedd38ba990f809a9dccf273700cd91c8acd1a9b91f9b5ade44",
+      "published_sha256": "abb3385f6403679514e80255cc6fcc3ce179a54da9680aa4396dc1034abfb4cc"
+    },
+    {
+      "file": "data/measurements/product-cost-20261022/waltid-pair08-on/completion.json",
+      "change": "host filesystem prefix normalized",
+      "original_sha256": "4995cfe759451cedd38ba990f809a9dccf273700cd91c8acd1a9b91f9b5ade44",
+      "published_sha256": "abb3385f6403679514e80255cc6fcc3ce179a54da9680aa4396dc1034abfb4cc"
+    },
+    {
+      "file": "data/measurements/product-cost-20261022/credo-pair06-off/runner.log",
+      "change": "host filesystem prefix normalized",
+      "original_sha256": "82c9a1fbd59d5a4963cedbcbaf6f6e6c619dc64ea6dcd2947319c54dbe7648d8",
+      "published_sha256": "1150f755c9c344e78fde9edce56bd95f4aa7a79bc98c79a1a7b58b8f893cd673"
+    },
+    {
+      "file": "data/measurements/product-cost-20261022/credo-pair09-on/runner.log",
+      "change": "host filesystem prefix normalized",
+      "original_sha256": "3d901ce68506257f4a49d0cb1f72e6f9e99c7404049f2eef050ad3f461c21d80",
+      "published_sha256": "ab482f206f55ffe4b4d1c267bea5bf7d17b7a6ab61898a0a88c55bc4f09f6b53"
+    },
+    {
+      "file": "data/measurements/product-cost-20261022/waltid-pair04-on/block.json",
+      "change": "host filesystem prefix normalized",
+      "original_sha256": "8aca1f3423a26bb8ef331b12ab339667367c855cfdff0d5f1d56c77ae7151abe",
+      "published_sha256": "7509cb26a5f590bccb1fdf61fa175f80eea653b93e182c134ef544a86475c8c1"
+    },
+    {
+      "file": "data/measurements/product-cost-20261022/waltid-pair04-on/completion.json",
+      "change": "host filesystem prefix normalized",
+      "original_sha256": "8aca1f3423a26bb8ef331b12ab339667367c855cfdff0d5f1d56c77ae7151abe",
+      "published_sha256": "7509cb26a5f590bccb1fdf61fa175f80eea653b93e182c134ef544a86475c8c1"
+    },
+    {
+      "file": "data/measurements/product-cost-20261022/waltid-pair01-on/block.json",
+      "change": "host filesystem prefix normalized",
+      "original_sha256": "9ea1c09f340bbf659d164d4c28f3dedb21f7fac2faa8360ff60742e4aa73a426",
+      "published_sha256": "2f77e6b9175ff527c5b060ca11523b214e83b199476b46e097adc5a86e3bccfe"
+    },
+    {
+      "file": "data/measurements/product-cost-20261022/waltid-pair01-on/completion.json",
+      "change": "host filesystem prefix normalized",
+      "original_sha256": "9ea1c09f340bbf659d164d4c28f3dedb21f7fac2faa8360ff60742e4aa73a426",
+      "published_sha256": "2f77e6b9175ff527c5b060ca11523b214e83b199476b46e097adc5a86e3bccfe"
+    },
+    {
+      "file": "data/measurements/product-cost-20261022/waltid-pair07-on/block.json",
+      "change": "host filesystem prefix normalized",
+      "original_sha256": "8aca1f3423a26bb8ef331b12ab339667367c855cfdff0d5f1d56c77ae7151abe",
+      "published_sha256": "7509cb26a5f590bccb1fdf61fa175f80eea653b93e182c134ef544a86475c8c1"
+    },
+    {
+      "file": "data/measurements/product-cost-20261022/waltid-pair07-on/completion.json",
+      "change": "host filesystem prefix normalized",
+      "original_sha256": "8aca1f3423a26bb8ef331b12ab339667367c855cfdff0d5f1d56c77ae7151abe",
+      "published_sha256": "7509cb26a5f590bccb1fdf61fa175f80eea653b93e182c134ef544a86475c8c1"
+    },
+    {
+      "file": "data/measurements/product-cost-20261022/credo-pair04-off/runner.log",
+      "change": "host filesystem prefix normalized",
+      "original_sha256": "49e5734d5ac16f067bbe14e5755d2f8a064c734f594817212cc837bb206b0bdd",
+      "published_sha256": "ea31f35b921e1920fd061793240e05241d34427a1b4f3e00da7608b510f61b83"
+    },
+    {
+      "file": "data/measurements/product-cost-20261022/waltid-pair05-off/block.json",
+      "change": "host filesystem prefix normalized",
+      "original_sha256": "dae50651d7751184de6304a8fde724ab49d1e1ae5f2b3783f45c1dc6e99719b1",
+      "published_sha256": "7339002a47620f0178491a62aec7a6c498607fff83d89b2d35b7e51444a0889e"
+    },
+    {
+      "file": "data/measurements/product-cost-20261022/waltid-pair05-off/completion.json",
+      "change": "host filesystem prefix normalized",
+      "original_sha256": "dae50651d7751184de6304a8fde724ab49d1e1ae5f2b3783f45c1dc6e99719b1",
+      "published_sha256": "7339002a47620f0178491a62aec7a6c498607fff83d89b2d35b7e51444a0889e"
+    },
+    {
+      "file": "data/measurements/product-cost-20261022/credo-pair07-on/runner.log",
+      "change": "host filesystem prefix normalized",
+      "original_sha256": "311f6904e42fce19cc870ad86b4d6e52b919a6d37cc3f925124d731d8ea431df",
+      "published_sha256": "fcfb4b7a3d3b8aba6649c02f380f29cb17b535b97eb880f93babad59cee105dc"
+    },
+    {
+      "file": "data/measurements/product-cost-20261022/waltid-pair00-off/block.json",
+      "change": "host filesystem prefix normalized",
+      "original_sha256": "10c844ebaaaa38e0d67925016c87a97ec3a224e7dad84c58b3c439b5f2bef6d9",
+      "published_sha256": "ca396b0266a263f781192653bae36c541a02d624c8b4a28a0e371763bd126bb5"
+    },
+    {
+      "file": "data/measurements/product-cost-20261022/waltid-pair00-off/completion.json",
+      "change": "host filesystem prefix normalized",
+      "original_sha256": "10c844ebaaaa38e0d67925016c87a97ec3a224e7dad84c58b3c439b5f2bef6d9",
+      "published_sha256": "ca396b0266a263f781192653bae36c541a02d624c8b4a28a0e371763bd126bb5"
+    },
+    {
+      "file": "data/measurements/product-cost-20261022/credo-pair02-on/runner.log",
+      "change": "host filesystem prefix normalized",
+      "original_sha256": "17bdee9ce883aa65dbccf0e4d21b96832caf29c7a4544f025e235f26075f2465",
+      "published_sha256": "652b729d3eb593d14303b9c2f3d8162ea83c46278e33d214dde10731f8b79c2e"
+    },
+    {
+      "file": "data/measurements/product-cost-20261022/waltid-pair03-off/block.json",
+      "change": "host filesystem prefix normalized",
+      "original_sha256": "bc09ef941c72b7c205985681d7ac6298d13b119c79540f5626023fbeb2d2c064",
+      "published_sha256": "9187d3e604617b3ae8cd2a6ea77a1d3f6fc21da7e6f102dbb8eec50bed435da1"
+    },
+    {
+      "file": "data/measurements/product-cost-20261022/waltid-pair03-off/completion.json",
+      "change": "host filesystem prefix normalized",
+      "original_sha256": "bc09ef941c72b7c205985681d7ac6298d13b119c79540f5626023fbeb2d2c064",
+      "published_sha256": "9187d3e604617b3ae8cd2a6ea77a1d3f6fc21da7e6f102dbb8eec50bed435da1"
+    },
+    {
+      "file": "data/measurements/product-cost-20261022/credo-pair04-on/runner.log",
+      "change": "host filesystem prefix normalized",
+      "original_sha256": "56c5bceab353b747db31418ed8028cadd474efd0184f3ab3a252254c9a3e0095",
+      "published_sha256": "1f9c46d56d56b7dbb2d0bf5f74d5e79210fe9f1e8d226bdc19b124c451b11cfc"
+    },
+    {
+      "file": "data/measurements/product-cost-20261022/credo-pair03-off/runner.log",
+      "change": "host filesystem prefix normalized",
+      "original_sha256": "9b052ecbc21812dfaff7bdbf1ac1c86912d3d073ac75fda854d96875af7fda96",
+      "published_sha256": "9747d3175fae83d8a0ea00023659b04ab713584b92951391883c26029fa30147"
+    },
+    {
+      "file": "data/measurements/product-cost-20261022/credo-pair00-on/runner.log",
+      "change": "host filesystem prefix normalized",
+      "original_sha256": "88facdc4aee26197c6ee5949f81b818b4ad5258f8752404bb97adef37e0d65a3",
+      "published_sha256": "6649e25c9b7e9f29af653a7d3a19baa60ac84234baf2b38f2b70d1a8442e2a74"
+    },
+    {
+      "file": "data/measurements/product-cost-20261022/credo-pair06-on/runner.log",
+      "change": "host filesystem prefix normalized",
+      "original_sha256": "5196796e38345766d5ba8d7f18d79b1a4a928affb3d3f94a824356884e1aadbc",
+      "published_sha256": "587d46aed93411b21d7d6f409b3e3301a5bd811b299c67945173ad40c2553fc9"
+    },
+    {
+      "file": "data/measurements/product-cost-20261022/waltid-pair05-on/block.json",
+      "change": "host filesystem prefix normalized",
+      "original_sha256": "a470b5ed0342c2eef907a5a6da4c7ef468bb3da67198fb6b0ff1b4959717c2d0",
+      "published_sha256": "c4a8d03c4778e29bb6f39e6647e77bc08861d94f8a34f784906e5e3d64235ce1"
+    },
+    {
+      "file": "data/measurements/product-cost-20261022/waltid-pair05-on/completion.json",
+      "change": "host filesystem prefix normalized",
+      "original_sha256": "a470b5ed0342c2eef907a5a6da4c7ef468bb3da67198fb6b0ff1b4959717c2d0",
+      "published_sha256": "c4a8d03c4778e29bb6f39e6647e77bc08861d94f8a34f784906e5e3d64235ce1"
+    },
+    {
+      "file": "data/measurements/product-cost-20261022/waltid-pair07-off/block.json",
+      "change": "host filesystem prefix normalized",
+      "original_sha256": "00ce0660a76feab82aa0e0b72feb381a8817daa577a61702527ad8d6b61583b5",
+      "published_sha256": "08fc674250756469d5664eb101924b718a1b27f413bd7fc9e802b70944614367"
+    },
+    {
+      "file": "data/measurements/product-cost-20261022/waltid-pair07-off/completion.json",
+      "change": "host filesystem prefix normalized",
+      "original_sha256": "00ce0660a76feab82aa0e0b72feb381a8817daa577a61702527ad8d6b61583b5",
+      "published_sha256": "08fc674250756469d5664eb101924b718a1b27f413bd7fc9e802b70944614367"
+    },
+    {
+      "file": "data/measurements/product-cost-20261022/credo-pair00-off/runner.log",
+      "change": "host filesystem prefix normalized",
+      "original_sha256": "fc0e78a83cb0172705b587f89cb05af5db095ec5c58e84693bfe929f232df0d0",
+      "published_sha256": "133af64f66a50e8d38c32a8882e27b65acd7e02219b80b16b1ccc3dc0a918885"
+    },
+    {
+      "file": "data/measurements/product-cost-20261022/waltid-pair06-on/block.json",
+      "change": "host filesystem prefix normalized",
+      "original_sha256": "f8d65e07a70d3650e1475e4e48cc04b61efdfdbbc01cc4e0c717be193a6c932b",
+      "published_sha256": "0ac231b0df42d525c65211be0adf0eb3ee0aa09829275d9aff8063c5c3311484"
+    },
+    {
+      "file": "data/measurements/product-cost-20261022/waltid-pair06-on/completion.json",
+      "change": "host filesystem prefix normalized",
+      "original_sha256": "f8d65e07a70d3650e1475e4e48cc04b61efdfdbbc01cc4e0c717be193a6c932b",
+      "published_sha256": "0ac231b0df42d525c65211be0adf0eb3ee0aa09829275d9aff8063c5c3311484"
+    },
+    {
+      "file": "data/measurements/product-cost-20261022/credo-pair07-off/runner.log",
+      "change": "host filesystem prefix normalized",
+      "original_sha256": "f6d50221f94855dd962e0c44f23ae5353bbaa06ac289a7d283f0745f4ed1b3e6",
+      "published_sha256": "715002533eb942a0516552501bff2234abc2aabc8a0c32dd0ff7ef22fc5e369f"
+    },
+    {
+      "file": "data/measurements/product-cost-20261022/waltid-pair02-off/block.json",
+      "change": "host filesystem prefix normalized",
+      "original_sha256": "7ba0f5482b0c9790a9354c93a497028b20ec0997f65ed4c5d861d161be61deb0",
+      "published_sha256": "4d2344366a05ddd615510f9c8d25ad99b7e316299776e9d33dfe598e122c29ba"
+    },
+    {
+      "file": "data/measurements/product-cost-20261022/waltid-pair02-off/completion.json",
+      "change": "host filesystem prefix normalized",
+      "original_sha256": "7ba0f5482b0c9790a9354c93a497028b20ec0997f65ed4c5d861d161be61deb0",
+      "published_sha256": "4d2344366a05ddd615510f9c8d25ad99b7e316299776e9d33dfe598e122c29ba"
+    },
+    {
+      "file": "data/measurements/product-cost-20261022/credo-pair09-off/runner.log",
+      "change": "host filesystem prefix normalized",
+      "original_sha256": "86e64d8c823e1fc621a871e0a49bdc1a595340e89f4e4468783f175583288c71",
+      "published_sha256": "b2fd13c094069e79aeedb4a3ac42404ae1b77e0dc95db9118cda04258d1b4813"
+    },
+    {
+      "file": "data/measurements/product-cost-20261022/waltid-pair03-on/block.json",
+      "change": "host filesystem prefix normalized",
+      "original_sha256": "f023b037273aa314c0642db39b12075deac73790b419b4dc2c89180a6d3ae5af",
+      "published_sha256": "b4ee94f3ca68b518ea56b883faaade44a2ab49e81d1658837d8355a9e6c55f8e"
+    },
+    {
+      "file": "data/measurements/product-cost-20261022/waltid-pair03-on/completion.json",
+      "change": "host filesystem prefix normalized",
+      "original_sha256": "f023b037273aa314c0642db39b12075deac73790b419b4dc2c89180a6d3ae5af",
+      "published_sha256": "b4ee94f3ca68b518ea56b883faaade44a2ab49e81d1658837d8355a9e6c55f8e"
+    },
+    {
+      "file": "data/measurements/product-cost-20261022/credo-pair05-off/runner.log",
+      "change": "host filesystem prefix normalized",
+      "original_sha256": "56ae998e5ef8cf98fbbb42bc63c773585079588a94ec641ef8fa695ad72418ee",
+      "published_sha256": "611ead489d6517b39f98cb60e0e010bbadf1a052f207c0021e6bf6b73a99dc2d"
+    },
+    {
+      "file": "data/measurements/product-cost-20261022/credo-pair05-on/runner.log",
+      "change": "host filesystem prefix normalized",
+      "original_sha256": "0662f52bf044f5d07ca5943b918a96730a16a1d149f0c5c9d3a983d2587d4c22",
+      "published_sha256": "e34e6951962fbea19202c1a2eaef921875ef1cf05f9a4f3167af24e7129ca84d"
+    },
+    {
+      "file": "data/measurements/product-cost-20261022/credo-pair03-on/runner.log",
+      "change": "host filesystem prefix normalized",
+      "original_sha256": "56fc1323fbc66572cf56fbb51c921309a97c61668a3d8271bbd3060199b7873b",
+      "published_sha256": "7bdcab51f7fe8911e27ad42c4150ae80956b59fac27b1d30ed3c2c502d914e6e"
+    },
+    {
+      "file": "data/measurements/product-cost-20261022/credo-pair08-off/runner.log",
+      "change": "host filesystem prefix normalized",
+      "original_sha256": "15d5a0c09900f38f69ce01f3320af5c28afedeb955ecfd9726ea25e02073f7ea",
+      "published_sha256": "13e0277a83549005016266bc3c82f2c8e2808fbcd1e4b2e271389ceeb465c548"
+    },
+    {
+      "file": "data/measurements/product-cost-20261022/waltid-pair09-off/block.json",
+      "change": "host filesystem prefix normalized",
+      "original_sha256": "453e6472bb1f08cc67c9e23e80831d8e82b52fe967e9cc047695ce50a0fddf91",
+      "published_sha256": "79a0fe04b04a2a683d67ec59d1fdd01bfed98a747fd79c68a4108c0ec8cbc468"
+    },
+    {
+      "file": "data/measurements/product-cost-20261022/waltid-pair09-off/completion.json",
+      "change": "host filesystem prefix normalized",
+      "original_sha256": "453e6472bb1f08cc67c9e23e80831d8e82b52fe967e9cc047695ce50a0fddf91",
+      "published_sha256": "79a0fe04b04a2a683d67ec59d1fdd01bfed98a747fd79c68a4108c0ec8cbc468"
+    },
+    {
+      "file": "data/measurements/product-cost-20261022/waltid-pair08-off/block.json",
+      "change": "host filesystem prefix normalized",
+      "original_sha256": "7ba0f5482b0c9790a9354c93a497028b20ec0997f65ed4c5d861d161be61deb0",
+      "published_sha256": "4d2344366a05ddd615510f9c8d25ad99b7e316299776e9d33dfe598e122c29ba"
+    },
+    {
+      "file": "data/measurements/product-cost-20261022/waltid-pair08-off/completion.json",
+      "change": "host filesystem prefix normalized",
+      "original_sha256": "7ba0f5482b0c9790a9354c93a497028b20ec0997f65ed4c5d861d161be61deb0",
+      "published_sha256": "4d2344366a05ddd615510f9c8d25ad99b7e316299776e9d33dfe598e122c29ba"
+    },
+    {
+      "file": "data/measurements/product-cost-20261022/waltid-pair01-off/block.json",
+      "change": "host filesystem prefix normalized",
+      "original_sha256": "aa5f97bfffb41868809955598d32cd034b83097533c722cda18cacb29f19341f",
+      "published_sha256": "a1e1573465e5d5129cdaf856d1ccc173ebb088b1ab6de39a319e0c57c2c9ccee"
+    },
+    {
+      "file": "data/measurements/product-cost-20261022/waltid-pair01-off/completion.json",
+      "change": "host filesystem prefix normalized",
+      "original_sha256": "aa5f97bfffb41868809955598d32cd034b83097533c722cda18cacb29f19341f",
+      "published_sha256": "a1e1573465e5d5129cdaf856d1ccc173ebb088b1ab6de39a319e0c57c2c9ccee"
+    },
+    {
+      "file": "data/measurements/product-cost-20261022/credo-pair02-off/runner.log",
+      "change": "host filesystem prefix normalized",
+      "original_sha256": "c574fafde1c5dac9ccffd36c62633bd9bf388e2d82444a6e733c5cfcb2a7bf96",
+      "published_sha256": "4a72593d024ea78d5535c3f04d27943a131b76f1df1d9329f9dab1880ccf0b59"
+    },
+    {
+      "file": "data/measurements/product-cost-20261022/credo-pair01-on/runner.log",
+      "change": "host filesystem prefix normalized",
+      "original_sha256": "940e7011d3fe36158650e2f60043a057533350ea9c10edb533f5e30fe17dd6a6",
+      "published_sha256": "ab8764859342018aa0ff3b681b8ee770237cbb1d6dd92263f25a44981b4b58ba"
+    },
+    {
+      "file": "data/measurements/product-cost-20261022/credo-pair01-off/runner.log",
+      "change": "host filesystem prefix normalized",
+      "original_sha256": "7ac4dcdba734f5ca757940f95daf8d59177c18f4d5c2776ff5e7890996c01ae1",
+      "published_sha256": "6918ad5a385407a97f0da8a4a4be71e43fbd98dc206af27f0fd5c5737312aa6c"
+    },
+    {
+      "file": "data/measurements/product-cost-20261022/waltid-pair02-on/block.json",
+      "change": "host filesystem prefix normalized",
+      "original_sha256": "f8d65e07a70d3650e1475e4e48cc04b61efdfdbbc01cc4e0c717be193a6c932b",
+      "published_sha256": "0ac231b0df42d525c65211be0adf0eb3ee0aa09829275d9aff8063c5c3311484"
+    },
+    {
+      "file": "data/measurements/product-cost-20261022/waltid-pair02-on/completion.json",
+      "change": "host filesystem prefix normalized",
+      "original_sha256": "f8d65e07a70d3650e1475e4e48cc04b61efdfdbbc01cc4e0c717be193a6c932b",
+      "published_sha256": "0ac231b0df42d525c65211be0adf0eb3ee0aa09829275d9aff8063c5c3311484"
+    },
+    {
+      "file": "data/measurements/product-cost-20261022/driver_at_measurement/experiments/eval/product_cost.py",
+      "change": "host filesystem prefix normalized",
+      "original_sha256": "59783caeebcb96df3eca3b050cfa44eb20eda81a4c61df5de8f9636c5f55d258",
+      "published_sha256": "b87e70c47e8913f8f9d5fe9d86e2a2e4a7b97abde1c84ae0db0624e9fc074d95"
+    },
+    {
+      "file": "experiments/eval/product_cost.py",
+      "change": "host filesystem prefix normalized",
+      "original_sha256": "59783caeebcb96df3eca3b050cfa44eb20eda81a4c61df5de8f9636c5f55d258",
+      "published_sha256": "b87e70c47e8913f8f9d5fe9d86e2a2e4a7b97abde1c84ae0db0624e9fc074d95"
+    }
+  ],
+  "dataset_manifest_updates": [
+    {
+      "dataset": "sept2026-thr015",
+      "files_with_normalized_metadata": []
+    },
+    {
+      "dataset": "sept2026-thr019",
+      "files_with_normalized_metadata": []
+    }
+  ],
+  "modified_source_files": [
+    {
+      "file": "scripts/plot_results.py",
+      "original_sha256": "e318dcf6ecf2336c4e6dd7b58283accaa90ffb3d13d5bb3863acbf4b658266af",
+      "published_sha256": "fbe2845847b5a4370a7ae05c435e351673a8634361270860dd4dc715241c6944"
+    },
+    {
+      "file": "scripts/draw_diagrams.py",
+      "original_sha256": "34f3d442892584742b44c191e5657fb7b1695c33c68332b6010bdf76ec42ba26",
+      "published_sha256": "7636b411820bf0af0443aef790aeff362aa964eb8af656ed81d41c598a83217e"
+    },
+    {
+      "file": "scripts/verify_saved_truth.py",
+      "original_sha256": "9f88b283feaba0299f52ffc28243802551712c66ea276f0642c0c0dba41723d2",
+      "published_sha256": "00cc4572a2e914dfd49c6ac683b2ade004db0cc7d4d4b078d6f8e2dbbc9411eb"
+    },
+    {
+      "file": "data/measurements/product-cost-20261022/driver_at_measurement/experiments/eval/product_cost.py",
+      "original_sha256": "59783caeebcb96df3eca3b050cfa44eb20eda81a4c61df5de8f9636c5f55d258",
+      "published_sha256": "b87e70c47e8913f8f9d5fe9d86e2a2e4a7b97abde1c84ae0db0624e9fc074d95"
+    },
+    {
+      "file": "experiments/eval/coverage.py",
+      "original_sha256": "c2240ba34f9c1d814ffd31815b42c0b35162a3c5ae8979e575d5fece2371d8c3",
+      "published_sha256": "83bc4b2794d467efcde70f5459763d7062937e786128a6f78344efeed4743790"
+    },
+    {
+      "file": "experiments/eval/fig3.py",
+      "original_sha256": "1310434ea39c9dccfd4d65dc2e26ba44a53cbd8540d4024b5e8f6e4be1ba3d6a",
+      "published_sha256": "0d3e3b73a9090a0d39821d2b0d7063b8395da2f9021e2addea000b78f159ae80"
+    },
+    {
+      "file": "experiments/eval/table_component.py",
+      "original_sha256": "3ae361aed54b470f0b79ebb9ed0f310878c8fd6d9f1ae0bbe0a75ce3ecdc87ce",
+      "published_sha256": "28dcf2c4a0a423d10d900586ac527f384c0cd5419ecdb650acbb0c75e25f170f"
+    },
+    {
+      "file": "experiments/eval/product_cost.py",
+      "original_sha256": "59783caeebcb96df3eca3b050cfa44eb20eda81a4c61df5de8f9636c5f55d258",
+      "published_sha256": "c68234cd18fdb6b3decea0f7a236eabfc09beacf7088c5719b3f43bbbb032870"
+    },
+    {
+      "file": "experiments/eval/table2.py",
+      "original_sha256": "35b7e0ec233f4976b760d4c1f39a038d37c1aa1cc7ffc55a2fb39e615a305ee0",
+      "published_sha256": "f7d529196e1b7257d51b94988c0e6ff7d6b3825875b55318c22fad04e3d3bed6"
+    },
+    {
+      "file": "experiments/eval/supp.py",
+      "original_sha256": "9c6f99e7e1c39ce3e92f2d4cdc2e56b3f88e145a6916ec7e4815f56f0302d8d3",
+      "published_sha256": "ad642379e4448d417fe2186fe8c3d10822de6a3daa32925375b697c3cd72d1c8"
+    },
+    {
+      "file": "experiments/eval/render.py",
+      "original_sha256": "704b9be11dc3dd348f3e54d3be248d16e7cfa40cf9cb34e6ec448796e9b1f9d5",
+      "published_sha256": "5366854566a6051e8276de32fb023f6e37735ede6af8434dd3f2db4b3d2b95cf"
+    },
+    {
+      "file": "experiments/eval/fig2.py",
+      "original_sha256": "99d6f66cfb1ba6590f42d6b91e383ad17e07ed6b69e27870ee60e82577820f7d",
+      "published_sha256": "74e180327f2d4cc801bcc55e5296a3e49b2e8c37a4380d5eda130f73621f1cfd"
+    },
+    {
+      "file": "experiments/eval/fig1.py",
+      "original_sha256": "c9238732cf6c55de26fae9ee648185cdbd042ab53322aa729915049bbe0b7059",
+      "published_sha256": "8f360486cb1ac90ca45f6d4989c19cee3d85d3e8ba941bdc9078ade766e98dd7"
+    },
+    {
+      "file": "experiments/eval/summarise_followup.py",
+      "original_sha256": "1d9fea54515c5c1aab2bdf592548c1fb6c63ece83c443f64b2e5b2ae06f2dc95",
+      "published_sha256": "ee06b3d62b96ae6774b9734cf2639989c791a5e42eff92039c67cbf624d9bebc"
+    },
+    {
+      "file": "experiments/eval/table1.py",
+      "original_sha256": "af15045f5ba598919e495be7bd0054aa1f84272489504ff196d5e150703a18a1",
+      "published_sha256": "500ad8caa2a0fca3167fab37a6e8b3b543478438a53bc4b3681ead1a73507297"
+    },
+    {
+      "file": "experiments/eval/harness/run_followup.py",
+      "original_sha256": "9a2a7bb073b62f3803e3996bb31b63744190da48d5109a19a0dfc958d28be055",
+      "published_sha256": "205df32072e47c343c06aead1831193c0fe4c718a7d29cd0df97922fac3c558c"
+    }
+  ],
+  "detector_source_byte_identical_to_baseline": true,
+  "acquisition_sources": "testbed/acquisition/SOURCE_IDENTITIES.json"
+}

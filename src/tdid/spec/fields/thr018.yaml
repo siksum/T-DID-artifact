@@ -1,0 +1,77 @@
+# TDID-THR-018 Non-consensual claim inference through repeated DCQL value probes
+# Source analysis: research/candidates/CAND-20260815-OBS-GAP-THR-016-020.yaml (TDID-THR-018 row)
+# Definition: research/candidates/CAND-20260908-CH6-THR-018-REAFFIRMED.yaml (unchanged definition).
+# The OBS-GAP named checks dcql_controlled_query_delta, dcql_outcome_indistinguishability and
+# dcql_predicate_result_revelation are conclusions over a request series; the rule computes them from the
+# per-request facts below. dcql_consent_authorization is carried as the Wallet's recorded interaction state.
+# Outcome classes come from the Wallet (the row's producer of the "externally visible outcome class"); the
+# Verifier is the attacker here, so its PRESENTATION_OUTCOME_OBSERVED record is corroboration only.
+# Where the join runs (privacy): the series is formed and judged inside the Wallet's T-DID instance, the only
+# party holding the keys of dcql_shape_ref and dcql_value_refs. dcql_match_result, the value commitments and
+# the series never leave that instance; only the per-request verdict does. request_ref (common vocabulary:
+# commitment over one presentation request object, keyed with a key the Wallet and Verifier collectors share
+# for this relationship) is needed only to attach the optional Verifier corroboration.
+threat: TDID-THR-018
+event_types:
+  DCQL_QUERY_EVALUATED:
+    produced_by: [wallet]
+    meaning: The Wallet evaluated the DCQL query of one presentation request against its credentials and responded (or stayed silent).
+  PRESENTATION_OUTCOME_OBSERVED:
+    produced_by: [verifier]
+    meaning: The Verifier recorded what it observed from the Wallet for one of its requests (a presentation, an error, or no response within its wait time). Corroboration only for TDID-THR-018.
+refs:
+  dcql_shape_ref:
+    produced_by: [wallet]
+    meaning: Wallet-local keyed commitment over the DCQL query with every value constraint removed (credential formats, claim paths, operators and structure), rotated at the end of each probe window.
+    reveals: Whether two requests asked the same question shape (equality within one window only).
+facts:
+  dcql_value_refs:
+    produced_by: [wallet]
+    type: array
+    meaning: Wallet-local keyed commitments, one per value constraint in canonical query order, over the constraint values of this request; same key and rotation as dcql_shape_ref.
+    reveals: In which value positions two same-shape requests differ (equality per position only).
+  dcql_match_result:
+    produced_by: [wallet]
+    type: enum
+    enum: [match, no_match]
+    meaning: Whether the Wallet's DCQL evaluation found a credential satisfying the query (local ground truth).
+    reveals: The protected predicate result; local-only visibility.
+  dcql_user_interaction:
+    produced_by: [wallet]
+    type: enum
+    enum: [none, completed_authorized, completed_declined]
+    meaning: User interaction completed before anything Verifier-visible was produced for this request. none = the Wallet produced its response, error or silence without a completed user interaction.
+    reveals: Whether the user was involved before the Verifier could observe an outcome.
+  dcql_visible_outcome_class:
+    produced_by: [wallet]
+    type: enum
+    enum: [presentation, error, no_response]
+    meaning: What the Wallet made visible to the Verifier for this request before any completed user interaction or at the end of processing (a presentation response, an error response, or nothing). The outcome the Verifier can observe, recorded by the honest side.
+    reveals: The coarse outcome class only.
+  dcql_visible_outcome_delay_ms:
+    produced_by: [wallet]
+    type: integer
+    meaning: Milliseconds between the Wallet receiving the request and producing the visible outcome (absent for no_response). Used only under a preregistered timing procedure.
+    reveals: Wallet-side response latency.
+  observed_outcome_class:
+    produced_by: [verifier]
+    type: enum
+    enum: [presentation, error, no_response]
+    meaning: Class of what the Verifier received for its request. Corroboration only; never decides the verdict, because the Verifier is the party this threat is about.
+    reveals: The coarse outcome class only.
+policy_params:
+  probe_window_seconds:
+    produced_by: [wallet]
+    type: integer
+    example: 3600
+    meaning: Requests from one Verifier with the same shape within this window form one probe series. A privacy-policy choice, not mandated by OpenID4VP. Unset = whether two requests belong to one series is unknown.
+  pre_response_interaction_required:
+    produced_by: [wallet]
+    type: boolean
+    example: true
+    meaning: Whether the Wallet's privacy policy requires a completed user interaction before any Verifier-visible outcome of DCQL evaluation. When false, a silent outcome is not non-consensual under that policy. Unset = unknown (a completed interaction still settles consent).
+  timing_distinguish_threshold_ms:
+    produced_by: [wallet]
+    type: integer
+    example: 0
+    meaning: Preregistered latency difference above which a match and a no-match outcome count as distinguishable. 0 disables the timing procedure. Without a timing procedure (0 or unset), equal visible classes are not established as indistinguishable, because the Verifier may still separate them by latency.

@@ -1,0 +1,813 @@
+{
+  "complete": true,
+  "summary": {
+    "waltid": {
+      "blocks": 20,
+      "pairs": 10,
+      "modes": {
+        "off": {
+          "p50_ms": {
+            "median": 21.555866,
+            "min": 19.8994485,
+            "max": 26.131735499999998
+          },
+          "p95_ms": {
+            "median": 28.911175349999994,
+            "min": 25.9992577,
+            "max": 35.833503699999994
+          },
+          "bytes_per_case": {
+            "median": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "events_per_case": {
+            "median": 0.0,
+            "min": 0,
+            "max": 0
+          }
+        },
+        "on": {
+          "p50_ms": {
+            "median": 23.057154750000002,
+            "min": 21.6780125,
+            "max": 25.627724999999998
+          },
+          "p95_ms": {
+            "median": 32.07233969999999,
+            "min": 27.843222399999995,
+            "max": 35.075044150000004
+          },
+          "bytes_per_case": {
+            "median": 2061.6,
+            "min": 2061.57,
+            "max": 2061.6
+          },
+          "events_per_case": {
+            "median": 1.8,
+            "min": 1.8,
+            "max": 1.8
+          }
+        }
+      },
+      "paired": {
+        "p50_ms_delta": {
+          "median": 1.3863675000000004,
+          "min": -0.5040104999999997,
+          "max": 3.4247970000000016
+        },
+        "p50_ms_percent": {
+          "median": 6.763902371374698,
+          "min": -1.928729532717028,
+          "max": 16.047447594715198
+        },
+        "p95_ms_delta": {
+          "median": 2.5428653499999996,
+          "min": -1.544645850000002,
+          "max": 6.753944750000002
+        },
+        "p95_ms_percent": {
+          "median": 8.210669356977844,
+          "min": -4.812807579510106,
+          "max": 23.84774918024546
+        }
+      }
+    },
+    "credo": {
+      "blocks": 20,
+      "pairs": 10,
+      "modes": {
+        "off": {
+          "p50_ms": {
+            "median": 21.7184545,
+            "min": 20.040309,
+            "max": 25.3744095
+          },
+          "p95_ms": {
+            "median": 29.618591424999998,
+            "min": 28.02695055,
+            "max": 34.97319054999995
+          },
+          "bytes_per_case": {
+            "median": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "events_per_case": {
+            "median": 0.0,
+            "min": 0,
+            "max": 0
+          }
+        },
+        "on": {
+          "p50_ms": {
+            "median": 22.0052815,
+            "min": 19.247619,
+            "max": 22.866695
+          },
+          "p95_ms": {
+            "median": 29.336373724999994,
+            "min": 25.413490449999998,
+            "max": 31.862398049999992
+          },
+          "bytes_per_case": {
+            "median": 2012.2,
+            "min": 2012.2,
+            "max": 2012.2
+          },
+          "events_per_case": {
+            "median": 1.8,
+            "min": 1.8,
+            "max": 1.8
+          }
+        }
+      },
+      "paired": {
+        "p50_ms_delta": {
+          "median": -0.3093537500000014,
+          "min": -2.7146030000000003,
+          "max": 1.7915330000000012
+        },
+        "p50_ms_percent": {
+          "median": -1.328798888484546,
+          "min": -10.698191814079458,
+          "max": 8.500684360101248
+        },
+        "p95_ms_delta": {
+          "median": -0.7743292499999992,
+          "min": -3.110792499999956,
+          "max": 2.259998900000003
+        },
+        "p95_ms_percent": {
+          "median": -2.566571119808963,
+          "min": -10.267261809968545,
+          "max": 8.013254368842603
+        }
+      }
+    }
+  },
+  "blocks": [
+    {
+      "product": "credo",
+      "pair": 0,
+      "mode": "off",
+      "cases": 100,
+      "requests": 180,
+      "p50_ms": 21.960954,
+      "p95_ms": 30.5637887,
+      "event_bytes": 0,
+      "bytes_per_case": 0.0,
+      "events_per_case": 0
+    },
+    {
+      "product": "credo",
+      "pair": 0,
+      "mode": "on",
+      "cases": 100,
+      "requests": 180,
+      "p50_ms": 22.777725500000003,
+      "p95_ms": 30.663144199999998,
+      "event_bytes": 201220,
+      "bytes_per_case": 2012.2,
+      "events_per_case": 1.8
+    },
+    {
+      "product": "credo",
+      "pair": 1,
+      "mode": "off",
+      "cases": 100,
+      "requests": 180,
+      "p50_ms": 22.9161575,
+      "p95_ms": 30.769781499999997,
+      "event_bytes": 0,
+      "bytes_per_case": 0.0,
+      "events_per_case": 0
+    },
+    {
+      "product": "credo",
+      "pair": 1,
+      "mode": "on",
+      "cases": 100,
+      "requests": 180,
+      "p50_ms": 21.681929500000003,
+      "p95_ms": 30.0372804,
+      "event_bytes": 201220,
+      "bytes_per_case": 2012.2,
+      "events_per_case": 1.8
+    },
+    {
+      "product": "credo",
+      "pair": 2,
+      "mode": "off",
+      "cases": 100,
+      "requests": 180,
+      "p50_ms": 20.040309,
+      "p95_ms": 28.02695055,
+      "event_bytes": 0,
+      "bytes_per_case": 0.0,
+      "events_per_case": 0
+    },
+    {
+      "product": "credo",
+      "pair": 2,
+      "mode": "on",
+      "cases": 100,
+      "requests": 180,
+      "p50_ms": 21.550037500000002,
+      "p95_ms": 28.086488699999997,
+      "event_bytes": 201220,
+      "bytes_per_case": 2012.2,
+      "events_per_case": 1.8
+    },
+    {
+      "product": "credo",
+      "pair": 3,
+      "mode": "off",
+      "cases": 100,
+      "requests": 180,
+      "p50_ms": 21.6440675,
+      "p95_ms": 29.650888799999997,
+      "event_bytes": 0,
+      "bytes_per_case": 0.0,
+      "events_per_case": 0
+    },
+    {
+      "product": "credo",
+      "pair": 3,
+      "mode": "on",
+      "cases": 100,
+      "requests": 180,
+      "p50_ms": 22.643138,
+      "p95_ms": 28.834731399999995,
+      "event_bytes": 201220,
+      "bytes_per_case": 2012.2,
+      "events_per_case": 1.8
+    },
+    {
+      "product": "credo",
+      "pair": 4,
+      "mode": "off",
+      "cases": 100,
+      "requests": 180,
+      "p50_ms": 20.936742000000002,
+      "p95_ms": 28.143387999999998,
+      "event_bytes": 0,
+      "bytes_per_case": 0.0,
+      "events_per_case": 0
+    },
+    {
+      "product": "credo",
+      "pair": 4,
+      "mode": "on",
+      "cases": 100,
+      "requests": 180,
+      "p50_ms": 19.247619,
+      "p95_ms": 25.413490449999998,
+      "event_bytes": 201220,
+      "bytes_per_case": 2012.2,
+      "events_per_case": 1.8
+    },
+    {
+      "product": "credo",
+      "pair": 5,
+      "mode": "off",
+      "cases": 100,
+      "requests": 180,
+      "p50_ms": 23.13495,
+      "p95_ms": 30.52368809999999,
+      "event_bytes": 0,
+      "bytes_per_case": 0.0,
+      "events_per_case": 0
+    },
+    {
+      "product": "credo",
+      "pair": 5,
+      "mode": "on",
+      "cases": 100,
+      "requests": 180,
+      "p50_ms": 21.917333499999998,
+      "p95_ms": 29.022578049999993,
+      "event_bytes": 201220,
+      "bytes_per_case": 2012.2,
+      "events_per_case": 1.8
+    },
+    {
+      "product": "credo",
+      "pair": 6,
+      "mode": "off",
+      "cases": 100,
+      "requests": 180,
+      "p50_ms": 21.7928415,
+      "p95_ms": 28.763694299999997,
+      "event_bytes": 0,
+      "bytes_per_case": 0.0,
+      "events_per_case": 0
+    },
+    {
+      "product": "credo",
+      "pair": 6,
+      "mode": "on",
+      "cases": 100,
+      "requests": 180,
+      "p50_ms": 20.613111,
+      "p95_ms": 25.810450499999998,
+      "event_bytes": 201220,
+      "bytes_per_case": 2012.2,
+      "events_per_case": 1.8
+    },
+    {
+      "product": "credo",
+      "pair": 7,
+      "mode": "off",
+      "cases": 100,
+      "requests": 180,
+      "p50_ms": 21.5322065,
+      "p95_ms": 29.586294049999996,
+      "event_bytes": 0,
+      "bytes_per_case": 0.0,
+      "events_per_case": 0
+    },
+    {
+      "product": "credo",
+      "pair": 7,
+      "mode": "on",
+      "cases": 100,
+      "requests": 180,
+      "p50_ms": 22.0932295,
+      "p95_ms": 29.650169399999992,
+      "event_bytes": 201220,
+      "bytes_per_case": 2012.2,
+      "events_per_case": 1.8
+    },
+    {
+      "product": "credo",
+      "pair": 8,
+      "mode": "off",
+      "cases": 100,
+      "requests": 180,
+      "p50_ms": 25.3744095,
+      "p95_ms": 34.97319054999995,
+      "event_bytes": 0,
+      "bytes_per_case": 0.0,
+      "events_per_case": 0
+    },
+    {
+      "product": "credo",
+      "pair": 8,
+      "mode": "on",
+      "cases": 100,
+      "requests": 180,
+      "p50_ms": 22.6598065,
+      "p95_ms": 31.862398049999992,
+      "event_bytes": 201220,
+      "bytes_per_case": 2012.2,
+      "events_per_case": 1.8
+    },
+    {
+      "product": "credo",
+      "pair": 9,
+      "mode": "off",
+      "cases": 100,
+      "requests": 180,
+      "p50_ms": 21.075162,
+      "p95_ms": 28.203259199999994,
+      "event_bytes": 0,
+      "bytes_per_case": 0.0,
+      "events_per_case": 0
+    },
+    {
+      "product": "credo",
+      "pair": 9,
+      "mode": "on",
+      "cases": 100,
+      "requests": 180,
+      "p50_ms": 22.866695,
+      "p95_ms": 30.463258099999997,
+      "event_bytes": 201220,
+      "bytes_per_case": 2012.2,
+      "events_per_case": 1.8
+    },
+    {
+      "product": "waltid",
+      "pair": 0,
+      "mode": "off",
+      "cases": 100,
+      "requests": 180,
+      "p50_ms": 26.131735499999998,
+      "p95_ms": 35.833503699999994,
+      "event_bytes": 0,
+      "bytes_per_case": 0.0,
+      "events_per_case": 0
+    },
+    {
+      "product": "waltid",
+      "pair": 0,
+      "mode": "on",
+      "cases": 100,
+      "requests": 180,
+      "p50_ms": 25.627724999999998,
+      "p95_ms": 34.660946049999964,
+      "event_bytes": 206160,
+      "bytes_per_case": 2061.6,
+      "events_per_case": 1.8
+    },
+    {
+      "product": "waltid",
+      "pair": 1,
+      "mode": "off",
+      "cases": 100,
+      "requests": 180,
+      "p50_ms": 22.4817055,
+      "p95_ms": 28.19320205,
+      "event_bytes": 0,
+      "bytes_per_case": 0.0,
+      "events_per_case": 0
+    },
+    {
+      "product": "waltid",
+      "pair": 1,
+      "mode": "on",
+      "cases": 100,
+      "requests": 180,
+      "p50_ms": 25.091638500000002,
+      "p95_ms": 31.409899749999994,
+      "event_bytes": 206160,
+      "bytes_per_case": 2061.6,
+      "events_per_case": 1.8
+    },
+    {
+      "product": "waltid",
+      "pair": 2,
+      "mode": "off",
+      "cases": 100,
+      "requests": 180,
+      "p50_ms": 22.1482305,
+      "p95_ms": 28.3210994,
+      "event_bytes": 0,
+      "bytes_per_case": 0.0,
+      "events_per_case": 0
+    },
+    {
+      "product": "waltid",
+      "pair": 2,
+      "mode": "on",
+      "cases": 100,
+      "requests": 180,
+      "p50_ms": 25.255247,
+      "p95_ms": 35.075044150000004,
+      "event_bytes": 206160,
+      "bytes_per_case": 2061.6,
+      "events_per_case": 1.8
+    },
+    {
+      "product": "waltid",
+      "pair": 3,
+      "mode": "off",
+      "cases": 100,
+      "requests": 180,
+      "p50_ms": 21.341693,
+      "p95_ms": 31.516199799999995,
+      "event_bytes": 0,
+      "bytes_per_case": 0.0,
+      "events_per_case": 0
+    },
+    {
+      "product": "waltid",
+      "pair": 3,
+      "mode": "on",
+      "cases": 100,
+      "requests": 180,
+      "p50_ms": 24.76649,
+      "p95_ms": 34.302023299999995,
+      "event_bytes": 206157,
+      "bytes_per_case": 2061.57,
+      "events_per_case": 1.8
+    },
+    {
+      "product": "waltid",
+      "pair": 4,
+      "mode": "off",
+      "cases": 100,
+      "requests": 180,
+      "p50_ms": 21.594728,
+      "p95_ms": 30.333778099999996,
+      "event_bytes": 0,
+      "bytes_per_case": 0.0,
+      "events_per_case": 0
+    },
+    {
+      "product": "waltid",
+      "pair": 4,
+      "mode": "on",
+      "cases": 100,
+      "requests": 180,
+      "p50_ms": 22.4057195,
+      "p95_ms": 32.633685299999996,
+      "event_bytes": 206160,
+      "bytes_per_case": 2061.6,
+      "events_per_case": 1.8
+    },
+    {
+      "product": "waltid",
+      "pair": 5,
+      "mode": "off",
+      "cases": 100,
+      "requests": 180,
+      "p50_ms": 20.5960185,
+      "p95_ms": 28.461724449999995,
+      "event_bytes": 0,
+      "bytes_per_case": 0.0,
+      "events_per_case": 0
+    },
+    {
+      "product": "waltid",
+      "pair": 5,
+      "mode": "on",
+      "cases": 100,
+      "requests": 180,
+      "p50_ms": 22.07481,
+      "p95_ms": 30.4031503,
+      "event_bytes": 206160,
+      "bytes_per_case": 2061.6,
+      "events_per_case": 1.8
+    },
+    {
+      "product": "waltid",
+      "pair": 6,
+      "mode": "off",
+      "cases": 100,
+      "requests": 180,
+      "p50_ms": 19.8994485,
+      "p95_ms": 25.9992577,
+      "event_bytes": 0,
+      "bytes_per_case": 0.0,
+      "events_per_case": 0
+    },
+    {
+      "product": "waltid",
+      "pair": 6,
+      "mode": "on",
+      "cases": 100,
+      "requests": 180,
+      "p50_ms": 22.965184,
+      "p95_ms": 31.510994099999994,
+      "event_bytes": 206157,
+      "bytes_per_case": 2061.57,
+      "events_per_case": 1.8
+    },
+    {
+      "product": "waltid",
+      "pair": 7,
+      "mode": "off",
+      "cases": 100,
+      "requests": 180,
+      "p50_ms": 20.384069,
+      "p95_ms": 27.113867,
+      "event_bytes": 0,
+      "bytes_per_case": 0.0,
+      "events_per_case": 0
+    },
+    {
+      "product": "waltid",
+      "pair": 7,
+      "mode": "on",
+      "cases": 100,
+      "requests": 180,
+      "p50_ms": 21.6780125,
+      "p95_ms": 27.843222399999995,
+      "event_bytes": 206160,
+      "bytes_per_case": 2061.6,
+      "events_per_case": 1.8
+    },
+    {
+      "product": "waltid",
+      "pair": 8,
+      "mode": "off",
+      "cases": 100,
+      "requests": 180,
+      "p50_ms": 21.517004,
+      "p95_ms": 29.360626249999996,
+      "event_bytes": 0,
+      "bytes_per_case": 0.0,
+      "events_per_case": 0
+    },
+    {
+      "product": "waltid",
+      "pair": 8,
+      "mode": "on",
+      "cases": 100,
+      "requests": 180,
+      "p50_ms": 22.628859,
+      "p95_ms": 34.5704742,
+      "event_bytes": 206160,
+      "bytes_per_case": 2061.6,
+      "events_per_case": 1.8
+    },
+    {
+      "product": "waltid",
+      "pair": 9,
+      "mode": "off",
+      "cases": 100,
+      "requests": 180,
+      "p50_ms": 23.0128515,
+      "p95_ms": 32.094485899999995,
+      "event_bytes": 0,
+      "bytes_per_case": 0.0,
+      "events_per_case": 0
+    },
+    {
+      "product": "waltid",
+      "pair": 9,
+      "mode": "on",
+      "cases": 100,
+      "requests": 180,
+      "p50_ms": 23.1491255,
+      "p95_ms": 30.549840049999993,
+      "event_bytes": 206160,
+      "bytes_per_case": 2061.6,
+      "events_per_case": 1.8
+    }
+  ],
+  "pairs": [
+    {
+      "product": "waltid",
+      "pair": 0,
+      "first": "off",
+      "p50_ms_delta": -0.5040104999999997,
+      "p50_ms_percent": -1.928729532717028,
+      "p95_ms_delta": -1.17255765000003,
+      "p95_ms_percent": -3.2722383493859417
+    },
+    {
+      "product": "waltid",
+      "pair": 1,
+      "first": "on",
+      "p50_ms_delta": 2.6099330000000016,
+      "p50_ms_percent": 11.609141486174176,
+      "p95_ms_delta": 3.216697699999994,
+      "p95_ms_percent": 11.409479825297085
+    },
+    {
+      "product": "waltid",
+      "pair": 2,
+      "first": "off",
+      "p50_ms_delta": 3.1070165000000003,
+      "p50_ms_percent": 14.028283207545634,
+      "p95_ms_delta": 6.753944750000002,
+      "p95_ms_percent": 23.84774918024546
+    },
+    {
+      "product": "waltid",
+      "pair": 3,
+      "first": "on",
+      "p50_ms_delta": 3.4247970000000016,
+      "p50_ms_percent": 16.047447594715198,
+      "p95_ms_delta": 2.7858234999999993,
+      "p95_ms_percent": 8.839338237727505
+    },
+    {
+      "product": "waltid",
+      "pair": 4,
+      "first": "off",
+      "p50_ms_delta": 0.8109915000000001,
+      "p50_ms_percent": 3.7555068996469885,
+      "p95_ms_delta": 2.2999072,
+      "p95_ms_percent": 7.582000476228182
+    },
+    {
+      "product": "waltid",
+      "pair": 5,
+      "first": "on",
+      "p50_ms_delta": 1.4787914999999998,
+      "p50_ms_percent": 7.179987238795691,
+      "p95_ms_delta": 1.9414258500000052,
+      "p95_ms_percent": 6.821181384882691
+    },
+    {
+      "product": "waltid",
+      "pair": 6,
+      "first": "off",
+      "p50_ms_delta": 3.0657355000000024,
+      "p50_ms_percent": 15.406132989062499,
+      "p95_ms_delta": 5.511736399999993,
+      "p95_ms_percent": 21.19959140218066
+    },
+    {
+      "product": "waltid",
+      "pair": 7,
+      "first": "on",
+      "p50_ms_delta": 1.293943500000001,
+      "p50_ms_percent": 6.347817503953705,
+      "p95_ms_delta": 0.7293553999999958,
+      "p95_ms_percent": 2.6899718878166503
+    },
+    {
+      "product": "waltid",
+      "pair": 8,
+      "first": "off",
+      "p50_ms_delta": 1.1118549999999985,
+      "p50_ms_percent": 5.167331846013499,
+      "p95_ms_delta": 5.209847950000004,
+      "p95_ms_percent": 17.744335238762165
+    },
+    {
+      "product": "waltid",
+      "pair": 9,
+      "first": "on",
+      "p50_ms_delta": 0.13627400000000023,
+      "p50_ms_percent": 0.5921647736700523,
+      "p95_ms_delta": -1.544645850000002,
+      "p95_ms_percent": -4.812807579510106
+    },
+    {
+      "product": "credo",
+      "pair": 0,
+      "first": "off",
+      "p50_ms_delta": 0.8167715000000015,
+      "p50_ms_percent": 3.719198628620603,
+      "p95_ms_delta": 0.09935549999999793,
+      "p95_ms_percent": 0.32507586338600075
+    },
+    {
+      "product": "credo",
+      "pair": 1,
+      "first": "on",
+      "p50_ms_delta": -1.234227999999998,
+      "p50_ms_percent": -5.385841845431539,
+      "p95_ms_delta": -0.7325010999999968,
+      "p95_ms_percent": -2.38058596548694
+    },
+    {
+      "product": "credo",
+      "pair": 2,
+      "first": "off",
+      "p50_ms_delta": 1.5097285000000014,
+      "p50_ms_percent": 7.533459189676174,
+      "p95_ms_delta": 0.05953814999999807,
+      "p95_ms_percent": 0.2124317802387462
+    },
+    {
+      "product": "credo",
+      "pair": 3,
+      "first": "on",
+      "p50_ms_delta": 0.999070500000002,
+      "p50_ms_percent": 4.615909186200801,
+      "p95_ms_delta": -0.8161574000000016,
+      "p95_ms_percent": -2.7525562741309857
+    },
+    {
+      "product": "credo",
+      "pair": 4,
+      "first": "off",
+      "p50_ms_delta": -1.6891230000000022,
+      "p50_ms_percent": -8.06774521078782,
+      "p95_ms_delta": -2.7298975500000005,
+      "p95_ms_percent": -9.699960608864863
+    },
+    {
+      "product": "credo",
+      "pair": 5,
+      "first": "on",
+      "p50_ms_delta": -1.2176165000000019,
+      "p50_ms_percent": -5.263104091428777,
+      "p95_ms_delta": -1.5011100499999976,
+      "p95_ms_percent": -4.917852800363263
+    },
+    {
+      "product": "credo",
+      "pair": 6,
+      "first": "off",
+      "p50_ms_delta": -1.1797305000000016,
+      "p50_ms_percent": -5.413385399971828,
+      "p95_ms_delta": -2.953243799999999,
+      "p95_ms_percent": -10.267261809968545
+    },
+    {
+      "product": "credo",
+      "pair": 7,
+      "first": "on",
+      "p50_ms_delta": 0.5610229999999987,
+      "p50_ms_percent": 2.6055063144596846,
+      "p95_ms_delta": 0.06387534999999644,
+      "p95_ms_percent": 0.21589506915617387
+    },
+    {
+      "product": "credo",
+      "pair": 8,
+      "first": "off",
+      "p50_ms_delta": -2.7146030000000003,
+      "p50_ms_percent": -10.698191814079458,
+      "p95_ms_delta": -3.110792499999956,
+      "p95_ms_percent": -8.894791842204288
+    },
+    {
+      "product": "credo",
+      "pair": 9,
+      "first": "on",
+      "p50_ms_delta": 1.7915330000000012,
+      "p50_ms_percent": 8.500684360101248,
+      "p95_ms_delta": 2.259998900000003,
+      "p95_ms_percent": 8.013254368842603
+    }
+  ]
+}

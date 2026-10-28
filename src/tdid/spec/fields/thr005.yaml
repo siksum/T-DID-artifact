@@ -1,0 +1,56 @@
+# TDID-THR-005 DID URL parameter injection through unsafe caller-input concatenation
+# Source analysis: research/candidates/CAND-20260814-OBS-GAP-THR-001-005.yaml (TDID-THR-005 row),
+# success condition as stated in CAND-20260908-CH6-THR-005-REAFFIRMED (construction method, parsed minus
+# authorized parameters, and the effect of the injected parameter; no producer confinement verdict).
+# Reuses from _common: RESOLUTION_DECISION.
+# Downstream branch of the success condition (OBS-GAP row: "security_relevant_downstream_decision_change"),
+# same pattern as THR-006: the caller-facing component that built the DID URL records its decision that
+# used the resolution result (DID_URL_RESULT_USE_DECISION, joined on raw_did_url_ref) with two commitments of
+# that decision's output, one computed with the actual result and one computed with the result of the same
+# DID URL carrying only the authorized parameters. No producer states that the decision "changed".
+threat: TDID-THR-005
+event_types:
+  DID_URL_CONSTRUCTED:
+    produced_by: [wallet, verifier, issuer, relying_party]
+    meaning: A caller-facing component built a DID URL from caller-supplied input before sending it for resolution or dereferencing.
+  DID_URL_RESULT_USE_DECISION:
+    produced_by: [wallet, verifier, issuer, relying_party]
+    meaning: >-
+      The caller-facing component that built a DID URL made a security-relevant decision (for example
+      accepting a proof, issuing a credential or authenticating a session) using the result of resolving or
+      dereferencing that DID URL. The outcome is that decision's outcome; pending means no decision yet.
+refs:
+  raw_did_url_ref:
+    produced_by: [wallet, verifier, issuer, relying_party, resolver]
+    meaning: Commitment over the exact DID URL string as constructed by the caller-facing component or as received by the resolver, before normalization, under one deployment-local commitment key.
+    reveals: Which resolution request carried the DID URL that a given construction produced, and which downstream decision used its result (exact-string join).
+  decision_output_ref:
+    produced_by: [wallet, verifier, issuer, relying_party]
+    meaning: Commitment, under the caller-facing component's local key, over the output of its decision that used the resolution result it actually received (outcome plus the decided values, for example the accepted key, endpoint or subject).
+    reveals: Together with baseline_decision_output_ref, whether the injected parameters changed that decision.
+  baseline_decision_output_ref:
+    produced_by: [wallet, verifier, issuer, relying_party]
+    meaning: Commitment, with the same key and canonicalization as decision_output_ref, over the output of the same decision computed with the result of resolving the DID URL built from the authorized parameters only. Absent when the component did not compute it.
+    reveals: The decision the component would have made without the parameters outside the authorized set.
+facts:
+  did_url_construction_method:
+    type: enum
+    enum: [structured, concatenation, interpolation]
+    produced_by: [wallet, verifier, issuer, relying_party]
+    meaning: How the component built the DID URL from caller input (a structured builder, string concatenation, or template interpolation).
+    reveals: Whether caller input could become DID URL structure.
+  authorized_did_parameter_names:
+    type: array
+    produced_by: [wallet, verifier, issuer, relying_party]
+    meaning: Names (never values) of the DID parameters the caller-facing component intended and was authorized to put into this DID URL.
+    reveals: The parameter set the request was supposed to carry.
+  parsed_did_parameter_names:
+    type: array
+    produced_by: [resolver]
+    meaning: Names (never values) of the DID parameters the resolver's parser found in the received DID URL.
+    reveals: The parameter set the request actually carried after parsing.
+  applied_did_parameter_names:
+    type: array
+    produced_by: [resolver]
+    meaning: Names (never values) of the DID parameters the resolver acted on when selecting the returned document version, service or resource.
+    reveals: Which parsed parameters changed what the resolver returned.

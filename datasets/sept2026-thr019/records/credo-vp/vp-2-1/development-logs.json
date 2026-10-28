@@ -1,0 +1,2350 @@
+[
+  {
+    "sequence": 1,
+    "level": "INFO",
+    "message": "Creating agent with config",
+    "data": [
+      {
+        "agentConfig": {
+          "allowInsecureHttpUrls": true,
+          "logger": 1,
+          "agentDependencies": true
+        }
+      }
+    ],
+    "embedded": []
+  },
+  {
+    "sequence": 2,
+    "level": "DEBUG",
+    "message": "Listening for routing key created events in tenant agent context provider",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 3,
+    "level": "INFO",
+    "message": "Agent storage is up to date.",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 4,
+    "level": "TRACE",
+    "message": "Imported key OKP key with crv 'Ed25519' with key id '<ref:<ref:2dcdddc25cf02be2414e219852aa89413fa1b561d525b99fdd4670c6431b8ebb>>'",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 5,
+    "level": "DEBUG",
+    "message": "creating did key",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 6,
+    "level": "DEBUG",
+    "message": "Creating tenant",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 7,
+    "level": "DEBUG",
+    "message": "Getting tenant agent for tenant '<ref:<ref:4a7e2a969b805e8335c9cc4b14bacd29fa99fb0660ce9de3b7f01177cabfe640>>'",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 8,
+    "level": "DEBUG",
+    "message": "Getting context for session with tenant '<ref:<ref:4a7e2a969b805e8335c9cc4b14bacd29fa99fb0660ce9de3b7f01177cabfe640>>'",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 9,
+    "level": "DEBUG",
+    "message": "Acquiring tenant session",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 10,
+    "level": "DEBUG",
+    "message": "Increasing current session count to 1 (max: 100)",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 11,
+    "level": "DEBUG",
+    "message": "Acquired tenant session (1 / 100)",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 12,
+    "level": "DEBUG",
+    "message": "Acquired lock for tenant '<ref:<ref:4a7e2a969b805e8335c9cc4b14bacd29fa99fb0660ce9de3b7f01177cabfe640>>' to get context",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 13,
+    "level": "DEBUG",
+    "message": "No agent context has been initialized for tenant '<ref:<ref:4a7e2a969b805e8335c9cc4b14bacd29fa99fb0660ce9de3b7f01177cabfe640>>', creating one",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 14,
+    "level": "DEBUG",
+    "message": "Increased agent context session count for tenant '<ref:<ref:4a7e2a969b805e8335c9cc4b14bacd29fa99fb0660ce9de3b7f01177cabfe640>>' to 1",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 15,
+    "level": "DEBUG",
+    "message": "Created tenant agent context for context correlation id 'tenant-<ref:<ref:4a7e2a969b805e8335c9cc4b14bacd29fa99fb0660ce9de3b7f01177cabfe640>>'",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 16,
+    "level": "TRACE",
+    "message": "Got tenant context for tenant '<ref:<ref:4a7e2a969b805e8335c9cc4b14bacd29fa99fb0660ce9de3b7f01177cabfe640>>'",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 17,
+    "level": "INFO",
+    "message": "Creating agent with config",
+    "data": [
+      {
+        "agentConfig": {
+          "allowInsecureHttpUrls": true,
+          "logger": 1,
+          "agentDependencies": true
+        }
+      }
+    ],
+    "embedded": []
+  },
+  {
+    "sequence": 18,
+    "level": "TRACE",
+    "message": "Initializing tenant agent for tenant '<ref:<ref:4a7e2a969b805e8335c9cc4b14bacd29fa99fb0660ce9de3b7f01177cabfe640>>'",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 19,
+    "level": "TRACE",
+    "message": "Ending session for agent context with contextCorrelationId 'tenant-<ref:<ref:4a7e2a969b805e8335c9cc4b14bacd29fa99fb0660ce9de3b7f01177cabfe640>>'",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 20,
+    "level": "DEBUG",
+    "message": "Ending session for agent context with contextCorrelationId tenant-<ref:<ref:4a7e2a969b805e8335c9cc4b14bacd29fa99fb0660ce9de3b7f01177cabfe640>>'",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 21,
+    "level": "DEBUG",
+    "message": "Acquired lock for tenant 'tenant-<ref:<ref:4a7e2a969b805e8335c9cc4b14bacd29fa99fb0660ce9de3b7f01177cabfe640>>' to end session context",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 22,
+    "level": "DEBUG",
+    "message": "Decreased agent context session count for tenant 'tenant-<ref:<ref:4a7e2a969b805e8335c9cc4b14bacd29fa99fb0660ce9de3b7f01177cabfe640>>' to 0",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 23,
+    "level": "DEBUG",
+    "message": "Closing agent context for tenant 'tenant-<ref:<ref:4a7e2a969b805e8335c9cc4b14bacd29fa99fb0660ce9de3b7f01177cabfe640>>'",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 24,
+    "level": "DEBUG",
+    "message": "Releasing tenant session",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 25,
+    "level": "DEBUG",
+    "message": "Decreasing current sessions to 0 (max: 100)",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 26,
+    "level": "INFO",
+    "message": "Successfully created tenant '<ref:<ref:4a7e2a969b805e8335c9cc4b14bacd29fa99fb0660ce9de3b7f01177cabfe640>>'",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 27,
+    "level": "DEBUG",
+    "message": "Getting tenant agent for tenant '<ref:<ref:4a7e2a969b805e8335c9cc4b14bacd29fa99fb0660ce9de3b7f01177cabfe640>>'",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 28,
+    "level": "DEBUG",
+    "message": "Getting context for session with tenant '<ref:<ref:4a7e2a969b805e8335c9cc4b14bacd29fa99fb0660ce9de3b7f01177cabfe640>>'",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 29,
+    "level": "DEBUG",
+    "message": "Acquiring tenant session",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 30,
+    "level": "DEBUG",
+    "message": "Increasing current session count to 1 (max: 100)",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 31,
+    "level": "DEBUG",
+    "message": "Acquired tenant session (1 / 100)",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 32,
+    "level": "DEBUG",
+    "message": "Acquired lock for tenant '<ref:<ref:4a7e2a969b805e8335c9cc4b14bacd29fa99fb0660ce9de3b7f01177cabfe640>>' to get context",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 33,
+    "level": "DEBUG",
+    "message": "No agent context has been initialized for tenant '<ref:<ref:4a7e2a969b805e8335c9cc4b14bacd29fa99fb0660ce9de3b7f01177cabfe640>>', creating one",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 34,
+    "level": "DEBUG",
+    "message": "Increased agent context session count for tenant '<ref:<ref:4a7e2a969b805e8335c9cc4b14bacd29fa99fb0660ce9de3b7f01177cabfe640>>' to 1",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 35,
+    "level": "DEBUG",
+    "message": "Created tenant agent context for context correlation id 'tenant-<ref:<ref:4a7e2a969b805e8335c9cc4b14bacd29fa99fb0660ce9de3b7f01177cabfe640>>'",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 36,
+    "level": "TRACE",
+    "message": "Got tenant context for tenant '<ref:<ref:4a7e2a969b805e8335c9cc4b14bacd29fa99fb0660ce9de3b7f01177cabfe640>>'",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 37,
+    "level": "INFO",
+    "message": "Creating agent with config",
+    "data": [
+      {
+        "agentConfig": {
+          "allowInsecureHttpUrls": true,
+          "logger": 1,
+          "agentDependencies": true
+        }
+      }
+    ],
+    "embedded": []
+  },
+  {
+    "sequence": 38,
+    "level": "TRACE",
+    "message": "Initializing tenant agent for tenant '<ref:<ref:4a7e2a969b805e8335c9cc4b14bacd29fa99fb0660ce9de3b7f01177cabfe640>>'",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 39,
+    "level": "DEBUG",
+    "message": "Created key OKP key with crv 'Ed25519' with key id '<ref:<ref:e70d9f0b05c685ff5df01199947e73ea2a1a72de439ea1f8ab8a47deee1e911a>>'",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 40,
+    "level": "DEBUG",
+    "message": "creating did key",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 41,
+    "level": "TRACE",
+    "message": "Ending session for agent context with contextCorrelationId 'tenant-<ref:<ref:4a7e2a969b805e8335c9cc4b14bacd29fa99fb0660ce9de3b7f01177cabfe640>>'",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 42,
+    "level": "DEBUG",
+    "message": "Ending session for agent context with contextCorrelationId tenant-<ref:<ref:4a7e2a969b805e8335c9cc4b14bacd29fa99fb0660ce9de3b7f01177cabfe640>>'",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 43,
+    "level": "DEBUG",
+    "message": "Acquired lock for tenant 'tenant-<ref:<ref:4a7e2a969b805e8335c9cc4b14bacd29fa99fb0660ce9de3b7f01177cabfe640>>' to end session context",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 44,
+    "level": "DEBUG",
+    "message": "Decreased agent context session count for tenant 'tenant-<ref:<ref:4a7e2a969b805e8335c9cc4b14bacd29fa99fb0660ce9de3b7f01177cabfe640>>' to 0",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 45,
+    "level": "DEBUG",
+    "message": "Closing agent context for tenant 'tenant-<ref:<ref:4a7e2a969b805e8335c9cc4b14bacd29fa99fb0660ce9de3b7f01177cabfe640>>'",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 46,
+    "level": "DEBUG",
+    "message": "Releasing tenant session",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 47,
+    "level": "DEBUG",
+    "message": "Decreasing current sessions to 0 (max: 100)",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 48,
+    "level": "INFO",
+    "message": "Creating agent with config",
+    "data": [
+      {
+        "agentConfig": {
+          "allowInsecureHttpUrls": true,
+          "logger": 1,
+          "agentDependencies": true
+        }
+      }
+    ],
+    "embedded": []
+  },
+  {
+    "sequence": 49,
+    "level": "DEBUG",
+    "message": "Listening for routing key created events in tenant agent context provider",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 50,
+    "level": "INFO",
+    "message": "Agent storage is up to date.",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 51,
+    "level": "TRACE",
+    "message": "Imported key OKP key with crv 'Ed25519' with key id '<ref:<ref:4d284bbf2bbdb88db33ba00b6bc6e2fd047932c7c6eab61b50b4d250af45c503>>'",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 52,
+    "level": "DEBUG",
+    "message": "creating did key",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 53,
+    "level": "DEBUG",
+    "message": "Creating tenant",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 54,
+    "level": "DEBUG",
+    "message": "Getting tenant agent for tenant '<ref:<ref:3c620485bd4d8217c1344f0d369a464231570a84a99f6de35ffc702c0f9a91ca>>'",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 55,
+    "level": "DEBUG",
+    "message": "Getting context for session with tenant '<ref:<ref:3c620485bd4d8217c1344f0d369a464231570a84a99f6de35ffc702c0f9a91ca>>'",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 56,
+    "level": "DEBUG",
+    "message": "Acquiring tenant session",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 57,
+    "level": "DEBUG",
+    "message": "Increasing current session count to 1 (max: 100)",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 58,
+    "level": "DEBUG",
+    "message": "Acquired tenant session (1 / 100)",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 59,
+    "level": "DEBUG",
+    "message": "Acquired lock for tenant '<ref:<ref:3c620485bd4d8217c1344f0d369a464231570a84a99f6de35ffc702c0f9a91ca>>' to get context",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 60,
+    "level": "DEBUG",
+    "message": "No agent context has been initialized for tenant '<ref:<ref:3c620485bd4d8217c1344f0d369a464231570a84a99f6de35ffc702c0f9a91ca>>', creating one",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 61,
+    "level": "DEBUG",
+    "message": "Increased agent context session count for tenant '<ref:<ref:3c620485bd4d8217c1344f0d369a464231570a84a99f6de35ffc702c0f9a91ca>>' to 1",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 62,
+    "level": "DEBUG",
+    "message": "Created tenant agent context for context correlation id 'tenant-<ref:<ref:3c620485bd4d8217c1344f0d369a464231570a84a99f6de35ffc702c0f9a91ca>>'",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 63,
+    "level": "TRACE",
+    "message": "Got tenant context for tenant '<ref:<ref:3c620485bd4d8217c1344f0d369a464231570a84a99f6de35ffc702c0f9a91ca>>'",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 64,
+    "level": "INFO",
+    "message": "Creating agent with config",
+    "data": [
+      {
+        "agentConfig": {
+          "allowInsecureHttpUrls": true,
+          "logger": 1,
+          "agentDependencies": true
+        }
+      }
+    ],
+    "embedded": []
+  },
+  {
+    "sequence": 65,
+    "level": "TRACE",
+    "message": "Initializing tenant agent for tenant '<ref:<ref:3c620485bd4d8217c1344f0d369a464231570a84a99f6de35ffc702c0f9a91ca>>'",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 66,
+    "level": "TRACE",
+    "message": "Ending session for agent context with contextCorrelationId 'tenant-<ref:<ref:3c620485bd4d8217c1344f0d369a464231570a84a99f6de35ffc702c0f9a91ca>>'",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 67,
+    "level": "DEBUG",
+    "message": "Ending session for agent context with contextCorrelationId tenant-<ref:<ref:3c620485bd4d8217c1344f0d369a464231570a84a99f6de35ffc702c0f9a91ca>>'",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 68,
+    "level": "DEBUG",
+    "message": "Acquired lock for tenant 'tenant-<ref:<ref:3c620485bd4d8217c1344f0d369a464231570a84a99f6de35ffc702c0f9a91ca>>' to end session context",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 69,
+    "level": "DEBUG",
+    "message": "Decreased agent context session count for tenant 'tenant-<ref:<ref:3c620485bd4d8217c1344f0d369a464231570a84a99f6de35ffc702c0f9a91ca>>' to 0",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 70,
+    "level": "DEBUG",
+    "message": "Closing agent context for tenant 'tenant-<ref:<ref:3c620485bd4d8217c1344f0d369a464231570a84a99f6de35ffc702c0f9a91ca>>'",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 71,
+    "level": "DEBUG",
+    "message": "Releasing tenant session",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 72,
+    "level": "DEBUG",
+    "message": "Decreasing current sessions to 0 (max: 100)",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 73,
+    "level": "INFO",
+    "message": "Successfully created tenant '<ref:<ref:3c620485bd4d8217c1344f0d369a464231570a84a99f6de35ffc702c0f9a91ca>>'",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 74,
+    "level": "DEBUG",
+    "message": "Getting tenant agent for tenant '<ref:<ref:3c620485bd4d8217c1344f0d369a464231570a84a99f6de35ffc702c0f9a91ca>>'",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 75,
+    "level": "DEBUG",
+    "message": "Getting context for session with tenant '<ref:<ref:3c620485bd4d8217c1344f0d369a464231570a84a99f6de35ffc702c0f9a91ca>>'",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 76,
+    "level": "DEBUG",
+    "message": "Acquiring tenant session",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 77,
+    "level": "DEBUG",
+    "message": "Increasing current session count to 1 (max: 100)",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 78,
+    "level": "DEBUG",
+    "message": "Acquired tenant session (1 / 100)",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 79,
+    "level": "DEBUG",
+    "message": "Acquired lock for tenant '<ref:<ref:3c620485bd4d8217c1344f0d369a464231570a84a99f6de35ffc702c0f9a91ca>>' to get context",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 80,
+    "level": "DEBUG",
+    "message": "No agent context has been initialized for tenant '<ref:<ref:3c620485bd4d8217c1344f0d369a464231570a84a99f6de35ffc702c0f9a91ca>>', creating one",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 81,
+    "level": "DEBUG",
+    "message": "Increased agent context session count for tenant '<ref:<ref:3c620485bd4d8217c1344f0d369a464231570a84a99f6de35ffc702c0f9a91ca>>' to 1",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 82,
+    "level": "DEBUG",
+    "message": "Created tenant agent context for context correlation id 'tenant-<ref:<ref:3c620485bd4d8217c1344f0d369a464231570a84a99f6de35ffc702c0f9a91ca>>'",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 83,
+    "level": "TRACE",
+    "message": "Got tenant context for tenant '<ref:<ref:3c620485bd4d8217c1344f0d369a464231570a84a99f6de35ffc702c0f9a91ca>>'",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 84,
+    "level": "INFO",
+    "message": "Creating agent with config",
+    "data": [
+      {
+        "agentConfig": {
+          "allowInsecureHttpUrls": true,
+          "logger": 1,
+          "agentDependencies": true
+        }
+      }
+    ],
+    "embedded": []
+  },
+  {
+    "sequence": 85,
+    "level": "TRACE",
+    "message": "Initializing tenant agent for tenant '<ref:<ref:3c620485bd4d8217c1344f0d369a464231570a84a99f6de35ffc702c0f9a91ca>>'",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 86,
+    "level": "DEBUG",
+    "message": "Created key OKP key with crv 'Ed25519' with key id '<ref:<ref:2f287f62ce1bbd7e3dda2d3e1ac6c551545e35664faa96076b46ab9819538628>>'",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 87,
+    "level": "DEBUG",
+    "message": "creating did key",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 88,
+    "level": "TRACE",
+    "message": "Ending session for agent context with contextCorrelationId 'tenant-<ref:<ref:3c620485bd4d8217c1344f0d369a464231570a84a99f6de35ffc702c0f9a91ca>>'",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 89,
+    "level": "DEBUG",
+    "message": "Ending session for agent context with contextCorrelationId tenant-<ref:<ref:3c620485bd4d8217c1344f0d369a464231570a84a99f6de35ffc702c0f9a91ca>>'",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 90,
+    "level": "DEBUG",
+    "message": "Acquired lock for tenant 'tenant-<ref:<ref:3c620485bd4d8217c1344f0d369a464231570a84a99f6de35ffc702c0f9a91ca>>' to end session context",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 91,
+    "level": "DEBUG",
+    "message": "Decreased agent context session count for tenant 'tenant-<ref:<ref:3c620485bd4d8217c1344f0d369a464231570a84a99f6de35ffc702c0f9a91ca>>' to 0",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 92,
+    "level": "DEBUG",
+    "message": "Closing agent context for tenant 'tenant-<ref:<ref:3c620485bd4d8217c1344f0d369a464231570a84a99f6de35ffc702c0f9a91ca>>'",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 93,
+    "level": "DEBUG",
+    "message": "Releasing tenant session",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 94,
+    "level": "DEBUG",
+    "message": "Decreasing current sessions to 0 (max: 100)",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 95,
+    "level": "DEBUG",
+    "message": "Creating tenant",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 96,
+    "level": "DEBUG",
+    "message": "Getting tenant agent for tenant '<ref:<ref:324807962299d80868653aef93ae7cb75c36f8ec861602e933f4a754062487d0>>'",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 97,
+    "level": "DEBUG",
+    "message": "Getting context for session with tenant '<ref:<ref:324807962299d80868653aef93ae7cb75c36f8ec861602e933f4a754062487d0>>'",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 98,
+    "level": "DEBUG",
+    "message": "Acquiring tenant session",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 99,
+    "level": "DEBUG",
+    "message": "Increasing current session count to 1 (max: 100)",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 100,
+    "level": "DEBUG",
+    "message": "Acquired tenant session (1 / 100)",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 101,
+    "level": "DEBUG",
+    "message": "Acquired lock for tenant '<ref:<ref:324807962299d80868653aef93ae7cb75c36f8ec861602e933f4a754062487d0>>' to get context",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 102,
+    "level": "DEBUG",
+    "message": "No agent context has been initialized for tenant '<ref:<ref:324807962299d80868653aef93ae7cb75c36f8ec861602e933f4a754062487d0>>', creating one",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 103,
+    "level": "DEBUG",
+    "message": "Increased agent context session count for tenant '<ref:<ref:324807962299d80868653aef93ae7cb75c36f8ec861602e933f4a754062487d0>>' to 1",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 104,
+    "level": "DEBUG",
+    "message": "Created tenant agent context for context correlation id 'tenant-<ref:<ref:324807962299d80868653aef93ae7cb75c36f8ec861602e933f4a754062487d0>>'",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 105,
+    "level": "TRACE",
+    "message": "Got tenant context for tenant '<ref:<ref:324807962299d80868653aef93ae7cb75c36f8ec861602e933f4a754062487d0>>'",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 106,
+    "level": "INFO",
+    "message": "Creating agent with config",
+    "data": [
+      {
+        "agentConfig": {
+          "allowInsecureHttpUrls": true,
+          "logger": 1,
+          "agentDependencies": true
+        }
+      }
+    ],
+    "embedded": []
+  },
+  {
+    "sequence": 107,
+    "level": "TRACE",
+    "message": "Initializing tenant agent for tenant '<ref:<ref:324807962299d80868653aef93ae7cb75c36f8ec861602e933f4a754062487d0>>'",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 108,
+    "level": "TRACE",
+    "message": "Ending session for agent context with contextCorrelationId 'tenant-<ref:<ref:324807962299d80868653aef93ae7cb75c36f8ec861602e933f4a754062487d0>>'",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 109,
+    "level": "DEBUG",
+    "message": "Ending session for agent context with contextCorrelationId tenant-<ref:<ref:324807962299d80868653aef93ae7cb75c36f8ec861602e933f4a754062487d0>>'",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 110,
+    "level": "DEBUG",
+    "message": "Acquired lock for tenant 'tenant-<ref:<ref:324807962299d80868653aef93ae7cb75c36f8ec861602e933f4a754062487d0>>' to end session context",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 111,
+    "level": "DEBUG",
+    "message": "Decreased agent context session count for tenant 'tenant-<ref:<ref:324807962299d80868653aef93ae7cb75c36f8ec861602e933f4a754062487d0>>' to 0",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 112,
+    "level": "DEBUG",
+    "message": "Closing agent context for tenant 'tenant-<ref:<ref:324807962299d80868653aef93ae7cb75c36f8ec861602e933f4a754062487d0>>'",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 113,
+    "level": "DEBUG",
+    "message": "Releasing tenant session",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 114,
+    "level": "DEBUG",
+    "message": "Decreasing current sessions to 0 (max: 100)",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 115,
+    "level": "INFO",
+    "message": "Successfully created tenant '<ref:<ref:324807962299d80868653aef93ae7cb75c36f8ec861602e933f4a754062487d0>>'",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 116,
+    "level": "DEBUG",
+    "message": "Getting tenant agent for tenant '<ref:<ref:324807962299d80868653aef93ae7cb75c36f8ec861602e933f4a754062487d0>>'",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 117,
+    "level": "DEBUG",
+    "message": "Getting context for session with tenant '<ref:<ref:324807962299d80868653aef93ae7cb75c36f8ec861602e933f4a754062487d0>>'",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 118,
+    "level": "DEBUG",
+    "message": "Acquiring tenant session",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 119,
+    "level": "DEBUG",
+    "message": "Increasing current session count to 1 (max: 100)",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 120,
+    "level": "DEBUG",
+    "message": "Acquired tenant session (1 / 100)",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 121,
+    "level": "DEBUG",
+    "message": "Acquired lock for tenant '<ref:<ref:324807962299d80868653aef93ae7cb75c36f8ec861602e933f4a754062487d0>>' to get context",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 122,
+    "level": "DEBUG",
+    "message": "No agent context has been initialized for tenant '<ref:<ref:324807962299d80868653aef93ae7cb75c36f8ec861602e933f4a754062487d0>>', creating one",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 123,
+    "level": "DEBUG",
+    "message": "Increased agent context session count for tenant '<ref:<ref:324807962299d80868653aef93ae7cb75c36f8ec861602e933f4a754062487d0>>' to 1",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 124,
+    "level": "DEBUG",
+    "message": "Created tenant agent context for context correlation id 'tenant-<ref:<ref:324807962299d80868653aef93ae7cb75c36f8ec861602e933f4a754062487d0>>'",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 125,
+    "level": "TRACE",
+    "message": "Got tenant context for tenant '<ref:<ref:324807962299d80868653aef93ae7cb75c36f8ec861602e933f4a754062487d0>>'",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 126,
+    "level": "INFO",
+    "message": "Creating agent with config",
+    "data": [
+      {
+        "agentConfig": {
+          "allowInsecureHttpUrls": true,
+          "logger": 1,
+          "agentDependencies": true
+        }
+      }
+    ],
+    "embedded": []
+  },
+  {
+    "sequence": 127,
+    "level": "TRACE",
+    "message": "Initializing tenant agent for tenant '<ref:<ref:324807962299d80868653aef93ae7cb75c36f8ec861602e933f4a754062487d0>>'",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 128,
+    "level": "DEBUG",
+    "message": "Created key OKP key with crv 'Ed25519' with key id '<ref:<ref:0858a90eba95fb8275d035478f1069667ff9e8ae9d241880dab3255cd8bbcaf2>>'",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 129,
+    "level": "DEBUG",
+    "message": "creating did key",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 130,
+    "level": "TRACE",
+    "message": "Ending session for agent context with contextCorrelationId 'tenant-<ref:<ref:324807962299d80868653aef93ae7cb75c36f8ec861602e933f4a754062487d0>>'",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 131,
+    "level": "DEBUG",
+    "message": "Ending session for agent context with contextCorrelationId tenant-<ref:<ref:324807962299d80868653aef93ae7cb75c36f8ec861602e933f4a754062487d0>>'",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 132,
+    "level": "DEBUG",
+    "message": "Acquired lock for tenant 'tenant-<ref:<ref:324807962299d80868653aef93ae7cb75c36f8ec861602e933f4a754062487d0>>' to end session context",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 133,
+    "level": "DEBUG",
+    "message": "Decreased agent context session count for tenant 'tenant-<ref:<ref:324807962299d80868653aef93ae7cb75c36f8ec861602e933f4a754062487d0>>' to 0",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 134,
+    "level": "DEBUG",
+    "message": "Closing agent context for tenant 'tenant-<ref:<ref:324807962299d80868653aef93ae7cb75c36f8ec861602e933f4a754062487d0>>'",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 135,
+    "level": "DEBUG",
+    "message": "Releasing tenant session",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 136,
+    "level": "DEBUG",
+    "message": "Decreasing current sessions to 0 (max: 100)",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 137,
+    "level": "DEBUG",
+    "message": "Getting tenant agent for tenant '<ref:<ref:4a7e2a969b805e8335c9cc4b14bacd29fa99fb0660ce9de3b7f01177cabfe640>>'",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 138,
+    "level": "DEBUG",
+    "message": "Getting context for session with tenant '<ref:<ref:4a7e2a969b805e8335c9cc4b14bacd29fa99fb0660ce9de3b7f01177cabfe640>>'",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 139,
+    "level": "DEBUG",
+    "message": "Acquiring tenant session",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 140,
+    "level": "DEBUG",
+    "message": "Increasing current session count to 1 (max: 100)",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 141,
+    "level": "DEBUG",
+    "message": "Acquired tenant session (1 / 100)",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 142,
+    "level": "DEBUG",
+    "message": "Acquired lock for tenant '<ref:<ref:4a7e2a969b805e8335c9cc4b14bacd29fa99fb0660ce9de3b7f01177cabfe640>>' to get context",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 143,
+    "level": "DEBUG",
+    "message": "No agent context has been initialized for tenant '<ref:<ref:4a7e2a969b805e8335c9cc4b14bacd29fa99fb0660ce9de3b7f01177cabfe640>>', creating one",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 144,
+    "level": "DEBUG",
+    "message": "Increased agent context session count for tenant '<ref:<ref:4a7e2a969b805e8335c9cc4b14bacd29fa99fb0660ce9de3b7f01177cabfe640>>' to 1",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 145,
+    "level": "DEBUG",
+    "message": "Created tenant agent context for context correlation id 'tenant-<ref:<ref:4a7e2a969b805e8335c9cc4b14bacd29fa99fb0660ce9de3b7f01177cabfe640>>'",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 146,
+    "level": "TRACE",
+    "message": "Got tenant context for tenant '<ref:<ref:4a7e2a969b805e8335c9cc4b14bacd29fa99fb0660ce9de3b7f01177cabfe640>>'",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 147,
+    "level": "INFO",
+    "message": "Creating agent with config",
+    "data": [
+      {
+        "agentConfig": {
+          "allowInsecureHttpUrls": true,
+          "logger": 1,
+          "agentDependencies": true
+        }
+      }
+    ],
+    "embedded": []
+  },
+  {
+    "sequence": 148,
+    "level": "TRACE",
+    "message": "Initializing tenant agent for tenant '<ref:<ref:4a7e2a969b805e8335c9cc4b14bacd29fa99fb0660ce9de3b7f01177cabfe640>>'",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 149,
+    "level": "DEBUG",
+    "message": "Getting tenant agent for tenant '<ref:<ref:3c620485bd4d8217c1344f0d369a464231570a84a99f6de35ffc702c0f9a91ca>>'",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 150,
+    "level": "DEBUG",
+    "message": "Getting context for session with tenant '<ref:<ref:3c620485bd4d8217c1344f0d369a464231570a84a99f6de35ffc702c0f9a91ca>>'",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 151,
+    "level": "DEBUG",
+    "message": "Acquiring tenant session",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 152,
+    "level": "DEBUG",
+    "message": "Increasing current session count to 1 (max: 100)",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 153,
+    "level": "DEBUG",
+    "message": "Acquired tenant session (1 / 100)",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 154,
+    "level": "DEBUG",
+    "message": "Acquired lock for tenant '<ref:<ref:3c620485bd4d8217c1344f0d369a464231570a84a99f6de35ffc702c0f9a91ca>>' to get context",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 155,
+    "level": "DEBUG",
+    "message": "No agent context has been initialized for tenant '<ref:<ref:3c620485bd4d8217c1344f0d369a464231570a84a99f6de35ffc702c0f9a91ca>>', creating one",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 156,
+    "level": "DEBUG",
+    "message": "Increased agent context session count for tenant '<ref:<ref:3c620485bd4d8217c1344f0d369a464231570a84a99f6de35ffc702c0f9a91ca>>' to 1",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 157,
+    "level": "DEBUG",
+    "message": "Created tenant agent context for context correlation id 'tenant-<ref:<ref:3c620485bd4d8217c1344f0d369a464231570a84a99f6de35ffc702c0f9a91ca>>'",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 158,
+    "level": "TRACE",
+    "message": "Got tenant context for tenant '<ref:<ref:3c620485bd4d8217c1344f0d369a464231570a84a99f6de35ffc702c0f9a91ca>>'",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 159,
+    "level": "INFO",
+    "message": "Creating agent with config",
+    "data": [
+      {
+        "agentConfig": {
+          "allowInsecureHttpUrls": true,
+          "logger": 1,
+          "agentDependencies": true
+        }
+      }
+    ],
+    "embedded": []
+  },
+  {
+    "sequence": 160,
+    "level": "TRACE",
+    "message": "Initializing tenant agent for tenant '<ref:<ref:3c620485bd4d8217c1344f0d369a464231570a84a99f6de35ffc702c0f9a91ca>>'",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 161,
+    "level": "DEBUG",
+    "message": "Getting tenant agent for tenant '<ref:<ref:324807962299d80868653aef93ae7cb75c36f8ec861602e933f4a754062487d0>>'",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 162,
+    "level": "DEBUG",
+    "message": "Getting context for session with tenant '<ref:<ref:324807962299d80868653aef93ae7cb75c36f8ec861602e933f4a754062487d0>>'",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 163,
+    "level": "DEBUG",
+    "message": "Acquiring tenant session",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 164,
+    "level": "DEBUG",
+    "message": "Increasing current session count to 2 (max: 100)",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 165,
+    "level": "DEBUG",
+    "message": "Acquired tenant session (2 / 100)",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 166,
+    "level": "DEBUG",
+    "message": "Acquired lock for tenant '<ref:<ref:324807962299d80868653aef93ae7cb75c36f8ec861602e933f4a754062487d0>>' to get context",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 167,
+    "level": "DEBUG",
+    "message": "No agent context has been initialized for tenant '<ref:<ref:324807962299d80868653aef93ae7cb75c36f8ec861602e933f4a754062487d0>>', creating one",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 168,
+    "level": "DEBUG",
+    "message": "Increased agent context session count for tenant '<ref:<ref:324807962299d80868653aef93ae7cb75c36f8ec861602e933f4a754062487d0>>' to 1",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 169,
+    "level": "DEBUG",
+    "message": "Created tenant agent context for context correlation id 'tenant-<ref:<ref:324807962299d80868653aef93ae7cb75c36f8ec861602e933f4a754062487d0>>'",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 170,
+    "level": "TRACE",
+    "message": "Got tenant context for tenant '<ref:<ref:324807962299d80868653aef93ae7cb75c36f8ec861602e933f4a754062487d0>>'",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 171,
+    "level": "INFO",
+    "message": "Creating agent with config",
+    "data": [
+      {
+        "agentConfig": {
+          "allowInsecureHttpUrls": true,
+          "logger": 1,
+          "agentDependencies": true
+        }
+      }
+    ],
+    "embedded": []
+  },
+  {
+    "sequence": 172,
+    "level": "TRACE",
+    "message": "Initializing tenant agent for tenant '<ref:<ref:324807962299d80868653aef93ae7cb75c36f8ec861602e933f4a754062487d0>>'",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 173,
+    "level": "DEBUG",
+    "message": "Getting tenant by id '<ref:<ref:3c620485bd4d8217c1344f0d369a464231570a84a99f6de35ffc702c0f9a91ca>>'",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 174,
+    "level": "DEBUG",
+    "message": "Getting tenant by id '<ref:<ref:324807962299d80868653aef93ae7cb75c36f8ec861602e933f4a754062487d0>>'",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 175,
+    "level": "DEBUG",
+    "message": "resolving didUrl <ref:<ref:e1f6cdf37b42987379248914b18598cde4a3d2d06aaff9953390cc6d883a1e5a>>",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 176,
+    "level": "DEBUG",
+    "message": "resolving didUrl <ref:<ref:e1f6cdf37b42987379248914b18598cde4a3d2d06aaff9953390cc6d883a1e5a>>",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 177,
+    "level": "DEBUG",
+    "message": "resolving didUrl <ref:<ref:263158eb00ff137e08ade19a580e698d5f0390f9bfd80e78cd5c14793c763ce0>>",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 178,
+    "level": "DEBUG",
+    "message": "resolving didUrl <ref:<ref:3469e40fefb2502ba8f3502948a62a490690294bbff7722a6c23996b651b55af>>",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 179,
+    "level": "DEBUG",
+    "message": "resolving didUrl <ref:<ref:7535446a476e9beb56c0e28d4e2ae8be3144693b937ab087de2e10c27ff1ef06>>",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 180,
+    "level": "DEBUG",
+    "message": "Created key EC key with crv 'P-256' with key id '<ref:<ref:d6e745d78f36b49876a55cf216149c65e6255dd6c3d41feeb9f62dd84e1e1445>>'",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 181,
+    "level": "DEBUG",
+    "message": "resolving didUrl <ref:<ref:c439d727b39312e11b0c9af3bb8b9c2396a435a1f48abdfd5fc4a986449b4d34>>",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 182,
+    "level": "TRACE",
+    "message": "Ending session for agent context with contextCorrelationId 'tenant-<ref:<ref:3c620485bd4d8217c1344f0d369a464231570a84a99f6de35ffc702c0f9a91ca>>'",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 183,
+    "level": "DEBUG",
+    "message": "Ending session for agent context with contextCorrelationId tenant-<ref:<ref:3c620485bd4d8217c1344f0d369a464231570a84a99f6de35ffc702c0f9a91ca>>'",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 184,
+    "level": "DEBUG",
+    "message": "Acquired lock for tenant 'tenant-<ref:<ref:3c620485bd4d8217c1344f0d369a464231570a84a99f6de35ffc702c0f9a91ca>>' to end session context",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 185,
+    "level": "DEBUG",
+    "message": "Decreased agent context session count for tenant 'tenant-<ref:<ref:3c620485bd4d8217c1344f0d369a464231570a84a99f6de35ffc702c0f9a91ca>>' to 0",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 186,
+    "level": "DEBUG",
+    "message": "Closing agent context for tenant 'tenant-<ref:<ref:3c620485bd4d8217c1344f0d369a464231570a84a99f6de35ffc702c0f9a91ca>>'",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 187,
+    "level": "DEBUG",
+    "message": "Releasing tenant session",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 188,
+    "level": "DEBUG",
+    "message": "Decreasing current sessions to 1 (max: 100)",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 189,
+    "level": "TRACE",
+    "message": "Ending session for agent context with contextCorrelationId 'tenant-<ref:<ref:324807962299d80868653aef93ae7cb75c36f8ec861602e933f4a754062487d0>>'",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 190,
+    "level": "DEBUG",
+    "message": "Ending session for agent context with contextCorrelationId tenant-<ref:<ref:324807962299d80868653aef93ae7cb75c36f8ec861602e933f4a754062487d0>>'",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 191,
+    "level": "DEBUG",
+    "message": "Acquired lock for tenant 'tenant-<ref:<ref:324807962299d80868653aef93ae7cb75c36f8ec861602e933f4a754062487d0>>' to end session context",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 192,
+    "level": "DEBUG",
+    "message": "Decreased agent context session count for tenant 'tenant-<ref:<ref:324807962299d80868653aef93ae7cb75c36f8ec861602e933f4a754062487d0>>' to 0",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 193,
+    "level": "DEBUG",
+    "message": "Closing agent context for tenant 'tenant-<ref:<ref:324807962299d80868653aef93ae7cb75c36f8ec861602e933f4a754062487d0>>'",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 194,
+    "level": "DEBUG",
+    "message": "Releasing tenant session",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 195,
+    "level": "DEBUG",
+    "message": "Decreasing current sessions to 0 (max: 100)",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 196,
+    "level": "DEBUG",
+    "message": "resolving didUrl <ref:<ref:3469e40fefb2502ba8f3502948a62a490690294bbff7722a6c23996b651b55af>>",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 197,
+    "level": "DEBUG",
+    "message": "verified Authorization Request",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 198,
+    "level": "DEBUG",
+    "message": "request 'openid4vp://?client_id=decentralized_identifier%3Adid%3Akey%3Az6MkvdBHXEoy8xpY6hFCmBDAQQLDDXQKtXfZCRktxmMMdRji&request=<ref:<ref:5b158da94ac5c719c64082ae570b6df1c5cf301dc91465b874e1aa68cc8a6a05>>'",
+    "data": [],
+    "embedded": [
+      {
+        "value_ref": "3159c473be5f8757848f1cfa06915e8b0ac6c8e48b8bf1c6b6b91c8d00a8d9b3",
+        "unsigned_decoding": {
+          "header": {
+            "alg": "EdDSA",
+            "kid": {
+              "value_ref": "843b90e497abaefd50474b59fc6788a05dded2b010df48b933dfc9cae3106069"
+            },
+            "typ": {
+              "value_ref": "86352443fa5ac3f0fff9d97750546aa589276031d026bbf4e9ce89a42cfd4416"
+            }
+          },
+          "payload": {
+            "iat": 1788866111,
+            "exp": 1788866411,
+            "aud": {
+              "value_ref": "889b6a7c3b4390325e58522fb29f4267956107eca2dbfdbad70839d2796efe4e",
+              "url_scheme": "https:",
+              "path_ref": "86309fb7f237a52b58ff0d3f429f194bc6daec8478acaa0f75fb4755080ca1f2",
+              "query": []
+            },
+            "response_type": "vp_token",
+            "client_id": {
+              "value_ref": "37f1febf0c476790ea0c994aa99d06360fc385201a169a87c5770012252ad756"
+            },
+            "response_uri": {
+              "value_ref": "723c158ff8020f6f5871f1c6c4e3a52a5ecc4f512a927fe2d51f02ee3afaa7f9",
+              "url_scheme": "http:",
+              "path_ref": "93b6535ad58f8cc0fc7ee24ca28ce08ec26686012bf5d819939cb0b5230c8b1a",
+              "query": [
+                {
+                  "key": "session",
+                  "value": {
+                    "value_ref": "f8d7f5f3ea83e01d9e2165068ddfea32a5408e63e2a86bec8c5db5c7222b798b"
+                  }
+                }
+              ]
+            },
+            "response_mode": "direct_post",
+            "nonce": {
+              "value_ref": "ad7935160a63c7aafc50a2c9ef0f3d4844a2d9e5031eef22bf5ce3ff946dafaf"
+            },
+            "dcql_query": {
+              "credentials": [
+                {
+                  "format": "jwt_vc_json",
+                  "meta": {
+                    "type_values": [
+                      [
+                        {
+                          "value_ref": "9bed0fd339828119075b594188c400706d71eaa4f72322e12bf7ab4259dc6528"
+                        }
+                      ]
+                    ]
+                  },
+                  "id": {
+                    "value_ref": "4dfc8ba80cd643851b7c7b49cfc728b5769354b4f367ba539bc305a411a8d6ee"
+                  }
+                }
+              ]
+            },
+            "client_metadata": {
+              "vp_formats_supported": {
+                "jwt_vc_json": {
+                  "alg_values": [
+                    {
+                      "value_ref": "bfda50e8193e92931db3003fff9850454b967b7ee578f9d4ae6f772729491c2a"
+                    },
+                    {
+                      "value_ref": "e319230b3307a1bffbd53372bae8af1928fb98b91b12fb47bbf94a8f4a231b37"
+                    },
+                    {
+                      "value_ref": "0eb9f01d3f6742184e71c3f10ad1adaa40655153e1f2e6613f224d9a15e136af"
+                    },
+                    {
+                      "value_ref": "3a5f3e7f785f2a2b9cf8d6a55d694cd0346c6e1f2b18505e6426df559993ccd9"
+                    },
+                    {
+                      "value_ref": "019def08f1e4e4ea053ddeb88f587e16c5eb0e3c34d58179ff99fe42f872f43c"
+                    },
+                    {
+                      "value_ref": "f930cdc239d2146fd1f09fdf3a0ac9d1ba4f131d039eea497146de28f94f652c"
+                    },
+                    "ES256",
+                    {
+                      "value_ref": "399f40aaaa359aa1375b71e94028bb0ff2e93208887d525aec63f716934812b4"
+                    },
+                    {
+                      "value_ref": "232e0207896398bc21b69ed43cdd36c669f3cd708204f3716f0fe388c54093fb"
+                    },
+                    {
+                      "value_ref": "a09c8bda81680ed0632f481f212888c7bf623c2453997b8d057c473faecda834"
+                    },
+                    {
+                      "value_ref": "eb733b6963e048d7b17d83ba529cab48d4f1fcf9b7c89b4c0bffaaa1642986ca"
+                    },
+                    {
+                      "value_ref": "a9e83a69a21d1c0167357ea8ebd1af608813e314aa2cac9dcac723f5e3077eb1"
+                    },
+                    "EdDSA",
+                    {
+                      "value_ref": "6c8cb9c70c25e3c64b5541ec35e220cd69a769e0dd162ed12bce1609bc43dd9a"
+                    },
+                    "ES256K"
+                  ]
+                }
+              }
+            },
+            "state": {
+              "value_ref": "3b35e070750f76c0f0ef6bbe555cb20cd005cc53cbdac54041c8cc32a91506f6"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "sequence": 199,
+    "level": "DEBUG",
+    "message": "Getting context for session with tenant '<ref:<ref:324807962299d80868653aef93ae7cb75c36f8ec861602e933f4a754062487d0>>'",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 200,
+    "level": "DEBUG",
+    "message": "Acquiring tenant session",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 201,
+    "level": "DEBUG",
+    "message": "Increasing current session count to 1 (max: 100)",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 202,
+    "level": "DEBUG",
+    "message": "Acquired tenant session (1 / 100)",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 203,
+    "level": "DEBUG",
+    "message": "Acquired lock for tenant '<ref:<ref:324807962299d80868653aef93ae7cb75c36f8ec861602e933f4a754062487d0>>' to get context",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 204,
+    "level": "DEBUG",
+    "message": "No agent context has been initialized for tenant '<ref:<ref:324807962299d80868653aef93ae7cb75c36f8ec861602e933f4a754062487d0>>', creating one",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 205,
+    "level": "DEBUG",
+    "message": "Increased agent context session count for tenant '<ref:<ref:324807962299d80868653aef93ae7cb75c36f8ec861602e933f4a754062487d0>>' to 1",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 206,
+    "level": "DEBUG",
+    "message": "Created tenant agent context for context correlation id 'tenant-<ref:<ref:324807962299d80868653aef93ae7cb75c36f8ec861602e933f4a754062487d0>>'",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 207,
+    "level": "DEBUG",
+    "message": "Updating openid4vc verification session record <ref:<ref:0fb3be39829d4117301b8382cd71a325d671c9cec9189a7d90a6c060f14833fe>> to state RequestUriRetrieved (previous=RequestCreated)",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 208,
+    "level": "DEBUG",
+    "message": "Ending session for agent context with contextCorrelationId tenant-<ref:<ref:324807962299d80868653aef93ae7cb75c36f8ec861602e933f4a754062487d0>>'",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 209,
+    "level": "DEBUG",
+    "message": "Acquired lock for tenant 'tenant-<ref:<ref:324807962299d80868653aef93ae7cb75c36f8ec861602e933f4a754062487d0>>' to end session context",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 210,
+    "level": "DEBUG",
+    "message": "Decreased agent context session count for tenant 'tenant-<ref:<ref:324807962299d80868653aef93ae7cb75c36f8ec861602e933f4a754062487d0>>' to 0",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 211,
+    "level": "DEBUG",
+    "message": "Closing agent context for tenant 'tenant-<ref:<ref:324807962299d80868653aef93ae7cb75c36f8ec861602e933f4a754062487d0>>'",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 212,
+    "level": "DEBUG",
+    "message": "Releasing tenant session",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 213,
+    "level": "DEBUG",
+    "message": "Decreasing current sessions to 0 (max: 100)",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 214,
+    "level": "DEBUG",
+    "message": "resolving didUrl <ref:<ref:c439d727b39312e11b0c9af3bb8b9c2396a435a1f48abdfd5fc4a986449b4d34>>",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 215,
+    "level": "DEBUG",
+    "message": "verified Authorization Request",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 216,
+    "level": "DEBUG",
+    "message": "request 'openid4vp://?client_id=decentralized_identifier%3Adid%3Akey%3Az6MksHe9odQDVNgHq1pRNiNp6TU6fDdr3ejUTBEMWzZjhCHG&request_uri=http%3A%2F%2Flocalhost%3A1234%2Foid4vp%2F<ref:<ref:5d96dcfa12ed45e1d903258dcdbdf8390c5c559d36a9056557319df58dc71fe6>>%2Fauthorization-requests%2F<ref:<ref:7cb6a6c344886aafc61dd03ba89c87fcc30a4ccdf737ba01d075144c492f564c>>'",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 217,
+    "level": "DEBUG",
+    "message": "resolving didUrl <ref:<ref:03b00e61c4db9821e8121d2ebbb7d739b8faa2b06c20bb3dd651e235bfbc285d>>",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 218,
+    "level": "DEBUG",
+    "message": "resolving didUrl <ref:<ref:03b00e61c4db9821e8121d2ebbb7d739b8faa2b06c20bb3dd651e235bfbc285d>>",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 219,
+    "level": "DEBUG",
+    "message": "Getting context for session with tenant '<ref:<ref:3c620485bd4d8217c1344f0d369a464231570a84a99f6de35ffc702c0f9a91ca>>'",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 220,
+    "level": "DEBUG",
+    "message": "Acquiring tenant session",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 221,
+    "level": "DEBUG",
+    "message": "Increasing current session count to 1 (max: 100)",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 222,
+    "level": "DEBUG",
+    "message": "Acquired tenant session (1 / 100)",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 223,
+    "level": "DEBUG",
+    "message": "Acquired lock for tenant '<ref:<ref:3c620485bd4d8217c1344f0d369a464231570a84a99f6de35ffc702c0f9a91ca>>' to get context",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 224,
+    "level": "DEBUG",
+    "message": "No agent context has been initialized for tenant '<ref:<ref:3c620485bd4d8217c1344f0d369a464231570a84a99f6de35ffc702c0f9a91ca>>', creating one",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 225,
+    "level": "DEBUG",
+    "message": "Increased agent context session count for tenant '<ref:<ref:3c620485bd4d8217c1344f0d369a464231570a84a99f6de35ffc702c0f9a91ca>>' to 1",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 226,
+    "level": "DEBUG",
+    "message": "Created tenant agent context for context correlation id 'tenant-<ref:<ref:3c620485bd4d8217c1344f0d369a464231570a84a99f6de35ffc702c0f9a91ca>>'",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 227,
+    "level": "TRACE",
+    "message": "Presentation response",
+    "data": [
+      {
+        "value_ref": "ae0705c111a2e53994d84bb01ac29593284556078e335f399427627537445d68",
+        "unsigned_decoding": {
+          "header": {
+            "typ": "JWT",
+            "alg": "EdDSA",
+            "kid": {
+              "value_ref": "e14b19e5c24143ec99ac85413656cb6b408f4b0c23a66995ca8515620a9b3d74"
+            }
+          },
+          "payload": {
+            "vp": {
+              "@context": [
+                {
+                  "value_ref": "db8235495cc15e78921c7400f921de4da65db229e6f633eff21e9e4eab6cd4a7",
+                  "url_scheme": "https:",
+                  "path_ref": "374ddd9ac3b858dbde3557c93ae0d2c9ecc1d056299ea85b19aecaeba6635316",
+                  "query": []
+                }
+              ],
+              "type": [
+                {
+                  "value_ref": "3eb4d906237ec7093d63cf776b9c19ef365a630c164262931feae9a49a06e76c"
+                }
+              ],
+              "verifiableCredential": [
+                {
+                  "value_ref": "4a813459fd63b6318b312439a72878ef3f0828921dbea25169c50c5f745fe2d9",
+                  "unsigned_decoding": {
+                    "header": {
+                      "typ": "JWT",
+                      "alg": "EdDSA",
+                      "kid": {
+                        "value_ref": "834d6530d90d446ed87b85c796b7f5aac66886e9f70b0b41f37dad8dfab82223"
+                      }
+                    },
+                    "payload": {
+                      "vc": {
+                        "@context": [
+                          {
+                            "value_ref": "db8235495cc15e78921c7400f921de4da65db229e6f633eff21e9e4eab6cd4a7",
+                            "url_scheme": "https:",
+                            "path_ref": "374ddd9ac3b858dbde3557c93ae0d2c9ecc1d056299ea85b19aecaeba6635316",
+                            "query": []
+                          }
+                        ],
+                        "type": [
+                          {
+                            "value_ref": "7c88827417dbd76642c97d4695e26c9e0fa1e24bb6fc25bd391f6c41b6da66cd"
+                          },
+                          {
+                            "value_ref": "9bed0fd339828119075b594188c400706d71eaa4f72322e12bf7ab4259dc6528"
+                          }
+                        ],
+                        "credentialSubject": {}
+                      },
+                      "iss": {
+                        "value_ref": "af8b385c2e211777c76346da745fa6dfdd23843410168b6d2083395c187e281c"
+                      },
+                      "sub": {
+                        "value_ref": "0eb1b02c178b020c7157ae5a02015f258b18da5d37bb1aa87ce319c87b526f84"
+                      },
+                      "nbf": 1788866111
+                    }
+                  }
+                }
+              ]
+            },
+            "nonce": {
+              "value_ref": "ad7935160a63c7aafc50a2c9ef0f3d4844a2d9e5031eef22bf5ce3ff946dafaf"
+            },
+            "iss": {
+              "value_ref": "0eb1b02c178b020c7157ae5a02015f258b18da5d37bb1aa87ce319c87b526f84"
+            },
+            "aud": {
+              "value_ref": "37f1febf0c476790ea0c994aa99d06360fc385201a169a87c5770012252ad756"
+            }
+          }
+        }
+      }
+    ],
+    "embedded": []
+  },
+  {
+    "sequence": 228,
+    "level": "DEBUG",
+    "message": "resolving didUrl <ref:<ref:4fb32bd77ae6e77952ba590f14d661f90a2e3a864e4724fbcc80a608907add73>>",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 229,
+    "level": "DEBUG",
+    "message": "resolving didUrl <ref:<ref:78e231fb915d382a3332a76b716166adf2492de456b72ee2ec55d81a9594cbde>>",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 230,
+    "level": "DEBUG",
+    "message": "Updating openid4vc verification session record <ref:<ref:4a5a957fbd9df5b3675da05b7805a2f4dfe92bafa9b32fc3b538603d0161f1cd>> to state ResponseVerified (previous=RequestCreated)",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 231,
+    "level": "DEBUG",
+    "message": "Ending session for agent context with contextCorrelationId tenant-<ref:<ref:3c620485bd4d8217c1344f0d369a464231570a84a99f6de35ffc702c0f9a91ca>>'",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 232,
+    "level": "DEBUG",
+    "message": "Acquired lock for tenant 'tenant-<ref:<ref:3c620485bd4d8217c1344f0d369a464231570a84a99f6de35ffc702c0f9a91ca>>' to end session context",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 233,
+    "level": "DEBUG",
+    "message": "Decreased agent context session count for tenant 'tenant-<ref:<ref:3c620485bd4d8217c1344f0d369a464231570a84a99f6de35ffc702c0f9a91ca>>' to 0",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 234,
+    "level": "DEBUG",
+    "message": "Closing agent context for tenant 'tenant-<ref:<ref:3c620485bd4d8217c1344f0d369a464231570a84a99f6de35ffc702c0f9a91ca>>'",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 235,
+    "level": "DEBUG",
+    "message": "Releasing tenant session",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 236,
+    "level": "DEBUG",
+    "message": "Decreasing current sessions to 0 (max: 100)",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 237,
+    "level": "DEBUG",
+    "message": "Getting tenant agent for tenant '<ref:<ref:3c620485bd4d8217c1344f0d369a464231570a84a99f6de35ffc702c0f9a91ca>>'",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 238,
+    "level": "DEBUG",
+    "message": "Getting context for session with tenant '<ref:<ref:3c620485bd4d8217c1344f0d369a464231570a84a99f6de35ffc702c0f9a91ca>>'",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 239,
+    "level": "DEBUG",
+    "message": "Acquiring tenant session",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 240,
+    "level": "DEBUG",
+    "message": "Increasing current session count to 1 (max: 100)",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 241,
+    "level": "DEBUG",
+    "message": "Acquired tenant session (1 / 100)",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 242,
+    "level": "DEBUG",
+    "message": "Acquired lock for tenant '<ref:<ref:3c620485bd4d8217c1344f0d369a464231570a84a99f6de35ffc702c0f9a91ca>>' to get context",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 243,
+    "level": "DEBUG",
+    "message": "No agent context has been initialized for tenant '<ref:<ref:3c620485bd4d8217c1344f0d369a464231570a84a99f6de35ffc702c0f9a91ca>>', creating one",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 244,
+    "level": "DEBUG",
+    "message": "Increased agent context session count for tenant '<ref:<ref:3c620485bd4d8217c1344f0d369a464231570a84a99f6de35ffc702c0f9a91ca>>' to 1",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 245,
+    "level": "DEBUG",
+    "message": "Created tenant agent context for context correlation id 'tenant-<ref:<ref:3c620485bd4d8217c1344f0d369a464231570a84a99f6de35ffc702c0f9a91ca>>'",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 246,
+    "level": "TRACE",
+    "message": "Got tenant context for tenant '<ref:<ref:3c620485bd4d8217c1344f0d369a464231570a84a99f6de35ffc702c0f9a91ca>>'",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 247,
+    "level": "INFO",
+    "message": "Creating agent with config",
+    "data": [
+      {
+        "agentConfig": {
+          "allowInsecureHttpUrls": true,
+          "logger": 1,
+          "agentDependencies": true
+        }
+      }
+    ],
+    "embedded": []
+  },
+  {
+    "sequence": 248,
+    "level": "TRACE",
+    "message": "Initializing tenant agent for tenant '<ref:<ref:3c620485bd4d8217c1344f0d369a464231570a84a99f6de35ffc702c0f9a91ca>>'",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 249,
+    "level": "DEBUG",
+    "message": "resolving didUrl <ref:<ref:03b00e61c4db9821e8121d2ebbb7d739b8faa2b06c20bb3dd651e235bfbc285d>>",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 250,
+    "level": "DEBUG",
+    "message": "resolving didUrl <ref:<ref:03b00e61c4db9821e8121d2ebbb7d739b8faa2b06c20bb3dd651e235bfbc285d>>",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 251,
+    "level": "DEBUG",
+    "message": "Created key EC key with crv 'P-256' with key id '<ref:<ref:e62a7e43d64f13c111cdb23d1302b59bd2554c44602d63d04005c6481fb68dc0>>'",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 252,
+    "level": "DEBUG",
+    "message": "Getting context for session with tenant '<ref:<ref:324807962299d80868653aef93ae7cb75c36f8ec861602e933f4a754062487d0>>'",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 253,
+    "level": "DEBUG",
+    "message": "Acquiring tenant session",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 254,
+    "level": "DEBUG",
+    "message": "Increasing current session count to 2 (max: 100)",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 255,
+    "level": "DEBUG",
+    "message": "Acquired tenant session (2 / 100)",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 256,
+    "level": "DEBUG",
+    "message": "Acquired lock for tenant '<ref:<ref:324807962299d80868653aef93ae7cb75c36f8ec861602e933f4a754062487d0>>' to get context",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 257,
+    "level": "DEBUG",
+    "message": "No agent context has been initialized for tenant '<ref:<ref:324807962299d80868653aef93ae7cb75c36f8ec861602e933f4a754062487d0>>', creating one",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 258,
+    "level": "DEBUG",
+    "message": "Increased agent context session count for tenant '<ref:<ref:324807962299d80868653aef93ae7cb75c36f8ec861602e933f4a754062487d0>>' to 1",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 259,
+    "level": "DEBUG",
+    "message": "Created tenant agent context for context correlation id 'tenant-<ref:<ref:324807962299d80868653aef93ae7cb75c36f8ec861602e933f4a754062487d0>>'",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 260,
+    "level": "TRACE",
+    "message": "Presentation response",
+    "data": [
+      {
+        "value_ref": "09299806f095bc64a77e19012526864a0d86e981b815d787084638a58013aa52",
+        "unsigned_decoding": {
+          "header": {
+            "typ": "JWT",
+            "alg": "EdDSA",
+            "kid": {
+              "value_ref": "e14b19e5c24143ec99ac85413656cb6b408f4b0c23a66995ca8515620a9b3d74"
+            }
+          },
+          "payload": {
+            "vp": {
+              "@context": [
+                {
+                  "value_ref": "db8235495cc15e78921c7400f921de4da65db229e6f633eff21e9e4eab6cd4a7",
+                  "url_scheme": "https:",
+                  "path_ref": "374ddd9ac3b858dbde3557c93ae0d2c9ecc1d056299ea85b19aecaeba6635316",
+                  "query": []
+                }
+              ],
+              "type": [
+                {
+                  "value_ref": "3eb4d906237ec7093d63cf776b9c19ef365a630c164262931feae9a49a06e76c"
+                }
+              ],
+              "verifiableCredential": [
+                {
+                  "value_ref": "5877248de2ef9f92066cd1db0ed5ec8072fdc9617a6ea26feb5faa224de6bd1a",
+                  "unsigned_decoding": {
+                    "header": {
+                      "typ": "JWT",
+                      "alg": "EdDSA",
+                      "kid": {
+                        "value_ref": "834d6530d90d446ed87b85c796b7f5aac66886e9f70b0b41f37dad8dfab82223"
+                      }
+                    },
+                    "payload": {
+                      "vc": {
+                        "@context": [
+                          {
+                            "value_ref": "db8235495cc15e78921c7400f921de4da65db229e6f633eff21e9e4eab6cd4a7",
+                            "url_scheme": "https:",
+                            "path_ref": "374ddd9ac3b858dbde3557c93ae0d2c9ecc1d056299ea85b19aecaeba6635316",
+                            "query": []
+                          }
+                        ],
+                        "type": [
+                          {
+                            "value_ref": "7c88827417dbd76642c97d4695e26c9e0fa1e24bb6fc25bd391f6c41b6da66cd"
+                          },
+                          {
+                            "value_ref": "87cb962b0c7c78b3ab6e43331af2cc7b58518b897aecee724c71a21ce589c434"
+                          }
+                        ],
+                        "credentialSubject": {}
+                      },
+                      "iss": {
+                        "value_ref": "af8b385c2e211777c76346da745fa6dfdd23843410168b6d2083395c187e281c"
+                      },
+                      "sub": {
+                        "value_ref": "0eb1b02c178b020c7157ae5a02015f258b18da5d37bb1aa87ce319c87b526f84"
+                      },
+                      "nbf": 1788866111
+                    }
+                  }
+                }
+              ]
+            },
+            "nonce": {
+              "value_ref": "0fa8f33ca83dae63efd7df032523003ef3305f7abf01b592104ca79954f7e8b8"
+            },
+            "iss": {
+              "value_ref": "0eb1b02c178b020c7157ae5a02015f258b18da5d37bb1aa87ce319c87b526f84"
+            },
+            "aud": {
+              "value_ref": "4e7c7791440affed1be924df8934cf84eb5404be3866f905600a3f10498a4a21"
+            }
+          }
+        }
+      }
+    ],
+    "embedded": []
+  },
+  {
+    "sequence": 261,
+    "level": "DEBUG",
+    "message": "resolving didUrl <ref:<ref:4fb32bd77ae6e77952ba590f14d661f90a2e3a864e4724fbcc80a608907add73>>",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 262,
+    "level": "DEBUG",
+    "message": "resolving didUrl <ref:<ref:78e231fb915d382a3332a76b716166adf2492de456b72ee2ec55d81a9594cbde>>",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 263,
+    "level": "DEBUG",
+    "message": "Updating openid4vc verification session record <ref:<ref:0fb3be39829d4117301b8382cd71a325d671c9cec9189a7d90a6c060f14833fe>> to state ResponseVerified (previous=RequestUriRetrieved)",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 264,
+    "level": "DEBUG",
+    "message": "Ending session for agent context with contextCorrelationId tenant-<ref:<ref:324807962299d80868653aef93ae7cb75c36f8ec861602e933f4a754062487d0>>'",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 265,
+    "level": "DEBUG",
+    "message": "Acquired lock for tenant 'tenant-<ref:<ref:324807962299d80868653aef93ae7cb75c36f8ec861602e933f4a754062487d0>>' to end session context",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 266,
+    "level": "DEBUG",
+    "message": "Decreased agent context session count for tenant 'tenant-<ref:<ref:324807962299d80868653aef93ae7cb75c36f8ec861602e933f4a754062487d0>>' to 0",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 267,
+    "level": "DEBUG",
+    "message": "Closing agent context for tenant 'tenant-<ref:<ref:324807962299d80868653aef93ae7cb75c36f8ec861602e933f4a754062487d0>>'",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 268,
+    "level": "DEBUG",
+    "message": "Releasing tenant session",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 269,
+    "level": "DEBUG",
+    "message": "Decreasing current sessions to 1 (max: 100)",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 270,
+    "level": "DEBUG",
+    "message": "Getting tenant agent for tenant '<ref:<ref:324807962299d80868653aef93ae7cb75c36f8ec861602e933f4a754062487d0>>'",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 271,
+    "level": "DEBUG",
+    "message": "Getting context for session with tenant '<ref:<ref:324807962299d80868653aef93ae7cb75c36f8ec861602e933f4a754062487d0>>'",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 272,
+    "level": "DEBUG",
+    "message": "Acquiring tenant session",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 273,
+    "level": "DEBUG",
+    "message": "Increasing current session count to 2 (max: 100)",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 274,
+    "level": "DEBUG",
+    "message": "Acquired tenant session (2 / 100)",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 275,
+    "level": "DEBUG",
+    "message": "Acquired lock for tenant '<ref:<ref:324807962299d80868653aef93ae7cb75c36f8ec861602e933f4a754062487d0>>' to get context",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 276,
+    "level": "DEBUG",
+    "message": "No agent context has been initialized for tenant '<ref:<ref:324807962299d80868653aef93ae7cb75c36f8ec861602e933f4a754062487d0>>', creating one",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 277,
+    "level": "DEBUG",
+    "message": "Increased agent context session count for tenant '<ref:<ref:324807962299d80868653aef93ae7cb75c36f8ec861602e933f4a754062487d0>>' to 1",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 278,
+    "level": "DEBUG",
+    "message": "Created tenant agent context for context correlation id 'tenant-<ref:<ref:324807962299d80868653aef93ae7cb75c36f8ec861602e933f4a754062487d0>>'",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 279,
+    "level": "TRACE",
+    "message": "Got tenant context for tenant '<ref:<ref:324807962299d80868653aef93ae7cb75c36f8ec861602e933f4a754062487d0>>'",
+    "data": [],
+    "embedded": []
+  },
+  {
+    "sequence": 280,
+    "level": "INFO",
+    "message": "Creating agent with config",
+    "data": [
+      {
+        "agentConfig": {
+          "allowInsecureHttpUrls": true,
+          "logger": 1,
+          "agentDependencies": true
+        }
+      }
+    ],
+    "embedded": []
+  },
+  {
+    "sequence": 281,
+    "level": "TRACE",
+    "message": "Initializing tenant agent for tenant '<ref:<ref:324807962299d80868653aef93ae7cb75c36f8ec861602e933f4a754062487d0>>'",
+    "data": [],
+    "embedded": []
+  }
+]

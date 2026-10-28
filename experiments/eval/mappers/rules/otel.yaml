@@ -1,0 +1,66 @@
+# T-DID event <-> OpenTelemetry Logs Data Model record. Primary-source copies:
+# docs/eval-handoff/std-sources/otel_dm.md, otel_sc_session.md, otel_sc_event.md, otel_common.md.
+# Levels (see _common.yaml): core = top-level fields of the Logs Data Model (Timestamp, TraceId, SpanId,
+# SeverityNumber, Body, Resource, InstrumentationScope, Attributes, EventName); keys inside Resource and
+# Attributes are semantic conventions, so they are ext. Arbitrary Attributes keys and Body are never used.
+standard: otel
+layout: otel
+version: logs-data-model (spec 1.x) + semantic conventions
+constants: {}
+slots:
+  event_type:
+    path: EventName
+    level: core
+    codec: verbatim
+    source: https://opentelemetry.io/docs/specs/otel/logs/data-model/#field-eventname
+    why: "'Name that identifies the class / type of event.'"
+  occurred_at:
+    path: Timestamp
+    level: core
+    codec: epoch_ns
+    source: https://opentelemetry.io/docs/specs/otel/logs/data-model/#field-timestamp
+    why: "'Time when the event occurred' (nanoseconds since epoch)."
+  refs.request_ref:
+    path: TraceId
+    level: core
+    codec: w3c_trace
+    source: https://opentelemetry.io/docs/specs/otel/logs/data-model/#field-traceid (W3C trace-context 16 bytes)
+    why: "'Request trace ID'. Carries an equality-preserving 128-bit projection of request_ref, not its value."
+  producer.implementation:
+    path: Resource.service.name
+    level: ext
+    codec: verbatim
+    source: https://opentelemetry.io/docs/specs/semconv/resource/#service (service.name, Stable)
+    why: Logical name of the service = implementation.
+  producer.instance:
+    path: Resource.service.instance.id
+    level: ext
+    codec: verbatim
+    source: https://opentelemetry.io/docs/specs/semconv/resource/#service (service.instance.id)
+    why: "'The string ID of the service instance.'"
+  event_id:
+    path: Attributes.log.record.uid
+    level: ext
+    codec: verbatim
+    source: https://opentelemetry.io/docs/specs/semconv/general/logs/ (log.record.uid, Development)
+    why: "'A unique identifier for the Log Record.'"
+  refs.frontend_session_ref:
+    path: Attributes.session.id
+    level: ext
+    codec: verbatim
+    source: https://opentelemetry.io/docs/specs/semconv/general/session/ (session.id, Development; std-sources/otel_sc_session.md)
+    why: "'A unique id to identify a session'. Most favourable reading for the standard: the verifier frontend and the relying party record one shared frontend-session id here, read back as T-DID's joint frontend_session_ref (2026-10-20 main-agent decision, handoff section 8). The component-local session_ref is then not carried."
+lost:
+  producer.role: No field; derived from EventName only when the T-DID event type has one producing role.
+  producer.seq: The data model has no sequence field.
+  producer.stream_start: No field.
+  producer.service: No field with T-DID's meaning.
+  workflow_ref: TraceId already carries request_ref; no other grouping field.
+  decision.outcome: No outcome field (SeverityNumber is severity, not outcome).
+  decision.reason_class: No field.
+  checks: No outcome field, so no per-check record can be carried.
+  refs.session_ref: The one session field carries the joint frontend session (favourable reading); the component-local session id is not carried.
+  other refs: No field for the identity of a cryptographic object.
+  facts: No field (e.g. vp_response_mode).
+  policy: No field.
+split: null

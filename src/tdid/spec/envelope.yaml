@@ -1,0 +1,12 @@
+# Common envelope of every T-DID security event.
+# Threat-specific refs and facts are registered in spec/fields/*.yaml and merged into the schema.
+schema_version: tdid-event/1.0
+roles: [issuer, wallet, verifier, relying_party, resolver, status_service, did_controller, content_host,
+        intermediary, external_service]
+# intermediary: proxy, cache or gateway in front of a DID component. external_service: a non-DID
+# service whose own codes or sessions a DID flow can carry (e.g. a transaction code).
+outcomes: [issue, accept, reject, resolve, error, pending, none]
+check_results: [pass, fail, not_performed, unavailable, error]
+provenance: [Native, Instrumented, Derived, External, Unavailable, Configured]
+integrity_results: [verified, failed, not_checked]
+visibility: [local_only, shareable]

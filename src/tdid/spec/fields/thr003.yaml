@@ -1,0 +1,18 @@
+# TDID-THR-003 Consumption of a substituted DID document after verification
+# Source analysis: research/candidates/CAND-20260814-OBS-GAP-THR-001-005.yaml (TDID-THR-003 row),
+# success condition as stated in CAND-20260908-CH6-THR-003-REAFFIRMED (no pass result for the consumed commitment).
+# Reuses from _common: RESOLUTION_DECISION (verification time), PRESENTATION_DECISION,
+# RELYING_AUTHENTICATION_DECISION, ISSUANCE_DECISION (consumption time), document_ref.
+threat: TDID-THR-003
+refs:
+  document_object_ref:
+    produced_by: [resolver, verifier, issuer, relying_party]
+    meaning: Consumer-local identifier of one stored DID-document representation (memory object, cache entry or storage record) to which a verification result was attached and from which a later decision read.
+    reveals: Which verification-time record and which later consumption refer to the same stored document object.
+checks:
+  did_document_verification:
+    produced_by: [resolver, verifier, issuer, relying_party]
+    meaning: Verification of a resolved DID document (method-specific integrity and proof checks) executed when the document was resolved and stored.
+  consumed_document_reverification:
+    produced_by: [verifier, issuer, relying_party]
+    meaning: Re-verification of the DID document bytes actually read at consumption time, executed by the consuming component before use; not_performed when the consumer relied on the earlier verification result.

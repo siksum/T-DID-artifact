@@ -1,0 +1,8 @@
+(* Same condition as thr015.mfotl (policy limit 1); one output (e, v) at every decision. *)
+LET used(p) = ONCE[1,*) (EXISTS e2, o2. dec(e2,p,o2) AND pass(e2) AND issue(e2)) IN
+LET issued(p,o) = ONCE[1,*) (EXISTS e2. dec(e2,p,o) AND pass(e2) AND issue(e2)) IN
+LET attack(e) =
+  EXISTS p, o.
+       dec(e,p,o) AND pass(e) AND issue(e) AND allowed(e,1) AND used(p) AND NOT issued(p,o)
+IN ((EXISTS p, o. dec(e,p,o)) AND attack(e) AND v = "attack")
+   OR ((EXISTS p, o. dec(e,p,o)) AND NOT attack(e) AND v = "no_attack")

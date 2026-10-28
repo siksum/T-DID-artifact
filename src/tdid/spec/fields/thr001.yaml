@@ -1,0 +1,35 @@
+# TDID-THR-001 Pairwise DID unlinkability failure through reused DID document material
+# Source analysis: research/candidates/CAND-20260814-OBS-GAP-THR-001-005.yaml (TDID-THR-001 row),
+# success condition as refined by CAND-20260908-CH6-THR-001-REAFFIRMED (commitment equality across contexts).
+# Reuses from _common: RESOLUTION_DECISION, did_ref.
+threat: TDID-THR-001
+event_types:
+  PAIRWISE_CONTEXT_BOUND:
+    produced_by: [wallet, did_controller]
+    meaning: The holder's wallet or DID controller bound one of its DIDs to one relationship context under its separation policy.
+refs:
+  relationship_ref:
+    produced_by: [wallet, did_controller]
+    meaning: Holder-local commitment over one relationship context (counterparty and purpose) that a DID was bound to.
+    reveals: Whether two DID bindings belong to the same relationship or to different relationships (equality only; the counterparty stays local).
+  holder_ref:
+    produced_by: [wallet, did_controller]
+    meaning: Producer-local commitment over the holder (wallet user or controller account) on whose behalf a DID was bound to a relationship context; one wallet or agent instance can serve several holders. It identifies the holder account, not any key the holder uses.
+    reveals: Whether two DID bindings recorded by the same wallet or controller instance belong to the same holder (equality only, never across producers).
+  verification_material_ref:
+    produced_by: [resolver]
+    meaning: Commitment over the policy-designated verification-method material of a resolved DID document, keyed with the comparison key of one authorized privacy scope.
+    reveals: Whether two resolved DID documents expose the same designated verification material. This equality is the correlation being measured, so the ref stays local_only inside the authorized scope.
+  service_material_ref:
+    produced_by: [resolver]
+    meaning: Commitment over the policy-designated service-endpoint material of a resolved DID document, keyed with the comparison key of one authorized privacy scope.
+    reveals: Whether two resolved DID documents expose the same designated service endpoint (equality only, local_only inside the authorized scope).
+policy_params:
+  pairwise_separation_required:
+    type: boolean
+    example: false
+    meaning: Whether the holder's privacy policy designates this relationship pairwise or unlinkable. A deployment policy, not mandated by DID Core; false means repeated material is not this threat, unset leaves the condition unknown.
+  pairwise_shared_service_permitted:
+    type: boolean
+    example: false
+    meaning: Whether the holder's versioned herd-privacy policy explicitly permits the same service endpoint across pairwise relationships. A deployment policy, not mandated by DID Core; unset leaves a shared service endpoint undecided.

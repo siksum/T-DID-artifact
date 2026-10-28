@@ -1,0 +1,34 @@
+# TDID-THR-002 Acceptance of a DID or VC action after a verification method compromise signal
+# Source analysis: research/candidates/CAND-20260814-OBS-GAP-THR-001-005.yaml (TDID-THR-002 row),
+# unchanged by CAND-20260908-CH6-THR-002-REAFFIRMED.
+# Reuses from _common: KEY_LIFECYCLE_CHANGED (occurred_at = the signal's authenticated effective time),
+# PRESENTATION_DECISION, RELYING_AUTHENTICATION_DECISION, ISSUANCE_DECISION (occurred_at = locally trusted
+# receipt or decision time; an attacker-supplied proof iat is never used).
+threat: TDID-THR-002
+refs:
+  key_scoped_ref:
+    produced_by: [did_controller, resolver, verifier, relying_party, issuer]
+    meaning: >-
+      Joint commitment over one DID verification method (the method's DID URL) whose key verified the proof
+      (holder, issuer or controller key alike), keyed with a key shared only by the compromise-signal collector
+      and the relying components of one tenant and purpose scope. It names the verification method rather than
+      its key material, so the signal side and the relying side compute the same value for the same method.
+    reveals: Whether a later proof was verified under the verification method that a lifecycle signal names (equality only inside that scope, never across unrelated relying parties).
+  signal_scope_ref:
+    produced_by: [did_controller, resolver, verifier, relying_party, issuer]
+    meaning: >-
+      Joint commitment over the tenant and purpose scope whose compromise-signal collector serves this record,
+      keyed with the same scope key as key_scoped_ref. On a lifecycle signal it names the collector's scope; on a
+      relying decision it names the scope whose collector would report a compromise of the method it used.
+    reveals: Which signal collector's complete history can establish that no compromise signal exists for a method used by a decision.
+facts:
+  compromise_reason_class:
+    type: enum
+    enum: [compromised, rotated, revoked, other]
+    produced_by: [did_controller, resolver]
+    meaning: Reason the authenticated lifecycle signal states for a verification-method change, as given by its source. Absent when the source states no reason.
+    reveals: Whether a key change is a declared compromise or a routine rotation or revocation.
+checks:
+  compromise_signal_authority:
+    produced_by: [did_controller, resolver]
+    meaning: The signal collector verified that the lifecycle signal comes from a source its configured authority policy accepts for this DID and verification method (controller, DID method, KMS, HSM, IAM or incident service).

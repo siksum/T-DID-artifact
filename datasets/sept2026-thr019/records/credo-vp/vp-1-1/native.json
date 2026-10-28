@@ -1,0 +1,69 @@
+{
+  "product": {
+    "response_mode": "direct_post",
+    "initial_state": "RequestCreated",
+    "final_state": "ResponseVerified",
+    "request_transaction": "aa2eb510fefa6d6e378a972ddbdff37a92ed3793d5304f1b7e2739bbbd99abe0",
+    "result_transaction": "aa2eb510fefa6d6e378a972ddbdff37a92ed3793d5304f1b7e2739bbbd99abe0",
+    "request_state": "8b6ed87a547d18d6ac41a39c218fa245d1e32b2b8f11cafed08a2df50ac01e1c",
+    "response_state": "8b6ed87a547d18d6ac41a39c218fa245d1e32b2b8f11cafed08a2df50ac01e1c",
+    "http_status": 200,
+    "verified_presentations": 1,
+    "sdk_record": {
+      "_tags": {
+        "verifierId": "7f050e6f19d5b438489f84a77bdbfb960500a8d6b5d9676292d4ab3a909666d5",
+        "state": "e43eb203d4bf6b58abfec8e7c0bb4ed7b637b5f00b45912b97a8af105863d262",
+        "nonce": "79315c3c59727205ff87d8c7850e4706aa504aa3d7323a863686400d6757a21f",
+        "payloadState": "8b6ed87a547d18d6ac41a39c218fa245d1e32b2b8f11cafed08a2df50ac01e1c",
+        "authorizationRequestUri": "edb772e4f4b990ec384363afc80484fa8ed58979521675b024c4b3933f0f8234",
+        "authorizationRequestId": "b0f2094bee5781e6723a862b38f32d7f056d94adf623aa6ced33a129f9fdef32",
+        "openId4VpVersion": "b298d771aa3b0f60bba53057350928e0be160778e8836f34ce27d0de929332d7"
+      },
+      "metadata": {},
+      "id": "aa2eb510fefa6d6e378a972ddbdff37a92ed3793d5304f1b7e2739bbbd99abe0",
+      "createdAt": "c3c21522d8dfcaa88bc3c1029ae964d0889ec6a408aeacafac755dbafa684533",
+      "verifierId": "7f050e6f19d5b438489f84a77bdbfb960500a8d6b5d9676292d4ab3a909666d5",
+      "state": "e43eb203d4bf6b58abfec8e7c0bb4ed7b637b5f00b45912b97a8af105863d262",
+      "authorizationRequestJwt": "4db0b07694c2cbd76e56833b9bce1fd9cf0fd51f0283a208cb3b189dea02eafe",
+      "authorizationRequestUri": "edb772e4f4b990ec384363afc80484fa8ed58979521675b024c4b3933f0f8234",
+      "authorizationRequestId": "b0f2094bee5781e6723a862b38f32d7f056d94adf623aa6ced33a129f9fdef32",
+      "authorizationResponsePayload": {
+        "state": "8b6ed87a547d18d6ac41a39c218fa245d1e32b2b8f11cafed08a2df50ac01e1c",
+        "vp_token": "2dc7e9ca4e120ea4cced9fbe501b525792c549004bb2d4bfeedbf379f98b7f0f"
+      },
+      "expiresAt": "bfa3101b76d7b4303f4966850ff3962899976bf86369bca1421c05b8deb6372e",
+      "openId4VpVersion": "b298d771aa3b0f60bba53057350928e0be160778e8836f34ce27d0de929332d7",
+      "updatedAt": "26d7ce02dc097b9b06235853b5beced173e74ec4b6d06098a37c3ae4c7a66782"
+    }
+  },
+  "application": {
+    "sessions": [
+      {
+        "id": "a33a53bebb802da299edd913e8d680668b492158b694b95a328a091befd19c3c",
+        "controller": "72aa0d500e1bf9e4a083b2614b4ce29b60b955367777c14746c63c21c8c1ab99",
+        "access_policy": "allow",
+        "transaction": "aa2eb510fefa6d6e378a972ddbdff37a92ed3793d5304f1b7e2739bbbd99abe0",
+        "signed_request": "4db0b07694c2cbd76e56833b9bce1fd9cf0fd51f0283a208cb3b189dea02eafe"
+      },
+      {
+        "id": "cacb91d996f58c65b6fc92677fdabca0331b3ff53b89b704abf2d522dffeda3d",
+        "controller": "4cca96d9834d68fa237f7ab73d54de238964467b5afc3a47f838f94c5b27c847",
+        "access_policy": "allow",
+        "transaction": null,
+        "signed_request": "4db0b07694c2cbd76e56833b9bce1fd9cf0fd51f0283a208cb3b189dea02eafe"
+      }
+    ],
+    "initiator_session": "a33a53bebb802da299edd913e8d680668b492158b694b95a328a091befd19c3c",
+    "wallet_session": "cacb91d996f58c65b6fc92677fdabca0331b3ff53b89b704abf2d522dffeda3d",
+    "relay_capture": {
+      "request": "4db0b07694c2cbd76e56833b9bce1fd9cf0fd51f0283a208cb3b189dea02eafe",
+      "source_context": "72aa0d500e1bf9e4a083b2614b4ce29b60b955367777c14746c63c21c8c1ab99"
+    },
+    "access": [
+      {
+        "session": "a33a53bebb802da299edd913e8d680668b492158b694b95a328a091befd19c3c",
+        "value": "granted"
+      }
+    ]
+  }
+}

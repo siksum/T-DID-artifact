@@ -1,0 +1,145 @@
+-- walt.id issuer 1.0.0-SNAPSHOT --
+11:12:15.617669908 [32m INFO[0m [                main] :        Configuration : Configuration set using the DSL with append=true
+11:12:15.700352280 [32m INFO[0m [                main] :       walt.id issuer : Starting walt.id issuer 1.0.0-SNAPSHOT...
+11:12:15.735075880 [32m INFO[0m [                main] :         Feature-Init : Initializing features...
+11:12:15.735492203 [32m INFO[0m [                main] :         Feature-Init : Registering common feature catalog...
+11:12:15.739324569 [32m INFO[0m [                main] :         Feature-Init : Registering service feature catalog...
+11:12:15.740192280 [32m INFO[0m [                main] :         Feature-Init : Loading feature amendments...
+11:12:16.210694720 [32m INFO[0m [                main] :       FeatureManager : Disabled features (0): 
+11:12:16.211986539 [32m INFO[0m [                main] :       FeatureManager : Enabling base feature "authentication-service"...
+11:12:16.214841830 [32m INFO[0m [                main] :       FeatureManager : ↳ Loading config "authentication-service" for feature "authentication-service"...
+11:12:16.254195947 [32m INFO[0m [                main] :       FeatureManager : Enabling base feature "issuer-service"...
+11:12:16.254513226 [32m INFO[0m [                main] :       FeatureManager : ↳ Loading config "issuer-service" for feature "issuer-service"...
+kotlin-logging: initializing... active logger factory: Slf4jLoggerFactory
+11:12:17.610481842 [32m INFO[0m [                main] :       FeatureManager : Enabling base feature "web"...
+11:12:17.610792760 [32m INFO[0m [                main] :       FeatureManager : ↳ Loading config "web" for feature "web"...
+11:12:17.654113963 [32m INFO[0m [                main] :       FeatureManager : Enabling base feature "credential-types"...
+11:12:17.654317651 [32m INFO[0m [                main] :       FeatureManager : ↳ Loading config "credential-issuer-metadata" for feature "credential-types"...
+11:12:17.715096706 [32m INFO[0m [                main] :       FeatureManager : Enabled features (4): authentication-service, issuer-service, web, credential-types
+11:12:17.715783853 [32m INFO[0m [                main] :       FeatureManager : Defaulted features (9): openapi, feature-flag-information-endpoint, healthchecks, dev-mode, authservice, persistence, entra, debug-endpoints, httpclient
+11:12:17.716326349 [32m INFO[0m [                main] :       FeatureManager : Enabling default feature "openapi"...
+11:12:17.716711013 [32m INFO[0m [                main] :       FeatureManager : Enabling default feature "feature-flag-information-endpoint"...
+11:12:17.716808525 [32m INFO[0m [                main] :       FeatureManager : Enabling default feature "healthchecks"...
+11:12:17.716904473 [32m INFO[0m [                main] :       FeatureManager : Enabling default feature "authservice"...
+11:12:17.717443454 [32m INFO[0m [                main] :       FeatureManager : Amending feature "authservice"...
+11:12:17.718817515 [32m INFO[0m [                main] :       FeatureManager : Enabling default feature "httpclient"...
+11:12:17.718989434 [32m INFO[0m [                main] :       FeatureManager : ↳ Loading config "httpclient" for feature "httpclient"...
+11:12:17.744557365 [32m INFO[0m [                main] :       FeatureManager : Enabling feature "httpclient"...
+11:12:17.747952970 [32m INFO[0m [                main] :         Feature-Init : Feature initialization completed (2.009684812s).
+11:12:17.748972161 [32m INFO[0m [                main] :         Service-Init : Initializing walt.id issuer 1.0.0-SNAPSHOT...
+11:12:17.952185209 [32m INFO[0m [                main] :         Service-Init : Service initialization completed (202.456112ms).
+11:12:17.952957332 [32m INFO[0m [                main] :       Service-Runner : Running walt.id issuer 1.0.0-SNAPSHOT...
+11:12:17.957412304 [32m INFO[0m [                main] :           WebService : Starting web server (binding to 127.0.0.1, listening on port 19011)...
+11:12:18.006732324 [32m INFO[0m [                main] :    i.k.s.Application : Autoreload is disabled because the development mode is off.
+11:12:18.471391376  INFO [                main] :     EnterpriseStatus : walt.id issuer - Application modules loaded, web server is starting...
+11:12:18.471757296  INFO [                main] :    i.k.s.Application : Application started in 0.484 seconds.
+11:12:18.471987403  INFO [                main] :     EnterpriseStatus : walt.id issuer - Web server started, the app will be ready soon...
+11:12:19.817776913  INFO [          D-worker-2] :    i.k.s.Application : Responding at http://127.0.0.1:19011
+11:12:19.822352018  INFO [                main] :     EnterpriseStatus : walt.id issuer - Web server ready! [total startup time: 4326ms]
+11:12:20.174452518  INFO [          D-worker-7] :    i.k.s.Application : 404 Not Found: GET /native-audit-readiness-not-found in 50 ms (127.0.0.1 - Python-urllib/3.12)
+11:12:20.360737816  INFO [          D-worker-4] :    i.k.s.Application : 200 OK: POST /onboard/issuer in 161 ms (127.0.0.1 - Python-urllib/3.12)
+11:12:20.520723656  INFO [          D-worker-8] :    i.k.s.Application : 200 OK: POST /openid4vc/jwt/issue in 79 ms (127.0.0.1 - Python-urllib/3.12)
+11:12:20.946413697  INFO [          D-worker-6] :    i.k.s.Application : 200 OK: GET /draft13/credentialOffer in 388 ms (127.0.0.1 - Python-urllib/3.12)
+11:12:21.025361707  INFO [         D-worker-10] :    i.k.s.Application : 200 OK: POST /draft13/token in 48 ms (127.0.0.1 - Python-urllib/3.12)
+11:12:21.181245590  INFO [          D-worker-1] :    i.k.s.Application : 200 OK: POST /draft13/credential in 124 ms (127.0.0.1 - Python-urllib/3.12)
+11:12:21.228369674  INFO [          D-worker-1] :    i.k.s.Application : 200 OK: POST /openid4vc/jwt/issue in 7 ms (127.0.0.1 - Python-urllib/3.12)
+11:12:21.271316140  INFO [          D-worker-9] :    i.k.s.Application : 200 OK: GET /draft13/credentialOffer in 13 ms (127.0.0.1 - Python-urllib/3.12)
+11:12:21.330663308  INFO [          D-worker-1] :    i.k.s.Application : 200 OK: POST /draft13/token in 20 ms (127.0.0.1 - Python-urllib/3.12)
+11:12:21.409123181  INFO [         D-worker-12] :    i.k.s.Application : 200 OK: POST /draft13/credential in 38 ms (127.0.0.1 - Python-urllib/3.12)
+11:12:21.445113804  INFO [         D-worker-12] :    i.k.s.Application : 200 OK: POST /openid4vc/jwt/issue in 6 ms (127.0.0.1 - Python-urllib/3.12)
+11:12:21.496433707  INFO [         D-worker-12] :    i.k.s.Application : 200 OK: GET /draft13/credentialOffer in 13 ms (127.0.0.1 - Python-urllib/3.12)
+11:12:21.552498010  INFO [         D-worker-11] :    i.k.s.Application : 200 OK: POST /draft13/token in 18 ms (127.0.0.1 - Python-urllib/3.12)
+11:12:21.623774326  INFO [         D-worker-11] :    i.k.s.Application : 200 OK: POST /draft13/credential in 33 ms (127.0.0.1 - Python-urllib/3.12)
+11:12:21.672218670  INFO [          D-worker-9] :    i.k.s.Application : 200 OK: POST /openid4vc/jwt/issue in 12 ms (127.0.0.1 - Python-urllib/3.12)
+11:12:21.711703992  INFO [          D-worker-9] :    i.k.s.Application : 200 OK: GET /draft13/credentialOffer in 12 ms (127.0.0.1 - Python-urllib/3.12)
+11:12:21.769365189  INFO [         D-worker-11] :    i.k.s.Application : 200 OK: POST /draft13/token in 19 ms (127.0.0.1 - Python-urllib/3.12)
+11:12:21.828645692  INFO [          D-worker-2] :    i.k.s.Application : 200 OK: POST /draft13/credential in 32 ms (127.0.0.1 - Python-urllib/3.12)
+11:12:21.902618675  INFO [         D-worker-11] :    i.k.s.Application : 200 OK: POST /draft13/credential in 33 ms (127.0.0.1 - Python-urllib/3.12)
+11:12:21.940525565  INFO [         D-worker-11] :    i.k.s.Application : 200 OK: POST /openid4vc/jwt/issue in 6 ms (127.0.0.1 - Python-urllib/3.12)
+11:12:22.006045915  INFO [          D-worker-9] :    i.k.s.Application : 200 OK: GET /draft13/credentialOffer in 11 ms (127.0.0.1 - Python-urllib/3.12)
+11:12:22.056819103  INFO [          D-worker-5] :    i.k.s.Application : 200 OK: POST /draft13/token in 18 ms (127.0.0.1 - Python-urllib/3.12)
+11:12:22.126052265  INFO [          D-worker-4] :    i.k.s.Application : 200 OK: POST /draft13/credential in 32 ms (127.0.0.1 - Python-urllib/3.12)
+11:12:22.170756065  INFO [          D-worker-1] :    i.k.s.Application : 200 OK: POST /openid4vc/jwt/issue in 9 ms (127.0.0.1 - Python-urllib/3.12)
+11:12:22.222640627  INFO [          D-worker-9] :    i.k.s.Application : 200 OK: GET /draft13/credentialOffer in 11 ms (127.0.0.1 - Python-urllib/3.12)
+11:12:22.276420849  INFO [          D-worker-9] :    i.k.s.Application : 200 OK: POST /draft13/token in 17 ms (127.0.0.1 - Python-urllib/3.12)
+11:12:22.339782260  INFO [          D-worker-9] :    i.k.s.Application : 400 Bad Request: POST /draft13/credential in 27 ms (127.0.0.1 - Python-urllib/3.12)
+11:12:22.386985971  INFO [          D-worker-2] :    i.k.s.Application : 200 OK: POST /openid4vc/jwt/issue in 6 ms (127.0.0.1 - Python-urllib/3.12)
+11:12:22.437858865  INFO [          D-worker-2] :    i.k.s.Application : 200 OK: GET /draft13/credentialOffer in 11 ms (127.0.0.1 - Python-urllib/3.12)
+11:12:22.479818139  INFO [         D-worker-13] :    i.k.s.Application : 200 OK: POST /draft13/token in 15 ms (127.0.0.1 - Python-urllib/3.12)
+11:12:22.542817558  INFO [          D-worker-8] :    i.k.s.Application : 200 OK: POST /draft13/credential in 31 ms (127.0.0.1 - Python-urllib/3.12)
+11:12:22.583052210  INFO [          D-worker-7] :    i.k.s.Application : 200 OK: POST /openid4vc/jwt/issue in 4 ms (127.0.0.1 - Python-urllib/3.12)
+11:12:22.631038905  INFO [         D-worker-13] :    i.k.s.Application : 200 OK: GET /draft13/credentialOffer in 10 ms (127.0.0.1 - Python-urllib/3.12)
+11:12:22.673995190  INFO [         D-worker-13] :    i.k.s.Application : 200 OK: POST /draft13/token in 15 ms (127.0.0.1 - Python-urllib/3.12)
+11:12:22.741067692  INFO [          D-worker-1] :    i.k.s.Application : 400 Bad Request: POST /draft13/credential in 28 ms (127.0.0.1 - Python-urllib/3.12)
+11:12:22.774927958  INFO [          D-worker-4] :    i.k.s.Application : 200 OK: POST /openid4vc/jwt/issue in 4 ms (127.0.0.1 - Python-urllib/3.12)
+11:12:22.816193745  INFO [         D-worker-11] :    i.k.s.Application : 200 OK: GET /draft13/credentialOffer in 10 ms (127.0.0.1 - Python-urllib/3.12)
+11:12:22.903595962  INFO [          D-worker-2] :    i.k.s.Application : 200 OK: POST /draft13/token in 50 ms (127.0.0.1 - Python-urllib/3.12)
+11:12:22.990871522  INFO [          D-worker-5] :    i.k.s.Application : 200 OK: POST /draft13/credential in 32 ms (127.0.0.1 - Python-urllib/3.12)
+11:12:23.035382885  INFO [          D-worker-9] :    i.k.s.Application : 200 OK: POST /openid4vc/jwt/issue in 6 ms (127.0.0.1 - Python-urllib/3.12)
+11:12:23.082036716  INFO [          D-worker-5] :    i.k.s.Application : 200 OK: GET /draft13/credentialOffer in 9 ms (127.0.0.1 - Python-urllib/3.12)
+11:12:23.135362433  INFO [          D-worker-3] :    i.k.s.Application : 200 OK: POST /draft13/token in 16 ms (127.0.0.1 - Python-urllib/3.12)
+11:12:23.195540614  INFO [          D-worker-5] :    i.k.s.Application : 200 OK: POST /draft13/credential in 31 ms (127.0.0.1 - Python-urllib/3.12)
+11:12:23.240184142  INFO [          D-worker-3] :    i.k.s.Application : 200 OK: POST /openid4vc/jwt/issue in 5 ms (127.0.0.1 - Python-urllib/3.12)
+11:12:23.290230722  INFO [         D-worker-11] :    i.k.s.Application : 200 OK: GET /draft13/credentialOffer in 11 ms (127.0.0.1 - Python-urllib/3.12)
+11:12:23.343724391  INFO [         D-worker-12] :    i.k.s.Application : 200 OK: POST /draft13/token in 16 ms (127.0.0.1 - Python-urllib/3.12)
+11:12:23.424438971  INFO [         D-worker-10] :    i.k.s.Application : 200 OK: POST /draft13/credential in 43 ms (127.0.0.1 - Python-urllib/3.12)
+11:12:23.502289833  INFO [          D-worker-6] :    i.k.s.Application : 200 OK: POST /openid4vc/jwt/issue in 5 ms (127.0.0.1 - Python-urllib/3.12)
+11:12:23.547622010  INFO [          D-worker-1] :    i.k.s.Application : 200 OK: GET /draft13/credentialOffer in 12 ms (127.0.0.1 - Python-urllib/3.12)
+11:12:23.605027192  INFO [         D-worker-11] :    i.k.s.Application : 200 OK: POST /draft13/token in 19 ms (127.0.0.1 - Python-urllib/3.12)
+11:12:23.681666596  INFO [          D-worker-3] :    i.k.s.Application : 200 OK: POST /draft13/credential in 37 ms (127.0.0.1 - Python-urllib/3.12)
+11:12:23.748065346  INFO [         D-worker-13] :    i.k.s.Application : 200 OK: POST /draft13/credential in 30 ms (127.0.0.1 - Python-urllib/3.12)
+11:12:23.792522278  INFO [         D-worker-11] :    i.k.s.Application : 200 OK: POST /openid4vc/jwt/issue in 6 ms (127.0.0.1 - Python-urllib/3.12)
+11:12:23.837336403  INFO [         D-worker-13] :    i.k.s.Application : 200 OK: GET /draft13/credentialOffer in 10 ms (127.0.0.1 - Python-urllib/3.12)
+11:12:23.909533288  INFO [          D-worker-4] :    i.k.s.Application : 200 OK: POST /draft13/token in 42 ms (127.0.0.1 - Python-urllib/3.12)
+11:12:23.965526789  INFO [          D-worker-8] :    i.k.s.Application : 200 OK: POST /draft13/credential in 26 ms (127.0.0.1 - Python-urllib/3.12)
+11:12:23.999844996  INFO [         D-worker-13] :    i.k.s.Application : 200 OK: POST /openid4vc/jwt/issue in 5 ms (127.0.0.1 - Python-urllib/3.12)
+11:12:24.047826341  INFO [          D-worker-3] :    i.k.s.Application : 200 OK: GET /draft13/credentialOffer in 8 ms (127.0.0.1 - Python-urllib/3.12)
+11:12:24.103325755  INFO [          D-worker-6] :    i.k.s.Application : 200 OK: POST /draft13/token in 15 ms (127.0.0.1 - Python-urllib/3.12)
+11:12:24.151113220  INFO [          D-worker-6] :    i.k.s.Application : 400 Bad Request: POST /draft13/credential in 18 ms (127.0.0.1 - Python-urllib/3.12)
+11:12:24.196433835  INFO [          D-worker-5] :    i.k.s.Application : 200 OK: POST /openid4vc/jwt/issue in 5 ms (127.0.0.1 - Python-urllib/3.12)
+11:12:24.244785208  INFO [          D-worker-6] :    i.k.s.Application : 200 OK: GET /draft13/credentialOffer in 9 ms (127.0.0.1 - Python-urllib/3.12)
+11:12:24.307479079  INFO [          D-worker-4] :    i.k.s.Application : 200 OK: POST /draft13/token in 13 ms (127.0.0.1 - Python-urllib/3.12)
+11:12:24.375264774  INFO [          D-worker-4] :    i.k.s.Application : 200 OK: POST /draft13/credential in 28 ms (127.0.0.1 - Python-urllib/3.12)
+11:12:24.410539037  INFO [          D-worker-4] :    i.k.s.Application : 200 OK: POST /openid4vc/jwt/issue in 6 ms (127.0.0.1 - Python-urllib/3.12)
+11:12:24.453685705  INFO [          D-worker-2] :    i.k.s.Application : 200 OK: GET /draft13/credentialOffer in 9 ms (127.0.0.1 - Python-urllib/3.12)
+11:12:24.493743179  INFO [          D-worker-7] :    i.k.s.Application : 200 OK: POST /draft13/token in 13 ms (127.0.0.1 - Python-urllib/3.12)
+11:12:24.538362592  INFO [          D-worker-2] :    i.k.s.Application : 400 Bad Request: POST /draft13/credential in 17 ms (127.0.0.1 - Python-urllib/3.12)
+11:12:24.569813916  INFO [          D-worker-4] :    i.k.s.Application : 200 OK: POST /openid4vc/jwt/issue in 4 ms (127.0.0.1 - Python-urllib/3.12)
+11:12:24.603850260  INFO [         D-worker-11] :    i.k.s.Application : 200 OK: GET /draft13/credentialOffer in 7 ms (127.0.0.1 - Python-urllib/3.12)
+11:12:24.643285809  INFO [         D-worker-10] :    i.k.s.Application : 200 OK: POST /draft13/token in 11 ms (127.0.0.1 - Python-urllib/3.12)
+11:12:24.707061379  INFO [          D-worker-2] :    i.k.s.Application : 200 OK: POST /draft13/credential in 26 ms (127.0.0.1 - Python-urllib/3.12)
+11:12:24.753423708  INFO [         D-worker-11] :    i.k.s.Application : 200 OK: POST /openid4vc/jwt/issue in 6 ms (127.0.0.1 - Python-urllib/3.12)
+11:12:24.832932770  INFO [         D-worker-12] :    i.k.s.Application : 200 OK: GET /draft13/credentialOffer in 9 ms (127.0.0.1 - Python-urllib/3.12)
+11:12:24.885376039  INFO [          D-worker-8] :    i.k.s.Application : 200 OK: POST /draft13/token in 15 ms (127.0.0.1 - Python-urllib/3.12)
+11:12:24.945896225  INFO [          D-worker-4] :    i.k.s.Application : 200 OK: POST /draft13/credential in 24 ms (127.0.0.1 - Python-urllib/3.12)
+11:12:24.990888581  INFO [          D-worker-6] :    i.k.s.Application : 200 OK: POST /openid4vc/jwt/issue in 5 ms (127.0.0.1 - Python-urllib/3.12)
+11:12:25.038120424  INFO [         D-worker-12] :    i.k.s.Application : 200 OK: GET /draft13/credentialOffer in 10 ms (127.0.0.1 - Python-urllib/3.12)
+11:12:25.091809727  INFO [          D-worker-1] :    i.k.s.Application : 200 OK: POST /draft13/token in 15 ms (127.0.0.1 - Python-urllib/3.12)
+11:12:25.158100337  INFO [          D-worker-6] :    i.k.s.Application : 200 OK: POST /draft13/credential in 23 ms (127.0.0.1 - Python-urllib/3.12)
+11:12:25.192972543  INFO [          D-worker-2] :    i.k.s.Application : 200 OK: POST /openid4vc/jwt/issue in 6 ms (127.0.0.1 - Python-urllib/3.12)
+11:12:25.234637190  INFO [          D-worker-5] :    i.k.s.Application : 200 OK: GET /draft13/credentialOffer in 8 ms (127.0.0.1 - Python-urllib/3.12)
+11:12:25.277623260  INFO [          D-worker-2] :    i.k.s.Application : 200 OK: POST /draft13/token in 13 ms (127.0.0.1 - Python-urllib/3.12)
+11:12:25.347800006  INFO [          D-worker-3] :    i.k.s.Application : 200 OK: POST /draft13/credential in 41 ms (127.0.0.1 - Python-urllib/3.12)
+11:12:25.411196762  INFO [          D-worker-2] :    i.k.s.Application : 200 OK: POST /draft13/credential in 27 ms (127.0.0.1 - Python-urllib/3.12)
+11:12:25.453910256  INFO [         D-worker-10] :    i.k.s.Application : 200 OK: POST /openid4vc/jwt/issue in 4 ms (127.0.0.1 - Python-urllib/3.12)
+11:12:25.509308502  INFO [          D-worker-5] :    i.k.s.Application : 200 OK: GET /draft13/credentialOffer in 22 ms (127.0.0.1 - Python-urllib/3.12)
+11:12:25.552856055  INFO [          D-worker-6] :    i.k.s.Application : 200 OK: POST /draft13/token in 12 ms (127.0.0.1 - Python-urllib/3.12)
+11:12:25.607878314  INFO [         D-worker-10] :    i.k.s.Application : 200 OK: POST /draft13/credential in 26 ms (127.0.0.1 - Python-urllib/3.12)
+11:12:25.645615529  INFO [         D-worker-12] :    i.k.s.Application : 200 OK: POST /openid4vc/jwt/issue in 5 ms (127.0.0.1 - Python-urllib/3.12)
+11:12:25.742944226  INFO [         D-worker-12] :    i.k.s.Application : 200 OK: GET /draft13/credentialOffer in 51 ms (127.0.0.1 - Python-urllib/3.12)
+11:12:25.823126287  INFO [          D-worker-9] :    i.k.s.Application : 200 OK: POST /draft13/token in 16 ms (127.0.0.1 - Python-urllib/3.12)
+11:12:25.880278189  INFO [          D-worker-1] :    i.k.s.Application : 400 Bad Request: POST /draft13/credential in 21 ms (127.0.0.1 - Python-urllib/3.12)
+11:12:25.913785481  INFO [          D-worker-5] :    i.k.s.Application : 200 OK: POST /openid4vc/jwt/issue in 4 ms (127.0.0.1 - Python-urllib/3.12)
+11:12:25.959505808  INFO [          D-worker-7] :    i.k.s.Application : 200 OK: GET /draft13/credentialOffer in 9 ms (127.0.0.1 - Python-urllib/3.12)
+11:12:26.008081016  INFO [          D-worker-5] :    i.k.s.Application : 200 OK: POST /draft13/token in 12 ms (127.0.0.1 - Python-urllib/3.12)
+11:12:26.058749801  INFO [         D-worker-12] :    i.k.s.Application : 200 OK: POST /draft13/credential in 23 ms (127.0.0.1 - Python-urllib/3.12)
+11:12:26.093018497  INFO [          D-worker-2] :    i.k.s.Application : 200 OK: POST /openid4vc/jwt/issue in 4 ms (127.0.0.1 - Python-urllib/3.12)
+11:12:26.128466882  INFO [          D-worker-9] :    i.k.s.Application : 200 OK: GET /draft13/credentialOffer in 8 ms (127.0.0.1 - Python-urllib/3.12)
+11:12:26.169849025  INFO [          D-worker-9] :    i.k.s.Application : 200 OK: POST /draft13/token in 13 ms (127.0.0.1 - Python-urllib/3.12)
+11:12:26.232223984  INFO [          D-worker-6] :    i.k.s.Application : 400 Bad Request: POST /draft13/credential in 26 ms (127.0.0.1 - Python-urllib/3.12)
+11:12:26.236376996  INFO [            Thread-3] : c.s.c.HealthCheckReg : Cohort HealthCheckRegistry shutdown hook is executing
+11:12:26.239424204  INFO [          D-worker-8] :     EnterpriseStatus : walt.id issuer - Web server - stop preparing...
+11:12:26.241137324  INFO [    KtorShutdownHook] :     EnterpriseStatus : walt.id issuer - Web server - stopping...
+11:12:26.241583583  INFO [                main] :       Service-Runner : Service run completed (8.287791953s).
+11:12:26.242072771  INFO [                main] :       walt.id issuer : Service phases ended after 10.508027362s.
+11:12:26.242835566  INFO [    KtorShutdownHook] :     EnterpriseStatus : walt.id issuer - Web server is stopped.

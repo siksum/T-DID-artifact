@@ -1,0 +1,21 @@
+# TDID-THR-015 Duplicate credential issuance through OpenID4VCI key-proof replay
+# Source analysis: research/candidates/CAND-20260814-OBS-GAP-THR-011-015.yaml (TDID-THR-015 row)
+threat: TDID-THR-015
+refs:
+  proof_ref:
+    produced_by: [issuer]
+    meaning: Issuer-local keyed commitment over the complete serialized key-proof bytes.
+    reveals: Whether two credential requests presented the exact same key proof (equality only, proof itself stays local).
+  output_ref:
+    produced_by: [issuer]
+    meaning: Issuer-local commitment over the credential returned on this decision.
+    reveals: Whether an accepted request returned a new credential or re-delivered one already issued for the same proof.
+checks:
+  credential_key_proof_validation:
+    produced_by: [issuer]
+    meaning: The issuer's validation of the key proof as it executes it (at least the signature and the c_nonce; audience and freshness where the issuer checks them).
+policy_params:
+  allowed_proof_uses:
+    type: integer
+    example: 1
+    meaning: How many accepted uses one key proof may have. A deployment policy, not mandated by OpenID4VCI.

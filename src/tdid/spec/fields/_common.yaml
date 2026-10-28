@@ -1,0 +1,107 @@
+# Shared vocabulary used by several threats. Threat files may reuse these names but must not redefine them.
+# All refs are opaque commitments (keyed hashes); raw identifiers, keys and tokens stay with the producer.
+# Local ref: keyed with a key only that producer holds; equal values mean equal inputs at that producer.
+# Joint ref: two producers must compare the same input (a cooperative threat). Both key it with a key
+#   they share for that relationship only; the field's meaning names the producers that share the key.
+#   No raw value and no key is ever exported to T-DID.
+# Decision outcome: events that record an action or observation rather than a decision (a request
+#   was created, a response was sent, content was fetched) use outcome `none`. Decisions use issue,
+#   accept, reject, resolve, error or pending.
+# History: absence of earlier records is established only when the producer's first record declares
+#   producer.stream_start (its relevant state began there) and the sequence has no gaps.
+# Policy params never carry a value the rules assume: an unset parameter makes the dependent condition
+#   unknown. The `example` shown for a parameter is documentation, not a default.
+threat: COMMON
+event_types:
+  TOKEN_ISSUED:
+    produced_by: [issuer]
+    meaning: The issuer token endpoint issued or refused an access token.
+  ISSUANCE_DECISION:
+    produced_by: [issuer]
+    meaning: The issuer's final decision for one credential request.
+  PRESENTATION_REQUESTED:
+    produced_by: [verifier]
+    meaning: The verifier created a presentation request.
+  PRESENTATION_DECISION:
+    produced_by: [verifier]
+    meaning: The verifier's final decision on one presentation response.
+  RELYING_AUTHENTICATION_DECISION:
+    produced_by: [relying_party]
+    meaning: The relying party created or refused an authenticated session based on a verification result.
+  RESOLUTION_DECISION:
+    produced_by: [resolver]
+    meaning: The resolver's final result for one resolution or dereferencing request.
+  STATUS_FETCHED:
+    produced_by: [verifier, status_service]
+    meaning: A credential status entry was retrieved.
+  STATUS_DECISION:
+    produced_by: [verifier]
+    meaning: The verifier's decision that used a status entry.
+  KEY_LIFECYCLE_CHANGED:
+    produced_by: [did_controller, resolver]
+    meaning: A verification method was rotated, revoked or reported compromised.
+  CONTENT_RENDERED:
+    produced_by: [wallet, verifier, relying_party]
+    meaning: Credential content was rendered or executed by a holder application.
+  RESOLVER_HEALTH_MEASURED:
+    produced_by: [resolver]
+    meaning: A resolver service health probe measured resource use and availability against its configured thresholds.
+  WALLET_RESPONSE_SENT:
+    produced_by: [wallet]
+    meaning: The wallet sent an Authorization Response for one presentation request to the response endpoint named in that request.
+refs:
+  session_ref:
+    produced_by: [issuer, verifier, relying_party, wallet]
+    meaning: Component-local session or transaction identifier of the flow this decision belongs to.
+    reveals: Which decisions belong to the same session or transaction at that component.
+  account_ref:
+    produced_by: [issuer, relying_party]
+    meaning: Local account the decision binds to (the account that is authenticated or receives the credential).
+    reveals: Which local account a decision authenticated or bound, and whether two decisions touched the same account.
+  subject_ref:
+    produced_by: [verifier, relying_party]
+    meaning: Commitment over the credential subject identifier established by verification.
+    reveals: Whether two verifications established the same credential subject.
+  presentation_ref:
+    produced_by: [verifier, relying_party]
+    meaning: Commitment over the complete serialized presentation bytes.
+    reveals: Whether the exact same presentation bytes were submitted more than once.
+  request_ref:
+    produced_by: [issuer, verifier, wallet, relying_party]
+    meaning: Commitment over one authorization, presentation or credential request object.
+    reveals: Which request a response, a wallet send or a later decision completes; equality across producers when keyed jointly.
+  credential_ref:
+    produced_by: [issuer, wallet, verifier]
+    meaning: Commitment over one credential.
+    reveals: Whether two records concern the same credential.
+  issuer_ref:
+    produced_by: [issuer, verifier, wallet, relying_party]
+    meaning: Commitment over an issuer identifier.
+    reveals: Which issuer a credential or a stored binding is attributed to, compared by equality only.
+  verifier_ref:
+    produced_by: [verifier, wallet, relying_party]
+    meaning: Commitment over a verifier or relying party identifier.
+    reveals: Which verifier or relying party a record concerns.
+  did_ref:
+    produced_by: [resolver, verifier, wallet, did_controller]
+    meaning: Commitment over a DID.
+    reveals: Whether two records concern the same DID.
+  did_url_ref:
+    produced_by: [resolver]
+    meaning: Commitment over the canonicalized DID URL of a request.
+    reveals: Whether two requests asked for the same canonical DID URL.
+  document_ref:
+    produced_by: [resolver, verifier, wallet, issuer, relying_party]
+    meaning: Commitment over the DID document bytes that were verified or consumed.
+    reveals: Whether the DID document bytes used at one point are the ones verified at another.
+  content_ref:
+    produced_by: [wallet, verifier, resolver, issuer]
+    meaning: Commitment over externally retrieved content bytes.
+    reveals: Whether the external content used is byte-identical to another retrieval or a trusted version.
+checks:
+  rp_verification_result_check:
+    produced_by: [relying_party]
+    meaning: The relying party confirmed that the verification result it consumed is a verifier accept for the presentation identified by presentation_ref. The required check of a relying-party decision, not itself a threat condition.
+  resolver_availability_slo:
+    produced_by: [resolver]
+    meaning: Comparison of measured resolver latency, error and denial rates against the configured availability objective; fail means the objective was missed.

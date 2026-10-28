@@ -1,0 +1,150 @@
+--- a/waltid-libraries/sdjwt/waltid-sdjwt/src/commonMain/kotlin/id/walt/sdjwt/KeyBindingJwt.kt
++++ b/waltid-libraries/sdjwt/waltid-sdjwt/src/commonMain/kotlin/id/walt/sdjwt/KeyBindingJwt.kt
+@@ -54,8 +54,17 @@
+         reqAudience: String,
+         reqNonce: String,
+         sdJwt: SDJwt,
++        // T-DID testbed: told each binding comparison that is actually evaluated ("aud", "nonce"), in order
++        observer: ((String, Boolean) -> Unit)? = null,
+     ): Boolean {
+-        return type == KB_JWT_TYPE && audience == reqAudience && nonce == reqNonce && sdJwt.isPresentation &&
++        if (type != KB_JWT_TYPE) return false
++        val audienceMatches = audience == reqAudience
++        observer?.invoke("aud", audienceMatches)
++        if (!audienceMatches) return false
++        val nonceMatches = nonce == reqNonce
++        observer?.invoke("nonce", nonceMatches)
++        if (!nonceMatches) return false
++        return sdJwt.isPresentation &&
+                 getSdHash(sdJwt.toString(formatForPresentation = true, withKBJwt = false)) == sdHash &&
+                 verifyAsync(jwtCryptoProvider).verified
+     }
+--- a/waltid-libraries/sdjwt/waltid-sdjwt/src/commonMain/kotlin/id/walt/sdjwt/SDJwtVC.kt
++++ b/waltid-libraries/sdjwt/waltid-sdjwt/src/commonMain/kotlin/id/walt/sdjwt/SDJwtVC.kt
+@@ -51,7 +51,8 @@
+         jwtCryptoProvider: AsyncJWTCryptoProvider,
+         requiresHolderKeyBinding: Boolean,
+         audience: String? = null,
+-        nonce: String? = null
++        nonce: String? = null,
++        observer: ((String, Boolean) -> Unit)? = null
+     ): Boolean {
+         return if (!holderDid.isNullOrEmpty()) TODO("Holder DID verification not yet supported")
+         else if (holderKeyJWK != null) {
+@@ -61,6 +62,7 @@
+                         reqAudience = audience,
+                         reqNonce = nonce,
+                         sdJwt = this,
++                        observer = observer,
+                     )
+         } else
+             !requiresHolderKeyBinding
+@@ -117,7 +119,8 @@
+         jwtCryptoProvider: AsyncJWTCryptoProvider,
+         requiresHolderKeyBinding: Boolean,
+         audience: String? = null,
+-        nonce: String? = null
++        nonce: String? = null,
++        observer: ((String, Boolean) -> Unit)? = null
+     ): VCVerificationResult {
+         var message = ""
+ 
+@@ -134,7 +137,7 @@
+                         !vct.isNullOrEmpty().also {
+                             if (it) message = "$message, VC has no verifiable credential type property (vct)"
+                         } &&
+-                        verifyHolderKeyBindingAsync(jwtCryptoProvider, requiresHolderKeyBinding, audience, nonce).also {
++                        verifyHolderKeyBindingAsync(jwtCryptoProvider, requiresHolderKeyBinding, audience, nonce, observer).also {
+                             if (!it) message = "$message, holder key binding could not be verified"
+                         },
+             vcVerificationMessage = message
+--- a/waltid-libraries/credentials/waltid-verification-policies/src/commonMain/kotlin/id/walt/policies/policies/SdJwtVCSignaturePolicy.kt
++++ b/waltid-libraries/credentials/waltid-verification-policies/src/commonMain/kotlin/id/walt/policies/policies/SdJwtVCSignaturePolicy.kt
+@@ -92,7 +92,9 @@
+                     JWTCryptoProviderManager.getDefaultAsyncJWTCryptoProvider(keyMap),
+                     requiresHolderKeyBinding = true,
+                     context["clientId"]?.toString(),
+-                    context["challenge"]?.toString()
++                    context["challenge"]?.toString(),
++                    // T-DID testbed: optional observer of the binding comparisons, supplied by the verifier service
++                    @Suppress("UNCHECKED_CAST") (context["tdidBindingObserver"] as? (String, Boolean) -> Unit)
+                 )
+ 
+                 if (!verificationResult.verified) {
+--- a/waltid-services/waltid-verifier-api/src/main/kotlin/id/walt/verifier/oidc/OIDCVerifierService.kt
++++ b/waltid-services/waltid-verifier-api/src/main/kotlin/id/walt/verifier/oidc/OIDCVerifierService.kt
+@@ -6,6 +6,7 @@
+ import com.upokecenter.cbor.CBORObject
+ import id.walt.commons.config.ConfigManager
+ import id.walt.commons.persistence.ConfiguredPersistence
++import id.walt.commons.tdid.TdidEvents
+ import id.walt.crypto.keys.Key
+ import id.walt.mdoc.COSECryptoProviderKeyInfo
+ import id.walt.mdoc.SimpleCOSECryptoProvider
+@@ -153,6 +154,56 @@
+     // ------------------------------------
+     // Simple cryptographic operations interface implementation
+     override fun doVerify(tokenResponse: TokenResponse, session: PresentationSession): Boolean {
++        // T-DID collection point: one PRESENTATION_DECISION at the end of every verification
++        val tdidBindings = java.util.concurrent.ConcurrentHashMap<String, Boolean>()
++        val result = runCatching { doVerifyObserved(tokenResponse, session, tdidBindings) }
++        tdidPresentationDecision(tokenResponse, session, tdidBindings, result)
++        return result.getOrThrow()
++    }
++
++    private fun tdidPresentationDecision(
++        tokenResponse: TokenResponse,
++        session: PresentationSession,
++        bindings: Map<String, Boolean>,
++        result: Result<Boolean>,
++    ) = runCatching {
++        if (!TdidEvents.enabled) return@runCatching
++        val sessionRef = TdidEvents.local("presentation_session", session.id)
++        val refs = mutableMapOf("session_ref" to sessionRef)
++        val vpToken = tokenResponse.vpToken?.let { if (it is JsonPrimitive) it.content else it.toString() }
++        vpToken?.let { refs["presentation_ref"] = TdidEvents.joint("presentation", it) }
++        (session.authorizationRequest?.state ?: session.id).let { refs["request_ref"] = TdidEvents.joint("request", it) }
++        val accepted = result.getOrNull() == true
++        if (accepted && vpToken != null) tdidSubjectId(vpToken)?.let { refs["subject_ref"] = TdidEvents.joint("subject", it) }
++        fun observed(key: String) = when (bindings[key]) { true -> "pass"; false -> "fail"; null -> "not_performed" }
++        TdidEvents.emit(
++            eventType = "PRESENTATION_DECISION",
++            workflowRef = "verifier-session:$sessionRef",
++            required = listOf("vp_nonce_binding_validation", "vp_client_id_binding_validation"),
++            results = mapOf(
++                "vp_nonce_binding_validation" to observed("nonce"),
++                "vp_client_id_binding_validation" to observed("aud"),
++            ),
++            outcome = when { result.isFailure -> "error"; accepted -> "accept"; else -> "reject" },
++            reason = result.exceptionOrNull()?.let { it::class.simpleName ?: "exception" }
++                ?: if (!accepted) "policies_failed" else null,
++            refs = refs,
++        )
++    }.onFailure { logger.error(it) { "T-DID collection point failed" } }
++
++    /** Subject identifier of the presented credential: the credential JWT's `sub`, else credentialSubject.id. */
++    private fun tdidSubjectId(vpToken: String): String? = runCatching {
++        val credentialJwt = if ("~" in vpToken) vpToken.substringBefore("~") else
++            id.walt.oid4vc.util.JwtUtils.parseJWTPayload(vpToken)["vp"]?.jsonObject?.get("verifiableCredential")
++                ?.jsonArray?.firstOrNull()?.jsonPrimitive?.content ?: return@runCatching null
++        val payload = id.walt.oid4vc.util.JwtUtils.parseJWTPayload(credentialJwt.substringBefore("~"))
++        payload["sub"]?.jsonPrimitive?.contentOrNull
++            ?: payload["vc"]?.jsonObject?.get("credentialSubject")?.jsonObject?.get("id")?.jsonPrimitive?.contentOrNull
++    }.getOrNull()
++
++    private fun doVerifyObserved(
++        tokenResponse: TokenResponse, session: PresentationSession, tdidBindings: MutableMap<String, Boolean>,
++    ): Boolean {
+         val policies = sessionVerificationInfos[session.id]
+             ?: throw NotFoundException("Policy listing for session: ${session.id} is missing. Please ensure that the session ID is correct and that the policies have been properly configured.")
+ 
+@@ -196,7 +247,8 @@
+                             tokenResponse.presentationSubmission?.toJSON()?.let { "presentationSubmission" to it },
+                             "challenge" to (session.authorizationRequest?.nonce ?: ""),
+                             "clientId" to (session.authorizationRequest?.clientId ?: ""),
+-                            "responseUri" to (session.authorizationRequest?.responseUri ?: "")
++                            "responseUri" to (session.authorizationRequest?.responseUri ?: ""),
++                            "tdidBindingObserver" to { check: String, ok: Boolean -> tdidBindings[check] = ok }
+                         ).toMap()
+                     )
+                 }

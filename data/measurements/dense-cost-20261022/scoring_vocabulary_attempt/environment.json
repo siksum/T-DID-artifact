@@ -1,0 +1,36 @@
+{
+  "start_utc": "2026-10-21T18:37:34Z",
+  "base_commit": "d981da4c5a170e321eec68ea2a65fb8075820d4c",
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+  "purpose": "Dense cost diagnosis; same THR-015 workload, all checks retained",
+  "loads": [
+    500,
+    750,
+    1000,
+    1250,
+    1500,
+    1750,
+    2000
+  ],
+  "repeats": 3,
+  "window_s": 5,
+  "warmup_s": 1,
+  "preencode": true,
+  "memory_checkpoints": [
+    0,
+    10000,
+    20000,
+    30000,
+    40000,
+    50000,
+    60000,
+    70000,
+    80000,
+    90000,
+    100000
+  ],
+  "memory_processes": "fresh process for each rule count and seed; cumulative within process",
+  "budget_s": 900.0,
+  "complete": false
+}

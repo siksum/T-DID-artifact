@@ -1,0 +1,468 @@
+{
+  "THR-015": {
+    "none (base)": {
+      "records_present": true,
+      "judges": {
+        "pltl": {
+          "wrong": 0,
+          "withheld": 0,
+          "silent": 0,
+          "changed": 0,
+          "runs": 27
+        },
+        "fo": {
+          "wrong": 0,
+          "withheld": 0,
+          "silent": 0,
+          "changed": 0,
+          "runs": 27
+        },
+        "ltl3": {
+          "wrong": 0,
+          "withheld": 0,
+          "silent": 0,
+          "changed": 0,
+          "runs": 27
+        },
+        "tdid": {
+          "wrong": 0,
+          "withheld": 0,
+          "silent": 0,
+          "changed": 0,
+          "runs": 27
+        }
+      }
+    },
+    "issuer": {
+      "records_present": true,
+      "judges": {
+        "pltl": {
+          "wrong": 6,
+          "withheld": 0,
+          "silent": 27,
+          "changed": 6,
+          "runs": 27
+        },
+        "fo": {
+          "wrong": 6,
+          "withheld": 0,
+          "silent": 27,
+          "changed": 6,
+          "runs": 27
+        },
+        "ltl3": {
+          "wrong": 6,
+          "withheld": 0,
+          "silent": 27,
+          "changed": 6,
+          "runs": 27
+        },
+        "tdid": {
+          "wrong": 6,
+          "withheld": 0,
+          "silent": 27,
+          "changed": 6,
+          "runs": 27
+        }
+      }
+    },
+    "wallet": {
+      "records_present": false,
+      "judges": {
+        "pltl": {
+          "wrong": 0,
+          "withheld": 0,
+          "silent": 0,
+          "changed": 0,
+          "runs": 27
+        },
+        "fo": {
+          "wrong": 0,
+          "withheld": 0,
+          "silent": 0,
+          "changed": 0,
+          "runs": 27
+        },
+        "ltl3": {
+          "wrong": 0,
+          "withheld": 0,
+          "silent": 0,
+          "changed": 0,
+          "runs": 27
+        },
+        "tdid": {
+          "wrong": 0,
+          "withheld": 0,
+          "silent": 0,
+          "changed": 0,
+          "runs": 27
+        }
+      }
+    },
+    "verifier": {
+      "records_present": false,
+      "judges": {
+        "pltl": {
+          "wrong": 0,
+          "withheld": 0,
+          "silent": 0,
+          "changed": 0,
+          "runs": 27
+        },
+        "fo": {
+          "wrong": 0,
+          "withheld": 0,
+          "silent": 0,
+          "changed": 0,
+          "runs": 27
+        },
+        "ltl3": {
+          "wrong": 0,
+          "withheld": 0,
+          "silent": 0,
+          "changed": 0,
+          "runs": 27
+        },
+        "tdid": {
+          "wrong": 0,
+          "withheld": 0,
+          "silent": 0,
+          "changed": 0,
+          "runs": 27
+        }
+      }
+    },
+    "resolver": {
+      "records_present": false,
+      "judges": {
+        "pltl": {
+          "wrong": 0,
+          "withheld": 0,
+          "silent": 0,
+          "changed": 0,
+          "runs": 27
+        },
+        "fo": {
+          "wrong": 0,
+          "withheld": 0,
+          "silent": 0,
+          "changed": 0,
+          "runs": 27
+        },
+        "ltl3": {
+          "wrong": 0,
+          "withheld": 0,
+          "silent": 0,
+          "changed": 0,
+          "runs": 27
+        },
+        "tdid": {
+          "wrong": 0,
+          "withheld": 0,
+          "silent": 0,
+          "changed": 0,
+          "runs": 27
+        }
+      }
+    },
+    "status_service": {
+      "records_present": false,
+      "judges": {
+        "pltl": {
+          "wrong": 0,
+          "withheld": 0,
+          "silent": 0,
+          "changed": 0,
+          "runs": 27
+        },
+        "fo": {
+          "wrong": 0,
+          "withheld": 0,
+          "silent": 0,
+          "changed": 0,
+          "runs": 27
+        },
+        "ltl3": {
+          "wrong": 0,
+          "withheld": 0,
+          "silent": 0,
+          "changed": 0,
+          "runs": 27
+        },
+        "tdid": {
+          "wrong": 0,
+          "withheld": 0,
+          "silent": 0,
+          "changed": 0,
+          "runs": 27
+        }
+      }
+    },
+    "relying_party": {
+      "records_present": false,
+      "judges": {
+        "pltl": {
+          "wrong": 0,
+          "withheld": 0,
+          "silent": 0,
+          "changed": 0,
+          "runs": 27
+        },
+        "fo": {
+          "wrong": 0,
+          "withheld": 0,
+          "silent": 0,
+          "changed": 0,
+          "runs": 27
+        },
+        "ltl3": {
+          "wrong": 0,
+          "withheld": 0,
+          "silent": 0,
+          "changed": 0,
+          "runs": 27
+        },
+        "tdid": {
+          "wrong": 0,
+          "withheld": 0,
+          "silent": 0,
+          "changed": 0,
+          "runs": 27
+        }
+      }
+    }
+  },
+  "THR-019": {
+    "none (base)": {
+      "records_present": true,
+      "judges": {
+        "pltl": {
+          "wrong": 3,
+          "withheld": 0,
+          "silent": 0,
+          "changed": 0,
+          "runs": 12
+        },
+        "fo": {
+          "wrong": 3,
+          "withheld": 0,
+          "silent": 0,
+          "changed": 0,
+          "runs": 12
+        },
+        "ltl3": {
+          "wrong": 3,
+          "withheld": 0,
+          "silent": 0,
+          "changed": 0,
+          "runs": 12
+        },
+        "tdid": {
+          "wrong": 0,
+          "withheld": 9,
+          "silent": 0,
+          "changed": 0,
+          "runs": 12
+        }
+      }
+    },
+    "issuer": {
+      "records_present": false,
+      "judges": {
+        "pltl": {
+          "wrong": 3,
+          "withheld": 0,
+          "silent": 0,
+          "changed": 0,
+          "runs": 12
+        },
+        "fo": {
+          "wrong": 3,
+          "withheld": 0,
+          "silent": 0,
+          "changed": 0,
+          "runs": 12
+        },
+        "ltl3": {
+          "wrong": 3,
+          "withheld": 0,
+          "silent": 0,
+          "changed": 0,
+          "runs": 12
+        },
+        "tdid": {
+          "wrong": 0,
+          "withheld": 9,
+          "silent": 0,
+          "changed": 0,
+          "runs": 12
+        }
+      }
+    },
+    "wallet": {
+      "records_present": true,
+      "judges": {
+        "pltl": {
+          "wrong": 3,
+          "withheld": 0,
+          "silent": 0,
+          "changed": 0,
+          "runs": 12
+        },
+        "fo": {
+          "wrong": 3,
+          "withheld": 0,
+          "silent": 0,
+          "changed": 0,
+          "runs": 12
+        },
+        "ltl3": {
+          "wrong": 3,
+          "withheld": 0,
+          "silent": 0,
+          "changed": 0,
+          "runs": 12
+        },
+        "tdid": {
+          "wrong": 0,
+          "withheld": 9,
+          "silent": 0,
+          "changed": 0,
+          "runs": 12
+        }
+      }
+    },
+    "verifier": {
+      "records_present": true,
+      "judges": {
+        "pltl": {
+          "wrong": 3,
+          "withheld": 0,
+          "silent": 0,
+          "changed": 0,
+          "runs": 12
+        },
+        "fo": {
+          "wrong": 3,
+          "withheld": 0,
+          "silent": 0,
+          "changed": 0,
+          "runs": 12
+        },
+        "ltl3": {
+          "wrong": 3,
+          "withheld": 0,
+          "silent": 0,
+          "changed": 0,
+          "runs": 12
+        },
+        "tdid": {
+          "wrong": 0,
+          "withheld": 9,
+          "silent": 0,
+          "changed": 0,
+          "runs": 12
+        }
+      }
+    },
+    "resolver": {
+      "records_present": false,
+      "judges": {
+        "pltl": {
+          "wrong": 3,
+          "withheld": 0,
+          "silent": 0,
+          "changed": 0,
+          "runs": 12
+        },
+        "fo": {
+          "wrong": 3,
+          "withheld": 0,
+          "silent": 0,
+          "changed": 0,
+          "runs": 12
+        },
+        "ltl3": {
+          "wrong": 3,
+          "withheld": 0,
+          "silent": 0,
+          "changed": 0,
+          "runs": 12
+        },
+        "tdid": {
+          "wrong": 0,
+          "withheld": 9,
+          "silent": 0,
+          "changed": 0,
+          "runs": 12
+        }
+      }
+    },
+    "status_service": {
+      "records_present": false,
+      "judges": {
+        "pltl": {
+          "wrong": 3,
+          "withheld": 0,
+          "silent": 0,
+          "changed": 0,
+          "runs": 12
+        },
+        "fo": {
+          "wrong": 3,
+          "withheld": 0,
+          "silent": 0,
+          "changed": 0,
+          "runs": 12
+        },
+        "ltl3": {
+          "wrong": 3,
+          "withheld": 0,
+          "silent": 0,
+          "changed": 0,
+          "runs": 12
+        },
+        "tdid": {
+          "wrong": 0,
+          "withheld": 9,
+          "silent": 0,
+          "changed": 0,
+          "runs": 12
+        }
+      }
+    },
+    "relying_party": {
+      "records_present": true,
+      "judges": {
+        "pltl": {
+          "wrong": 3,
+          "withheld": 0,
+          "silent": 12,
+          "changed": 0,
+          "runs": 12
+        },
+        "fo": {
+          "wrong": 3,
+          "withheld": 0,
+          "silent": 12,
+          "changed": 0,
+          "runs": 12
+        },
+        "ltl3": {
+          "wrong": 0,
+          "withheld": 12,
+          "silent": 0,
+          "changed": 12,
+          "runs": 12
+        },
+        "tdid": {
+          "wrong": 0,
+          "withheld": 12,
+          "silent": 0,
+          "changed": 3,
+          "runs": 12
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+(* TDID-THR-015 attack at issuance decision e (proof p, output o), policy limit 1 (allowed_proof_uses = 1,
+   the deployed policy of every dataset here). Outputs = attack decisions.
+   With limit 1, "uses + 1 > limit" <=> "some earlier validated issued decision used proof p" (the first such
+   use is always counted). Same outputs as the general CNT-aggregation form in general/thr015_cnt.mfotl
+   (checked on the real datasets and on synthetic logs), without MonPoly's unbounded-past aggregation cost.
+   A decision whose policy does not state limit 1 (allowed(e,1) absent) is not an attack: missing = false. *)
+LET used(p) = ONCE[1,*) (EXISTS e2, o2. dec(e2,p,o2) AND pass(e2) AND issue(e2)) IN
+LET issued(p,o) = ONCE[1,*) (EXISTS e2. dec(e2,p,o) AND pass(e2) AND issue(e2)) IN
+EXISTS p, o. dec(e,p,o) AND pass(e) AND issue(e) AND allowed(e,1) AND used(p) AND NOT issued(p,o)

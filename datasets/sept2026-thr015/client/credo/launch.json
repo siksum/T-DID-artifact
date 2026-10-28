@@ -1,0 +1,27 @@
+{
+  "argv": [
+    ".local/opt/tdid-runtime/node-v20.20.2-linux-x64/bin/node",
+    "T-DID/research/runs/RUN-20260908-CHAPTER6-FIVE-AXIS-002/apparatus/PAIRED-EVIDENCE-CREDO-001/node_modules/vitest/vitest.mjs",
+    "run",
+    "--project",
+    "e2e",
+    "--no-cache",
+    "packages/openid4vc/tests/paired_audit.e2e.test.ts"
+  ],
+  "cwd": "T-DID/research/runs/RUN-20260908-CHAPTER6-FIVE-AXIS-002/apparatus/PAIRED-EVIDENCE-CREDO-001",
+  "product": "Credo TS",
+  "env": {
+    "TDID_PRODUCT_OBSERVER": "on",
+    "TDID_CONTROL_REUSE_BLOCK": "off",
+    "TDID_FUNCTIONAL_CONTROLS": "off",
+    "TDID_FUNCTIONAL_PROFILE": "performance-default",
+    "JAVA_HOME": ".local/opt/tdid-runtime/jdk-21.0.12.1+1",
+    "LIB_ASKAR_PATH": "T-DID/research/candidates/chapter6-loopback-successor-20260908-001/native-askar-0.6.0",
+    "NATIVE_AUDIT_ROOT": "T-DID/research/runs/RUN-20260908-CHAPTER6-FIVE-AXIS-002/raw/EXEC-paired-evidence-001/credo",
+    "TDID_PRODUCT_PORT": "19012",
+    "TDID_EVIDENCE_PATH": "T-DID/research/runs/RUN-20260908-CHAPTER6-FIVE-AXIS-002/raw/EXEC-paired-evidence-001/credo/augmented.jsonl",
+    "TDID_POLICY_SCOPE": "single-use-key-proof"
+  },
+  "key_sha256": "2d943b8c64e90dff78300c9b056ab350191e8159a0ef7c70c9800c7d6cdea9b1",
+  "original_build_receipt_sha256": "df02533f8c01ff89077659bc5aa26937a250e5f51428b5a26251b34efe3fdf47"
+}

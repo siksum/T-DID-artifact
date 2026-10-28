@@ -1,0 +1,40 @@
+# TDID-THR-004 Resolver cache exhaustion through logically equivalent DID URL variants
+# Source analysis: research/candidates/CAND-20260814-OBS-GAP-THR-001-005.yaml (TDID-THR-004 row),
+# success condition as stated in CAND-20260908-CH6-THR-004-REAFFIRMED (one limit on distinct cache keys).
+# Reuses from _common: RESOLUTION_DECISION, did_url_ref (must be computed under the policy's versioned
+# canonicalization profile, independently of the cache-key construction).
+threat: TDID-THR-004
+refs:
+  cache_key_ref:
+    produced_by: [resolver]
+    meaning: Resolver-local commitment over the exact cache key the resolver used for one request.
+    reveals: Whether two requests were stored under the same cache entry or under distinct entries.
+facts:
+  cache_allocation:
+    type: enum
+    enum: [allocated, hit, not_cached]
+    produced_by: [resolver]
+    meaning: Cache outcome of one resolution request as reported by cache instrumentation (a new entry was allocated, an existing entry served it, or the cache was not used).
+    reveals: Whether the request added an entry to the resolver cache.
+  cache_entry_count:
+    type: integer
+    produced_by: [resolver]
+    meaning: Number of entries in the resolver cache at the time of a health measurement.
+    reveals: Cache occupancy, the denominator of the share held by one identity's variant entries.
+checks:
+  resolver_resource_threshold:
+    produced_by: [resolver]
+    meaning: Comparison of measured resolver memory, cache occupancy or eviction rate against the configured resource threshold; fail means the threshold was exceeded.
+policy_params:
+  variant_allocation_limit:
+    type: integer
+    example: null
+    meaning: Most distinct cache entries one canonical DID URL identity may allocate within the window. A preregistered deployment policy, not mandated by DID Resolution; unset leaves the condition unknown.
+  variant_window_seconds:
+    type: integer
+    example: null
+    meaning: Length of the counting window for variant allocations and for the health measurement that applies to them. A preregistered deployment policy; unset leaves the conditions unknown.
+  attribution_min_share:
+    type: number
+    example: null
+    meaning: Minimum share of cache entries held by one identity's variant allocations at a failing measurement for the degradation to be attributed to them. A preregistered deployment policy and a passive stand-in for controlled measurement; unset leaves attribution unknown.

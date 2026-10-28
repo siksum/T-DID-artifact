@@ -1,0 +1,8 @@
+(* TDID-THR-015 attack at issuance decision e (proof p, output o). Outputs = attack decisions.
+   uses c = distinct outputs of earlier validated issued decisions with proof p
+          = number of counted earlier uses (an uncounted use re-delivers an output already counted). *)
+EXISTS p, o, n, c.
+     dec(e,p,o) AND pass(e) AND issue(e) AND allowed(e,n)
+ AND (c <- CNT o2; p ONCE[1,*) (EXISTS e2. dec(e2,p,o2) AND pass(e2) AND issue(e2)))
+ AND n < c + 1
+ AND NOT ONCE[1,*) (EXISTS e2. dec(e2,p,o) AND pass(e2) AND issue(e2))

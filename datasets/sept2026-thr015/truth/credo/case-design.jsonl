@@ -1,0 +1,15 @@
+{"case_id": "00-fresh", "scenario": "fresh", "repetition": 0, "request_ids": ["00-fresh-0"], "statuses": [200]}
+{"case_id": "00-different_proof", "scenario": "different_proof", "repetition": 0, "request_ids": ["00-different_proof-0", "00-different_proof-1"], "statuses": [200, 200]}
+{"case_id": "00-same_session_reuse", "scenario": "same_session_reuse", "repetition": 0, "request_ids": ["00-same_session_reuse-0", "00-same_session_reuse-1"], "statuses": [200, 500]}
+{"case_id": "00-new_session_reuse", "scenario": "new_session_reuse", "repetition": 0, "request_ids": ["00-new_session_reuse-0", "00-new_session_reuse-1"], "statuses": [200, 200]}
+{"case_id": "00-bad_signature", "scenario": "bad_signature", "repetition": 0, "request_ids": ["00-bad_signature-0", "00-bad_signature-1"], "statuses": [200, 400]}
+{"case_id": "01-fresh", "scenario": "fresh", "repetition": 1, "request_ids": ["01-fresh-0"], "statuses": [200]}
+{"case_id": "01-different_proof", "scenario": "different_proof", "repetition": 1, "request_ids": ["01-different_proof-0", "01-different_proof-1"], "statuses": [200, 200]}
+{"case_id": "01-same_session_reuse", "scenario": "same_session_reuse", "repetition": 1, "request_ids": ["01-same_session_reuse-0", "01-same_session_reuse-1"], "statuses": [200, 500]}
+{"case_id": "01-new_session_reuse", "scenario": "new_session_reuse", "repetition": 1, "request_ids": ["01-new_session_reuse-0", "01-new_session_reuse-1"], "statuses": [200, 200]}
+{"case_id": "01-bad_signature", "scenario": "bad_signature", "repetition": 1, "request_ids": ["01-bad_signature-0", "01-bad_signature-1"], "statuses": [200, 400]}
+{"case_id": "02-fresh", "scenario": "fresh", "repetition": 2, "request_ids": ["02-fresh-0"], "statuses": [200]}
+{"case_id": "02-different_proof", "scenario": "different_proof", "repetition": 2, "request_ids": ["02-different_proof-0", "02-different_proof-1"], "statuses": [200, 200]}
+{"case_id": "02-same_session_reuse", "scenario": "same_session_reuse", "repetition": 2, "request_ids": ["02-same_session_reuse-0", "02-same_session_reuse-1"], "statuses": [200, 500]}
+{"case_id": "02-new_session_reuse", "scenario": "new_session_reuse", "repetition": 2, "request_ids": ["02-new_session_reuse-0", "02-new_session_reuse-1"], "statuses": [200, 200]}
+{"case_id": "02-bad_signature", "scenario": "bad_signature", "repetition": 2, "request_ids": ["02-bad_signature-0", "02-bad_signature-1"], "statuses": [200, 400]}

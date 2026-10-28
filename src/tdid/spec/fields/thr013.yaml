@@ -1,0 +1,89 @@
+# TDID-THR-013 Execution of attacker-injected active content from credential data
+# Source analysis: research/candidates/CAND-20260814-OBS-GAP-THR-011-015.yaml (TDID-THR-013 row),
+# CAND-20260908-CH6-THR-013-REAFFIRMED.yaml (unchanged definition); primary source VC Data Model 2.0 9.10.
+# One record: the consumer's CONTENT_RENDERED event (consumer = wallet, verifier or relying party, as in
+# _common), written by renderer instrumentation that wraps the sink
+# and the render context monitor (webview/frame hooks, CSP reports). Raw claims, markup, scripts, DOM and
+# URLs stay local; only the classes below are emitted.
+# CONTENT_RENDERED outcome: accept = content handed to the sink, reject = refused before the sink,
+# error = failed mid-way.
+threat: TDID-THR-013
+facts:
+  rendered_content_source:
+    type: enum
+    enum: [credential_claim, credential_display_metadata, issuer_render_template, external_resource, wallet_ui]
+    produced_by: [wallet, verifier, relying_party]
+    meaning: >-
+      Where the rendered content came from: a credential claim value, credential display metadata, an
+      issuer-supplied render template, an external resource referenced by the credential, or the consuming
+      application's own UI code (value wallet_ui, used by every consumer for its own code).
+    reveals: Origin class of the rendered content; not the content or field path.
+  rendered_content_active:
+    type: boolean
+    produced_by: [wallet, verifier, relying_party]
+    meaning: >-
+      The renderer's parse of the content before any sanitization found features that can execute under the
+      policy's versioned active-content profile (script element, event handler, active URI scheme, template
+      expression, embedded active media). Required for a positive verdict: an effect observed while
+      rendering content classified inert (for example an image loading) is never treated as active content.
+    reveals: Whether the content carried active features; not which.
+  render_sink:
+    type: enum
+    enum: [native_text, native_image, html_dom, html_webview, html_sandboxed_frame, template_engine, uri_handler]
+    produced_by: [wallet, verifier, relying_party]
+    meaning: >-
+      The sink the content was handed to. native_text and native_image never interpret markup; the other
+      sinks can execute active content.
+    reveals: Renderer mode class.
+  sink_input_active:
+    type: boolean
+    produced_by: [wallet, verifier, relying_party]
+    meaning: >-
+      The exact value passed to the sink, after every sanitization and transformation, still contained active
+      features under the same profile.
+    reveals: Whether active features reached the sink.
+  render_effect:
+    type: enum
+    enum: [none, script_execution, network_request, storage_access, privileged_api_call, navigation, ui_action]
+    produced_by: [wallet, verifier, relying_party]
+    meaning: >-
+      Security effect the render-context monitor observed during the render (the most severe one when several
+      occurred); none = no effect observed.
+    reveals: Effect class; not URLs, payloads or DOM.
+  render_effect_origin:
+    type: enum
+    enum: [content_context, host_application]
+    produced_by: [wallet, verifier, relying_party]
+    meaning: >-
+      Where the observed effect originated: inside the render context created for the content, or in the host
+      application's own code.
+    reveals: Whether an effect came from the rendered content's context.
+  render_context_exclusive:
+    type: boolean
+    produced_by: [wallet, verifier, relying_party]
+    meaning: >-
+      The render context (frame, webview or template scope) contained only this content, so an effect
+      originating in it can be attributed to this content.
+    reveals: Whether attribution to this content is unambiguous.
+checks:
+  render_isolation:
+    produced_by: [wallet, verifier, relying_party]
+    meaning: >-
+      Isolation that forbids script execution and the listed effects in the render context (sandboxed frame
+      without script permission, CSP script-src 'none', JavaScript disabled in the webview). pass = enforced
+      for this render; fail = configured but not applied; not_performed = no isolation.
+  render_effect_monitoring:
+    produced_by: [wallet, verifier, relying_party]
+    meaning: >-
+      The render-context monitor was attached for the whole render, so render_effect none means no effect.
+      pass = attached; not_performed = no monitor; unavailable = monitor state unknown.
+policy_params:
+  issuer_render_templates_trusted:
+    type: boolean
+    example: false
+    produced_by: [wallet, verifier, relying_party]
+    meaning: >-
+      Read from the rendering consumer's record. The consumer's policy authorizes issuer-supplied render
+      templates to execute as active content (for
+      example a vetted render method). Claim values are never authorized to execute. Unset = whether template
+      content is untrusted is unknown.

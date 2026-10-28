@@ -1,0 +1,26 @@
+# TDID-THR-021 End-user impersonation through cross-transaction Presentation replay
+# Source analysis: research/candidates/CAND-20260815-OBS-GAP-THR-021.yaml (TDID-THR-021 row),
+# CAND-20260908-CH6-THR-021-REAFFIRMED.yaml; primary source OpenID4VP 1.0 section 14.1.
+# Joins (one local operator): verifier PRESENTATION_DECISION (presentation_ref, request_ref = transaction,
+# subject_ref) and relying-party RELYING_AUTHENTICATION_DECISION (presentation_ref and request_ref of the
+# result it consumed, session_ref, account_ref, subject_ref). "Seen in an earlier transaction" is computed by
+# the rule from verifier history; no component reports reuse. "Earlier" is by occurred_at across producers,
+# never by input order. The row's OR branch (exact reuse OR failed required binding) is kept apart from prior
+# origin: a failed binding on bytes never seen before leaves origin unknown.
+threat: TDID-THR-021
+checks:
+  vp_nonce_binding_validation:
+    produced_by: [verifier]
+    meaning: The verifier checked that the presentation's proof is bound to the nonce of the current Authorization Request (OpenID4VP 1.0 section 14.1.2).
+  vp_client_id_binding_validation:
+    produced_by: [verifier]
+    meaning: The verifier checked that the presentation's proof is bound to its own client identifier as audience (OpenID4VP 1.0 section 14.1.2).
+policy_params:
+  presentation_without_holder_binding_accepted:
+    type: boolean
+    example: false
+    produced_by: [verifier]
+    meaning: >-
+      The verifier policy explicitly accepts presentations without Holder Binding for this use case after a
+      risk assessment (OpenID4VP 1.0 section 14.1.1); false = it does not. It never waives a binding check
+      the same policy lists as required. Unset = unknown unless a required binding failed.

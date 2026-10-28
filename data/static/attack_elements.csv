@@ -1,0 +1,22 @@
+threat_id,attack_entry,classification,goal,precondition,target,mechanism,success,decision_reason
+TDID-THR-001,T1589,analogous,mismatch,narrower,narrower,mismatch,mismatch,Shared identity context supports analogy only.
+TDID-THR-002,T1078,partial,match,narrower,narrower,match,match,Temporal compromise-signal semantics prevent equivalence but not mechanism alignment.
+TDID-THR-003,T1565.001,exact,match,match,match,match,match,Verification commitments operationalize the ATT&CK behavior without changing it.
+TDID-THR-004,T1499.003,exact,match,match,match,match,match,"URI normalization is the concrete exhaustion feature, not a semantic difference."
+TDID-THR-005,,none,mismatch,mismatch,mismatch,mismatch,mismatch,A broad public-application exploitation umbrella is not a mechanism mapping.
+TDID-THR-006,T1565,exact,match,match,match,match,match,Digest commitments are detector details for a concrete Data Manipulation instance.
+TDID-THR-007,T1499.004,partial,match,narrower,match,match,match,The graph-cycle precondition is narrower; request flooding is not required.
+TDID-THR-008,,none,mismatch,mismatch,mismatch,mismatch,mismatch,The nearest ATT&CK entry is too broad to classify the parser-confusion mechanism.
+TDID-THR-009,T1499.003,exact,match,match,match,match,match,noCache is the concrete resource-intensive feature named by the general technique.
+TDID-THR-010,,none,mismatch,mismatch,mismatch,mismatch,mismatch,No entry was adopted for this bounded origin/path-escape tuple; a broad exploitation umbrella does not establish mechanism equivalence.
+TDID-THR-011,T1119,analogous,match,mismatch,narrower,match,match,"The collection mechanism and result exceed a name-only similarity, but the trust-position precondition prevents partial equivalence."
+TDID-THR-012,T1589,analogous,mismatch,mismatch,narrower,mismatch,match,"Similar information gain supports analogy, not a technique-equivalent mechanism."
+TDID-THR-013,T1203,analogous,mismatch,mismatch,narrower,mismatch,mismatch,"The untrusted-content and execution-sink pathway supports analogy, but T1203 requires arbitrary code execution through client-software exploitation; THR-013 also accepts attributed network or navigation effects without an explicit code-execution witness."
+TDID-THR-014,T1589,analogous,mismatch,narrower,narrower,mismatch,mismatch,Shared identity association is insufficient for partial equivalence.
+TDID-THR-015,T1212,partial,match,match,narrower,match,match,Issuance-count policy and key-proof target are narrower than ATT&CK's replay example.
+TDID-THR-016,T1550,partial,match,narrower,broader,match,match,Material scope and component-role precondition prevent exact equivalence.
+TDID-THR-017,T1598,analogous,mismatch,narrower,match,match,mismatch,"Phishing is the delivery analogy, but the defining cross-service redemption lies outside T1598's success scope."
+TDID-THR-018,T1589,partial,match,narrower,narrower,match,match,The DCQL oracle and consent boundary narrow an ATT&CK-described active-probing path.
+TDID-THR-019,T1557,analogous,match,mismatch,match,mismatch,match,Similar relay outcome does not erase the network-versus-application mechanism difference.
+TDID-THR-020,T1078,analogous,match,mismatch,narrower,mismatch,match,Account-takeover outcome supports analogy only; T1606 is also rejected because nothing is forged.
+TDID-THR-021,T1212,exact,match,match,match,match,match,"Nonce, audience, state, and prior-use commitments instantiate ATT&CK's current-request validation requirement."

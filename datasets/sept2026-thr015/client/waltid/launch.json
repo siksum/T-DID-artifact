@@ -1,0 +1,20 @@
+{
+  "argv": [
+    "T-DID/research/runs/RUN-20260908-CHAPTER6-FIVE-AXIS-002/apparatus/PRODUCT-BUILD-001/waltid/waltid-services/waltid-issuer-api/build/install/waltid-issuer-api/bin/waltid-issuer-api"
+  ],
+  "cwd": "T-DID/research/runs/RUN-20260908-CHAPTER6-FIVE-AXIS-002/raw/EXEC-paired-evidence-001/waltid",
+  "product": "walt.id",
+  "env": {
+    "TDID_PRODUCT_OBSERVER": "on",
+    "TDID_CONTROL_REUSE_BLOCK": "off",
+    "TDID_FUNCTIONAL_CONTROLS": "off",
+    "TDID_FUNCTIONAL_PROFILE": "performance-default",
+    "JAVA_HOME": ".local/opt/tdid-runtime/jdk-21.0.12.1+1",
+    "LIB_ASKAR_PATH": "T-DID/research/candidates/chapter6-loopback-successor-20260908-001/native-askar-0.6.0",
+    "TDID_PRODUCT_PORT": "19011",
+    "TDID_EVIDENCE_PATH": "T-DID/research/runs/RUN-20260908-CHAPTER6-FIVE-AXIS-002/raw/EXEC-paired-evidence-001/waltid/augmented.jsonl",
+    "TDID_POLICY_SCOPE": "single-use-key-proof"
+  },
+  "key_sha256": "30aefeab845d0742fad7bb5443f7db337756f34c495cf665c7d6a780daf74797",
+  "original_build_receipt_sha256": "df02533f8c01ff89077659bc5aa26937a250e5f51428b5a26251b34efe3fdf47"
+}

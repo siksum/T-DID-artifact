@@ -1,0 +1,3831 @@
+{
+  "accepted_events": 27,
+  "duplicate_events": 0,
+  "findings": [
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "a9492be2-5f9e-48ef-8beb-646203c78e83"
+      ],
+      "notes": [],
+      "predicates": {
+        "ReasonCompromised": null,
+        "SignalAuthoritative": null,
+        "SignalForSameMethod": null,
+        "SignalIntegrityVerified": null,
+        "UseAccepted": true,
+        "UseAtOrAfterEffectiveTime": null
+      },
+      "subject": "use:a9492be2-5f9e-48ef-8beb-646203c78e83",
+      "threat_id": "TDID-THR-002",
+      "trigger_event_id": "a9492be2-5f9e-48ef-8beb-646203c78e83",
+      "unknown_conditions": [
+        "SignalForSameMethod",
+        "SignalAuthoritative",
+        "SignalIntegrityVerified",
+        "ReasonCompromised",
+        "UseAtOrAfterEffectiveTime"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:a9492be2-5f9e-48ef-8beb-646203c78e83"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "a9492be2-5f9e-48ef-8beb-646203c78e83"
+      ],
+      "notes": [],
+      "predicates": {
+        "ConsumedCommitmentUnverified": null,
+        "NotReverifiedAtUse": null,
+        "SecurityRelevantUse": true,
+        "VerifiedEarlier": null
+      },
+      "subject": "use:a9492be2-5f9e-48ef-8beb-646203c78e83",
+      "threat_id": "TDID-THR-003",
+      "trigger_event_id": "a9492be2-5f9e-48ef-8beb-646203c78e83",
+      "unknown_conditions": [
+        "VerifiedEarlier",
+        "ConsumedCommitmentUnverified",
+        "NotReverifiedAtUse"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:a9492be2-5f9e-48ef-8beb-646203c78e83"
+    },
+    {
+      "established_conditions": 4,
+      "evidence_event_ids": [
+        "a9492be2-5f9e-48ef-8beb-646203c78e83"
+      ],
+      "notes": [],
+      "predicates": {
+        "ExceedsAllowedUses": false,
+        "Issued": true,
+        "KeyProofValidated": true,
+        "ReturnsNewCredential": true,
+        "SameProofAcceptedBefore": false
+      },
+      "subject": "event:a9492be2-5f9e-48ef-8beb-646203c78e83",
+      "threat_id": "TDID-THR-015",
+      "trigger_event_id": "a9492be2-5f9e-48ef-8beb-646203c78e83",
+      "unknown_conditions": [],
+      "verdict": "not_succeeded",
+      "workflow_ref": "decision:a9492be2-5f9e-48ef-8beb-646203c78e83"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "a9492be2-5f9e-48ef-8beb-646203c78e83"
+      ],
+      "notes": [
+        "no issuance_secret_ref: Wallet and Issuer records cannot be joined"
+      ],
+      "predicates": {
+        "RecipientOutsideApplicationRole": null,
+        "ResultObtained": null,
+        "ReusedByRecipient": null,
+        "SecretReadableByRecipient": null
+      },
+      "subject": "event:a9492be2-5f9e-48ef-8beb-646203c78e83",
+      "threat_id": "TDID-THR-016",
+      "trigger_event_id": "a9492be2-5f9e-48ef-8beb-646203c78e83",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "SecretReadableByRecipient",
+        "ReusedByRecipient",
+        "ResultObtained"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:a9492be2-5f9e-48ef-8beb-646203c78e83"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "862f2d35-d343-4812-bf53-3e64bd2e306a"
+      ],
+      "notes": [],
+      "predicates": {
+        "ReasonCompromised": null,
+        "SignalAuthoritative": null,
+        "SignalForSameMethod": null,
+        "SignalIntegrityVerified": null,
+        "UseAccepted": true,
+        "UseAtOrAfterEffectiveTime": null
+      },
+      "subject": "use:862f2d35-d343-4812-bf53-3e64bd2e306a",
+      "threat_id": "TDID-THR-002",
+      "trigger_event_id": "862f2d35-d343-4812-bf53-3e64bd2e306a",
+      "unknown_conditions": [
+        "SignalForSameMethod",
+        "SignalAuthoritative",
+        "SignalIntegrityVerified",
+        "ReasonCompromised",
+        "UseAtOrAfterEffectiveTime"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:862f2d35-d343-4812-bf53-3e64bd2e306a"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "862f2d35-d343-4812-bf53-3e64bd2e306a"
+      ],
+      "notes": [],
+      "predicates": {
+        "ConsumedCommitmentUnverified": null,
+        "NotReverifiedAtUse": null,
+        "SecurityRelevantUse": true,
+        "VerifiedEarlier": null
+      },
+      "subject": "use:862f2d35-d343-4812-bf53-3e64bd2e306a",
+      "threat_id": "TDID-THR-003",
+      "trigger_event_id": "862f2d35-d343-4812-bf53-3e64bd2e306a",
+      "unknown_conditions": [
+        "VerifiedEarlier",
+        "ConsumedCommitmentUnverified",
+        "NotReverifiedAtUse"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:862f2d35-d343-4812-bf53-3e64bd2e306a"
+    },
+    {
+      "established_conditions": 4,
+      "evidence_event_ids": [
+        "862f2d35-d343-4812-bf53-3e64bd2e306a"
+      ],
+      "notes": [],
+      "predicates": {
+        "ExceedsAllowedUses": false,
+        "Issued": true,
+        "KeyProofValidated": true,
+        "ReturnsNewCredential": true,
+        "SameProofAcceptedBefore": false
+      },
+      "subject": "event:862f2d35-d343-4812-bf53-3e64bd2e306a",
+      "threat_id": "TDID-THR-015",
+      "trigger_event_id": "862f2d35-d343-4812-bf53-3e64bd2e306a",
+      "unknown_conditions": [],
+      "verdict": "not_succeeded",
+      "workflow_ref": "decision:862f2d35-d343-4812-bf53-3e64bd2e306a"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "862f2d35-d343-4812-bf53-3e64bd2e306a"
+      ],
+      "notes": [
+        "no issuance_secret_ref: Wallet and Issuer records cannot be joined"
+      ],
+      "predicates": {
+        "RecipientOutsideApplicationRole": null,
+        "ResultObtained": null,
+        "ReusedByRecipient": null,
+        "SecretReadableByRecipient": null
+      },
+      "subject": "event:862f2d35-d343-4812-bf53-3e64bd2e306a",
+      "threat_id": "TDID-THR-016",
+      "trigger_event_id": "862f2d35-d343-4812-bf53-3e64bd2e306a",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "SecretReadableByRecipient",
+        "ReusedByRecipient",
+        "ResultObtained"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:862f2d35-d343-4812-bf53-3e64bd2e306a"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "d28bbe34-f84e-416c-b1f9-961085fd31ab"
+      ],
+      "notes": [],
+      "predicates": {
+        "ReasonCompromised": null,
+        "SignalAuthoritative": null,
+        "SignalForSameMethod": null,
+        "SignalIntegrityVerified": null,
+        "UseAccepted": true,
+        "UseAtOrAfterEffectiveTime": null
+      },
+      "subject": "use:d28bbe34-f84e-416c-b1f9-961085fd31ab",
+      "threat_id": "TDID-THR-002",
+      "trigger_event_id": "d28bbe34-f84e-416c-b1f9-961085fd31ab",
+      "unknown_conditions": [
+        "SignalForSameMethod",
+        "SignalAuthoritative",
+        "SignalIntegrityVerified",
+        "ReasonCompromised",
+        "UseAtOrAfterEffectiveTime"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:d28bbe34-f84e-416c-b1f9-961085fd31ab"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "d28bbe34-f84e-416c-b1f9-961085fd31ab"
+      ],
+      "notes": [],
+      "predicates": {
+        "ConsumedCommitmentUnverified": null,
+        "NotReverifiedAtUse": null,
+        "SecurityRelevantUse": true,
+        "VerifiedEarlier": null
+      },
+      "subject": "use:d28bbe34-f84e-416c-b1f9-961085fd31ab",
+      "threat_id": "TDID-THR-003",
+      "trigger_event_id": "d28bbe34-f84e-416c-b1f9-961085fd31ab",
+      "unknown_conditions": [
+        "VerifiedEarlier",
+        "ConsumedCommitmentUnverified",
+        "NotReverifiedAtUse"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:d28bbe34-f84e-416c-b1f9-961085fd31ab"
+    },
+    {
+      "established_conditions": 4,
+      "evidence_event_ids": [
+        "d28bbe34-f84e-416c-b1f9-961085fd31ab"
+      ],
+      "notes": [],
+      "predicates": {
+        "ExceedsAllowedUses": false,
+        "Issued": true,
+        "KeyProofValidated": true,
+        "ReturnsNewCredential": true,
+        "SameProofAcceptedBefore": false
+      },
+      "subject": "event:d28bbe34-f84e-416c-b1f9-961085fd31ab",
+      "threat_id": "TDID-THR-015",
+      "trigger_event_id": "d28bbe34-f84e-416c-b1f9-961085fd31ab",
+      "unknown_conditions": [],
+      "verdict": "not_succeeded",
+      "workflow_ref": "decision:d28bbe34-f84e-416c-b1f9-961085fd31ab"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "d28bbe34-f84e-416c-b1f9-961085fd31ab"
+      ],
+      "notes": [
+        "no issuance_secret_ref: Wallet and Issuer records cannot be joined"
+      ],
+      "predicates": {
+        "RecipientOutsideApplicationRole": null,
+        "ResultObtained": null,
+        "ReusedByRecipient": null,
+        "SecretReadableByRecipient": null
+      },
+      "subject": "event:d28bbe34-f84e-416c-b1f9-961085fd31ab",
+      "threat_id": "TDID-THR-016",
+      "trigger_event_id": "d28bbe34-f84e-416c-b1f9-961085fd31ab",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "SecretReadableByRecipient",
+        "ReusedByRecipient",
+        "ResultObtained"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:d28bbe34-f84e-416c-b1f9-961085fd31ab"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "2e8868fc-8952-47c1-9133-251def1735e5"
+      ],
+      "notes": [],
+      "predicates": {
+        "ReasonCompromised": null,
+        "SignalAuthoritative": null,
+        "SignalForSameMethod": null,
+        "SignalIntegrityVerified": null,
+        "UseAccepted": true,
+        "UseAtOrAfterEffectiveTime": null
+      },
+      "subject": "use:2e8868fc-8952-47c1-9133-251def1735e5",
+      "threat_id": "TDID-THR-002",
+      "trigger_event_id": "2e8868fc-8952-47c1-9133-251def1735e5",
+      "unknown_conditions": [
+        "SignalForSameMethod",
+        "SignalAuthoritative",
+        "SignalIntegrityVerified",
+        "ReasonCompromised",
+        "UseAtOrAfterEffectiveTime"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:2e8868fc-8952-47c1-9133-251def1735e5"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "2e8868fc-8952-47c1-9133-251def1735e5"
+      ],
+      "notes": [],
+      "predicates": {
+        "ConsumedCommitmentUnverified": null,
+        "NotReverifiedAtUse": null,
+        "SecurityRelevantUse": true,
+        "VerifiedEarlier": null
+      },
+      "subject": "use:2e8868fc-8952-47c1-9133-251def1735e5",
+      "threat_id": "TDID-THR-003",
+      "trigger_event_id": "2e8868fc-8952-47c1-9133-251def1735e5",
+      "unknown_conditions": [
+        "VerifiedEarlier",
+        "ConsumedCommitmentUnverified",
+        "NotReverifiedAtUse"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:2e8868fc-8952-47c1-9133-251def1735e5"
+    },
+    {
+      "established_conditions": 4,
+      "evidence_event_ids": [
+        "2e8868fc-8952-47c1-9133-251def1735e5"
+      ],
+      "notes": [],
+      "predicates": {
+        "ExceedsAllowedUses": false,
+        "Issued": true,
+        "KeyProofValidated": true,
+        "ReturnsNewCredential": true,
+        "SameProofAcceptedBefore": false
+      },
+      "subject": "event:2e8868fc-8952-47c1-9133-251def1735e5",
+      "threat_id": "TDID-THR-015",
+      "trigger_event_id": "2e8868fc-8952-47c1-9133-251def1735e5",
+      "unknown_conditions": [],
+      "verdict": "not_succeeded",
+      "workflow_ref": "decision:2e8868fc-8952-47c1-9133-251def1735e5"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "2e8868fc-8952-47c1-9133-251def1735e5"
+      ],
+      "notes": [
+        "no issuance_secret_ref: Wallet and Issuer records cannot be joined"
+      ],
+      "predicates": {
+        "RecipientOutsideApplicationRole": null,
+        "ResultObtained": null,
+        "ReusedByRecipient": null,
+        "SecretReadableByRecipient": null
+      },
+      "subject": "event:2e8868fc-8952-47c1-9133-251def1735e5",
+      "threat_id": "TDID-THR-016",
+      "trigger_event_id": "2e8868fc-8952-47c1-9133-251def1735e5",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "SecretReadableByRecipient",
+        "ReusedByRecipient",
+        "ResultObtained"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:2e8868fc-8952-47c1-9133-251def1735e5"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "57d3879b-7eb4-4f16-91c3-54f4bd0e76d7"
+      ],
+      "notes": [],
+      "predicates": {
+        "ReasonCompromised": null,
+        "SignalAuthoritative": null,
+        "SignalForSameMethod": null,
+        "SignalIntegrityVerified": null,
+        "UseAccepted": true,
+        "UseAtOrAfterEffectiveTime": null
+      },
+      "subject": "use:57d3879b-7eb4-4f16-91c3-54f4bd0e76d7",
+      "threat_id": "TDID-THR-002",
+      "trigger_event_id": "57d3879b-7eb4-4f16-91c3-54f4bd0e76d7",
+      "unknown_conditions": [
+        "SignalForSameMethod",
+        "SignalAuthoritative",
+        "SignalIntegrityVerified",
+        "ReasonCompromised",
+        "UseAtOrAfterEffectiveTime"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:57d3879b-7eb4-4f16-91c3-54f4bd0e76d7"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "57d3879b-7eb4-4f16-91c3-54f4bd0e76d7"
+      ],
+      "notes": [],
+      "predicates": {
+        "ConsumedCommitmentUnverified": null,
+        "NotReverifiedAtUse": null,
+        "SecurityRelevantUse": true,
+        "VerifiedEarlier": null
+      },
+      "subject": "use:57d3879b-7eb4-4f16-91c3-54f4bd0e76d7",
+      "threat_id": "TDID-THR-003",
+      "trigger_event_id": "57d3879b-7eb4-4f16-91c3-54f4bd0e76d7",
+      "unknown_conditions": [
+        "VerifiedEarlier",
+        "ConsumedCommitmentUnverified",
+        "NotReverifiedAtUse"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:57d3879b-7eb4-4f16-91c3-54f4bd0e76d7"
+    },
+    {
+      "established_conditions": 4,
+      "evidence_event_ids": [
+        "2e8868fc-8952-47c1-9133-251def1735e5",
+        "57d3879b-7eb4-4f16-91c3-54f4bd0e76d7"
+      ],
+      "notes": [],
+      "predicates": {
+        "ExceedsAllowedUses": true,
+        "Issued": true,
+        "KeyProofValidated": true,
+        "ReturnsNewCredential": true,
+        "SameProofAcceptedBefore": true
+      },
+      "subject": "event:57d3879b-7eb4-4f16-91c3-54f4bd0e76d7",
+      "threat_id": "TDID-THR-015",
+      "trigger_event_id": "57d3879b-7eb4-4f16-91c3-54f4bd0e76d7",
+      "unknown_conditions": [],
+      "verdict": "succeeded",
+      "workflow_ref": "decision:57d3879b-7eb4-4f16-91c3-54f4bd0e76d7"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "57d3879b-7eb4-4f16-91c3-54f4bd0e76d7"
+      ],
+      "notes": [
+        "no issuance_secret_ref: Wallet and Issuer records cannot be joined"
+      ],
+      "predicates": {
+        "RecipientOutsideApplicationRole": null,
+        "ResultObtained": null,
+        "ReusedByRecipient": null,
+        "SecretReadableByRecipient": null
+      },
+      "subject": "event:57d3879b-7eb4-4f16-91c3-54f4bd0e76d7",
+      "threat_id": "TDID-THR-016",
+      "trigger_event_id": "57d3879b-7eb4-4f16-91c3-54f4bd0e76d7",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "SecretReadableByRecipient",
+        "ReusedByRecipient",
+        "ResultObtained"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:57d3879b-7eb4-4f16-91c3-54f4bd0e76d7"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "fdc440d5-147d-46c2-9e3b-a5f2abb20238"
+      ],
+      "notes": [],
+      "predicates": {
+        "ReasonCompromised": null,
+        "SignalAuthoritative": null,
+        "SignalForSameMethod": null,
+        "SignalIntegrityVerified": null,
+        "UseAccepted": true,
+        "UseAtOrAfterEffectiveTime": null
+      },
+      "subject": "use:fdc440d5-147d-46c2-9e3b-a5f2abb20238",
+      "threat_id": "TDID-THR-002",
+      "trigger_event_id": "fdc440d5-147d-46c2-9e3b-a5f2abb20238",
+      "unknown_conditions": [
+        "SignalForSameMethod",
+        "SignalAuthoritative",
+        "SignalIntegrityVerified",
+        "ReasonCompromised",
+        "UseAtOrAfterEffectiveTime"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:fdc440d5-147d-46c2-9e3b-a5f2abb20238"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "fdc440d5-147d-46c2-9e3b-a5f2abb20238"
+      ],
+      "notes": [],
+      "predicates": {
+        "ConsumedCommitmentUnverified": null,
+        "NotReverifiedAtUse": null,
+        "SecurityRelevantUse": true,
+        "VerifiedEarlier": null
+      },
+      "subject": "use:fdc440d5-147d-46c2-9e3b-a5f2abb20238",
+      "threat_id": "TDID-THR-003",
+      "trigger_event_id": "fdc440d5-147d-46c2-9e3b-a5f2abb20238",
+      "unknown_conditions": [
+        "VerifiedEarlier",
+        "ConsumedCommitmentUnverified",
+        "NotReverifiedAtUse"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:fdc440d5-147d-46c2-9e3b-a5f2abb20238"
+    },
+    {
+      "established_conditions": 4,
+      "evidence_event_ids": [
+        "fdc440d5-147d-46c2-9e3b-a5f2abb20238"
+      ],
+      "notes": [],
+      "predicates": {
+        "ExceedsAllowedUses": false,
+        "Issued": true,
+        "KeyProofValidated": true,
+        "ReturnsNewCredential": true,
+        "SameProofAcceptedBefore": false
+      },
+      "subject": "event:fdc440d5-147d-46c2-9e3b-a5f2abb20238",
+      "threat_id": "TDID-THR-015",
+      "trigger_event_id": "fdc440d5-147d-46c2-9e3b-a5f2abb20238",
+      "unknown_conditions": [],
+      "verdict": "not_succeeded",
+      "workflow_ref": "decision:fdc440d5-147d-46c2-9e3b-a5f2abb20238"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "fdc440d5-147d-46c2-9e3b-a5f2abb20238"
+      ],
+      "notes": [
+        "no issuance_secret_ref: Wallet and Issuer records cannot be joined"
+      ],
+      "predicates": {
+        "RecipientOutsideApplicationRole": null,
+        "ResultObtained": null,
+        "ReusedByRecipient": null,
+        "SecretReadableByRecipient": null
+      },
+      "subject": "event:fdc440d5-147d-46c2-9e3b-a5f2abb20238",
+      "threat_id": "TDID-THR-016",
+      "trigger_event_id": "fdc440d5-147d-46c2-9e3b-a5f2abb20238",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "SecretReadableByRecipient",
+        "ReusedByRecipient",
+        "ResultObtained"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:fdc440d5-147d-46c2-9e3b-a5f2abb20238"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "7bb29d0f-1bf7-4d15-86df-db16ef0fb3cd"
+      ],
+      "notes": [],
+      "predicates": {
+        "ReasonCompromised": null,
+        "SignalAuthoritative": null,
+        "SignalForSameMethod": null,
+        "SignalIntegrityVerified": null,
+        "UseAccepted": false,
+        "UseAtOrAfterEffectiveTime": null
+      },
+      "subject": "use:7bb29d0f-1bf7-4d15-86df-db16ef0fb3cd",
+      "threat_id": "TDID-THR-002",
+      "trigger_event_id": "7bb29d0f-1bf7-4d15-86df-db16ef0fb3cd",
+      "unknown_conditions": [
+        "SignalForSameMethod",
+        "SignalAuthoritative",
+        "SignalIntegrityVerified",
+        "ReasonCompromised",
+        "UseAtOrAfterEffectiveTime"
+      ],
+      "verdict": "not_succeeded",
+      "workflow_ref": "decision:7bb29d0f-1bf7-4d15-86df-db16ef0fb3cd"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "7bb29d0f-1bf7-4d15-86df-db16ef0fb3cd"
+      ],
+      "notes": [],
+      "predicates": {
+        "ConsumedCommitmentUnverified": null,
+        "NotReverifiedAtUse": null,
+        "SecurityRelevantUse": false,
+        "VerifiedEarlier": null
+      },
+      "subject": "use:7bb29d0f-1bf7-4d15-86df-db16ef0fb3cd",
+      "threat_id": "TDID-THR-003",
+      "trigger_event_id": "7bb29d0f-1bf7-4d15-86df-db16ef0fb3cd",
+      "unknown_conditions": [
+        "VerifiedEarlier",
+        "ConsumedCommitmentUnverified",
+        "NotReverifiedAtUse"
+      ],
+      "verdict": "not_succeeded",
+      "workflow_ref": "decision:7bb29d0f-1bf7-4d15-86df-db16ef0fb3cd"
+    },
+    {
+      "established_conditions": 3,
+      "evidence_event_ids": [
+        "fdc440d5-147d-46c2-9e3b-a5f2abb20238",
+        "7bb29d0f-1bf7-4d15-86df-db16ef0fb3cd"
+      ],
+      "notes": [],
+      "predicates": {
+        "ExceedsAllowedUses": true,
+        "Issued": false,
+        "KeyProofValidated": false,
+        "ReturnsNewCredential": null,
+        "SameProofAcceptedBefore": true
+      },
+      "subject": "event:7bb29d0f-1bf7-4d15-86df-db16ef0fb3cd",
+      "threat_id": "TDID-THR-015",
+      "trigger_event_id": "7bb29d0f-1bf7-4d15-86df-db16ef0fb3cd",
+      "unknown_conditions": [
+        "ReturnsNewCredential"
+      ],
+      "verdict": "not_succeeded",
+      "workflow_ref": "decision:7bb29d0f-1bf7-4d15-86df-db16ef0fb3cd"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "7bb29d0f-1bf7-4d15-86df-db16ef0fb3cd"
+      ],
+      "notes": [
+        "no issuance_secret_ref: Wallet and Issuer records cannot be joined"
+      ],
+      "predicates": {
+        "RecipientOutsideApplicationRole": null,
+        "ResultObtained": null,
+        "ReusedByRecipient": null,
+        "SecretReadableByRecipient": null
+      },
+      "subject": "event:7bb29d0f-1bf7-4d15-86df-db16ef0fb3cd",
+      "threat_id": "TDID-THR-016",
+      "trigger_event_id": "7bb29d0f-1bf7-4d15-86df-db16ef0fb3cd",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "SecretReadableByRecipient",
+        "ReusedByRecipient",
+        "ResultObtained"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:7bb29d0f-1bf7-4d15-86df-db16ef0fb3cd"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "e21f854e-e761-454f-ad1f-695a527b8c9a"
+      ],
+      "notes": [],
+      "predicates": {
+        "ReasonCompromised": null,
+        "SignalAuthoritative": null,
+        "SignalForSameMethod": null,
+        "SignalIntegrityVerified": null,
+        "UseAccepted": true,
+        "UseAtOrAfterEffectiveTime": null
+      },
+      "subject": "use:e21f854e-e761-454f-ad1f-695a527b8c9a",
+      "threat_id": "TDID-THR-002",
+      "trigger_event_id": "e21f854e-e761-454f-ad1f-695a527b8c9a",
+      "unknown_conditions": [
+        "SignalForSameMethod",
+        "SignalAuthoritative",
+        "SignalIntegrityVerified",
+        "ReasonCompromised",
+        "UseAtOrAfterEffectiveTime"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:e21f854e-e761-454f-ad1f-695a527b8c9a"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "e21f854e-e761-454f-ad1f-695a527b8c9a"
+      ],
+      "notes": [],
+      "predicates": {
+        "ConsumedCommitmentUnverified": null,
+        "NotReverifiedAtUse": null,
+        "SecurityRelevantUse": true,
+        "VerifiedEarlier": null
+      },
+      "subject": "use:e21f854e-e761-454f-ad1f-695a527b8c9a",
+      "threat_id": "TDID-THR-003",
+      "trigger_event_id": "e21f854e-e761-454f-ad1f-695a527b8c9a",
+      "unknown_conditions": [
+        "VerifiedEarlier",
+        "ConsumedCommitmentUnverified",
+        "NotReverifiedAtUse"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:e21f854e-e761-454f-ad1f-695a527b8c9a"
+    },
+    {
+      "established_conditions": 4,
+      "evidence_event_ids": [
+        "e21f854e-e761-454f-ad1f-695a527b8c9a"
+      ],
+      "notes": [],
+      "predicates": {
+        "ExceedsAllowedUses": false,
+        "Issued": true,
+        "KeyProofValidated": true,
+        "ReturnsNewCredential": true,
+        "SameProofAcceptedBefore": false
+      },
+      "subject": "event:e21f854e-e761-454f-ad1f-695a527b8c9a",
+      "threat_id": "TDID-THR-015",
+      "trigger_event_id": "e21f854e-e761-454f-ad1f-695a527b8c9a",
+      "unknown_conditions": [],
+      "verdict": "not_succeeded",
+      "workflow_ref": "decision:e21f854e-e761-454f-ad1f-695a527b8c9a"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "e21f854e-e761-454f-ad1f-695a527b8c9a"
+      ],
+      "notes": [
+        "no issuance_secret_ref: Wallet and Issuer records cannot be joined"
+      ],
+      "predicates": {
+        "RecipientOutsideApplicationRole": null,
+        "ResultObtained": null,
+        "ReusedByRecipient": null,
+        "SecretReadableByRecipient": null
+      },
+      "subject": "event:e21f854e-e761-454f-ad1f-695a527b8c9a",
+      "threat_id": "TDID-THR-016",
+      "trigger_event_id": "e21f854e-e761-454f-ad1f-695a527b8c9a",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "SecretReadableByRecipient",
+        "ReusedByRecipient",
+        "ResultObtained"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:e21f854e-e761-454f-ad1f-695a527b8c9a"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "1aa7047c-dec8-4334-951c-360ac83df694"
+      ],
+      "notes": [],
+      "predicates": {
+        "ReasonCompromised": null,
+        "SignalAuthoritative": null,
+        "SignalForSameMethod": null,
+        "SignalIntegrityVerified": null,
+        "UseAccepted": false,
+        "UseAtOrAfterEffectiveTime": null
+      },
+      "subject": "use:1aa7047c-dec8-4334-951c-360ac83df694",
+      "threat_id": "TDID-THR-002",
+      "trigger_event_id": "1aa7047c-dec8-4334-951c-360ac83df694",
+      "unknown_conditions": [
+        "SignalForSameMethod",
+        "SignalAuthoritative",
+        "SignalIntegrityVerified",
+        "ReasonCompromised",
+        "UseAtOrAfterEffectiveTime"
+      ],
+      "verdict": "not_succeeded",
+      "workflow_ref": "decision:1aa7047c-dec8-4334-951c-360ac83df694"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "1aa7047c-dec8-4334-951c-360ac83df694"
+      ],
+      "notes": [],
+      "predicates": {
+        "ConsumedCommitmentUnverified": null,
+        "NotReverifiedAtUse": null,
+        "SecurityRelevantUse": false,
+        "VerifiedEarlier": null
+      },
+      "subject": "use:1aa7047c-dec8-4334-951c-360ac83df694",
+      "threat_id": "TDID-THR-003",
+      "trigger_event_id": "1aa7047c-dec8-4334-951c-360ac83df694",
+      "unknown_conditions": [
+        "VerifiedEarlier",
+        "ConsumedCommitmentUnverified",
+        "NotReverifiedAtUse"
+      ],
+      "verdict": "not_succeeded",
+      "workflow_ref": "decision:1aa7047c-dec8-4334-951c-360ac83df694"
+    },
+    {
+      "established_conditions": 3,
+      "evidence_event_ids": [
+        "1aa7047c-dec8-4334-951c-360ac83df694"
+      ],
+      "notes": [],
+      "predicates": {
+        "ExceedsAllowedUses": false,
+        "Issued": false,
+        "KeyProofValidated": false,
+        "ReturnsNewCredential": null,
+        "SameProofAcceptedBefore": false
+      },
+      "subject": "event:1aa7047c-dec8-4334-951c-360ac83df694",
+      "threat_id": "TDID-THR-015",
+      "trigger_event_id": "1aa7047c-dec8-4334-951c-360ac83df694",
+      "unknown_conditions": [
+        "ReturnsNewCredential"
+      ],
+      "verdict": "not_succeeded",
+      "workflow_ref": "decision:1aa7047c-dec8-4334-951c-360ac83df694"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "1aa7047c-dec8-4334-951c-360ac83df694"
+      ],
+      "notes": [
+        "no issuance_secret_ref: Wallet and Issuer records cannot be joined"
+      ],
+      "predicates": {
+        "RecipientOutsideApplicationRole": null,
+        "ResultObtained": null,
+        "ReusedByRecipient": null,
+        "SecretReadableByRecipient": null
+      },
+      "subject": "event:1aa7047c-dec8-4334-951c-360ac83df694",
+      "threat_id": "TDID-THR-016",
+      "trigger_event_id": "1aa7047c-dec8-4334-951c-360ac83df694",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "SecretReadableByRecipient",
+        "ReusedByRecipient",
+        "ResultObtained"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:1aa7047c-dec8-4334-951c-360ac83df694"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "c887871c-618e-4522-80dd-3874f1872a71"
+      ],
+      "notes": [],
+      "predicates": {
+        "ReasonCompromised": null,
+        "SignalAuthoritative": null,
+        "SignalForSameMethod": null,
+        "SignalIntegrityVerified": null,
+        "UseAccepted": true,
+        "UseAtOrAfterEffectiveTime": null
+      },
+      "subject": "use:c887871c-618e-4522-80dd-3874f1872a71",
+      "threat_id": "TDID-THR-002",
+      "trigger_event_id": "c887871c-618e-4522-80dd-3874f1872a71",
+      "unknown_conditions": [
+        "SignalForSameMethod",
+        "SignalAuthoritative",
+        "SignalIntegrityVerified",
+        "ReasonCompromised",
+        "UseAtOrAfterEffectiveTime"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:c887871c-618e-4522-80dd-3874f1872a71"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "c887871c-618e-4522-80dd-3874f1872a71"
+      ],
+      "notes": [],
+      "predicates": {
+        "ConsumedCommitmentUnverified": null,
+        "NotReverifiedAtUse": null,
+        "SecurityRelevantUse": true,
+        "VerifiedEarlier": null
+      },
+      "subject": "use:c887871c-618e-4522-80dd-3874f1872a71",
+      "threat_id": "TDID-THR-003",
+      "trigger_event_id": "c887871c-618e-4522-80dd-3874f1872a71",
+      "unknown_conditions": [
+        "VerifiedEarlier",
+        "ConsumedCommitmentUnverified",
+        "NotReverifiedAtUse"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:c887871c-618e-4522-80dd-3874f1872a71"
+    },
+    {
+      "established_conditions": 4,
+      "evidence_event_ids": [
+        "c887871c-618e-4522-80dd-3874f1872a71"
+      ],
+      "notes": [],
+      "predicates": {
+        "ExceedsAllowedUses": false,
+        "Issued": true,
+        "KeyProofValidated": true,
+        "ReturnsNewCredential": true,
+        "SameProofAcceptedBefore": false
+      },
+      "subject": "event:c887871c-618e-4522-80dd-3874f1872a71",
+      "threat_id": "TDID-THR-015",
+      "trigger_event_id": "c887871c-618e-4522-80dd-3874f1872a71",
+      "unknown_conditions": [],
+      "verdict": "not_succeeded",
+      "workflow_ref": "decision:c887871c-618e-4522-80dd-3874f1872a71"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "c887871c-618e-4522-80dd-3874f1872a71"
+      ],
+      "notes": [
+        "no issuance_secret_ref: Wallet and Issuer records cannot be joined"
+      ],
+      "predicates": {
+        "RecipientOutsideApplicationRole": null,
+        "ResultObtained": null,
+        "ReusedByRecipient": null,
+        "SecretReadableByRecipient": null
+      },
+      "subject": "event:c887871c-618e-4522-80dd-3874f1872a71",
+      "threat_id": "TDID-THR-016",
+      "trigger_event_id": "c887871c-618e-4522-80dd-3874f1872a71",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "SecretReadableByRecipient",
+        "ReusedByRecipient",
+        "ResultObtained"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:c887871c-618e-4522-80dd-3874f1872a71"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "d22267ec-eb26-463b-a229-a1c0da73502e"
+      ],
+      "notes": [],
+      "predicates": {
+        "ReasonCompromised": null,
+        "SignalAuthoritative": null,
+        "SignalForSameMethod": null,
+        "SignalIntegrityVerified": null,
+        "UseAccepted": true,
+        "UseAtOrAfterEffectiveTime": null
+      },
+      "subject": "use:d22267ec-eb26-463b-a229-a1c0da73502e",
+      "threat_id": "TDID-THR-002",
+      "trigger_event_id": "d22267ec-eb26-463b-a229-a1c0da73502e",
+      "unknown_conditions": [
+        "SignalForSameMethod",
+        "SignalAuthoritative",
+        "SignalIntegrityVerified",
+        "ReasonCompromised",
+        "UseAtOrAfterEffectiveTime"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:d22267ec-eb26-463b-a229-a1c0da73502e"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "d22267ec-eb26-463b-a229-a1c0da73502e"
+      ],
+      "notes": [],
+      "predicates": {
+        "ConsumedCommitmentUnverified": null,
+        "NotReverifiedAtUse": null,
+        "SecurityRelevantUse": true,
+        "VerifiedEarlier": null
+      },
+      "subject": "use:d22267ec-eb26-463b-a229-a1c0da73502e",
+      "threat_id": "TDID-THR-003",
+      "trigger_event_id": "d22267ec-eb26-463b-a229-a1c0da73502e",
+      "unknown_conditions": [
+        "VerifiedEarlier",
+        "ConsumedCommitmentUnverified",
+        "NotReverifiedAtUse"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:d22267ec-eb26-463b-a229-a1c0da73502e"
+    },
+    {
+      "established_conditions": 4,
+      "evidence_event_ids": [
+        "d22267ec-eb26-463b-a229-a1c0da73502e"
+      ],
+      "notes": [],
+      "predicates": {
+        "ExceedsAllowedUses": false,
+        "Issued": true,
+        "KeyProofValidated": true,
+        "ReturnsNewCredential": true,
+        "SameProofAcceptedBefore": false
+      },
+      "subject": "event:d22267ec-eb26-463b-a229-a1c0da73502e",
+      "threat_id": "TDID-THR-015",
+      "trigger_event_id": "d22267ec-eb26-463b-a229-a1c0da73502e",
+      "unknown_conditions": [],
+      "verdict": "not_succeeded",
+      "workflow_ref": "decision:d22267ec-eb26-463b-a229-a1c0da73502e"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "d22267ec-eb26-463b-a229-a1c0da73502e"
+      ],
+      "notes": [
+        "no issuance_secret_ref: Wallet and Issuer records cannot be joined"
+      ],
+      "predicates": {
+        "RecipientOutsideApplicationRole": null,
+        "ResultObtained": null,
+        "ReusedByRecipient": null,
+        "SecretReadableByRecipient": null
+      },
+      "subject": "event:d22267ec-eb26-463b-a229-a1c0da73502e",
+      "threat_id": "TDID-THR-016",
+      "trigger_event_id": "d22267ec-eb26-463b-a229-a1c0da73502e",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "SecretReadableByRecipient",
+        "ReusedByRecipient",
+        "ResultObtained"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:d22267ec-eb26-463b-a229-a1c0da73502e"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "dedac0d5-ee20-4f9c-8975-67c5c61ebde8"
+      ],
+      "notes": [],
+      "predicates": {
+        "ReasonCompromised": null,
+        "SignalAuthoritative": null,
+        "SignalForSameMethod": null,
+        "SignalIntegrityVerified": null,
+        "UseAccepted": true,
+        "UseAtOrAfterEffectiveTime": null
+      },
+      "subject": "use:dedac0d5-ee20-4f9c-8975-67c5c61ebde8",
+      "threat_id": "TDID-THR-002",
+      "trigger_event_id": "dedac0d5-ee20-4f9c-8975-67c5c61ebde8",
+      "unknown_conditions": [
+        "SignalForSameMethod",
+        "SignalAuthoritative",
+        "SignalIntegrityVerified",
+        "ReasonCompromised",
+        "UseAtOrAfterEffectiveTime"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:dedac0d5-ee20-4f9c-8975-67c5c61ebde8"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "dedac0d5-ee20-4f9c-8975-67c5c61ebde8"
+      ],
+      "notes": [],
+      "predicates": {
+        "ConsumedCommitmentUnverified": null,
+        "NotReverifiedAtUse": null,
+        "SecurityRelevantUse": true,
+        "VerifiedEarlier": null
+      },
+      "subject": "use:dedac0d5-ee20-4f9c-8975-67c5c61ebde8",
+      "threat_id": "TDID-THR-003",
+      "trigger_event_id": "dedac0d5-ee20-4f9c-8975-67c5c61ebde8",
+      "unknown_conditions": [
+        "VerifiedEarlier",
+        "ConsumedCommitmentUnverified",
+        "NotReverifiedAtUse"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:dedac0d5-ee20-4f9c-8975-67c5c61ebde8"
+    },
+    {
+      "established_conditions": 4,
+      "evidence_event_ids": [
+        "dedac0d5-ee20-4f9c-8975-67c5c61ebde8"
+      ],
+      "notes": [],
+      "predicates": {
+        "ExceedsAllowedUses": false,
+        "Issued": true,
+        "KeyProofValidated": true,
+        "ReturnsNewCredential": true,
+        "SameProofAcceptedBefore": false
+      },
+      "subject": "event:dedac0d5-ee20-4f9c-8975-67c5c61ebde8",
+      "threat_id": "TDID-THR-015",
+      "trigger_event_id": "dedac0d5-ee20-4f9c-8975-67c5c61ebde8",
+      "unknown_conditions": [],
+      "verdict": "not_succeeded",
+      "workflow_ref": "decision:dedac0d5-ee20-4f9c-8975-67c5c61ebde8"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "dedac0d5-ee20-4f9c-8975-67c5c61ebde8"
+      ],
+      "notes": [
+        "no issuance_secret_ref: Wallet and Issuer records cannot be joined"
+      ],
+      "predicates": {
+        "RecipientOutsideApplicationRole": null,
+        "ResultObtained": null,
+        "ReusedByRecipient": null,
+        "SecretReadableByRecipient": null
+      },
+      "subject": "event:dedac0d5-ee20-4f9c-8975-67c5c61ebde8",
+      "threat_id": "TDID-THR-016",
+      "trigger_event_id": "dedac0d5-ee20-4f9c-8975-67c5c61ebde8",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "SecretReadableByRecipient",
+        "ReusedByRecipient",
+        "ResultObtained"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:dedac0d5-ee20-4f9c-8975-67c5c61ebde8"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "bcba0105-d290-4140-b0ee-e3890e0cdda9"
+      ],
+      "notes": [],
+      "predicates": {
+        "ReasonCompromised": null,
+        "SignalAuthoritative": null,
+        "SignalForSameMethod": null,
+        "SignalIntegrityVerified": null,
+        "UseAccepted": true,
+        "UseAtOrAfterEffectiveTime": null
+      },
+      "subject": "use:bcba0105-d290-4140-b0ee-e3890e0cdda9",
+      "threat_id": "TDID-THR-002",
+      "trigger_event_id": "bcba0105-d290-4140-b0ee-e3890e0cdda9",
+      "unknown_conditions": [
+        "SignalForSameMethod",
+        "SignalAuthoritative",
+        "SignalIntegrityVerified",
+        "ReasonCompromised",
+        "UseAtOrAfterEffectiveTime"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:bcba0105-d290-4140-b0ee-e3890e0cdda9"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "bcba0105-d290-4140-b0ee-e3890e0cdda9"
+      ],
+      "notes": [],
+      "predicates": {
+        "ConsumedCommitmentUnverified": null,
+        "NotReverifiedAtUse": null,
+        "SecurityRelevantUse": true,
+        "VerifiedEarlier": null
+      },
+      "subject": "use:bcba0105-d290-4140-b0ee-e3890e0cdda9",
+      "threat_id": "TDID-THR-003",
+      "trigger_event_id": "bcba0105-d290-4140-b0ee-e3890e0cdda9",
+      "unknown_conditions": [
+        "VerifiedEarlier",
+        "ConsumedCommitmentUnverified",
+        "NotReverifiedAtUse"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:bcba0105-d290-4140-b0ee-e3890e0cdda9"
+    },
+    {
+      "established_conditions": 4,
+      "evidence_event_ids": [
+        "bcba0105-d290-4140-b0ee-e3890e0cdda9"
+      ],
+      "notes": [],
+      "predicates": {
+        "ExceedsAllowedUses": false,
+        "Issued": true,
+        "KeyProofValidated": true,
+        "ReturnsNewCredential": true,
+        "SameProofAcceptedBefore": false
+      },
+      "subject": "event:bcba0105-d290-4140-b0ee-e3890e0cdda9",
+      "threat_id": "TDID-THR-015",
+      "trigger_event_id": "bcba0105-d290-4140-b0ee-e3890e0cdda9",
+      "unknown_conditions": [],
+      "verdict": "not_succeeded",
+      "workflow_ref": "decision:bcba0105-d290-4140-b0ee-e3890e0cdda9"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "bcba0105-d290-4140-b0ee-e3890e0cdda9"
+      ],
+      "notes": [
+        "no issuance_secret_ref: Wallet and Issuer records cannot be joined"
+      ],
+      "predicates": {
+        "RecipientOutsideApplicationRole": null,
+        "ResultObtained": null,
+        "ReusedByRecipient": null,
+        "SecretReadableByRecipient": null
+      },
+      "subject": "event:bcba0105-d290-4140-b0ee-e3890e0cdda9",
+      "threat_id": "TDID-THR-016",
+      "trigger_event_id": "bcba0105-d290-4140-b0ee-e3890e0cdda9",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "SecretReadableByRecipient",
+        "ReusedByRecipient",
+        "ResultObtained"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:bcba0105-d290-4140-b0ee-e3890e0cdda9"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "bcd75b4e-556e-426f-84f8-8d127bbb2306"
+      ],
+      "notes": [],
+      "predicates": {
+        "ReasonCompromised": null,
+        "SignalAuthoritative": null,
+        "SignalForSameMethod": null,
+        "SignalIntegrityVerified": null,
+        "UseAccepted": true,
+        "UseAtOrAfterEffectiveTime": null
+      },
+      "subject": "use:bcd75b4e-556e-426f-84f8-8d127bbb2306",
+      "threat_id": "TDID-THR-002",
+      "trigger_event_id": "bcd75b4e-556e-426f-84f8-8d127bbb2306",
+      "unknown_conditions": [
+        "SignalForSameMethod",
+        "SignalAuthoritative",
+        "SignalIntegrityVerified",
+        "ReasonCompromised",
+        "UseAtOrAfterEffectiveTime"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:bcd75b4e-556e-426f-84f8-8d127bbb2306"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "bcd75b4e-556e-426f-84f8-8d127bbb2306"
+      ],
+      "notes": [],
+      "predicates": {
+        "ConsumedCommitmentUnverified": null,
+        "NotReverifiedAtUse": null,
+        "SecurityRelevantUse": true,
+        "VerifiedEarlier": null
+      },
+      "subject": "use:bcd75b4e-556e-426f-84f8-8d127bbb2306",
+      "threat_id": "TDID-THR-003",
+      "trigger_event_id": "bcd75b4e-556e-426f-84f8-8d127bbb2306",
+      "unknown_conditions": [
+        "VerifiedEarlier",
+        "ConsumedCommitmentUnverified",
+        "NotReverifiedAtUse"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:bcd75b4e-556e-426f-84f8-8d127bbb2306"
+    },
+    {
+      "established_conditions": 4,
+      "evidence_event_ids": [
+        "bcba0105-d290-4140-b0ee-e3890e0cdda9",
+        "bcd75b4e-556e-426f-84f8-8d127bbb2306"
+      ],
+      "notes": [],
+      "predicates": {
+        "ExceedsAllowedUses": true,
+        "Issued": true,
+        "KeyProofValidated": true,
+        "ReturnsNewCredential": true,
+        "SameProofAcceptedBefore": true
+      },
+      "subject": "event:bcd75b4e-556e-426f-84f8-8d127bbb2306",
+      "threat_id": "TDID-THR-015",
+      "trigger_event_id": "bcd75b4e-556e-426f-84f8-8d127bbb2306",
+      "unknown_conditions": [],
+      "verdict": "succeeded",
+      "workflow_ref": "decision:bcd75b4e-556e-426f-84f8-8d127bbb2306"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "bcd75b4e-556e-426f-84f8-8d127bbb2306"
+      ],
+      "notes": [
+        "no issuance_secret_ref: Wallet and Issuer records cannot be joined"
+      ],
+      "predicates": {
+        "RecipientOutsideApplicationRole": null,
+        "ResultObtained": null,
+        "ReusedByRecipient": null,
+        "SecretReadableByRecipient": null
+      },
+      "subject": "event:bcd75b4e-556e-426f-84f8-8d127bbb2306",
+      "threat_id": "TDID-THR-016",
+      "trigger_event_id": "bcd75b4e-556e-426f-84f8-8d127bbb2306",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "SecretReadableByRecipient",
+        "ReusedByRecipient",
+        "ResultObtained"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:bcd75b4e-556e-426f-84f8-8d127bbb2306"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "c79ec7a7-27b6-47e8-a5ad-c964b74bb9ed"
+      ],
+      "notes": [],
+      "predicates": {
+        "ReasonCompromised": null,
+        "SignalAuthoritative": null,
+        "SignalForSameMethod": null,
+        "SignalIntegrityVerified": null,
+        "UseAccepted": true,
+        "UseAtOrAfterEffectiveTime": null
+      },
+      "subject": "use:c79ec7a7-27b6-47e8-a5ad-c964b74bb9ed",
+      "threat_id": "TDID-THR-002",
+      "trigger_event_id": "c79ec7a7-27b6-47e8-a5ad-c964b74bb9ed",
+      "unknown_conditions": [
+        "SignalForSameMethod",
+        "SignalAuthoritative",
+        "SignalIntegrityVerified",
+        "ReasonCompromised",
+        "UseAtOrAfterEffectiveTime"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:c79ec7a7-27b6-47e8-a5ad-c964b74bb9ed"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "c79ec7a7-27b6-47e8-a5ad-c964b74bb9ed"
+      ],
+      "notes": [],
+      "predicates": {
+        "ConsumedCommitmentUnverified": null,
+        "NotReverifiedAtUse": null,
+        "SecurityRelevantUse": true,
+        "VerifiedEarlier": null
+      },
+      "subject": "use:c79ec7a7-27b6-47e8-a5ad-c964b74bb9ed",
+      "threat_id": "TDID-THR-003",
+      "trigger_event_id": "c79ec7a7-27b6-47e8-a5ad-c964b74bb9ed",
+      "unknown_conditions": [
+        "VerifiedEarlier",
+        "ConsumedCommitmentUnverified",
+        "NotReverifiedAtUse"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:c79ec7a7-27b6-47e8-a5ad-c964b74bb9ed"
+    },
+    {
+      "established_conditions": 4,
+      "evidence_event_ids": [
+        "c79ec7a7-27b6-47e8-a5ad-c964b74bb9ed"
+      ],
+      "notes": [],
+      "predicates": {
+        "ExceedsAllowedUses": false,
+        "Issued": true,
+        "KeyProofValidated": true,
+        "ReturnsNewCredential": true,
+        "SameProofAcceptedBefore": false
+      },
+      "subject": "event:c79ec7a7-27b6-47e8-a5ad-c964b74bb9ed",
+      "threat_id": "TDID-THR-015",
+      "trigger_event_id": "c79ec7a7-27b6-47e8-a5ad-c964b74bb9ed",
+      "unknown_conditions": [],
+      "verdict": "not_succeeded",
+      "workflow_ref": "decision:c79ec7a7-27b6-47e8-a5ad-c964b74bb9ed"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "c79ec7a7-27b6-47e8-a5ad-c964b74bb9ed"
+      ],
+      "notes": [
+        "no issuance_secret_ref: Wallet and Issuer records cannot be joined"
+      ],
+      "predicates": {
+        "RecipientOutsideApplicationRole": null,
+        "ResultObtained": null,
+        "ReusedByRecipient": null,
+        "SecretReadableByRecipient": null
+      },
+      "subject": "event:c79ec7a7-27b6-47e8-a5ad-c964b74bb9ed",
+      "threat_id": "TDID-THR-016",
+      "trigger_event_id": "c79ec7a7-27b6-47e8-a5ad-c964b74bb9ed",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "SecretReadableByRecipient",
+        "ReusedByRecipient",
+        "ResultObtained"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:c79ec7a7-27b6-47e8-a5ad-c964b74bb9ed"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "54034966-d4d1-469d-bb9d-8eef8ce77dca"
+      ],
+      "notes": [],
+      "predicates": {
+        "ReasonCompromised": null,
+        "SignalAuthoritative": null,
+        "SignalForSameMethod": null,
+        "SignalIntegrityVerified": null,
+        "UseAccepted": false,
+        "UseAtOrAfterEffectiveTime": null
+      },
+      "subject": "use:54034966-d4d1-469d-bb9d-8eef8ce77dca",
+      "threat_id": "TDID-THR-002",
+      "trigger_event_id": "54034966-d4d1-469d-bb9d-8eef8ce77dca",
+      "unknown_conditions": [
+        "SignalForSameMethod",
+        "SignalAuthoritative",
+        "SignalIntegrityVerified",
+        "ReasonCompromised",
+        "UseAtOrAfterEffectiveTime"
+      ],
+      "verdict": "not_succeeded",
+      "workflow_ref": "decision:54034966-d4d1-469d-bb9d-8eef8ce77dca"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "54034966-d4d1-469d-bb9d-8eef8ce77dca"
+      ],
+      "notes": [],
+      "predicates": {
+        "ConsumedCommitmentUnverified": null,
+        "NotReverifiedAtUse": null,
+        "SecurityRelevantUse": false,
+        "VerifiedEarlier": null
+      },
+      "subject": "use:54034966-d4d1-469d-bb9d-8eef8ce77dca",
+      "threat_id": "TDID-THR-003",
+      "trigger_event_id": "54034966-d4d1-469d-bb9d-8eef8ce77dca",
+      "unknown_conditions": [
+        "VerifiedEarlier",
+        "ConsumedCommitmentUnverified",
+        "NotReverifiedAtUse"
+      ],
+      "verdict": "not_succeeded",
+      "workflow_ref": "decision:54034966-d4d1-469d-bb9d-8eef8ce77dca"
+    },
+    {
+      "established_conditions": 3,
+      "evidence_event_ids": [
+        "c79ec7a7-27b6-47e8-a5ad-c964b74bb9ed",
+        "54034966-d4d1-469d-bb9d-8eef8ce77dca"
+      ],
+      "notes": [],
+      "predicates": {
+        "ExceedsAllowedUses": true,
+        "Issued": false,
+        "KeyProofValidated": false,
+        "ReturnsNewCredential": null,
+        "SameProofAcceptedBefore": true
+      },
+      "subject": "event:54034966-d4d1-469d-bb9d-8eef8ce77dca",
+      "threat_id": "TDID-THR-015",
+      "trigger_event_id": "54034966-d4d1-469d-bb9d-8eef8ce77dca",
+      "unknown_conditions": [
+        "ReturnsNewCredential"
+      ],
+      "verdict": "not_succeeded",
+      "workflow_ref": "decision:54034966-d4d1-469d-bb9d-8eef8ce77dca"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "54034966-d4d1-469d-bb9d-8eef8ce77dca"
+      ],
+      "notes": [
+        "no issuance_secret_ref: Wallet and Issuer records cannot be joined"
+      ],
+      "predicates": {
+        "RecipientOutsideApplicationRole": null,
+        "ResultObtained": null,
+        "ReusedByRecipient": null,
+        "SecretReadableByRecipient": null
+      },
+      "subject": "event:54034966-d4d1-469d-bb9d-8eef8ce77dca",
+      "threat_id": "TDID-THR-016",
+      "trigger_event_id": "54034966-d4d1-469d-bb9d-8eef8ce77dca",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "SecretReadableByRecipient",
+        "ReusedByRecipient",
+        "ResultObtained"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:54034966-d4d1-469d-bb9d-8eef8ce77dca"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "a7d14564-af4b-464f-b18c-9959ee739ff8"
+      ],
+      "notes": [],
+      "predicates": {
+        "ReasonCompromised": null,
+        "SignalAuthoritative": null,
+        "SignalForSameMethod": null,
+        "SignalIntegrityVerified": null,
+        "UseAccepted": true,
+        "UseAtOrAfterEffectiveTime": null
+      },
+      "subject": "use:a7d14564-af4b-464f-b18c-9959ee739ff8",
+      "threat_id": "TDID-THR-002",
+      "trigger_event_id": "a7d14564-af4b-464f-b18c-9959ee739ff8",
+      "unknown_conditions": [
+        "SignalForSameMethod",
+        "SignalAuthoritative",
+        "SignalIntegrityVerified",
+        "ReasonCompromised",
+        "UseAtOrAfterEffectiveTime"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:a7d14564-af4b-464f-b18c-9959ee739ff8"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "a7d14564-af4b-464f-b18c-9959ee739ff8"
+      ],
+      "notes": [],
+      "predicates": {
+        "ConsumedCommitmentUnverified": null,
+        "NotReverifiedAtUse": null,
+        "SecurityRelevantUse": true,
+        "VerifiedEarlier": null
+      },
+      "subject": "use:a7d14564-af4b-464f-b18c-9959ee739ff8",
+      "threat_id": "TDID-THR-003",
+      "trigger_event_id": "a7d14564-af4b-464f-b18c-9959ee739ff8",
+      "unknown_conditions": [
+        "VerifiedEarlier",
+        "ConsumedCommitmentUnverified",
+        "NotReverifiedAtUse"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:a7d14564-af4b-464f-b18c-9959ee739ff8"
+    },
+    {
+      "established_conditions": 4,
+      "evidence_event_ids": [
+        "a7d14564-af4b-464f-b18c-9959ee739ff8"
+      ],
+      "notes": [],
+      "predicates": {
+        "ExceedsAllowedUses": false,
+        "Issued": true,
+        "KeyProofValidated": true,
+        "ReturnsNewCredential": true,
+        "SameProofAcceptedBefore": false
+      },
+      "subject": "event:a7d14564-af4b-464f-b18c-9959ee739ff8",
+      "threat_id": "TDID-THR-015",
+      "trigger_event_id": "a7d14564-af4b-464f-b18c-9959ee739ff8",
+      "unknown_conditions": [],
+      "verdict": "not_succeeded",
+      "workflow_ref": "decision:a7d14564-af4b-464f-b18c-9959ee739ff8"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "a7d14564-af4b-464f-b18c-9959ee739ff8"
+      ],
+      "notes": [
+        "no issuance_secret_ref: Wallet and Issuer records cannot be joined"
+      ],
+      "predicates": {
+        "RecipientOutsideApplicationRole": null,
+        "ResultObtained": null,
+        "ReusedByRecipient": null,
+        "SecretReadableByRecipient": null
+      },
+      "subject": "event:a7d14564-af4b-464f-b18c-9959ee739ff8",
+      "threat_id": "TDID-THR-016",
+      "trigger_event_id": "a7d14564-af4b-464f-b18c-9959ee739ff8",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "SecretReadableByRecipient",
+        "ReusedByRecipient",
+        "ResultObtained"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:a7d14564-af4b-464f-b18c-9959ee739ff8"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "97f98555-c67f-4b2a-a847-db494d97815d"
+      ],
+      "notes": [],
+      "predicates": {
+        "ReasonCompromised": null,
+        "SignalAuthoritative": null,
+        "SignalForSameMethod": null,
+        "SignalIntegrityVerified": null,
+        "UseAccepted": false,
+        "UseAtOrAfterEffectiveTime": null
+      },
+      "subject": "use:97f98555-c67f-4b2a-a847-db494d97815d",
+      "threat_id": "TDID-THR-002",
+      "trigger_event_id": "97f98555-c67f-4b2a-a847-db494d97815d",
+      "unknown_conditions": [
+        "SignalForSameMethod",
+        "SignalAuthoritative",
+        "SignalIntegrityVerified",
+        "ReasonCompromised",
+        "UseAtOrAfterEffectiveTime"
+      ],
+      "verdict": "not_succeeded",
+      "workflow_ref": "decision:97f98555-c67f-4b2a-a847-db494d97815d"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "97f98555-c67f-4b2a-a847-db494d97815d"
+      ],
+      "notes": [],
+      "predicates": {
+        "ConsumedCommitmentUnverified": null,
+        "NotReverifiedAtUse": null,
+        "SecurityRelevantUse": false,
+        "VerifiedEarlier": null
+      },
+      "subject": "use:97f98555-c67f-4b2a-a847-db494d97815d",
+      "threat_id": "TDID-THR-003",
+      "trigger_event_id": "97f98555-c67f-4b2a-a847-db494d97815d",
+      "unknown_conditions": [
+        "VerifiedEarlier",
+        "ConsumedCommitmentUnverified",
+        "NotReverifiedAtUse"
+      ],
+      "verdict": "not_succeeded",
+      "workflow_ref": "decision:97f98555-c67f-4b2a-a847-db494d97815d"
+    },
+    {
+      "established_conditions": 3,
+      "evidence_event_ids": [
+        "97f98555-c67f-4b2a-a847-db494d97815d"
+      ],
+      "notes": [],
+      "predicates": {
+        "ExceedsAllowedUses": false,
+        "Issued": false,
+        "KeyProofValidated": false,
+        "ReturnsNewCredential": null,
+        "SameProofAcceptedBefore": false
+      },
+      "subject": "event:97f98555-c67f-4b2a-a847-db494d97815d",
+      "threat_id": "TDID-THR-015",
+      "trigger_event_id": "97f98555-c67f-4b2a-a847-db494d97815d",
+      "unknown_conditions": [
+        "ReturnsNewCredential"
+      ],
+      "verdict": "not_succeeded",
+      "workflow_ref": "decision:97f98555-c67f-4b2a-a847-db494d97815d"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "97f98555-c67f-4b2a-a847-db494d97815d"
+      ],
+      "notes": [
+        "no issuance_secret_ref: Wallet and Issuer records cannot be joined"
+      ],
+      "predicates": {
+        "RecipientOutsideApplicationRole": null,
+        "ResultObtained": null,
+        "ReusedByRecipient": null,
+        "SecretReadableByRecipient": null
+      },
+      "subject": "event:97f98555-c67f-4b2a-a847-db494d97815d",
+      "threat_id": "TDID-THR-016",
+      "trigger_event_id": "97f98555-c67f-4b2a-a847-db494d97815d",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "SecretReadableByRecipient",
+        "ReusedByRecipient",
+        "ResultObtained"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:97f98555-c67f-4b2a-a847-db494d97815d"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "3efd2a8c-8a5e-435b-a04b-2fe4dd95e031"
+      ],
+      "notes": [],
+      "predicates": {
+        "ReasonCompromised": null,
+        "SignalAuthoritative": null,
+        "SignalForSameMethod": null,
+        "SignalIntegrityVerified": null,
+        "UseAccepted": true,
+        "UseAtOrAfterEffectiveTime": null
+      },
+      "subject": "use:3efd2a8c-8a5e-435b-a04b-2fe4dd95e031",
+      "threat_id": "TDID-THR-002",
+      "trigger_event_id": "3efd2a8c-8a5e-435b-a04b-2fe4dd95e031",
+      "unknown_conditions": [
+        "SignalForSameMethod",
+        "SignalAuthoritative",
+        "SignalIntegrityVerified",
+        "ReasonCompromised",
+        "UseAtOrAfterEffectiveTime"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:3efd2a8c-8a5e-435b-a04b-2fe4dd95e031"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "3efd2a8c-8a5e-435b-a04b-2fe4dd95e031"
+      ],
+      "notes": [],
+      "predicates": {
+        "ConsumedCommitmentUnverified": null,
+        "NotReverifiedAtUse": null,
+        "SecurityRelevantUse": true,
+        "VerifiedEarlier": null
+      },
+      "subject": "use:3efd2a8c-8a5e-435b-a04b-2fe4dd95e031",
+      "threat_id": "TDID-THR-003",
+      "trigger_event_id": "3efd2a8c-8a5e-435b-a04b-2fe4dd95e031",
+      "unknown_conditions": [
+        "VerifiedEarlier",
+        "ConsumedCommitmentUnverified",
+        "NotReverifiedAtUse"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:3efd2a8c-8a5e-435b-a04b-2fe4dd95e031"
+    },
+    {
+      "established_conditions": 4,
+      "evidence_event_ids": [
+        "3efd2a8c-8a5e-435b-a04b-2fe4dd95e031"
+      ],
+      "notes": [],
+      "predicates": {
+        "ExceedsAllowedUses": false,
+        "Issued": true,
+        "KeyProofValidated": true,
+        "ReturnsNewCredential": true,
+        "SameProofAcceptedBefore": false
+      },
+      "subject": "event:3efd2a8c-8a5e-435b-a04b-2fe4dd95e031",
+      "threat_id": "TDID-THR-015",
+      "trigger_event_id": "3efd2a8c-8a5e-435b-a04b-2fe4dd95e031",
+      "unknown_conditions": [],
+      "verdict": "not_succeeded",
+      "workflow_ref": "decision:3efd2a8c-8a5e-435b-a04b-2fe4dd95e031"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "3efd2a8c-8a5e-435b-a04b-2fe4dd95e031"
+      ],
+      "notes": [
+        "no issuance_secret_ref: Wallet and Issuer records cannot be joined"
+      ],
+      "predicates": {
+        "RecipientOutsideApplicationRole": null,
+        "ResultObtained": null,
+        "ReusedByRecipient": null,
+        "SecretReadableByRecipient": null
+      },
+      "subject": "event:3efd2a8c-8a5e-435b-a04b-2fe4dd95e031",
+      "threat_id": "TDID-THR-016",
+      "trigger_event_id": "3efd2a8c-8a5e-435b-a04b-2fe4dd95e031",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "SecretReadableByRecipient",
+        "ReusedByRecipient",
+        "ResultObtained"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:3efd2a8c-8a5e-435b-a04b-2fe4dd95e031"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "35a75059-1bd9-40ce-aba0-f0fd0910942f"
+      ],
+      "notes": [],
+      "predicates": {
+        "ReasonCompromised": null,
+        "SignalAuthoritative": null,
+        "SignalForSameMethod": null,
+        "SignalIntegrityVerified": null,
+        "UseAccepted": true,
+        "UseAtOrAfterEffectiveTime": null
+      },
+      "subject": "use:35a75059-1bd9-40ce-aba0-f0fd0910942f",
+      "threat_id": "TDID-THR-002",
+      "trigger_event_id": "35a75059-1bd9-40ce-aba0-f0fd0910942f",
+      "unknown_conditions": [
+        "SignalForSameMethod",
+        "SignalAuthoritative",
+        "SignalIntegrityVerified",
+        "ReasonCompromised",
+        "UseAtOrAfterEffectiveTime"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:35a75059-1bd9-40ce-aba0-f0fd0910942f"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "35a75059-1bd9-40ce-aba0-f0fd0910942f"
+      ],
+      "notes": [],
+      "predicates": {
+        "ConsumedCommitmentUnverified": null,
+        "NotReverifiedAtUse": null,
+        "SecurityRelevantUse": true,
+        "VerifiedEarlier": null
+      },
+      "subject": "use:35a75059-1bd9-40ce-aba0-f0fd0910942f",
+      "threat_id": "TDID-THR-003",
+      "trigger_event_id": "35a75059-1bd9-40ce-aba0-f0fd0910942f",
+      "unknown_conditions": [
+        "VerifiedEarlier",
+        "ConsumedCommitmentUnverified",
+        "NotReverifiedAtUse"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:35a75059-1bd9-40ce-aba0-f0fd0910942f"
+    },
+    {
+      "established_conditions": 4,
+      "evidence_event_ids": [
+        "35a75059-1bd9-40ce-aba0-f0fd0910942f"
+      ],
+      "notes": [],
+      "predicates": {
+        "ExceedsAllowedUses": false,
+        "Issued": true,
+        "KeyProofValidated": true,
+        "ReturnsNewCredential": true,
+        "SameProofAcceptedBefore": false
+      },
+      "subject": "event:35a75059-1bd9-40ce-aba0-f0fd0910942f",
+      "threat_id": "TDID-THR-015",
+      "trigger_event_id": "35a75059-1bd9-40ce-aba0-f0fd0910942f",
+      "unknown_conditions": [],
+      "verdict": "not_succeeded",
+      "workflow_ref": "decision:35a75059-1bd9-40ce-aba0-f0fd0910942f"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "35a75059-1bd9-40ce-aba0-f0fd0910942f"
+      ],
+      "notes": [
+        "no issuance_secret_ref: Wallet and Issuer records cannot be joined"
+      ],
+      "predicates": {
+        "RecipientOutsideApplicationRole": null,
+        "ResultObtained": null,
+        "ReusedByRecipient": null,
+        "SecretReadableByRecipient": null
+      },
+      "subject": "event:35a75059-1bd9-40ce-aba0-f0fd0910942f",
+      "threat_id": "TDID-THR-016",
+      "trigger_event_id": "35a75059-1bd9-40ce-aba0-f0fd0910942f",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "SecretReadableByRecipient",
+        "ReusedByRecipient",
+        "ResultObtained"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:35a75059-1bd9-40ce-aba0-f0fd0910942f"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "734ed449-459e-4fa8-b7e2-e711fef129ee"
+      ],
+      "notes": [],
+      "predicates": {
+        "ReasonCompromised": null,
+        "SignalAuthoritative": null,
+        "SignalForSameMethod": null,
+        "SignalIntegrityVerified": null,
+        "UseAccepted": true,
+        "UseAtOrAfterEffectiveTime": null
+      },
+      "subject": "use:734ed449-459e-4fa8-b7e2-e711fef129ee",
+      "threat_id": "TDID-THR-002",
+      "trigger_event_id": "734ed449-459e-4fa8-b7e2-e711fef129ee",
+      "unknown_conditions": [
+        "SignalForSameMethod",
+        "SignalAuthoritative",
+        "SignalIntegrityVerified",
+        "ReasonCompromised",
+        "UseAtOrAfterEffectiveTime"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:734ed449-459e-4fa8-b7e2-e711fef129ee"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "734ed449-459e-4fa8-b7e2-e711fef129ee"
+      ],
+      "notes": [],
+      "predicates": {
+        "ConsumedCommitmentUnverified": null,
+        "NotReverifiedAtUse": null,
+        "SecurityRelevantUse": true,
+        "VerifiedEarlier": null
+      },
+      "subject": "use:734ed449-459e-4fa8-b7e2-e711fef129ee",
+      "threat_id": "TDID-THR-003",
+      "trigger_event_id": "734ed449-459e-4fa8-b7e2-e711fef129ee",
+      "unknown_conditions": [
+        "VerifiedEarlier",
+        "ConsumedCommitmentUnverified",
+        "NotReverifiedAtUse"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:734ed449-459e-4fa8-b7e2-e711fef129ee"
+    },
+    {
+      "established_conditions": 4,
+      "evidence_event_ids": [
+        "734ed449-459e-4fa8-b7e2-e711fef129ee"
+      ],
+      "notes": [],
+      "predicates": {
+        "ExceedsAllowedUses": false,
+        "Issued": true,
+        "KeyProofValidated": true,
+        "ReturnsNewCredential": true,
+        "SameProofAcceptedBefore": false
+      },
+      "subject": "event:734ed449-459e-4fa8-b7e2-e711fef129ee",
+      "threat_id": "TDID-THR-015",
+      "trigger_event_id": "734ed449-459e-4fa8-b7e2-e711fef129ee",
+      "unknown_conditions": [],
+      "verdict": "not_succeeded",
+      "workflow_ref": "decision:734ed449-459e-4fa8-b7e2-e711fef129ee"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "734ed449-459e-4fa8-b7e2-e711fef129ee"
+      ],
+      "notes": [
+        "no issuance_secret_ref: Wallet and Issuer records cannot be joined"
+      ],
+      "predicates": {
+        "RecipientOutsideApplicationRole": null,
+        "ResultObtained": null,
+        "ReusedByRecipient": null,
+        "SecretReadableByRecipient": null
+      },
+      "subject": "event:734ed449-459e-4fa8-b7e2-e711fef129ee",
+      "threat_id": "TDID-THR-016",
+      "trigger_event_id": "734ed449-459e-4fa8-b7e2-e711fef129ee",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "SecretReadableByRecipient",
+        "ReusedByRecipient",
+        "ResultObtained"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:734ed449-459e-4fa8-b7e2-e711fef129ee"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "d6c4750d-203a-44ee-82e3-aec0af517e59"
+      ],
+      "notes": [],
+      "predicates": {
+        "ReasonCompromised": null,
+        "SignalAuthoritative": null,
+        "SignalForSameMethod": null,
+        "SignalIntegrityVerified": null,
+        "UseAccepted": true,
+        "UseAtOrAfterEffectiveTime": null
+      },
+      "subject": "use:d6c4750d-203a-44ee-82e3-aec0af517e59",
+      "threat_id": "TDID-THR-002",
+      "trigger_event_id": "d6c4750d-203a-44ee-82e3-aec0af517e59",
+      "unknown_conditions": [
+        "SignalForSameMethod",
+        "SignalAuthoritative",
+        "SignalIntegrityVerified",
+        "ReasonCompromised",
+        "UseAtOrAfterEffectiveTime"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:d6c4750d-203a-44ee-82e3-aec0af517e59"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "d6c4750d-203a-44ee-82e3-aec0af517e59"
+      ],
+      "notes": [],
+      "predicates": {
+        "ConsumedCommitmentUnverified": null,
+        "NotReverifiedAtUse": null,
+        "SecurityRelevantUse": true,
+        "VerifiedEarlier": null
+      },
+      "subject": "use:d6c4750d-203a-44ee-82e3-aec0af517e59",
+      "threat_id": "TDID-THR-003",
+      "trigger_event_id": "d6c4750d-203a-44ee-82e3-aec0af517e59",
+      "unknown_conditions": [
+        "VerifiedEarlier",
+        "ConsumedCommitmentUnverified",
+        "NotReverifiedAtUse"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:d6c4750d-203a-44ee-82e3-aec0af517e59"
+    },
+    {
+      "established_conditions": 4,
+      "evidence_event_ids": [
+        "d6c4750d-203a-44ee-82e3-aec0af517e59"
+      ],
+      "notes": [],
+      "predicates": {
+        "ExceedsAllowedUses": false,
+        "Issued": true,
+        "KeyProofValidated": true,
+        "ReturnsNewCredential": true,
+        "SameProofAcceptedBefore": false
+      },
+      "subject": "event:d6c4750d-203a-44ee-82e3-aec0af517e59",
+      "threat_id": "TDID-THR-015",
+      "trigger_event_id": "d6c4750d-203a-44ee-82e3-aec0af517e59",
+      "unknown_conditions": [],
+      "verdict": "not_succeeded",
+      "workflow_ref": "decision:d6c4750d-203a-44ee-82e3-aec0af517e59"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "d6c4750d-203a-44ee-82e3-aec0af517e59"
+      ],
+      "notes": [
+        "no issuance_secret_ref: Wallet and Issuer records cannot be joined"
+      ],
+      "predicates": {
+        "RecipientOutsideApplicationRole": null,
+        "ResultObtained": null,
+        "ReusedByRecipient": null,
+        "SecretReadableByRecipient": null
+      },
+      "subject": "event:d6c4750d-203a-44ee-82e3-aec0af517e59",
+      "threat_id": "TDID-THR-016",
+      "trigger_event_id": "d6c4750d-203a-44ee-82e3-aec0af517e59",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "SecretReadableByRecipient",
+        "ReusedByRecipient",
+        "ResultObtained"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:d6c4750d-203a-44ee-82e3-aec0af517e59"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "3e021068-de65-4989-87ad-95188ed23693"
+      ],
+      "notes": [],
+      "predicates": {
+        "ReasonCompromised": null,
+        "SignalAuthoritative": null,
+        "SignalForSameMethod": null,
+        "SignalIntegrityVerified": null,
+        "UseAccepted": true,
+        "UseAtOrAfterEffectiveTime": null
+      },
+      "subject": "use:3e021068-de65-4989-87ad-95188ed23693",
+      "threat_id": "TDID-THR-002",
+      "trigger_event_id": "3e021068-de65-4989-87ad-95188ed23693",
+      "unknown_conditions": [
+        "SignalForSameMethod",
+        "SignalAuthoritative",
+        "SignalIntegrityVerified",
+        "ReasonCompromised",
+        "UseAtOrAfterEffectiveTime"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:3e021068-de65-4989-87ad-95188ed23693"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "3e021068-de65-4989-87ad-95188ed23693"
+      ],
+      "notes": [],
+      "predicates": {
+        "ConsumedCommitmentUnverified": null,
+        "NotReverifiedAtUse": null,
+        "SecurityRelevantUse": true,
+        "VerifiedEarlier": null
+      },
+      "subject": "use:3e021068-de65-4989-87ad-95188ed23693",
+      "threat_id": "TDID-THR-003",
+      "trigger_event_id": "3e021068-de65-4989-87ad-95188ed23693",
+      "unknown_conditions": [
+        "VerifiedEarlier",
+        "ConsumedCommitmentUnverified",
+        "NotReverifiedAtUse"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:3e021068-de65-4989-87ad-95188ed23693"
+    },
+    {
+      "established_conditions": 4,
+      "evidence_event_ids": [
+        "d6c4750d-203a-44ee-82e3-aec0af517e59",
+        "3e021068-de65-4989-87ad-95188ed23693"
+      ],
+      "notes": [],
+      "predicates": {
+        "ExceedsAllowedUses": true,
+        "Issued": true,
+        "KeyProofValidated": true,
+        "ReturnsNewCredential": true,
+        "SameProofAcceptedBefore": true
+      },
+      "subject": "event:3e021068-de65-4989-87ad-95188ed23693",
+      "threat_id": "TDID-THR-015",
+      "trigger_event_id": "3e021068-de65-4989-87ad-95188ed23693",
+      "unknown_conditions": [],
+      "verdict": "succeeded",
+      "workflow_ref": "decision:3e021068-de65-4989-87ad-95188ed23693"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "3e021068-de65-4989-87ad-95188ed23693"
+      ],
+      "notes": [
+        "no issuance_secret_ref: Wallet and Issuer records cannot be joined"
+      ],
+      "predicates": {
+        "RecipientOutsideApplicationRole": null,
+        "ResultObtained": null,
+        "ReusedByRecipient": null,
+        "SecretReadableByRecipient": null
+      },
+      "subject": "event:3e021068-de65-4989-87ad-95188ed23693",
+      "threat_id": "TDID-THR-016",
+      "trigger_event_id": "3e021068-de65-4989-87ad-95188ed23693",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "SecretReadableByRecipient",
+        "ReusedByRecipient",
+        "ResultObtained"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:3e021068-de65-4989-87ad-95188ed23693"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "5aa76494-1c93-4ae8-8cbb-287f1095f996"
+      ],
+      "notes": [],
+      "predicates": {
+        "ReasonCompromised": null,
+        "SignalAuthoritative": null,
+        "SignalForSameMethod": null,
+        "SignalIntegrityVerified": null,
+        "UseAccepted": true,
+        "UseAtOrAfterEffectiveTime": null
+      },
+      "subject": "use:5aa76494-1c93-4ae8-8cbb-287f1095f996",
+      "threat_id": "TDID-THR-002",
+      "trigger_event_id": "5aa76494-1c93-4ae8-8cbb-287f1095f996",
+      "unknown_conditions": [
+        "SignalForSameMethod",
+        "SignalAuthoritative",
+        "SignalIntegrityVerified",
+        "ReasonCompromised",
+        "UseAtOrAfterEffectiveTime"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:5aa76494-1c93-4ae8-8cbb-287f1095f996"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "5aa76494-1c93-4ae8-8cbb-287f1095f996"
+      ],
+      "notes": [],
+      "predicates": {
+        "ConsumedCommitmentUnverified": null,
+        "NotReverifiedAtUse": null,
+        "SecurityRelevantUse": true,
+        "VerifiedEarlier": null
+      },
+      "subject": "use:5aa76494-1c93-4ae8-8cbb-287f1095f996",
+      "threat_id": "TDID-THR-003",
+      "trigger_event_id": "5aa76494-1c93-4ae8-8cbb-287f1095f996",
+      "unknown_conditions": [
+        "VerifiedEarlier",
+        "ConsumedCommitmentUnverified",
+        "NotReverifiedAtUse"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:5aa76494-1c93-4ae8-8cbb-287f1095f996"
+    },
+    {
+      "established_conditions": 4,
+      "evidence_event_ids": [
+        "5aa76494-1c93-4ae8-8cbb-287f1095f996"
+      ],
+      "notes": [],
+      "predicates": {
+        "ExceedsAllowedUses": false,
+        "Issued": true,
+        "KeyProofValidated": true,
+        "ReturnsNewCredential": true,
+        "SameProofAcceptedBefore": false
+      },
+      "subject": "event:5aa76494-1c93-4ae8-8cbb-287f1095f996",
+      "threat_id": "TDID-THR-015",
+      "trigger_event_id": "5aa76494-1c93-4ae8-8cbb-287f1095f996",
+      "unknown_conditions": [],
+      "verdict": "not_succeeded",
+      "workflow_ref": "decision:5aa76494-1c93-4ae8-8cbb-287f1095f996"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "5aa76494-1c93-4ae8-8cbb-287f1095f996"
+      ],
+      "notes": [
+        "no issuance_secret_ref: Wallet and Issuer records cannot be joined"
+      ],
+      "predicates": {
+        "RecipientOutsideApplicationRole": null,
+        "ResultObtained": null,
+        "ReusedByRecipient": null,
+        "SecretReadableByRecipient": null
+      },
+      "subject": "event:5aa76494-1c93-4ae8-8cbb-287f1095f996",
+      "threat_id": "TDID-THR-016",
+      "trigger_event_id": "5aa76494-1c93-4ae8-8cbb-287f1095f996",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "SecretReadableByRecipient",
+        "ReusedByRecipient",
+        "ResultObtained"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:5aa76494-1c93-4ae8-8cbb-287f1095f996"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "c7fae0e4-ff9b-45d9-a0a5-00ff70282ad3"
+      ],
+      "notes": [],
+      "predicates": {
+        "ReasonCompromised": null,
+        "SignalAuthoritative": null,
+        "SignalForSameMethod": null,
+        "SignalIntegrityVerified": null,
+        "UseAccepted": false,
+        "UseAtOrAfterEffectiveTime": null
+      },
+      "subject": "use:c7fae0e4-ff9b-45d9-a0a5-00ff70282ad3",
+      "threat_id": "TDID-THR-002",
+      "trigger_event_id": "c7fae0e4-ff9b-45d9-a0a5-00ff70282ad3",
+      "unknown_conditions": [
+        "SignalForSameMethod",
+        "SignalAuthoritative",
+        "SignalIntegrityVerified",
+        "ReasonCompromised",
+        "UseAtOrAfterEffectiveTime"
+      ],
+      "verdict": "not_succeeded",
+      "workflow_ref": "decision:c7fae0e4-ff9b-45d9-a0a5-00ff70282ad3"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "c7fae0e4-ff9b-45d9-a0a5-00ff70282ad3"
+      ],
+      "notes": [],
+      "predicates": {
+        "ConsumedCommitmentUnverified": null,
+        "NotReverifiedAtUse": null,
+        "SecurityRelevantUse": false,
+        "VerifiedEarlier": null
+      },
+      "subject": "use:c7fae0e4-ff9b-45d9-a0a5-00ff70282ad3",
+      "threat_id": "TDID-THR-003",
+      "trigger_event_id": "c7fae0e4-ff9b-45d9-a0a5-00ff70282ad3",
+      "unknown_conditions": [
+        "VerifiedEarlier",
+        "ConsumedCommitmentUnverified",
+        "NotReverifiedAtUse"
+      ],
+      "verdict": "not_succeeded",
+      "workflow_ref": "decision:c7fae0e4-ff9b-45d9-a0a5-00ff70282ad3"
+    },
+    {
+      "established_conditions": 3,
+      "evidence_event_ids": [
+        "5aa76494-1c93-4ae8-8cbb-287f1095f996",
+        "c7fae0e4-ff9b-45d9-a0a5-00ff70282ad3"
+      ],
+      "notes": [],
+      "predicates": {
+        "ExceedsAllowedUses": true,
+        "Issued": false,
+        "KeyProofValidated": false,
+        "ReturnsNewCredential": null,
+        "SameProofAcceptedBefore": true
+      },
+      "subject": "event:c7fae0e4-ff9b-45d9-a0a5-00ff70282ad3",
+      "threat_id": "TDID-THR-015",
+      "trigger_event_id": "c7fae0e4-ff9b-45d9-a0a5-00ff70282ad3",
+      "unknown_conditions": [
+        "ReturnsNewCredential"
+      ],
+      "verdict": "not_succeeded",
+      "workflow_ref": "decision:c7fae0e4-ff9b-45d9-a0a5-00ff70282ad3"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "c7fae0e4-ff9b-45d9-a0a5-00ff70282ad3"
+      ],
+      "notes": [
+        "no issuance_secret_ref: Wallet and Issuer records cannot be joined"
+      ],
+      "predicates": {
+        "RecipientOutsideApplicationRole": null,
+        "ResultObtained": null,
+        "ReusedByRecipient": null,
+        "SecretReadableByRecipient": null
+      },
+      "subject": "event:c7fae0e4-ff9b-45d9-a0a5-00ff70282ad3",
+      "threat_id": "TDID-THR-016",
+      "trigger_event_id": "c7fae0e4-ff9b-45d9-a0a5-00ff70282ad3",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "SecretReadableByRecipient",
+        "ReusedByRecipient",
+        "ResultObtained"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:c7fae0e4-ff9b-45d9-a0a5-00ff70282ad3"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "de01834b-b86c-4abf-9cf4-96c8a2c1689a"
+      ],
+      "notes": [],
+      "predicates": {
+        "ReasonCompromised": null,
+        "SignalAuthoritative": null,
+        "SignalForSameMethod": null,
+        "SignalIntegrityVerified": null,
+        "UseAccepted": true,
+        "UseAtOrAfterEffectiveTime": null
+      },
+      "subject": "use:de01834b-b86c-4abf-9cf4-96c8a2c1689a",
+      "threat_id": "TDID-THR-002",
+      "trigger_event_id": "de01834b-b86c-4abf-9cf4-96c8a2c1689a",
+      "unknown_conditions": [
+        "SignalForSameMethod",
+        "SignalAuthoritative",
+        "SignalIntegrityVerified",
+        "ReasonCompromised",
+        "UseAtOrAfterEffectiveTime"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:de01834b-b86c-4abf-9cf4-96c8a2c1689a"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "de01834b-b86c-4abf-9cf4-96c8a2c1689a"
+      ],
+      "notes": [],
+      "predicates": {
+        "ConsumedCommitmentUnverified": null,
+        "NotReverifiedAtUse": null,
+        "SecurityRelevantUse": true,
+        "VerifiedEarlier": null
+      },
+      "subject": "use:de01834b-b86c-4abf-9cf4-96c8a2c1689a",
+      "threat_id": "TDID-THR-003",
+      "trigger_event_id": "de01834b-b86c-4abf-9cf4-96c8a2c1689a",
+      "unknown_conditions": [
+        "VerifiedEarlier",
+        "ConsumedCommitmentUnverified",
+        "NotReverifiedAtUse"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:de01834b-b86c-4abf-9cf4-96c8a2c1689a"
+    },
+    {
+      "established_conditions": 4,
+      "evidence_event_ids": [
+        "de01834b-b86c-4abf-9cf4-96c8a2c1689a"
+      ],
+      "notes": [],
+      "predicates": {
+        "ExceedsAllowedUses": false,
+        "Issued": true,
+        "KeyProofValidated": true,
+        "ReturnsNewCredential": true,
+        "SameProofAcceptedBefore": false
+      },
+      "subject": "event:de01834b-b86c-4abf-9cf4-96c8a2c1689a",
+      "threat_id": "TDID-THR-015",
+      "trigger_event_id": "de01834b-b86c-4abf-9cf4-96c8a2c1689a",
+      "unknown_conditions": [],
+      "verdict": "not_succeeded",
+      "workflow_ref": "decision:de01834b-b86c-4abf-9cf4-96c8a2c1689a"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "de01834b-b86c-4abf-9cf4-96c8a2c1689a"
+      ],
+      "notes": [
+        "no issuance_secret_ref: Wallet and Issuer records cannot be joined"
+      ],
+      "predicates": {
+        "RecipientOutsideApplicationRole": null,
+        "ResultObtained": null,
+        "ReusedByRecipient": null,
+        "SecretReadableByRecipient": null
+      },
+      "subject": "event:de01834b-b86c-4abf-9cf4-96c8a2c1689a",
+      "threat_id": "TDID-THR-016",
+      "trigger_event_id": "de01834b-b86c-4abf-9cf4-96c8a2c1689a",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "SecretReadableByRecipient",
+        "ReusedByRecipient",
+        "ResultObtained"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:de01834b-b86c-4abf-9cf4-96c8a2c1689a"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "fc2f2ed5-60b5-460b-bf79-a59d474b193d"
+      ],
+      "notes": [],
+      "predicates": {
+        "ReasonCompromised": null,
+        "SignalAuthoritative": null,
+        "SignalForSameMethod": null,
+        "SignalIntegrityVerified": null,
+        "UseAccepted": false,
+        "UseAtOrAfterEffectiveTime": null
+      },
+      "subject": "use:fc2f2ed5-60b5-460b-bf79-a59d474b193d",
+      "threat_id": "TDID-THR-002",
+      "trigger_event_id": "fc2f2ed5-60b5-460b-bf79-a59d474b193d",
+      "unknown_conditions": [
+        "SignalForSameMethod",
+        "SignalAuthoritative",
+        "SignalIntegrityVerified",
+        "ReasonCompromised",
+        "UseAtOrAfterEffectiveTime"
+      ],
+      "verdict": "not_succeeded",
+      "workflow_ref": "decision:fc2f2ed5-60b5-460b-bf79-a59d474b193d"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "fc2f2ed5-60b5-460b-bf79-a59d474b193d"
+      ],
+      "notes": [],
+      "predicates": {
+        "ConsumedCommitmentUnverified": null,
+        "NotReverifiedAtUse": null,
+        "SecurityRelevantUse": false,
+        "VerifiedEarlier": null
+      },
+      "subject": "use:fc2f2ed5-60b5-460b-bf79-a59d474b193d",
+      "threat_id": "TDID-THR-003",
+      "trigger_event_id": "fc2f2ed5-60b5-460b-bf79-a59d474b193d",
+      "unknown_conditions": [
+        "VerifiedEarlier",
+        "ConsumedCommitmentUnverified",
+        "NotReverifiedAtUse"
+      ],
+      "verdict": "not_succeeded",
+      "workflow_ref": "decision:fc2f2ed5-60b5-460b-bf79-a59d474b193d"
+    },
+    {
+      "established_conditions": 3,
+      "evidence_event_ids": [
+        "fc2f2ed5-60b5-460b-bf79-a59d474b193d"
+      ],
+      "notes": [],
+      "predicates": {
+        "ExceedsAllowedUses": false,
+        "Issued": false,
+        "KeyProofValidated": false,
+        "ReturnsNewCredential": null,
+        "SameProofAcceptedBefore": false
+      },
+      "subject": "event:fc2f2ed5-60b5-460b-bf79-a59d474b193d",
+      "threat_id": "TDID-THR-015",
+      "trigger_event_id": "fc2f2ed5-60b5-460b-bf79-a59d474b193d",
+      "unknown_conditions": [
+        "ReturnsNewCredential"
+      ],
+      "verdict": "not_succeeded",
+      "workflow_ref": "decision:fc2f2ed5-60b5-460b-bf79-a59d474b193d"
+    },
+    {
+      "established_conditions": 0,
+      "evidence_event_ids": [
+        "fc2f2ed5-60b5-460b-bf79-a59d474b193d"
+      ],
+      "notes": [
+        "no issuance_secret_ref: Wallet and Issuer records cannot be joined"
+      ],
+      "predicates": {
+        "RecipientOutsideApplicationRole": null,
+        "ResultObtained": null,
+        "ReusedByRecipient": null,
+        "SecretReadableByRecipient": null
+      },
+      "subject": "event:fc2f2ed5-60b5-460b-bf79-a59d474b193d",
+      "threat_id": "TDID-THR-016",
+      "trigger_event_id": "fc2f2ed5-60b5-460b-bf79-a59d474b193d",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "SecretReadableByRecipient",
+        "ReusedByRecipient",
+        "ResultObtained"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:fc2f2ed5-60b5-460b-bf79-a59d474b193d"
+    }
+  ],
+  "incomplete_streams": {},
+  "rejected_records": [],
+  "schema_version": "tdid-event/1.0",
+  "tdid_version": "1.0.0.dev0",
+  "workflows": [
+    {
+      "decisions": 1,
+      "no_relevant_record": false,
+      "threat_id": "TDID-THR-002",
+      "unknown_conditions": [],
+      "verdict": "not_succeeded",
+      "workflow_ref": "decision:1aa7047c-dec8-4334-951c-360ac83df694"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-002",
+      "unknown_conditions": [
+        "ReasonCompromised",
+        "SignalAuthoritative",
+        "SignalForSameMethod",
+        "SignalIntegrityVerified",
+        "UseAtOrAfterEffectiveTime"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:2e8868fc-8952-47c1-9133-251def1735e5"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-002",
+      "unknown_conditions": [
+        "ReasonCompromised",
+        "SignalAuthoritative",
+        "SignalForSameMethod",
+        "SignalIntegrityVerified",
+        "UseAtOrAfterEffectiveTime"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:35a75059-1bd9-40ce-aba0-f0fd0910942f"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-002",
+      "unknown_conditions": [
+        "ReasonCompromised",
+        "SignalAuthoritative",
+        "SignalForSameMethod",
+        "SignalIntegrityVerified",
+        "UseAtOrAfterEffectiveTime"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:3e021068-de65-4989-87ad-95188ed23693"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-002",
+      "unknown_conditions": [
+        "ReasonCompromised",
+        "SignalAuthoritative",
+        "SignalForSameMethod",
+        "SignalIntegrityVerified",
+        "UseAtOrAfterEffectiveTime"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:3efd2a8c-8a5e-435b-a04b-2fe4dd95e031"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": false,
+      "threat_id": "TDID-THR-002",
+      "unknown_conditions": [],
+      "verdict": "not_succeeded",
+      "workflow_ref": "decision:54034966-d4d1-469d-bb9d-8eef8ce77dca"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-002",
+      "unknown_conditions": [
+        "ReasonCompromised",
+        "SignalAuthoritative",
+        "SignalForSameMethod",
+        "SignalIntegrityVerified",
+        "UseAtOrAfterEffectiveTime"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:57d3879b-7eb4-4f16-91c3-54f4bd0e76d7"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-002",
+      "unknown_conditions": [
+        "ReasonCompromised",
+        "SignalAuthoritative",
+        "SignalForSameMethod",
+        "SignalIntegrityVerified",
+        "UseAtOrAfterEffectiveTime"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:5aa76494-1c93-4ae8-8cbb-287f1095f996"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-002",
+      "unknown_conditions": [
+        "ReasonCompromised",
+        "SignalAuthoritative",
+        "SignalForSameMethod",
+        "SignalIntegrityVerified",
+        "UseAtOrAfterEffectiveTime"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:734ed449-459e-4fa8-b7e2-e711fef129ee"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": false,
+      "threat_id": "TDID-THR-002",
+      "unknown_conditions": [],
+      "verdict": "not_succeeded",
+      "workflow_ref": "decision:7bb29d0f-1bf7-4d15-86df-db16ef0fb3cd"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-002",
+      "unknown_conditions": [
+        "ReasonCompromised",
+        "SignalAuthoritative",
+        "SignalForSameMethod",
+        "SignalIntegrityVerified",
+        "UseAtOrAfterEffectiveTime"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:862f2d35-d343-4812-bf53-3e64bd2e306a"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": false,
+      "threat_id": "TDID-THR-002",
+      "unknown_conditions": [],
+      "verdict": "not_succeeded",
+      "workflow_ref": "decision:97f98555-c67f-4b2a-a847-db494d97815d"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-002",
+      "unknown_conditions": [
+        "ReasonCompromised",
+        "SignalAuthoritative",
+        "SignalForSameMethod",
+        "SignalIntegrityVerified",
+        "UseAtOrAfterEffectiveTime"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:a7d14564-af4b-464f-b18c-9959ee739ff8"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-002",
+      "unknown_conditions": [
+        "ReasonCompromised",
+        "SignalAuthoritative",
+        "SignalForSameMethod",
+        "SignalIntegrityVerified",
+        "UseAtOrAfterEffectiveTime"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:a9492be2-5f9e-48ef-8beb-646203c78e83"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-002",
+      "unknown_conditions": [
+        "ReasonCompromised",
+        "SignalAuthoritative",
+        "SignalForSameMethod",
+        "SignalIntegrityVerified",
+        "UseAtOrAfterEffectiveTime"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:bcba0105-d290-4140-b0ee-e3890e0cdda9"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-002",
+      "unknown_conditions": [
+        "ReasonCompromised",
+        "SignalAuthoritative",
+        "SignalForSameMethod",
+        "SignalIntegrityVerified",
+        "UseAtOrAfterEffectiveTime"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:bcd75b4e-556e-426f-84f8-8d127bbb2306"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-002",
+      "unknown_conditions": [
+        "ReasonCompromised",
+        "SignalAuthoritative",
+        "SignalForSameMethod",
+        "SignalIntegrityVerified",
+        "UseAtOrAfterEffectiveTime"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:c79ec7a7-27b6-47e8-a5ad-c964b74bb9ed"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": false,
+      "threat_id": "TDID-THR-002",
+      "unknown_conditions": [],
+      "verdict": "not_succeeded",
+      "workflow_ref": "decision:c7fae0e4-ff9b-45d9-a0a5-00ff70282ad3"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-002",
+      "unknown_conditions": [
+        "ReasonCompromised",
+        "SignalAuthoritative",
+        "SignalForSameMethod",
+        "SignalIntegrityVerified",
+        "UseAtOrAfterEffectiveTime"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:c887871c-618e-4522-80dd-3874f1872a71"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-002",
+      "unknown_conditions": [
+        "ReasonCompromised",
+        "SignalAuthoritative",
+        "SignalForSameMethod",
+        "SignalIntegrityVerified",
+        "UseAtOrAfterEffectiveTime"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:d22267ec-eb26-463b-a229-a1c0da73502e"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-002",
+      "unknown_conditions": [
+        "ReasonCompromised",
+        "SignalAuthoritative",
+        "SignalForSameMethod",
+        "SignalIntegrityVerified",
+        "UseAtOrAfterEffectiveTime"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:d28bbe34-f84e-416c-b1f9-961085fd31ab"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-002",
+      "unknown_conditions": [
+        "ReasonCompromised",
+        "SignalAuthoritative",
+        "SignalForSameMethod",
+        "SignalIntegrityVerified",
+        "UseAtOrAfterEffectiveTime"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:d6c4750d-203a-44ee-82e3-aec0af517e59"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-002",
+      "unknown_conditions": [
+        "ReasonCompromised",
+        "SignalAuthoritative",
+        "SignalForSameMethod",
+        "SignalIntegrityVerified",
+        "UseAtOrAfterEffectiveTime"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:de01834b-b86c-4abf-9cf4-96c8a2c1689a"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-002",
+      "unknown_conditions": [
+        "ReasonCompromised",
+        "SignalAuthoritative",
+        "SignalForSameMethod",
+        "SignalIntegrityVerified",
+        "UseAtOrAfterEffectiveTime"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:dedac0d5-ee20-4f9c-8975-67c5c61ebde8"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-002",
+      "unknown_conditions": [
+        "ReasonCompromised",
+        "SignalAuthoritative",
+        "SignalForSameMethod",
+        "SignalIntegrityVerified",
+        "UseAtOrAfterEffectiveTime"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:e21f854e-e761-454f-ad1f-695a527b8c9a"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": false,
+      "threat_id": "TDID-THR-002",
+      "unknown_conditions": [],
+      "verdict": "not_succeeded",
+      "workflow_ref": "decision:fc2f2ed5-60b5-460b-bf79-a59d474b193d"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-002",
+      "unknown_conditions": [
+        "ReasonCompromised",
+        "SignalAuthoritative",
+        "SignalForSameMethod",
+        "SignalIntegrityVerified",
+        "UseAtOrAfterEffectiveTime"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:fdc440d5-147d-46c2-9e3b-a5f2abb20238"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": false,
+      "threat_id": "TDID-THR-003",
+      "unknown_conditions": [],
+      "verdict": "not_succeeded",
+      "workflow_ref": "decision:1aa7047c-dec8-4334-951c-360ac83df694"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-003",
+      "unknown_conditions": [
+        "ConsumedCommitmentUnverified",
+        "NotReverifiedAtUse",
+        "VerifiedEarlier"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:2e8868fc-8952-47c1-9133-251def1735e5"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-003",
+      "unknown_conditions": [
+        "ConsumedCommitmentUnverified",
+        "NotReverifiedAtUse",
+        "VerifiedEarlier"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:35a75059-1bd9-40ce-aba0-f0fd0910942f"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-003",
+      "unknown_conditions": [
+        "ConsumedCommitmentUnverified",
+        "NotReverifiedAtUse",
+        "VerifiedEarlier"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:3e021068-de65-4989-87ad-95188ed23693"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-003",
+      "unknown_conditions": [
+        "ConsumedCommitmentUnverified",
+        "NotReverifiedAtUse",
+        "VerifiedEarlier"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:3efd2a8c-8a5e-435b-a04b-2fe4dd95e031"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": false,
+      "threat_id": "TDID-THR-003",
+      "unknown_conditions": [],
+      "verdict": "not_succeeded",
+      "workflow_ref": "decision:54034966-d4d1-469d-bb9d-8eef8ce77dca"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-003",
+      "unknown_conditions": [
+        "ConsumedCommitmentUnverified",
+        "NotReverifiedAtUse",
+        "VerifiedEarlier"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:57d3879b-7eb4-4f16-91c3-54f4bd0e76d7"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-003",
+      "unknown_conditions": [
+        "ConsumedCommitmentUnverified",
+        "NotReverifiedAtUse",
+        "VerifiedEarlier"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:5aa76494-1c93-4ae8-8cbb-287f1095f996"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-003",
+      "unknown_conditions": [
+        "ConsumedCommitmentUnverified",
+        "NotReverifiedAtUse",
+        "VerifiedEarlier"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:734ed449-459e-4fa8-b7e2-e711fef129ee"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": false,
+      "threat_id": "TDID-THR-003",
+      "unknown_conditions": [],
+      "verdict": "not_succeeded",
+      "workflow_ref": "decision:7bb29d0f-1bf7-4d15-86df-db16ef0fb3cd"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-003",
+      "unknown_conditions": [
+        "ConsumedCommitmentUnverified",
+        "NotReverifiedAtUse",
+        "VerifiedEarlier"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:862f2d35-d343-4812-bf53-3e64bd2e306a"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": false,
+      "threat_id": "TDID-THR-003",
+      "unknown_conditions": [],
+      "verdict": "not_succeeded",
+      "workflow_ref": "decision:97f98555-c67f-4b2a-a847-db494d97815d"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-003",
+      "unknown_conditions": [
+        "ConsumedCommitmentUnverified",
+        "NotReverifiedAtUse",
+        "VerifiedEarlier"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:a7d14564-af4b-464f-b18c-9959ee739ff8"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-003",
+      "unknown_conditions": [
+        "ConsumedCommitmentUnverified",
+        "NotReverifiedAtUse",
+        "VerifiedEarlier"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:a9492be2-5f9e-48ef-8beb-646203c78e83"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-003",
+      "unknown_conditions": [
+        "ConsumedCommitmentUnverified",
+        "NotReverifiedAtUse",
+        "VerifiedEarlier"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:bcba0105-d290-4140-b0ee-e3890e0cdda9"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-003",
+      "unknown_conditions": [
+        "ConsumedCommitmentUnverified",
+        "NotReverifiedAtUse",
+        "VerifiedEarlier"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:bcd75b4e-556e-426f-84f8-8d127bbb2306"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-003",
+      "unknown_conditions": [
+        "ConsumedCommitmentUnverified",
+        "NotReverifiedAtUse",
+        "VerifiedEarlier"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:c79ec7a7-27b6-47e8-a5ad-c964b74bb9ed"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": false,
+      "threat_id": "TDID-THR-003",
+      "unknown_conditions": [],
+      "verdict": "not_succeeded",
+      "workflow_ref": "decision:c7fae0e4-ff9b-45d9-a0a5-00ff70282ad3"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-003",
+      "unknown_conditions": [
+        "ConsumedCommitmentUnverified",
+        "NotReverifiedAtUse",
+        "VerifiedEarlier"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:c887871c-618e-4522-80dd-3874f1872a71"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-003",
+      "unknown_conditions": [
+        "ConsumedCommitmentUnverified",
+        "NotReverifiedAtUse",
+        "VerifiedEarlier"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:d22267ec-eb26-463b-a229-a1c0da73502e"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-003",
+      "unknown_conditions": [
+        "ConsumedCommitmentUnverified",
+        "NotReverifiedAtUse",
+        "VerifiedEarlier"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:d28bbe34-f84e-416c-b1f9-961085fd31ab"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-003",
+      "unknown_conditions": [
+        "ConsumedCommitmentUnverified",
+        "NotReverifiedAtUse",
+        "VerifiedEarlier"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:d6c4750d-203a-44ee-82e3-aec0af517e59"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-003",
+      "unknown_conditions": [
+        "ConsumedCommitmentUnverified",
+        "NotReverifiedAtUse",
+        "VerifiedEarlier"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:de01834b-b86c-4abf-9cf4-96c8a2c1689a"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-003",
+      "unknown_conditions": [
+        "ConsumedCommitmentUnverified",
+        "NotReverifiedAtUse",
+        "VerifiedEarlier"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:dedac0d5-ee20-4f9c-8975-67c5c61ebde8"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-003",
+      "unknown_conditions": [
+        "ConsumedCommitmentUnverified",
+        "NotReverifiedAtUse",
+        "VerifiedEarlier"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:e21f854e-e761-454f-ad1f-695a527b8c9a"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": false,
+      "threat_id": "TDID-THR-003",
+      "unknown_conditions": [],
+      "verdict": "not_succeeded",
+      "workflow_ref": "decision:fc2f2ed5-60b5-460b-bf79-a59d474b193d"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-003",
+      "unknown_conditions": [
+        "ConsumedCommitmentUnverified",
+        "NotReverifiedAtUse",
+        "VerifiedEarlier"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:fdc440d5-147d-46c2-9e3b-a5f2abb20238"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": false,
+      "threat_id": "TDID-THR-015",
+      "unknown_conditions": [],
+      "verdict": "not_succeeded",
+      "workflow_ref": "decision:1aa7047c-dec8-4334-951c-360ac83df694"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": false,
+      "threat_id": "TDID-THR-015",
+      "unknown_conditions": [],
+      "verdict": "not_succeeded",
+      "workflow_ref": "decision:2e8868fc-8952-47c1-9133-251def1735e5"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": false,
+      "threat_id": "TDID-THR-015",
+      "unknown_conditions": [],
+      "verdict": "not_succeeded",
+      "workflow_ref": "decision:35a75059-1bd9-40ce-aba0-f0fd0910942f"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": false,
+      "threat_id": "TDID-THR-015",
+      "unknown_conditions": [],
+      "verdict": "succeeded",
+      "workflow_ref": "decision:3e021068-de65-4989-87ad-95188ed23693"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": false,
+      "threat_id": "TDID-THR-015",
+      "unknown_conditions": [],
+      "verdict": "not_succeeded",
+      "workflow_ref": "decision:3efd2a8c-8a5e-435b-a04b-2fe4dd95e031"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": false,
+      "threat_id": "TDID-THR-015",
+      "unknown_conditions": [],
+      "verdict": "not_succeeded",
+      "workflow_ref": "decision:54034966-d4d1-469d-bb9d-8eef8ce77dca"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": false,
+      "threat_id": "TDID-THR-015",
+      "unknown_conditions": [],
+      "verdict": "succeeded",
+      "workflow_ref": "decision:57d3879b-7eb4-4f16-91c3-54f4bd0e76d7"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": false,
+      "threat_id": "TDID-THR-015",
+      "unknown_conditions": [],
+      "verdict": "not_succeeded",
+      "workflow_ref": "decision:5aa76494-1c93-4ae8-8cbb-287f1095f996"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": false,
+      "threat_id": "TDID-THR-015",
+      "unknown_conditions": [],
+      "verdict": "not_succeeded",
+      "workflow_ref": "decision:734ed449-459e-4fa8-b7e2-e711fef129ee"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": false,
+      "threat_id": "TDID-THR-015",
+      "unknown_conditions": [],
+      "verdict": "not_succeeded",
+      "workflow_ref": "decision:7bb29d0f-1bf7-4d15-86df-db16ef0fb3cd"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": false,
+      "threat_id": "TDID-THR-015",
+      "unknown_conditions": [],
+      "verdict": "not_succeeded",
+      "workflow_ref": "decision:862f2d35-d343-4812-bf53-3e64bd2e306a"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": false,
+      "threat_id": "TDID-THR-015",
+      "unknown_conditions": [],
+      "verdict": "not_succeeded",
+      "workflow_ref": "decision:97f98555-c67f-4b2a-a847-db494d97815d"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": false,
+      "threat_id": "TDID-THR-015",
+      "unknown_conditions": [],
+      "verdict": "not_succeeded",
+      "workflow_ref": "decision:a7d14564-af4b-464f-b18c-9959ee739ff8"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": false,
+      "threat_id": "TDID-THR-015",
+      "unknown_conditions": [],
+      "verdict": "not_succeeded",
+      "workflow_ref": "decision:a9492be2-5f9e-48ef-8beb-646203c78e83"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": false,
+      "threat_id": "TDID-THR-015",
+      "unknown_conditions": [],
+      "verdict": "not_succeeded",
+      "workflow_ref": "decision:bcba0105-d290-4140-b0ee-e3890e0cdda9"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": false,
+      "threat_id": "TDID-THR-015",
+      "unknown_conditions": [],
+      "verdict": "succeeded",
+      "workflow_ref": "decision:bcd75b4e-556e-426f-84f8-8d127bbb2306"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": false,
+      "threat_id": "TDID-THR-015",
+      "unknown_conditions": [],
+      "verdict": "not_succeeded",
+      "workflow_ref": "decision:c79ec7a7-27b6-47e8-a5ad-c964b74bb9ed"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": false,
+      "threat_id": "TDID-THR-015",
+      "unknown_conditions": [],
+      "verdict": "not_succeeded",
+      "workflow_ref": "decision:c7fae0e4-ff9b-45d9-a0a5-00ff70282ad3"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": false,
+      "threat_id": "TDID-THR-015",
+      "unknown_conditions": [],
+      "verdict": "not_succeeded",
+      "workflow_ref": "decision:c887871c-618e-4522-80dd-3874f1872a71"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": false,
+      "threat_id": "TDID-THR-015",
+      "unknown_conditions": [],
+      "verdict": "not_succeeded",
+      "workflow_ref": "decision:d22267ec-eb26-463b-a229-a1c0da73502e"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": false,
+      "threat_id": "TDID-THR-015",
+      "unknown_conditions": [],
+      "verdict": "not_succeeded",
+      "workflow_ref": "decision:d28bbe34-f84e-416c-b1f9-961085fd31ab"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": false,
+      "threat_id": "TDID-THR-015",
+      "unknown_conditions": [],
+      "verdict": "not_succeeded",
+      "workflow_ref": "decision:d6c4750d-203a-44ee-82e3-aec0af517e59"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": false,
+      "threat_id": "TDID-THR-015",
+      "unknown_conditions": [],
+      "verdict": "not_succeeded",
+      "workflow_ref": "decision:de01834b-b86c-4abf-9cf4-96c8a2c1689a"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": false,
+      "threat_id": "TDID-THR-015",
+      "unknown_conditions": [],
+      "verdict": "not_succeeded",
+      "workflow_ref": "decision:dedac0d5-ee20-4f9c-8975-67c5c61ebde8"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": false,
+      "threat_id": "TDID-THR-015",
+      "unknown_conditions": [],
+      "verdict": "not_succeeded",
+      "workflow_ref": "decision:e21f854e-e761-454f-ad1f-695a527b8c9a"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": false,
+      "threat_id": "TDID-THR-015",
+      "unknown_conditions": [],
+      "verdict": "not_succeeded",
+      "workflow_ref": "decision:fc2f2ed5-60b5-460b-bf79-a59d474b193d"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": false,
+      "threat_id": "TDID-THR-015",
+      "unknown_conditions": [],
+      "verdict": "not_succeeded",
+      "workflow_ref": "decision:fdc440d5-147d-46c2-9e3b-a5f2abb20238"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-016",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "ResultObtained",
+        "ReusedByRecipient",
+        "SecretReadableByRecipient"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:1aa7047c-dec8-4334-951c-360ac83df694"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-016",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "ResultObtained",
+        "ReusedByRecipient",
+        "SecretReadableByRecipient"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:2e8868fc-8952-47c1-9133-251def1735e5"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-016",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "ResultObtained",
+        "ReusedByRecipient",
+        "SecretReadableByRecipient"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:35a75059-1bd9-40ce-aba0-f0fd0910942f"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-016",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "ResultObtained",
+        "ReusedByRecipient",
+        "SecretReadableByRecipient"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:3e021068-de65-4989-87ad-95188ed23693"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-016",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "ResultObtained",
+        "ReusedByRecipient",
+        "SecretReadableByRecipient"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:3efd2a8c-8a5e-435b-a04b-2fe4dd95e031"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-016",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "ResultObtained",
+        "ReusedByRecipient",
+        "SecretReadableByRecipient"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:54034966-d4d1-469d-bb9d-8eef8ce77dca"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-016",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "ResultObtained",
+        "ReusedByRecipient",
+        "SecretReadableByRecipient"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:57d3879b-7eb4-4f16-91c3-54f4bd0e76d7"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-016",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "ResultObtained",
+        "ReusedByRecipient",
+        "SecretReadableByRecipient"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:5aa76494-1c93-4ae8-8cbb-287f1095f996"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-016",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "ResultObtained",
+        "ReusedByRecipient",
+        "SecretReadableByRecipient"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:734ed449-459e-4fa8-b7e2-e711fef129ee"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-016",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "ResultObtained",
+        "ReusedByRecipient",
+        "SecretReadableByRecipient"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:7bb29d0f-1bf7-4d15-86df-db16ef0fb3cd"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-016",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "ResultObtained",
+        "ReusedByRecipient",
+        "SecretReadableByRecipient"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:862f2d35-d343-4812-bf53-3e64bd2e306a"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-016",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "ResultObtained",
+        "ReusedByRecipient",
+        "SecretReadableByRecipient"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:97f98555-c67f-4b2a-a847-db494d97815d"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-016",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "ResultObtained",
+        "ReusedByRecipient",
+        "SecretReadableByRecipient"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:a7d14564-af4b-464f-b18c-9959ee739ff8"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-016",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "ResultObtained",
+        "ReusedByRecipient",
+        "SecretReadableByRecipient"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:a9492be2-5f9e-48ef-8beb-646203c78e83"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-016",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "ResultObtained",
+        "ReusedByRecipient",
+        "SecretReadableByRecipient"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:bcba0105-d290-4140-b0ee-e3890e0cdda9"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-016",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "ResultObtained",
+        "ReusedByRecipient",
+        "SecretReadableByRecipient"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:bcd75b4e-556e-426f-84f8-8d127bbb2306"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-016",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "ResultObtained",
+        "ReusedByRecipient",
+        "SecretReadableByRecipient"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:c79ec7a7-27b6-47e8-a5ad-c964b74bb9ed"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-016",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "ResultObtained",
+        "ReusedByRecipient",
+        "SecretReadableByRecipient"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:c7fae0e4-ff9b-45d9-a0a5-00ff70282ad3"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-016",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "ResultObtained",
+        "ReusedByRecipient",
+        "SecretReadableByRecipient"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:c887871c-618e-4522-80dd-3874f1872a71"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-016",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "ResultObtained",
+        "ReusedByRecipient",
+        "SecretReadableByRecipient"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:d22267ec-eb26-463b-a229-a1c0da73502e"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-016",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "ResultObtained",
+        "ReusedByRecipient",
+        "SecretReadableByRecipient"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:d28bbe34-f84e-416c-b1f9-961085fd31ab"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-016",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "ResultObtained",
+        "ReusedByRecipient",
+        "SecretReadableByRecipient"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:d6c4750d-203a-44ee-82e3-aec0af517e59"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-016",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "ResultObtained",
+        "ReusedByRecipient",
+        "SecretReadableByRecipient"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:de01834b-b86c-4abf-9cf4-96c8a2c1689a"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-016",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "ResultObtained",
+        "ReusedByRecipient",
+        "SecretReadableByRecipient"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:dedac0d5-ee20-4f9c-8975-67c5c61ebde8"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-016",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "ResultObtained",
+        "ReusedByRecipient",
+        "SecretReadableByRecipient"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:e21f854e-e761-454f-ad1f-695a527b8c9a"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-016",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "ResultObtained",
+        "ReusedByRecipient",
+        "SecretReadableByRecipient"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:fc2f2ed5-60b5-460b-bf79-a59d474b193d"
+    },
+    {
+      "decisions": 1,
+      "no_relevant_record": true,
+      "threat_id": "TDID-THR-016",
+      "unknown_conditions": [
+        "RecipientOutsideApplicationRole",
+        "ResultObtained",
+        "ReusedByRecipient",
+        "SecretReadableByRecipient"
+      ],
+      "verdict": "incomplete",
+      "workflow_ref": "decision:fdc440d5-147d-46c2-9e3b-a5f2abb20238"
+    }
+  ]
+}

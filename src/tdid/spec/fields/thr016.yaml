@@ -1,0 +1,51 @@
+# TDID-THR-016 Split-wallet deputy impersonation using routed issuance secrets
+# Source analysis: research/candidates/CAND-20260815-OBS-GAP-THR-016-020.yaml (TDID-THR-016 row)
+# Definition: research/candidates/CAND-20260908-CH6-THR-016-REAFFIRMED.yaml (unchanged definition).
+# The OBS-GAP named checks routed_issuance_secret_deputy_reuse and deputy_unauthorized_result_attribution are
+# conclusions; they are not producer checks here and are computed by the rule from the joins below.
+# Results joined to a routing: Issuer TOKEN_ISSUED and ISSUANCE_DECISION (token or credential issued) and
+# PROTECTED_RESOURCE_RESPONSE (the source's confidential_data_returned result). Each carries the secret it
+# received (issuance_secret_ref, for a protected resource the access token), the caller it authenticated
+# (authenticated_caller_ref, caller_authentication) and its outcome.
+threat: TDID-THR-016
+event_types:
+  ISSUANCE_SECRET_ROUTED:
+    produced_by: [wallet]
+    meaning: The trusted application component of a split Wallet handed one issuance secret (authorization code, pre-authorized code, access token, refresh token or key proof) to another Wallet component.
+  PROTECTED_RESOURCE_RESPONSE:
+    produced_by: [issuer]
+    meaning: >-
+      The Credential Issuer, as the resource server for its access tokens, decided one request to a protected
+      endpoint that returns confidential data other than a token or a credential (for example a deferred
+      credential or the holder's account data). accept = the data was returned to the caller; reject = refused.
+refs:
+  issuance_secret_ref:
+    produced_by: [wallet, issuer]
+    meaning: Commitment over the complete issuance secret bytes under a commitment key shared by the Wallet application and the Issuer or Authorization Server of this deployment, so both sides compute the same value.
+    reveals: Whether a secret the Wallet routed is the secret an Issuer later received (equality only; the secret stays local).
+  routed_component_ref:
+    produced_by: [wallet]
+    meaning: Commitment, under the same shared key, over the authentication identity (client authentication key, attestation key or TLS client certificate) of the Wallet component that received the secret.
+    reveals: Which authenticated identity the receiving component would present to an Issuer (equality only).
+  authenticated_caller_ref:
+    produced_by: [issuer]
+    meaning: Commitment, under the same shared key, over the caller identity the Issuer or Authorization Server authenticated on this request (client authentication key, attestation key or TLS client certificate).
+    reveals: Which authenticated identity actually presented the request (equality only).
+facts:
+  secret_readable_by_recipient:
+    produced_by: [wallet]
+    type: boolean
+    meaning: True when the secret was handed over in a form the receiving component can read and replay; false when it was sealed end-to-end for the Issuer so the recipient only relays opaque bytes.
+    reveals: Whether the receiving component could reuse the secret.
+  recipient_holds_application_credentials:
+    produced_by: [wallet]
+    type: boolean
+    meaning: True when the receiving component can authenticate to an Issuer with the application's own client credentials, so an Issuer cannot tell its requests from the application's (Wallet deployment configuration).
+    reveals: Whether caller authentication can separate this component from the application.
+checks:
+  application_role_authorization:
+    produced_by: [wallet]
+    meaning: The Wallet's versioned split-Wallet policy evaluated whether the receiving component is authorized to act as the application for the operation the secret grants. pass = authorized; fail = outside that role.
+  caller_authentication:
+    produced_by: [issuer]
+    meaning: Authentication of the request caller executed by the Issuer or Authorization Server (client authentication, Wallet attestation or mutual TLS) that binds authenticated_caller_ref.

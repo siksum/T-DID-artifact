@@ -1,0 +1,8 @@
+{
+  "verified_subject": "a18aaec48d6138351e224755e9b43dff194d3737fb6da6214aeb9617cc5a7cc5",
+  "consumer_controller": "80af151beb840353c152d91b27fa55d65565b42e4d8d56fe66ff7a90484fdf0f",
+  "access_entry": "denied",
+  "result_verified": true,
+  "transaction_matches": true,
+  "subject_matches_wallet": true
+}

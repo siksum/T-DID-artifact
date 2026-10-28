@@ -1,0 +1,22 @@
+{
+  "pairs": 10,
+  "warmup_cases_per_block": 50,
+  "measured_cases_per_block": 100,
+  "scenario_mix": "equal five THR-015 existing recipes",
+  "timing": "monotonic credential request to full response body; startup/oracle excluded",
+  "baseline": "same pinned build, added collection OFF; not pristine unpatched binary",
+  "products": [
+    "waltid",
+    "credo"
+  ],
+  "repetitions": 30,
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+  "commit": "0d8718cb5ea1fdf5998c1503a8933432ffdb40f2",
+  "loadavg": [
+    1.0673828125,
+    0.537109375,
+    0.38232421875
+  ],
+  "started_utc": "2026-10-21T16:36:40Z"
+}

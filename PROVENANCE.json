@@ -11,7 +11,8 @@
     "Fig. 3(b) label changed from Unknown to Incomplete; captions made self-contained and MonPoly process-tree memory stated.",
     "External monitor binaries retrieved separately by digest/hash; no third-party binary is redistributed.",
     "Private campaign-locator columns omitted from the workflow ledger; oracle fields and outcomes preserved.",
-    "v1.0.1: author list in CITATION.cff and README; figure scripts omit creation dates and fix SVG ids so regenerated figures are byte-identical (vector content unchanged). Detector, data and measurements unchanged."
+    "v1.0.1: author list in CITATION.cff and README; figure scripts omit creation dates and fix SVG ids so regenerated figures are byte-identical (vector content unchanged). Detector, data and measurements unchanged.",
+    "v1.0.2: adds data/static/attack_v17_applicability.xlsx, an English edition of the preliminary ATT&CK v17 applicability workbook. Its 740 entry grades match the Korean analysis tabs of the original workbook (sha256 b3d09f7fd7e11dc82e822fa4e160e75ab6a3743c7a602ad477d31361718e31a1); the applicability label None is written No; README, Criteria, Threat_links and three inspection notes were added to the author-supplied translation (sha256 5afa45b08ecb9ede6bdbd4309166fa9d75cbe02064ea01686adf6ae11f57d331)."
   ],
   "host_path_transforms": [
     {

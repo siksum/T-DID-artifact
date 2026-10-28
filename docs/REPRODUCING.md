@@ -27,6 +27,7 @@ setup step. The published Git history contains none of these downloaded binaries
 | Item | Stored source | Recompute |
 |---|---|---|
 | 21 threats / taxonomy correspondence | data/static/attack_elements.csv, taxonomy_correspondence.csv | reproduce.py static checks; 21 x 4 entries |
+| ATT&CK v17 applicability (Table S4) | data/static/attack_v17_applicability.xlsx | Threat_links sheet; Summary/Techniques formulas recalculate on open |
 | 315 static combinations | implementation_feasibility_315.csv | 22 designable + 142 applicable but missing evidence/truth + 151 not applicable; applicable total 164 |
 | 42 / known 39 / determinate 30 / incomplete 9 | workflow_evidence_42.csv and included datasets | verify_saved_truth.py; common.layout; engine replay |
 | Input representation results (Table III) | data/expected/fig1.json | experiments.eval.fig1.run |

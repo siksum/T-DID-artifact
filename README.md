@@ -46,6 +46,7 @@ python3 -m venv .venv
 | PLTL, LTL3, MonPoly encodings and formulas | [experiments/eval/monitors](experiments/eval/monitors) |
 | Recorded product evidence, independent oracle fields, verdicts | [datasets](datasets) |
 | Taxonomy correspondence and 315 implementation/threat cells | [data/static](data/static) |
+| Preliminary ATT&CK v17 applicability analysis (Table S4 source column) | [attack_v17_applicability.xlsx](data/static/attack_v17_applicability.xlsx) |
 | Stored numerical reference results | [data/expected](data/expected) |
 | Figure input values and editable outputs | [data/figures](data/figures), [figures](figures) |
 | Figure 1–2 / 3–4 code | [draw_diagrams.py](scripts/draw_diagrams.py), [plot_results.py](scripts/plot_results.py) |
@@ -68,8 +69,10 @@ under deletion can include a success conclusion unsupported by the missing evide
 it as universal superiority. Recorded timing values describe the configured replay paths and machine,
 not pure algorithm cost or live-service throughput. New timing runs will vary across hosts.
 
-The preliminary ATT&CK workbook (D1) and manuscript drafts are outside this code artifact. Final
-correspondence decisions, source versions and code locators are retained as inspectable CSV files.
+The preliminary ATT&CK v17 applicability analysis is included as an English workbook whose 740 grades match
+the original Korean analysis entry by entry; its Threat_links sheet connects the 21 threats to Table S4.
+Manuscript drafts are outside this artifact. Final correspondence decisions, source versions and code
+locators are retained as inspectable CSV files.
 Host path strings in metadata/logs were normalized for publication; scientific observations and
 predicates were preserved. See DATA.md for the transformation and checksum boundary.
 
@@ -78,5 +81,5 @@ predicates were preserved. See DATA.md for the transformation and checksum bound
 The T-DID source, generated data, and original artifact documentation are provided under
 [Apache-2.0](LICENSE), subject to upstream notices for patches and external tools in
 [THIRD_PARTY.md](THIRD_PARTY.md). External MonPoly/LamaConv binaries are not redistributed.
-Use [CITATION.cff](CITATION.cff) for this software release (v1.0.1). Journal acceptance is not asserted by
+Use [CITATION.cff](CITATION.cff) for this software release (v1.0.2). Journal acceptance is not asserted by
 this artifact. Figure scripts write no creation date, so `make reproduce` regenerates byte-identical figures.

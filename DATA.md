@@ -5,7 +5,7 @@
 * `datasets/sept2026-thr015`: 15 walt.id and 15 Credo issuance workflows.
 * `datasets/sept2026-thr019`: 12 Credo + relying-party presentation workflows.
 * `data/static`: final 21-threat correspondence, fixed versions and code locators, 315 static cells,
-  and the 42-workflow oracle/verdict ledgers. Candidate and contribution IDs are original record IDs.
+  the 42-workflow oracle/verdict ledgers, and the preliminary ATT&CK v17 applicability workbook. Candidate and contribution IDs are original record IDs.
 * `data/measurements`: the stored dense replay records, process memory samples and paired logging
   on/off product records. Environment files identify the commits and configurations used when measured.
 
@@ -26,7 +26,11 @@ portable publication drivers may have different hashes because paths/output loca
 The public workflow ledger omits original private-workspace campaign path columns. Its oracle fields
 and outcome columns remain unchanged; dataset-relative paths point to the included evidence.
 
-The preliminary D1 workbook and 660-workflow historical campaign are excluded. No paper DOCX/PDF,
+The ATT&CK v17 applicability workbook is an English edition of the original Korean analysis workbook:
+entries, grades and rationales are kept; the applicability label None is written No as in Supplementary
+Table S4; IDs and names are corrected to v17 in its Corrections sheet; the grading criteria, threat links
+and inspection notes are added. The original Korean workbook, its English working tabs, analyst
+assignments and the 660-workflow historical campaign are excluded. No paper DOCX/PDF,
 agent notes, private repository history, third-party monitor binary, product binary or whole build tree
 is included. Product sources are retrieved at the recorded upstream commits for a fresh service run.
 

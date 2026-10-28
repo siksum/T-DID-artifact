@@ -10,7 +10,8 @@
     "Host filesystem prefixes and generated-result locations made portable; detector predicates and monitor encodings unchanged.",
     "Fig. 3(b) label changed from Unknown to Incomplete; captions made self-contained and MonPoly process-tree memory stated.",
     "External monitor binaries retrieved separately by digest/hash; no third-party binary is redistributed.",
-    "Private campaign-locator columns omitted from the workflow ledger; oracle fields and outcomes preserved."
+    "Private campaign-locator columns omitted from the workflow ledger; oracle fields and outcomes preserved.",
+    "v1.0.1: author list in CITATION.cff and README; figure scripts omit creation dates and fix SVG ids so regenerated figures are byte-identical (vector content unchanged). Detector, data and measurements unchanged."
   ],
   "host_path_transforms": [
     {

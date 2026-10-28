@@ -9,6 +9,9 @@ ROOT=Path(__file__).resolve().parent
 OUT=ROOT.parent/'figures'; OUT.mkdir(exist_ok=True)
 NAVY,TEAL,GRAY='#263B53','#438F88','#697783'
 plt.rcParams.update({'font.family':'STIXGeneral','font.size':9,'pdf.fonttype':42,'svg.fonttype':'none'})
+# Fixed creation date and SVG ids: regenerated figures are byte-identical to the released files.
+plt.rcParams['svg.hashsalt']='tdid'
+META={'svg':{'Date':None},'pdf':{'CreationDate':None},'png':{}}
 def canvas(h):
  f,a=plt.subplots(figsize=(7.16,h));a.set(xlim=(0,1),ylim=(0,1));a.axis('off');f.subplots_adjust(0,0,1,1);return f,a
 def box(a,x,y,w,h,text,fill='white',size=9):
@@ -20,7 +23,7 @@ def arrow(a,start,end,label='',pos=None,color=TEAL,style='-'):
   x,y=pos if pos else ((start[0]+end[0])/2,(start[1]+end[1])/2+.035)
   a.text(x,y,label,ha='center',va='center',fontsize=8,color=color)
 def save(f,n):
- for ext in ['svg','pdf','png']:f.savefig(OUT/f'Fig{n}.{ext}',dpi=360)
+ for ext in ['svg','pdf','png']:f.savefig(OUT/f'Fig{n}.{ext}',dpi=360,metadata=META[ext])
  plt.close(f)
 
 f,a=canvas(2.55)

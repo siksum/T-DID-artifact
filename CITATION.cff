@@ -2,9 +2,19 @@ cff-version: 1.2.0
 message: "Please cite this versioned software artifact when using its code or data."
 title: "T-DID: reproducible DID/VC security logging and detection artifact"
 type: software
-version: 1.0.0
+version: 1.0.1
 date-released: 2026-10-28
 authors:
-  - name: "siksum"
+  - given-names: "Namryeong"
+    family-names: "Kim"
+  - given-names: "So-Eun"
+    family-names: "Jeon"
+  - given-names: "Seung-Ha"
+    family-names: "Jee"
+  - given-names: "Jin-Min"
+    family-names: "Lee"
+  - given-names: "Il-Gu"
+    family-names: "Lee"
 repository-code: "https://github.com/siksum/T-DID-artifact"
 license: Apache-2.0
+abstract: "Artifact for the manuscript 'T-DID: Runtime Security Information and Stateful Threat Adjudication for DID/VC Systems', prepared for IEEE Transactions on Dependable and Secure Computing."

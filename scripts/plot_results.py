@@ -20,6 +20,9 @@ plt.rcParams.update({'font.family':'STIXGeneral','font.size':9,'axes.labelsize':
  'axes.edgecolor':'#444444','text.color':'#20252A','axes.labelcolor':'#20252A',
  'xtick.major.width':.5,'ytick.major.width':.5,'xtick.major.size':3,'ytick.major.size':3,
  'figure.facecolor':'white','axes.facecolor':'white','savefig.facecolor':'white'})
+# Fixed creation date and SVG ids: regenerated figures are byte-identical to the released files.
+plt.rcParams['svg.hashsalt']='tdid'
+META={'svg':{'Date':None},'pdf':{'CreationDate':None},'png':{}}
 CHECKS={}; plotted=[]
 
 def readcsv(path):return list(csv.DictReader(path.open()))
@@ -31,7 +34,7 @@ def grid(ax):
 def save(fig,name):
  # Fixed 7.16in canvas: exporting does not silently shrink labels via tight bounding boxes.
  for ext in ['pdf','svg','png']:
-  fig.savefig(OUT/f'{name}.{ext}',dpi=360)
+  fig.savefig(OUT/f'{name}.{ext}',dpi=360,metadata=META[ext])
  plt.close(fig)
 def legend(ax,handles,labels,cols=1,y=-.29,**kw):
  return ax.legend(handles,labels,loc='upper center',bbox_to_anchor=(.5,y),

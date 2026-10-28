@@ -4,6 +4,10 @@ An executable artifact for DID/VC threat success conditions, security event logg
 It contains the engine and **21 rules**, log-model mappings, three comparison monitors, the recorded
 **42 product workflows**, static analysis ledgers, and the data/code behind the paper's figures.
 
+Associated manuscript: N. Kim, S.-E. Jeon, S.-H. Jee, J.-M. Lee, and I.-G. Lee, "T-DID: Runtime Security
+Information and Stateful Threat Adjudication for DID/VC Systems," manuscript for *IEEE Transactions on
+Dependable and Secure Computing*.
+
 ## Start here
 
 Tested platform: **Linux x86-64, Python 3.12**. Full comparator replay additionally needs Docker once
@@ -74,5 +78,5 @@ predicates were preserved. See DATA.md for the transformation and checksum bound
 The T-DID source, generated data, and original artifact documentation are provided under
 [Apache-2.0](LICENSE), subject to upstream notices for patches and external tools in
 [THIRD_PARTY.md](THIRD_PARTY.md). External MonPoly/LamaConv binaries are not redistributed.
-Use [CITATION.cff](CITATION.cff) for this software release. A journal acceptance or archival DOI is not
-asserted by this artifact.
+Use [CITATION.cff](CITATION.cff) for this software release (v1.0.1). Journal acceptance is not asserted by
+this artifact. Figure scripts write no creation date, so `make reproduce` regenerates byte-identical figures.
